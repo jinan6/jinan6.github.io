@@ -360,14 +360,14 @@ codeblock:
   # Code Highlight theme
   # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
   # See: https://github.com/chriskempson/tomorrow-theme
-  highlight_theme: night eighties
+  highlight_theme: normal		#代码块风格设置
   # Add copy button on codeblock
   copy_button:
     enable: true    # 增加复制按钮的开关
     # Show text copy result.
     show_result: true   # 点击复制完后是否显示 复制成功 结果提示
     # Available values: default | flat | mac
-    style:
+    style: mac	#样式
 
 back2top:
   enable: true
