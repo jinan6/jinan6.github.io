@@ -28,22 +28,22 @@
       {### PAGE BODY ###}
       {#################}
       <div class="post-body{%- if page.direction and page.direction.toLowerCase() === 'rtl' %} rtl{%- endif %}">
-        {%- if page.type === 'tags' %}
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-              {{ _p('counter.tag_cloud', site.tags.length) }}
-            </div>
-            <div class="tag-cloud-tags">
-              {{ tagcloud({
-                min_font   : theme.tagcloud.min,
-                max_font   : theme.tagcloud.max,
-                amount     : theme.tagcloud.amount,
-                color      : true,
-                start_color: theme.tagcloud.start,
-                end_color  : theme.tagcloud.end})
-              }}
-            </div>
-          </div>
+       {%- if page.type === 'tags' %}
+         <div class="tag-cloud">
+           <div class="tag-cloud-title">
+             {{ _p('counter.tag_cloud', site.tags.length) }}
+           </div>
+           <div class="tag-cloud-tags">
+             {{ tagcloud({
+               min_font   : theme.tagcloud.min,
+               max_font   : theme.tagcloud.max,
+               amount     : theme.tagcloud.amount,
+               color      : true,
+               start_color: theme.tagcloud.start,
+               end_color  : theme.tagcloud.end})
+             }}
+           </div>
+         </div>
         {% elif page.type === 'categories' %}
           <div class="category-all-page">
             <div class="category-all-title">

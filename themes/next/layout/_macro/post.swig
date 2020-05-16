@@ -42,10 +42,10 @@
 
         <div class="post-meta">
 		{% if post.top %}
-		          <i class="fa fa-thumb-tack"></i>
-		          <font color=7D26CD>置顶</font>
-		          <span class="post-meta-divider">|</span>
-		      {% endif %}
+		  <i class="fa fa-thumb-tack"></i>
+		  <font color=7D26CD>置顶</font>
+		  <span class="post-meta-divider">|</span>
+		{% endif %}
 			  
 			  {% if post.essential%}
 			       <span class="post-meta-item-icon">

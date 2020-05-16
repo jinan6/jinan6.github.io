@@ -14,7 +14,3 @@
 {% block sidebar %}
   {{ sidebar_template.render(true) }}
 {% endblock %}
-
-{% if theme.mob_share.enable %}
-      {% include '_partials/share/mob_share.swig' %}
-{% endif %}

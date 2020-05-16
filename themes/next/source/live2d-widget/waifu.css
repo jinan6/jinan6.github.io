@@ -69,11 +69,11 @@
 
 #waifu #live2d {
 	cursor: grab;
-	/* height: 300px; */
+	height: 300px;
 	position: relative;
-	/* width: 300px; */
-	height: 200px;		/*后来改动*/
-	width: 200px;
+	width: 300px;
+	/* height: 200px; */		/*后来改动*/
+	/* width: 200px; */
 }
 
 #waifu #live2d:active {

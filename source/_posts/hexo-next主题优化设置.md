@@ -20,6 +20,7 @@ top:
 - 修改文章内链接文本样式
 - 修改文章底部的那个带#号的标签
 - 在每篇文章末尾统一添加“本文结束”标记
+- 新增看板娘(能说话、能换装)
 
 #### 1、在右上角或者左上角实现fork me on github
 
@@ -135,4 +136,47 @@ passage_end_tag:
   enabled: true
 ````
 
-未完待续。。。。
+#### 6、新增看板娘(能说话、能换装)
+
+###### 效果图：
+
+![效果](https://blog.pangao.vip/pic/Hexo%E5%8D%9A%E5%AE%A2NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E4%B9%8B%E6%96%B0%E5%A2%9E%E7%9C%8B%E6%9D%BF%E5%A8%98-1.gif)
+
+###### 具体实现方法：
+
+1、下载 [张书樵大神的项目](https://github.com/stevenjoezhang/live2d-widget)，解压到本地博客目录的 `themes/next/source` 下，修改文件夹名为 `live2d-widget`，修改项目中的 `autoload.js` 文件，如下：
+将
+
+````java
+const live2d_path = "https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/";
+````
+
+改为
+
+````java
+const live2d_path = "/live2d-widget/";
+````
+
+2、打开在`/themes/next/layout/_layout.swig`，在**head标签**中加入：
+
+````javas
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+````
+
+在末尾加入：
+
+````javas
+<script src="/live2d-widget/autoload.js"></script>
+````
+
+3、在 `主题配置文件` 中,新增如下内容：
+
+````java
+live2d:
+  enable: true
+````
+
+4、想修改看板娘大小、位置、格式、文本内容等，可查看并修改 `waifu-tips.js` 、 `waifu-tips.json` 和 `waifu.css`。
+
+未完待续。。。
