@@ -151,6 +151,6 @@ aplayer:
 backup:
   type: git
   theme: next
-  message: Back up my www.itrhx.com blog
+  message: 备份博客
   repository:
     github: git@github.com:jinan6/jinan6.github.io.git,backup
