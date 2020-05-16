@@ -35,7 +35,7 @@
 
         {{- next_inject('sidebar') }}
       </div>
-
+	  
       {%- if theme.back2top.enable and theme.back2top.sidebar %}
         <div class="back-to-top motion-element">
           <i class="fa fa-arrow-up"></i>

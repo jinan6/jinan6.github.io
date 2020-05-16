@@ -1026,3 +1026,6 @@ post_wordcount:
 # 文章末尾添加“本文结束”标记
 passage_end_tag:
   enabled: true
+#看板娘
+live2d:
+  enable: true
