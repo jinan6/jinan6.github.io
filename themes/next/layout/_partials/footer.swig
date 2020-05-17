@@ -88,7 +88,7 @@
         if (String(snum).length == 1) {
             snum = "0" + snum;
         }
-        document.getElementById("timeDate").innerHTML = " | 本站已运行 " + dnum + " 天 ";
+        document.getElementById("timeDate").innerHTML = "  本站已运行 " + dnum + " 天 ";
         document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
     }
     setInterval("createtime()", 250);
@@ -100,5 +100,19 @@
     <span class="fa fa-user">你是第<span id="busuanzi_value_site_uv"></span>个小伙伴</span>
     <span class="post-meta-divider">|</span>
 	<span class="fa fa-eye">本站已被浏览<span id="busuanzi_value_site_pv"></span>次啦</span>
-	
 </div>
+
+<div class="translate-style">
+繁/简：<a id="translateLink" href="javascript:translatePage();">繁体
+</a>
+</div>
+<script type="text/javascript" src="/js/tw_cn.js"></script>
+<script type="text/javascript">
+var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
+var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
+var cookieDomain = "https://tding.top/"; //Cookie地址, 一定要设定, 通常为你的网址
+var msgToTraditionalChinese = "繁体"; //此处可以更改为你想要显示的文字
+var msgToSimplifiedChinese = "简体"; //同上，但两处均不建议更改
+var translateButtonId = "translateLink"; //默认互换id
+translateInitilization();
+</script>

@@ -14,6 +14,8 @@ type: "links"
 | ookamiAntD`s Blog | https://yangbingdong.com/ |
 |       csde        |   http://www.csde.vip/    |
 |       千灵        |   https://qianling.pw/    |
+|  小丁的个人博客   |    https://tding.top/     |
+|      yearito      |    http://yearito.cn/     |
 
 
 

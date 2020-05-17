@@ -1030,3 +1030,8 @@ passage_end_tag:
 live2d:
   enable: true
   
+#打字特效
+# typing effect
+typing_effect:
+  colorful: true  # 礼花特效
+  shake: false  # 震动特效
