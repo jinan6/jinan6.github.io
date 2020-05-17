@@ -22,6 +22,13 @@ top:
 - 在每篇文章末尾统一添加“本文结束”标记
 - 新增看板娘(能说话、能换装)
 - 开启代码块复制功能及更换样式
+- 打字特效
+- 个性化回到顶部
+- 文章末尾版权声明
+- 添加图片灯箱
+- 相关文章推荐
+- 站点及文章字数统计
+- 站点运行时间统计
 
 #### 1、在右上角或者左上角实现fork me on github
 
@@ -187,5 +194,220 @@ live2d:
 ![样式](hexo-next主题优化设置/image-20200516222500714.png)
 
 自己根据需要修改即可
+
+#### 8、打字特效
+
+###### 效果图：![特效](hexo-next主题优化设置/typing-effect.gif)
+
+###### 具体实现方法：
+
+点击下方按钮下载相应的脚本，并置于 themes\next\source\js\ 目录下：
+
+[打字特效](https://script-1256884783.file.myqcloud.com/activate-power-mode.min.js)
+
+在主题自定义布局文件中添加以下代码：
+
+````javascript
+themes\next\layout\_custom\custom.swig
+{# 打字特效 #}
+{% if theme.typing_effect %}
+  <script src="/js/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = {{ theme.typing_effect.colorful }};
+    POWERMODE.shake = {{ theme.typing_effect.shake }};
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+{% endif %}
+````
+
+如果 custom.swig 文件不存在，需要手动新建并在布局页面中 body 末尾引入：
+
+````javas
+{% include '_custom/custom.swig' %}
+````
+
+在主题配置文件中添加以下代码：
+
+````javascript
+hemes\next\_config.yml
+# typing effect
+typing_effect:
+  colorful: true  # 礼花特效
+  shake: false  # 震动特效
+
+````
+
+#### 9、个性化回到顶部
+
+###### 具体实现方法：
+
+首先，找到自己喜欢的图片素材放到 source\images\ 目录下。
+
+你可以点击下方按钮下载本站所使用的小猫上吊素材（ 小猫咪这么可爱，当然要多放点孜然啦…）
+
+[ 下载图片](http://yearito.cn/images/scroll.png)
+
+然后在自定义样式文件中添加如下代码：
+
+````javas
+themes\next\source\css\_custom\custom.styl
+//自定义回到顶部样式
+.back-to-top {
+  right: 60px;
+  width: 70px;  //图片素材宽度
+  height: 900px;  //图片素材高度
+  top: -900px;
+  bottom: unset;
+  transition: all .5s ease-in-out;
+  background: url("/images/scroll.png");
+
+  //隐藏箭头图标
+  > i {
+    display: none;
+  }
+
+  &.back-to-top-on {
+    bottom: unset;
+    top: 100vh < (900px + 200px) ? calc( 100vh - 900px - 200px ) : 0px;
+  }
+}
+````
+
+重新运行刷新浏览器即可
+
+##### 10、文章末尾版权声明
+
+###### 效果图：![效果图](hexo-next主题优化设置/image-20200517170054604.png)
+
+###### 具体实现方法：
+
+在主题配置文件中开启文章底部的版权声明，版权声明默认使用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，用户可以根据自身需要修改 `licence` 字段变更协议。
+
+具体实现方法：
+
+
+
+#### 11、添加图片灯箱
+
+添加灯箱功能，实现点击图片后放大聚焦图片，并支持幻灯片播放、全屏播放、缩略图、快速分享到社交媒体等，该功能由 [fancyBox](https://github.com/fancyapps/fancybox) 提供。
+
+在根目录下执行以下命令安装相关依赖：
+
+````javas
+git clone https://github.com/theme-next/theme-next-fancybox3 themes/next/source/lib/fancybox
+
+````
+
+在主题配置文件中设置 `fancybox: true`：
+
+````javas
+themes\next_config.yml
+fancybox: true
+
+````
+
+#### 12、相关文章推荐
+
+###### 效果图：![效果](hexo-next主题优化设置/image-20200517170527296.png)
+
+###### 具体实现方法：
+
+在站点根目录中执行以下命令安装依赖：
+
+````javas
+npm install hexo-related-popular-posts --save
+
+````
+
+在主题配置文件中开启相关文章推荐功能：
+
+````javas
+related_posts:
+  enable: true
+  title: 相关文章推荐
+  display_in_home: false
+  params:
+    maxCount: 5
+````
+
+#### 13、站点及文章字数统计
+
+###### 效果图：![站点](hexo-next主题优化设置/image-20200517170949578.png)![文章](hexo-next主题优化设置/image-20200517171011384.png)
+
+###### 具体实现方法：
+
+在根目录下执行如下命令安装相关依赖：
+
+````javas
+npm install hexo-symbols-count-time --save
+````
+
+启用该功能需要同时修改站点配置文件和主题配置文件。
+
+将如下配置项添加到**站点配置文件**中，这些配置项主要用于控制每项统计信息是否显示。
+
+````javas
+#字数与时间 
+  symbols_count_time:
+  symbols: true                # 文章字数统计
+  time: true                   # 文章阅读时长
+  total_symbols: true          # 站点总字数统计
+  total_time: true             # 站点总阅读时长
+  exclude_codeblock: false     # 排除代码字数统计
+````
+
+主题配置文件：
+
+````javas
+symbols_count_time:
+  separated_meta: true  #显示属性名称,设为false后只显示图标和统计数字,不显示属性的文字
+  item_text_post: true  #显示属性名称,设为false后只显示图标和统计数字,不显示属性的文字
+  item_text_total: true #底部footer是否显示字数统计属性文字(如站点总字数,站点阅读时长 ≈ 1 分钟)
+  awl: 4		#平均每个字符的长度
+  wpm: 275
+````
+
+#### 14、站点运行时间统计
+
+###### 效果图：![运行时间](hexo-next主题优化设置/image-20200517171353373.png)
+
+###### 具体实现方法：
+
+打开**\themes\next\layout\_partials\footer.swig**,在末尾添加以下内容：
+
+````javas
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt = new Date("05/10/2020 22:00:00"); //此处修改你的建站时间或者网站上线时间 
+        now.setTime(now.getTime() + 250);
+        days = (now - grt) / 1000 / 60 / 60 / 24;
+        dnum = Math.floor(days);
+        hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+        hnum = Math.floor(hours);
+        if (String(hnum).length == 1) {
+            hnum = "0" + hnum;
+        }
+        minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes);
+        if (String(mnum).length == 1) {
+            mnum = "0" + mnum;
+        }
+        seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds);
+        if (String(snum).length == 1) {
+            snum = "0" + snum;
+        }
+        document.getElementById("timeDate").innerHTML = "  本站已运行 " + dnum + " 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+    setInterval("createtime()", 250);
+</script>
+````
+
+#### 15、添加站点访问量统计
+
+###### 效果图：
 
 ###### 未完待续。。。

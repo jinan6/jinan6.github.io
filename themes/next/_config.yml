@@ -257,8 +257,8 @@ symbols_count_time:
   separated_meta: true  #显示属性名称,设为false后只显示图标和统计数字,不显示属性的文字
   item_text_post: true  #显示属性名称,设为false后只显示图标和统计数字,不显示属性的文字
   item_text_total: true #底部footer是否显示字数统计属性文字(如站点总字数,站点阅读时长 ≈ 1 分钟)
-  awl: 2		#平均每个字符的长度
-  wpm: 200
+  awl: 4		#平均每个字符的长度
+  wpm: 275
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
 tag_icon: false
