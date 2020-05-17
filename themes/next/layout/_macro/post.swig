@@ -49,7 +49,7 @@
 			  
 			  {% if post.essential%}
 			       <span class="post-meta-item-icon">
-			           <i class="fa fa-newspaper-o jingping">精品</i>
+			           <i class="fa fa-newspaper-o jingping"> 精品</i>
 			       </span>
 			       <span class="post-meta-divider">|</span>
 			   {% endif %}
