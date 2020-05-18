@@ -130,3 +130,16 @@ backup:
   message: 备份博客
   repository:
     github: git@github.com:jinan6/jinan6.github.io.git,backup
+#
+# back2top标签，右下角滚动球
+moon_menu:
+  back2top:
+    enable: true
+    icon: fa fa-chevron-up
+    func: back2top
+    order: -1
+  back2bottom:
+    enable: true
+    icon: fa fa-chevron-down
+    func: back2bottom
+    order: -2

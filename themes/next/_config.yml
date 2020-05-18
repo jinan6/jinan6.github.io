@@ -360,7 +360,7 @@ codeblock:
   # Code Highlight theme
   # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
   # See: https://github.com/chriskempson/tomorrow-theme
-  highlight_theme: normal		#代码块风格设置
+  highlight_theme: night eighties		#代码块风格设置
   # Add copy button on codeblock
   copy_button:
     enable: true    # 增加复制按钮的开关
@@ -369,12 +369,12 @@ codeblock:
     # Available values: default | flat | mac
     style: mac	#样式
 
-back2top:
-  enable: true
+back2top:		#返回顶部
+  enable: false
   # Back to top in sidebar.
   sidebar: false
   # Scroll percent label in b2t button.
-  scrollpercent: true   # 是否显示当前阅读进度
+  scrollpercent: false   # 是否显示当前阅读进度
 
 # Reading progress bar
 reading_progress:
