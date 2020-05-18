@@ -666,7 +666,7 @@ rating:
 
 # AddThis Share. See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools.
-add_this_id: ra-5ec09bec4e4a6081
+#add_this_id: ra-5ec09bec4e4a6081
 #分享
 
 # ---------------------------------------------------------------
@@ -1035,3 +1035,5 @@ live2d:
 typing_effect:
   colorful: true  # 礼花特效
   shake: false  # 震动特效
+# share.js 分享
+share_js: true
