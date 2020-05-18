@@ -88,7 +88,7 @@
         if (String(snum).length == 1) {
             snum = "0" + snum;
         }
-        document.getElementById("timeDate").innerHTML = "  本站已运行 " + dnum + " 天 ";
+        document.getElementById("timeDate").innerHTML = "  我已在此等候你 " + dnum + " 天 ";
         document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
     }
     setInterval("createtime()", 250);
@@ -97,9 +97,9 @@
 
 <!-- 不蒜子统计 -->
 <div>
-    <span class="fa fa-user">你是第<span id="busuanzi_value_site_uv"></span>个小伙伴</span>
-    <span class="post-meta-divider">|</span>
-	<span class="fa fa-eye">本站已被浏览<span id="busuanzi_value_site_pv"></span>次啦</span>
+    <span>我的第<span id="busuanzi_value_site_uv" style="color:#1890ff"></span>个朋友</span>
+    <span class="post-meta-divider">，</span>
+	<span>历经<span id="busuanzi_value_site_pv" style="color:#1890ff"></span>次回眸才与你相遇</span>
 </div>
 
 <div class="translate-style">

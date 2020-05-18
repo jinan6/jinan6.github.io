@@ -43,7 +43,7 @@ essential: true
 
 
 
-一些基本的设置参考官方文档：[Next官方文档](http://theme-next.iissnan.com/getting-started.html)
+### 一些基本的设置参考官方文档：[Next官方文档](http://theme-next.iissnan.com/getting-started.html)
 
 #### 1、在右上角或者左上角实现fork me on github
 

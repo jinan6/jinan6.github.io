@@ -289,7 +289,7 @@ follow_me:		#底部   链接
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:		#相关文章
   enable: true
-  title: 相关文章推荐
+  title: 相关文章
   display_in_home: false
   params:
     maxCount: 5
