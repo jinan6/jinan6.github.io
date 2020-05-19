@@ -97,8 +97,7 @@
 
 <!-- 不蒜子统计 -->
 <div>
-    <span>我的第<span id="busuanzi_value_site_uv" style="color:#1890ff"></span>个朋友</span>
-    <span class="post-meta-divider">|</span>
+    <span>我的第<span id="busuanzi_value_site_uv" style="color:#1890ff"></span>个朋友，</span>
 	<span>历经<span id="busuanzi_value_site_pv" style="color:#1890ff"></span>次回眸才与你相遇</span>
 </div>
 
