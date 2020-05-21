@@ -122,7 +122,7 @@ tag_indicate = '<i class="fa fa-tag"></i>'
 
 ###### 5、在每篇文章末尾统一添加“本文结束”标记
 
-###### 效果图：![效果](hexo-next主题优化设置/image-20200515200355611.png)
+###### 效果图：![效果](hexo-next主题优化设置/image-20200521215626753.png)
 
 ###### 具体实现方法：
 
@@ -133,9 +133,10 @@ tag_indicate = '<i class="fa fa-tag"></i>'
 ````java
 <div>
     {% if not is_index %}
-        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+        <div style="text-align:center;color: rgba(234,16,61,.569);font-size: 18px;margin-top: 20px;" class="tag-end">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
     {% endif %}
 </div>
+
 
 ````
 
@@ -260,7 +261,7 @@ typing_effect:
 
 你可以点击下方按钮下载本站所使用的小猫上吊素材（ 小猫咪这么可爱，当然要多放点孜然啦…）
 
-[ 下载图片](http://yearito.cn/images/scroll.png)
+{% btn http://yearito.cn/images/scroll.png, 下载图片, download fa-lg fa-fw %}
 
 然后在自定义样式文件中添加如下代码：
 
