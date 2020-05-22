@@ -41,6 +41,8 @@ essential: true
 - 用LeanClound给hexo+next博客添加文章阅读数
 - 博主头像圆形并旋转
 - 添加近期文章板块
+- 添加博客热门文章页
+- 添加文章打赏功能
 
 <b>一些基本的设置参考官方文档：[Next官方文档](http://theme-next.iissnan.com/getting-started.html)</b>
 
@@ -1081,6 +1083,115 @@ avatar:
 recent_posts_title: 近期文章
 recent_posts_layout: block
 recent_posts: true
+````
+
+#### 添加博客热门文章页
+
+##### 效果图：![热门文章](hexo-next主题优化设置/image-20200522212021634.png)
+
+##### 具体实现方法：
+
+博客已有的分类，如 categories 和 tags，都是基于博主的，那么有没有一种分类是基于读者的呢？有，一种是搜索，另一种就是这里的文章阅读量排行榜。前提是在主题配置文件中配置了 leancloud_visitors，配置方法在基础配置中已经介绍过了。首先新建页面：
+
+````javascript
+hexo new page "top"
+````
+
+然后在主题配置文件中加上菜单 top 和它的 icon：
+
+文件位置：hexo/themes/next/_config.yml
+
+````javas
+menu:
+top: /top/ || fa fa-signal
+````
+
+接着在语言翻译文件中加上菜单 top：
+
+文件位置：hexo/themes/next/languages/zh-CN.yml
+
+````javas
+menu:
+  home: 首页
+  archives: 归档
+  categories: 分类
+  tags: 标签
+  about: 关于
+  search: 搜索
+  schedule: 日程表
+  sitemap: 站点地图
+  commonweal: 公益 404
+  links: 友链
+  playlist: 歌单
+  top: 热榜
+````
+
+最后，编辑第一步新建页面生成的文件：
+
+文件位置：博客根目录/source/top/index.md
+
+````javascript
+---
+title: 文章热度排行
+date: 2020-05-22 20:46:56
+comments: true
+---
+
+<div id="top" style="margin-top:30px;"></div>
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!-- <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script> -->
+<script>AV.initialize("app_id", "app_key");</script>
+<script type="text/javascript">
+    var time = 0
+    var title = ""
+    var url = ""
+    var query = new AV.Query('Counter');
+    query.notEqualTo('id', 0);
+    query.descending('time');
+    query.limit(1000);
+    query.find().then(function (todo) {
+        for (var i = 0; i < 1000; i++) {
+            var result = todo[i].attributes;
+            time = result.time;
+            title = result.title;
+            url = result.url;
+            var content = "<p class='my-article-top'>" + "<font color='#a7a7e5'>" + "➤【热度: " + "</font>" + "<font color='#f1a8ce'>" + time + " ℃】" + "</font>" + "<a href='"+"自己的博客地址"+url+"'>" + title + "</a>" + "</p>";
+            document.getElementById("top").innerHTML += content
+        }
+    }, function (error) {
+        console.log("error");
+    });
+</script>
+<style>.post-description {
+        display: none;
+    }
+</style>
+
+````
+
+必须将里面的里面的 `app_id` 和 `app_key` 替换为你的主题配置文件中的值，必须替换里面博客的链接，1000是显示文章的数量，其它可以自己看情况更改。最后，修改样式可以在 `custom.styl` 中加入自定义代码。
+
+#### 开启文章打赏功能
+
+一篇辛辛苦苦敲出来的文章，不妨开启一下文章打赏功能，万一真有人给你棒棒糖呢
+
+打开主题配置文件，搜索 reward，找到如下配置并修改：
+
+````javascript
+# Reward (Donate)
+# Front-matter variable (unsupport animation).
+reward_settings:
+  # If true, reward will be displayed in every article by default.
+  enable: true
+  animation: true
+  comment: 如果这篇文章对你有帮助，不妨
+
+reward:
+  wechatpay: /images/wechatpay.png
+  alipay: /images/alipay.png
+  #paypal: /images/paypal.png
+  #bitcoin: /images/bitcoin.png
 ````
 
 

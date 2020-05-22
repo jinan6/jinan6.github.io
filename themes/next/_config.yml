@@ -124,6 +124,7 @@ menu:
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
   links: /links/ || fa fa-link
+  top: /top/ || fa fa-signal
   playlist: /playlist/ || fa fa-music
   about: /about/ || fa fa-user
 
@@ -181,7 +182,7 @@ site_state: true
 social:
   GitHub: https://github.com/jinan6/jinan6.github.io || fab fa-github
   E-Mail: https://mail.qq.com/ || fa fa-envelope
-  Weibo: https://weibo.com/yourname || fab fa-weibo
+  Weibo: https://weibo.com/ || fab fa-weibo
   CSDN: https://blog.csdn.net/weixin_45777544 || fa fa-leaf
   RSS: /atom.xml || fa fa-rss
   #Google: https://plus.google.com/yourname || fab fa-google
@@ -267,13 +268,13 @@ tag_icon: false
 # Front-matter variable (unsupport animation).
 reward_settings:
   # If true, reward will be displayed in every article by default.
-  enable: false
-  animation: false
-  #comment: Donate comment here.
+  enable: true
+  animation: true
+  comment: 如果这篇文章对你有帮助，不妨
 
 reward:
-  #wechatpay: /images/wechatpay.png
-  #alipay: /images/alipay.png
+  wechatpay: /images/wechatpay.png
+  alipay: /images/alipay.png
   #paypal: /images/paypal.png
   #bitcoin: /images/bitcoin.png
 
