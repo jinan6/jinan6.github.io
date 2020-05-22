@@ -1035,3 +1035,5 @@ live2d:
 typing_effect:
   colorful: true  # 礼花特效
   shake: false  # 震动特效
+
+share_js: true
