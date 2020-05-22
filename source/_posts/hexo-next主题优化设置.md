@@ -84,7 +84,7 @@ essential: true
 
 ##### 具体实现方法
 
-打开**\themes\next\source\css\_common\components\post\post.styl**在末尾添加以下**CSS**样式
+打开**\themes\next\source\css\\_common\components\post\post.styl**在末尾添加以下**CSS**样式
 
 ````css
 // 文章内链接文本样式
