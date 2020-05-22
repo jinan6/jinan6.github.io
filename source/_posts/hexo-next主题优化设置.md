@@ -40,8 +40,7 @@ essential: true
 - 添加valine评论系统
 - 用LeanClound给hexo+next博客添加文章阅读数
 - 博主头像圆形并旋转
-
-
+- 添加近期文章板块
 
 <b>一些基本的设置参考官方文档：[Next官方文档](http://theme-next.iissnan.com/getting-started.html)</b>
 
@@ -84,7 +83,7 @@ essential: true
 
 ##### 具体实现方法
 
-打开**\themes\next\source\css\\_common\components\post\post.styl**在末尾添加以下**CSS**样式
+打开**\themes\next\source\css\_common\components\post\post.styl**在末尾添加以下**CSS**样式
 
 ````css
 // 文章内链接文本样式
@@ -1046,6 +1045,42 @@ avatar:
   rounded: true		#开启后，头像为圆形
   # If true, the avatar will be rotated with the cursor.
   rotated: true		#开启后，头像获得光标时旋转
+````
+
+#### 添加近期文章板块
+
+##### 效果图![近期文章](hexo-next主题优化设置/image-20200522124822493.png)
+
+##### 具体实现方法
+
+在 `next/layout/_macro/sidebar.swig` 中，加入以下代码
+
+````javas
+{% if theme.recent_posts %}
+    <div class="links-of-blogroll motion-element {{ "links-of-blogroll-" + theme.recent_posts_layout  }}">
+      <div class="links-of-blogroll-title">
+        <!-- modify icon to fire by szw -->
+        <i class="fa fa-history fa-{{ theme.recent_posts_icon | lower }}" aria-hidden="true"></i>
+        {{ theme.recent_posts_title }}
+      </div>
+      <ul class="links-of-blogroll-list">
+        {% set posts = site.posts.sort('-date').toArray() %}
+        {% for post in posts.slice('0', '5') %}
+          <li>
+            <a href="{{ url_for(post.path) }}" title="{{ post.title }}" target="_blank">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+{% endif %}
+````
+
+在主题配置文件中加入以下代码：
+
+````javas
+recent_posts_title: 近期文章
+recent_posts_layout: block
+recent_posts: true
 ````
 
 
