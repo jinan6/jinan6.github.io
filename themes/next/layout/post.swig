@@ -11,10 +11,6 @@
 
 {% endblock %}
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
-
     <div class="post-spread">
       {% if theme.jiathis %}
         {% include '_partials/share/jiathis.swig' %}
@@ -31,3 +27,8 @@
 +      {% endif %}
 
   </div>
+
+{% block sidebar %}
+  {{ sidebar_template.render(true) }}
+{% endblock %}
+

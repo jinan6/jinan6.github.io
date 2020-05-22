@@ -1035,9 +1035,9 @@ live2d:
 typing_effect:
   colorful: true  # 礼花特效
   shake: false  # 震动特效
-#分享
-share_js: true
-
+#近期文章
 recent_posts_title: 近期文章
 recent_posts_layout: block
 recent_posts: true
+
+share_js: true

@@ -65,5 +65,5 @@
 <!--崩溃欺骗-->
 <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
 <script src="/live2d-widget/autoload.js"></script>
-<script src="/dist/js/social-share.min.js"></script>
+<script src="/dist/js/social-share.min.js"></script></body>
 </html>
