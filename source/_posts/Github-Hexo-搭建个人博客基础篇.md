@@ -142,7 +142,7 @@ INFO Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.
 
 #### 连接本地与Github
 
-###### 生成密钥
+##### 生成密钥
 
 右键  <span style='color:red'>Git Bash Here</span> 输入以下 命令
 
@@ -196,7 +196,7 @@ The key's randomart image is:
 clip < ~/.ssh/id_rsa.pub
 ```
 
-###### 连接Github
+##### 连接Github
 
 点击==**Settings**=
 
@@ -260,7 +260,7 @@ hexo new post "article title"
 
 然后就可以进行编辑了，编辑完成后 输入<span style='color:red'>hexo g</span> 生成静态网页，输入<span style='color:red'>hexo s</span> 打开本地服务进行预览，确认无误后输入 <span style='color:red'>hexo d</span>  部署到**Github**
 
-#### 更换喜欢的主题
+更换喜欢的主题
 
 点击 这里 [主题](https://hexo.io/themes/) 进去**Hexo** 官网的主题库寻找自己喜欢的主题，选完之后进入它的**Github**地址
 

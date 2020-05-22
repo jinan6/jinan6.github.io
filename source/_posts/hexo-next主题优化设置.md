@@ -43,13 +43,13 @@ essential: true
 
 
 
-### 一些基本的设置参考官方文档：[Next官方文档](http://theme-next.iissnan.com/getting-started.html)
+<b>一些基本的设置参考官方文档：[Next官方文档](http://theme-next.iissnan.com/getting-started.html)</b>
 
-#### 1、在右上角或者左上角实现fork me on github
+#### 在右上角或者左上角实现fork me on github
 
-###### 效果图：![效果图](hexo-next主题优化设置/image-20200515193027529.png)
+##### 效果图![效果图](hexo-next主题优化设置/image-20200515193027529.png)
 
-###### 具体实现方法：
+##### 具体实现方法
 
 点击[这里](https://github.com/blog/273-github-ribbons) 或者 [这里](http://tholman.com/github-corners/)挑选自己喜欢的样式，并复制代码。 例如，我是复制如下代码：
 
@@ -57,13 +57,13 @@ essential: true
 
 然后粘贴刚才复制的代码到**\themes\next\layout\_layout.swig**文件中，放在**<div class="headband"></div>**的下面，并把**href**改为你自己的**GitHub**地址![更改地址](hexo-next主题优化设置/image-20200515193903771.png)
 
-#### 2、实现点击出现桃心效果
+#### 实现点击出现桃心效果
 
-###### 效果图：
+##### 效果图
 
 ![效果图](hexo-next主题优化设置/5308475-78e64c0a80bb559e.webp)
 
-###### 具体实现方法：
+##### 具体实现方法
 
 在**\themes\next\source\js/src**目录下新建<span style="color:red">**love.js**</span>输入以下代码
 
@@ -78,11 +78,11 @@ essential: true
 <script type="text/javascript" src="/js/src/love.js"></script>
 ````
 
-#### 3、修改文章内链接文本样式
+#### 修改文章内链接文本样式
 
-###### 效果图：![效果](hexo-next主题优化设置/5308475-8cc4fc18c399af7e.webp)
+##### 效果图![效果](hexo-next主题优化设置/5308475-8cc4fc18c399af7e.webp)
 
-###### 具体实现方法：
+##### 具体实现方法
 
 打开**\themes\next\source\css\_common\components\post\post.styl**在末尾添加以下**CSS**样式
 
@@ -100,11 +100,11 @@ essential: true
 }
 ````
 
-#### 4、修改文章底部的那个带#号的标签
+#### 修改文章底部的那个带#号的标签
 
-###### 效果图：![效果图](hexo-next主题优化设置/image-20200515195209340.png)
+##### 效果图![效果图](hexo-next主题优化设置/image-20200515195209340.png)
 
-###### 具体实现方法：
+##### 具体实现方法
 
 打开**\themes\next\layout\_macro\post.swig**搜索
 
@@ -120,11 +120,11 @@ tag_indicate = '#'
 tag_indicate = '<i class="fa fa-tag"></i>'
 ````
 
-###### 5、在每篇文章末尾统一添加“本文结束”标记
+#### 在每篇文章末尾统一添加“本文结束”标记
 
-###### 效果图：![效果](hexo-next主题优化设置/image-20200521215626753.png)
+##### 效果图![效果](hexo-next主题优化设置/image-20200521215626753.png)
 
-###### 具体实现方法：
+##### 具体实现方法
 
 在**\themes\next\layout\_macro**中新建**passage-end-tag.swig**
 
@@ -160,13 +160,13 @@ passage_end_tag:
   enabled: true
 ````
 
-#### 6、新增看板娘(能说话、能换装)
+#### 新增看板娘(能说话、能换装)
 
-###### 效果图：
+##### 效果图
 
 ![效果](https://blog.pangao.vip/pic/Hexo%E5%8D%9A%E5%AE%A2NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E4%B9%8B%E6%96%B0%E5%A2%9E%E7%9C%8B%E6%9D%BF%E5%A8%98-1.gif)
 
-###### 具体实现方法：
+##### 具体实现方法
 
 1、下载 [张书樵大神的项目](https://github.com/stevenjoezhang/live2d-widget)，解压到本地博客目录的 `themes/next/source` 下，修改文件夹名为 `live2d-widget`，修改项目中的 `autoload.js` 文件，如下：
 将
@@ -203,7 +203,7 @@ live2d:
 
 4、想修改看板娘大小、位置、格式、文本内容等，可查看并修改 `waifu-tips.js` 、 `waifu-tips.json` 和 `waifu.css`。
 
-#### 7、开启代码块复制功能及更换样式
+#### 开启代码块复制功能及更换样式
 
 在主题配置文件中修改以下代码：
 
@@ -211,11 +211,11 @@ live2d:
 
 自己根据需要修改即可
 
-#### 8、打字特效
+#### 打字特效
 
-###### 效果图：![特效](hexo-next主题优化设置/typing-effect.gif)
+##### 效果图![特效](hexo-next主题优化设置/typing-effect.gif)
 
-###### 具体实现方法：
+##### 具体实现方法
 
 点击下方按钮下载相应的脚本，并置于 themes\next\source\js\ 目录下：
 
@@ -253,9 +253,9 @@ typing_effect:
 
 ````
 
-#### 9、个性化回到顶部
+#### 个性化回到顶部
 
-###### 具体实现方法：
+##### 具体实现方法
 
 首先，找到自己喜欢的图片素材放到 source\images\ 目录下。
 
@@ -291,15 +291,13 @@ themes\next\source\css\_custom\custom.styl
 
 重新运行刷新浏览器即可
 
-##### 10、文章末尾版权声明
+#### 文章末尾版权声明
 
-###### 效果图：![效果图](hexo-next主题优化设置/image-20200517170054604.png)
+##### 效果图![效果图](hexo-next主题优化设置/image-20200517170054604.png)
 
-###### 具体实现方法：
+##### 具体实现方法：
 
 在主题配置文件中开启文章底部的版权声明，版权声明默认使用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，用户可以根据自身需要修改 `licence` 字段变更协议。
-
-###### 具体实现方法：
 
 编辑 主题配置文件，修改如下配置：
 
@@ -311,7 +309,7 @@ creative_commons:
   language:
 ````
 
-#### 11、添加图片灯箱
+#### 添加图片灯箱
 
 添加灯箱功能，实现点击图片后放大聚焦图片，并支持幻灯片播放、全屏播放、缩略图、快速分享到社交媒体等，该功能由 [fancyBox](https://github.com/fancyapps/fancybox) 提供。
 
@@ -330,11 +328,11 @@ fancybox: true
 
 ````
 
-#### 12、相关文章推荐
+#### 相关文章推荐
 
-###### 效果图：![效果](hexo-next主题优化设置/image-20200517170527296.png)
+##### 效果图![效果](hexo-next主题优化设置/image-20200517170527296.png)
 
-###### 具体实现方法：
+##### 具体实现方法
 
 在站点根目录中执行以下命令安装依赖：
 
@@ -354,11 +352,11 @@ related_posts:
     maxCount: 5
 ````
 
-#### 13、站点及文章字数统计
+#### 站点及文章字数统计
 
-###### 效果图：![站点](hexo-next主题优化设置/image-20200517170949578.png)![文章](hexo-next主题优化设置/image-20200517171011384.png)
+##### 效果图![站点](hexo-next主题优化设置/image-20200517170949578.png)![文章](hexo-next主题优化设置/image-20200517171011384.png)
 
-###### 具体实现方法：
+##### 具体实现方法
 
 在根目录下执行如下命令安装相关依赖：
 
@@ -391,11 +389,11 @@ symbols_count_time:
   wpm: 275
 ````
 
-#### 14、站点运行时间统计
+#### 站点运行时间统计
 
-###### 效果图：![运行时间](hexo-next主题优化设置/image-20200517171353373.png)
+##### 效果图![运行时间](hexo-next主题优化设置/image-20200517171353373.png)
 
-###### 具体实现方法：
+##### 具体实现方法
 
 打开**\themes\next\layout\_partials\footer.swig**,在末尾添加以下内容：
 
@@ -430,11 +428,11 @@ symbols_count_time:
 </script>
 ````
 
-#### 15、添加站点访问量统计
+#### 添加站点访问量统计
 
-###### 效果图：![效果图](hexo-next主题优化设置/image-20200517172730649.png)
+##### 效果图![效果图](hexo-next主题优化设置/image-20200517172730649.png)
 
-###### 具体实现方法：
+##### 具体实现方法
 
 打开主题配置文件，修改以下配置：
 
@@ -471,11 +469,11 @@ busuanzi_count:
 </div>
 ````
 
-#### 16、实现简体 / 繁体一键切换
+#### 实现简体 / 繁体一键切换
 
-###### 效果图：![简/繁](hexo-next主题优化设置/image-20200517173246459.png)
+##### 效果图![简/繁](hexo-next主题优化设置/image-20200517173246459.png)
 
-###### 具体实现方法：
+##### 具体实现方法
 
 1、首先，[点击这里](https://www.imatx.com/down/tw_cn.zip)右键另存下载简繁字体切换所需的tw_cn.js文件，我们把这个文件放到 `~/themes/next/source/js` 文件夹下。
 
@@ -500,11 +498,11 @@ translateInitilization();
 
 读者可以在**博客底部点击简体 / 繁体**来看具体的切换字体效果。
 
-#### 17、开启本地博客搜索功能
+#### 开启本地博客搜索功能
 
-###### 效果图：![搜索](hexo-next主题优化设置/image-20200517174420239.png)
+##### 效果图![搜索](hexo-next主题优化设置/image-20200517174420239.png)
 
-###### 具体实现方法：
+##### 具体实现方法
 
 提升读者用户体验，博客内肯定是需要一个全局搜索按钮的。当然hexo已经集成了几款开源的搜索插件，一般都使用的是 local_search。
 
@@ -534,9 +532,9 @@ search:
   limit: 10000
 ````
 
-#### 18、设置侧栏阅读进度百分比
+#### 设置侧栏阅读进度百分比
 
-###### 具体实现方法：
+##### 具体实现方法
 
 编辑站点配置文件，修改 back2top 部分如下
 
@@ -547,9 +545,9 @@ back2top:
   scrollpercent: true
 ````
 
-#### 19、文章置顶
+#### 文章置顶
 
-###### 具体实现方法：
+##### 具体实现方法
 
 在站点目录的 node_modules/hexo-generator-index/lib/generator.js 中，把改文件的代码全改成：
 
@@ -602,9 +600,9 @@ module.exports = function(locals){
 {% endif %}
 ````
 
-#### 20、精品文章
+#### 精品文章
 
-###### 具体实现方法：
+##### 具体实现方法
 
 在 `/themes/next/layout/_macro/` 路径，找到 `post.swig` ，在前 `文置` 顶功能后边，加上如下代码：
 
@@ -633,11 +631,11 @@ module.exports = function(locals){
 essential: true
 ````
 
-#### 21、博客加入canvas粒子时钟
+#### 博客加入canvas粒子时钟
 
-###### 效果图：![时钟](hexo-next主题优化设置/image-20200517175435773.png)
+##### 效果图![时钟](hexo-next主题优化设置/image-20200517175435773.png)
 
-###### 具体实现方法：
+##### 具体实现方法
 
 它是一个可以和客户端同步的时钟，其特点是当时间走动时，数字将会散落成一个个粒子动画。
 
@@ -946,11 +944,11 @@ essential: true
 })();
 ````
 
-#### 22、为站点添加标题崩溃特效
+#### 为站点添加标题崩溃特效
 
 > 该特效为：当用户离开站点相关的页面时，网页的标题会变成已崩溃，网站图标也会改变；当用户重新回到站点页面时才会恢复正常。
 
-###### 具体实现方法：
+##### 具体实现方法
 
 在 `/themes/next/source/js/src/` 目录下新建 `crash_cheat.js` ，代码如下：
 
@@ -986,11 +984,11 @@ $(window).load(function () {
 
 上面的图片放在 `/themes/next/source/images/` 目录下，自行选择喜欢的图片即可。
 
-#### 23、添加valine评论系统
+#### 添加valine评论系统
 
-###### 效果图：![评论](hexo-next主题优化设置/image-20200517175844957.png)
+##### 效果图![评论](hexo-next主题优化设置/image-20200517175844957.png)
 
-###### 具体实现方法：
+##### 具体实现方法
 
 没有评论系统的博客是没有灵魂的，不仅如此，当前免费开源的评论系统中，valine 因为简洁并且支持匿名留言得到很多博主的喜爱，而像其它的来必力（韩国的）、Gitalk（Github的）等都有这样那样的缺点，不太建议使用。
 
@@ -1019,9 +1017,9 @@ valine:		#评论功能
 
 注意由于 valine 依赖于 leancloud 存储服务，因此要先去 [https://leancloud.cn](https://leancloud.cn/) 网站注册，获取到 appid 和 appkey 后放到这里就 ok 了。其中 avatar 是设置默认头像，可以去 https://valine.js.org/avatar 选择默认头像，然后在这里设置名字即可。具体使用可以参考[valine的官方文档](https://valine.js.org/)。
 
-#### 24、用LeanClound给hexo+next博客添加文章阅读数
+#### 用LeanClound给hexo+next博客添加文章阅读数
 
-###### 具体实现方法：
+##### 具体实现方法
 
 由于已经使用了valine评论系统，只需要在进行小小的改动，就能实现此功能
 
@@ -1031,9 +1029,9 @@ valine:		#评论功能
 
 此处的新建Class名字必须为`Counter`:
 
-#### 25、博主头像圆形并旋转
+#### 博主头像圆形并旋转
 
-###### 具体实现方法：
+##### 具体实现方法
 
 在之前的版本里面得自定义才能达到，现在已经可以直接配置了。
 
@@ -1052,4 +1050,4 @@ avatar:
 
 
 
-###### 未完待续。。。
+##### 未完待续。。。
