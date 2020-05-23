@@ -38,6 +38,9 @@ body {
 //文章内容的透明度设置
 .content-wrap {
   opacity: 1;		//0.9为透明
+  padding: 25px;		//阅读全文增加的间距
+  -webkit-box-shadow: 0 0 14px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 14px rgba(202,203,204,0.5);
 }
 .content.index.posts-expand{
 	opacity: 1;		//0.9为透明
@@ -46,6 +49,7 @@ body {
  //侧边框的透明度设置
 .sidebar {
   opacity: 1;
+  border-radius: 20px;	//侧边栏下方圆角
 }
 
 //菜单栏的透明度设置
@@ -266,28 +270,27 @@ a {
 	margin-left: 30px;
 }
 // 文章主体阴影
-.content.index.posts-expand {
-    opacity: 1;
-    padding: 10px;
-    // margin-top: 30px;
-    margin-bottom: 50px;
-    padding: 25px;
-    -webkit-box-shadow: 0 0 14px rgba(202,203,203,0.5);
-    -moz-box-shadow: 0 0 14px rgba(202,203,204,0.5);
-}
+// .content.index.posts-expand {
+//     opacity: 1;
+//     padding: 10px;
+//     // margin-top: 30px;
+//     margin-bottom: 50px;
+//     padding: 25px;
+//     // -webkit-box-shadow: 0 0 14px rgba(202,203,203,0.5);
+//     // -moz-box-shadow: 0 0 14px rgba(202,203,204,0.5);
+// }
 
 .content.post.posts-expand {
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 30px;
 	border-radius: 30px;	//圆角
-    // padding: 25px;
     -webkit-box-shadow: 0 0 14px rgba(202,203,203,0.5);
     -moz-box-shadow: 0 0 14px rgba(202,203,204,0.5);
 }
 
 .sidebar-inner {
     background: var(--content-bg-color);
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.06), 0 1px 5px 0 rgba(0,0,0,.12), 0 -1px 0.5px 0 rgba(0,0,0,.09);
     box-sizing: border-box;
     color: var(--text-color);
@@ -313,5 +316,17 @@ a {
 	    font-size: 1.12em;
 	    border-bottom: none;
 }
+
+//文章下方分页样式
+.pagination .page-number.current {
+    background: #49b1f5;
+    border-radius: 50%;
+}
+.pagination .page-number {
+    border: 3px solid #49b1f5;
+    border-radius: 50%;
+}
 ````
+
+
 
