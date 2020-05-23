@@ -123,8 +123,8 @@ menu:
   #schedule: /schedule/ || fa fa-calendar  日程表
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
-  links: /links/ || fa fa-link
   top: /top/ || fa fa-signal
+  links: /links/ || fa fa-link
   playlist: /playlist/ || fa fa-music
   about: /about/ || fa fa-user
 
