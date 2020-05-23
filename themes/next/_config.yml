@@ -269,7 +269,7 @@ tag_icon: false
 reward_settings:
   # If true, reward will be displayed in every article by default.
   enable: true
-  animation: true
+  animation: false
   comment: 如果这篇文章对你有帮助，不妨
 
 reward:
@@ -290,7 +290,7 @@ follow_me:		#底部   链接
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:		#相关文章
   enable: true
-  title: 相关文章
+  title: 📚&nbsp;&nbsp;相关文章
   display_in_home: false
   params:
     maxCount: 5

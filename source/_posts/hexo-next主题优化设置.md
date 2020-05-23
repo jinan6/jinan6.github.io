@@ -1,7 +1,7 @@
 ---
-title: hexo+next主题优化设置
-tags: hexo
-categories: hexo和next
+title: Hexo+next主题优化设置
+tags: Hexo
+categories: Hexo和next
 abbrlink: 25396
 date: 2020-05-14 20:58:51
 top: 8
