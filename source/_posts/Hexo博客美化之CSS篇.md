@@ -228,6 +228,11 @@ blockquote {
     color: #5073b8;
     font-weight: 700;
 }
+.links-of-blogroll-list a:hover {		//鼠标移动增加下划线
+    color: #5073b8;
+    font-weight: 700;
+	border-bottom: 1px solid #999;
+}
 //去除超链接下划线
 a {
     border-bottom: none;
@@ -327,6 +332,3 @@ a {
     border-radius: 50%;
 }
 ````
-
-
-
