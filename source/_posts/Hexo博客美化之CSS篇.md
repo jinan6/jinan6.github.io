@@ -1,8 +1,8 @@
 ---
 title: Hexo博客美化之CSS篇
 essential: true
-tags: Hexo
-categories: Hexo和next
+tags: hexo
+categories: hexo和next
 abbrlink: 26259
 date: 2020-05-23 17:37:46
 top:
