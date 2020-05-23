@@ -1,4 +1,4 @@
-// //背景图片
+ //背景图片
 body {
     background:url(/images/aaa.jpg);
     background-repeat: no-repeat;
@@ -6,31 +6,30 @@ body {
     background-size: cover;      //填充
     background-position:50% 50%;
 }
-// //博客内容透明化
 //文章内容的透明度设置
 .content-wrap {
-  opacity: 0.9;
+  opacity: 1;		//0.9为透明
 }
 .content.index.posts-expand{
-	opacity: 1;
+	opacity: 1;		//0.9为透明
 }
 
-// //侧边框的透明度设置
+ //侧边框的透明度设置
 .sidebar {
-  opacity: 0.9;
+  opacity: 1;
 }
 
-// //菜单栏的透明度设置
+//菜单栏的透明度设置
 .header-inner {
-  background: rgba(255,255,255,0.9);
+  // background: rgba(255,255,255,0.9);		//侧边栏上部分透明度
   border-radius: 20px;
 }
 
-// //搜索框（local-search）的透明度设置
+//搜索框（local-search）的透明度设置
 .popup {
   opacity: 0.9;
 }
-// // 主页文章添加阴影效果
+ // 主页文章添加阴影效果
 .post {
    padding: 25px;
    background:rgba(255,255,255,0.9) none repeat scroll !important;
@@ -252,22 +251,19 @@ a {
 
 .content.post.posts-expand {
     margin-top: 50px;
-	margin-left: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 	border-radius: 30px;	//圆角
     // padding: 25px;
     -webkit-box-shadow: 0 0 14px rgba(202,203,203,0.5);
     -moz-box-shadow: 0 0 14px rgba(202,203,204,0.5);
 }
-//评论距离左侧边距
-.v[data-class=v] {
-    font-size: 16px;
-    text-align: left;
-    margin-left: 30px;
-}
 
-// .sidebar-inner.affix {
-//     position: fixed;
-//     top: 12px;
-//     border-radius: 20px;
-// }
+.sidebar-inner {
+    background: var(--content-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.06), 0 1px 5px 0 rgba(0,0,0,.12), 0 -1px 0.5px 0 rgba(0,0,0,.09);
+    box-sizing: border-box;
+    color: var(--text-color);
+    width: 240px;
+    opacity: 0;
+}
