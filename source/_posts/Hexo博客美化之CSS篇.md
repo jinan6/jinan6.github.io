@@ -127,6 +127,7 @@ article.post-block {
 //文章间距
 .post-block {
     padding: 35px;
+    border-radius 15px;
 }
 
 //精品文章
