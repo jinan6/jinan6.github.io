@@ -38,7 +38,8 @@ body {
 //文章内容的透明度设置
 .content-wrap {
   opacity: 1;		//0.9为透明
-  padding: 25px;		//阅读全文增加的间距
+  // padding: 25px;		//阅读全文增加的间距
+  padding: 15px;		//阅读全文增加的间距
   -webkit-box-shadow: 0 0 14px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 14px rgba(202,203,204,0.5);
 }
@@ -127,7 +128,7 @@ article.post-block {
 //文章间距
 .post-block {
     padding: 35px;
-    border-radius 15px;
+	border-radius 15px;
 }
 
 //精品文章
@@ -331,5 +332,22 @@ a {
 .pagination .page-number {
     border: 3px solid #49b1f5;
     border-radius: 50%;
+}
+
+//分页圆角
+.pagination {
+    border-radius: 15px;
+}
+
+//评论区样式图片
+textarea#veditor {
+    background-image: url(https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp);
+	// background-image: url(/images/评论.webp);
+	
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgba(255,255,255,0);
+    resize: vertical;
 }
 ````
