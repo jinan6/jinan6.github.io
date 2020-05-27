@@ -350,4 +350,9 @@ textarea#veditor {
     background-color: rgba(255,255,255,0);
     resize: vertical;
 }
+
+//简繁体字体颜色
+a#translateLink {
+    color: beige;
+}
 ````
