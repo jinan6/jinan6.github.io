@@ -69,12 +69,9 @@
 
 #waifu #live2d {
 	cursor: grab;
-	/* height: 300px; */
+	height: 300px;
 	position: relative;
-	/* width: 300px; */
-	height: 200px;		/*后来改动*/
-	width: 200px;
-	margin-bottom: 100px;	/*后加*/
+	width: 300px;
 }
 
 #waifu #live2d:active {
@@ -83,7 +80,7 @@
 
 #waifu-tool {
 	color: #aaa;
-	opacity: 1;
+	opacity: 0;		/*以前是1*/
 	position: absolute;
 	right: -10px;
 	top: 70px;
