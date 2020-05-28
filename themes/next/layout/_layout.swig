@@ -9,7 +9,6 @@
   {{ partial('_scripts/noscript.swig', {}, {cache: theme.cache.enable}) }}
  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
- <link rel="stylesheet" href="/dist/css/share.min.css">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -65,5 +64,5 @@
 <!--崩溃欺骗-->
 <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
 <script src="/live2d-widget/autoload.js"></script>
-<script src="/dist/js/social-share.min.js"></script></body>
+</body>
 </html>
