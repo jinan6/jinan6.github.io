@@ -86,7 +86,7 @@
                     <div class="card">
                         <img class="ava nofancybox" src="{{ link.avatar }}"/>
                         <div class="card-header">
-                        <div><a href="{{ link.site }}" target="_blank"> {{ link.nickname }}</a> <a href="{{ link.site }}"><span class="focus-links"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;关注</span></a></div>
+                        <div><a href="{{ link.site }}" target="_blank"> {{ link.nickname }}</a> <a href="{{ link.site }}"><span class="focus-links"></span></a></div>
                         <div class="info">{{ link.info }}</div>
                         </div>
                     </div>
@@ -103,7 +103,7 @@
                     <div class="card">
                         <img class="ava nofancybox" src="{{ link.avatar }}"/>
                         <div class="card-header">
-                        <div><a href="{{ link.site }}" target="_blank"> {{ link.nickname }}</a> <a href="{{ link.site }}"><span class="focus-links"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;关注</span></a></div>
+                        <div><a href="{{ link.site }}" target="_blank"> {{ link.nickname }}</a> <a href="{{ link.site }}"><span class="focus-links"></span></a></div>
                         <div class="info">{{ link.info }}</div>
                         </div>
                     </div>
@@ -119,7 +119,7 @@
 			        <div class="card">
 			            <img class="ava nofancybox" src="{{ link.avatar }}"/>
 			            <div class="card-header">
-			            <div><a href="{{ link.site }}" target="_blank"> {{ link.nickname }}</a> <a href="{{ link.site }}"><span class="focus-links"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;关注</span></a></div>
+			            <div><a href="{{ link.site }}" target="_blank"> {{ link.nickname }}</a> <a href="{{ link.site }}"><span class="focus-links"></span></a></div>
 			            <div class="info">{{ link.info }}</div>
 			            </div>
 			        </div>
