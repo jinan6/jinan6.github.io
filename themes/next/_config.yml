@@ -1042,3 +1042,36 @@ recent_posts_layout: block
 recent_posts: true
 
 share_js: true
+
+
+# 友情链接
+#大佬博客
+defaultlinks:
+  - nickname: Xu's Blog     # 昵称
+    avatar: https://hasaik.com/images/avatar.jpg    # 头像地址
+    site: https://hasaik.com/ #友链地址
+    info: 博观而约取，厚积而薄发！
+	
+  - nickname: 小丁的个人博客     # 昵称
+    avatar: https://tding.top/images/avatar.webp    # 头像地址
+    site: https://tding.top/ #友链地址
+    info: 世间所有的相遇，都是久别重逢
+	
+  - nickname: AomanHao     # 昵称
+    avatar: http://www.aomanhao.top/images/Avatar.jpg    # 头像地址
+    site: http://www.aomanhao.top #友链地址
+    info: 图像处理，优化世界
+
+#朋友博客
+friendslinks:
+  - nickname: csde     # 昵称
+    avatar: https://www.csde.vip/images/avatar.jpg    # 头像地址
+    site: https://www.csde.vip/ #友链地址
+    info: 个人博客
+
+#常用网站	
+commonlinks:
+  - nickname: MSDN     # 昵称
+    avatar: https://msdn.itellyou.cn/images/itellyou.cn.png    # 头像地址
+    site: https://msdn.itellyou.cn/ #友链地址
+    info: windows纯净镜像
