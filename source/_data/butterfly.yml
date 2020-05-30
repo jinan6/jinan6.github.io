@@ -699,7 +699,7 @@ inject:
   - <link rel="stylesheet" href="/css/background.css">
   bottom:
     # - <script src="xxxx"></script>
-      - <script src="https://player.lmih.cn/player/js/player.js" id="myhk" key="159080561813" m="1"></script>
+      # - <script src="https://player.lmih.cn/player/js/player.js" id="myhk" key="159080561813" m="1"></script>
 
 # CDN
 # 非必要不要修改
