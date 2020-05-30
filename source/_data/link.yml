@@ -1,0 +1,15 @@
+class:
+  class_name: 友情链接
+  link_list:
+    1:
+      name: csde
+      link: https://www.csde.vip/
+      avatar: https://www.csde.vip/img/avatar.png
+      descr: 博客
+    2:
+      name: 潘高的小站
+      link: https://blog.pangao.vip/
+      avatar: https://blog.pangao.vip/images/avatar.jpg
+      descr:  IT套路深，必须瞎折腾
+	  
+	  
