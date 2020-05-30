@@ -273,7 +273,7 @@ valine:
   emojiCDN: # emoji CDN
   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields nick/mail/link
-  bg: # valine background
+  bg: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530100127.webp# valine background
   count: false # dispaly comment count in top_img
 
 # utterances
@@ -698,6 +698,7 @@ inject:
   # - <link rel="stylesheet" href="xxxxx">
   bottom:
     # - <script src="xxxx"></script>
+      - <script src="https://player.lmih.cn/player/js/player.js" id="myhk" key="159080561813" m="1"></script>
 
 # CDN
 # 非必要不要修改
