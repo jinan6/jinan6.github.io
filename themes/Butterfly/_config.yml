@@ -257,24 +257,53 @@ gitalk:
   count: false # dispaly comment count in top_img
 
 # valine comment system. https://valine.js.org
+# valine:
+#   enable: true # if you want use valine,please set this value is true
+#   appId: MAMAVASxjT5dcOMaFjPqd7yC-gzGzoHsz
+#   appKey: nMOGrsKQHA5s9IXapTQnBglA
+#   notify: false # valine mail notify (true/false) Deprecated in v1.4.0+
+#   verify: false # valine verify code (true/false) Deprecated in v1.4.0+
+#   pageSize: 10 # comment list page size
+#   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
+#   lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
+#   placeholder: 在昵称中留下QQ号即可使用QQ昵称和QQ头像啦 # valine comment input placeholder(like: Please leave your footprints )
+#   guest_info: nick,mail,link #valine comment header info
+#   recordIP: false # Record reviewer IP
+#   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+#   emojiCDN: # emoji CDN
+#   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
+#   requiredFields: nick,mail # required fields nick/mail/link
+#   bg: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530100127.webp# valine background
+#   count: false # dispaly comment count in top_img
+
+# valine comment system. https://valine.js.org
 valine:
   enable: true # if you want use valine,please set this value is true
-  appId: MAMAVASxjT5dcOMaFjPqd7yC-gzGzoHsz
-  appKey: nMOGrsKQHA5s9IXapTQnBglA
-  notify: false # valine mail notify (true/false) Deprecated in v1.4.0+
-  verify: false # valine verify code (true/false) Deprecated in v1.4.0+
+  appId: MAMAVASxjT5dcOMaFjPqd7yC-gzGzoHsz # leancloud application app id
+  appKey: nMOGrsKQHA5s9IXapTQnBglA # leancloud application app key
+  master:	#博主邮箱 md5加密
+    - ce2266d4e91782573b50c29e06a811e4
+  friends:	#小伙伴邮箱 md5加密
+    - d799cdaab02b754cb52617372d860835
+  notify: false
+  verify: false
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
-  placeholder: 在昵称中留下QQ号即可使用QQ昵称和QQ头像啦 # valine comment input placeholder(like: Please leave your footprints )
-  guest_info: nick,mail,link #valine comment header info
-  recordIP: false # Record reviewer IP
+  lang: zh-cn # i18n: zh-cn/en
+  placeholder: 昵称输入QQ会自动匹配QQ昵称和QQ头像~，不试试吗？ # valine comment input placeholder(like: Please leave your footprints )
+  guest_info: 昵称,邮箱,主页 #valine comment header info
+  recordIP: true # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  emojiCDN: # emoji CDN
-  enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
-  requiredFields: nick,mail # required fields nick/mail/link
-  bg: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530100127.webp# valine background
-  count: false # dispaly comment count in top_img
+  bg: https://cdn.jsdelivr.net/gh/HCLonely/hclonely.github.io@1.4.7/img/comment_bg.png # valine background
+  count: true # top_img顯示評論數,
+  emojiCDN: 
+  enableQQ: true
+  requiredFields: nick,mail
+  metaPlaceholder:
+    nick: 昵称/QQ号(必填)
+    mail: 邮箱(必填)
+    link: 网址(https://)
+
 
 # utterances
 # https://utteranc.es/
@@ -302,7 +331,7 @@ facebook_comments:
 # ------------------------------------
 since: 2020
 
-footer_custom_text: 
+footer_custom_text: CDN BY <a target="_blank" rel="external nofollow" href="https://www.jsdelivr.com/"><b>jsDelivr</b></a> | HOST BY  <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a>
 
 footer_copyright:
   enable: true
@@ -320,8 +349,8 @@ baidu_analytics:
 # Google Analytics
 google_analytics:
 
-# Tencent_analytics ID
-tencent_analytics:
+# Tencent_analytics ID  腾讯分析
+tencent_analytics: 66562366
 
 # Ads
 # ---------------
@@ -699,8 +728,8 @@ inject:
   - <link rel="stylesheet" href="/css/background.css">
   bottom:
     # - <script src="xxxx"></script>
-      # - <script src="https://player.lmih.cn/player/js/player.js" id="myhk" key="159080561813" m="1"></script>
-
+    # - <script src="https://player.lmih.cn/player/js/player.js" id="myhk" key="159080561813" m="1"></script>
+      - <script type="text/javascript" src="http://tajs.qq.com/stats?sId=66562366" charset="UTF-8"></script>
 # CDN
 # 非必要不要修改
 CDN:
@@ -714,7 +743,8 @@ CDN:
   blueimp_md5: https://cdn.jsdelivr.net/npm/blueimp-md5/js/md5.min.js
   gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
-  valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
+  # valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
+  valine: https://cdn.jsdelivr.net/gh/HCLonely/Valine@1.4.14/dist/Valine.min.js
   disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqus.js
   disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqusjs.css
   utterances: https://utteranc.es/client.js
