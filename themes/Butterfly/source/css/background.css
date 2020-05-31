@@ -115,3 +115,11 @@ img {
     /* 背景颜色 */
     background:#fdf6e3;
 }
+
+/*评论图标*/
+.fa-chrome:before {
+    content: "";
+}
+.fa-windows:before {
+    content: "";
+}
