@@ -9,8 +9,6 @@ cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530093305.jpg
 
 <center>在美化过程中遇到的问题</center>
 
-<!--more-->
-
 ###### 问题：
 
 在使用了<--more-->标签后，点击阅读原文会自动下滑到这个标签之下的内容中，个人感觉体验不是太好

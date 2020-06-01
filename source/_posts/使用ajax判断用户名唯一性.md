@@ -9,8 +9,6 @@ cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530093848.jpeg
 
 <center>ajax判断用户名唯一</center>
 
-<!--more-->
-
 ## 判断用户名唯一性
 
 **dao层：**

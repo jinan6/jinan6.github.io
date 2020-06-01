@@ -8,7 +8,7 @@ date: 2020-06-01 09:10:58
 sticky:
 ---
 
-{% note success %} success 关于Butterfly主题的一些优化 {% endnote %}
+{% note success %}  关于Butterfly主题的一些优化 {% endnote %}
 
 ### 优化文章链接
 
@@ -28,20 +28,19 @@ year/:month/:day/:title/
 
 在博客根目录下执行以下代码
 
-````css
+````bash
 npm install hexo-abbrlink --save
 ````
 
 安装完成后==编辑站点配置文件==，修改如下配置
 
-```yml
+```yaml
 #permalink: :year/:month/:day/:title/
 #permalink_defaults:
 permalink: posts/:abbrlink/
 abbrlink:
   alg: crc32 #support crc16(default) and crc32
   rep: dec   #support dec(default) and hex
-
 ```
 
 重新生成部署即可
@@ -54,17 +53,17 @@ abbrlink:
 
 #### 安装插件
 
-````yaml
+````bash
 npm install hexo-bilibili-bangumi --save
 ````
 
 #### 更新插件
 
-````yaml
+````bash
 npm install hexo-bilibili-bangumi --update --save
 ````
 
-### 修改站点配置文件
+#### 修改站点配置文件
 
 ````yaml
 bangumi:
@@ -85,9 +84,9 @@ bangumi:
 - **show**: 初始显示页面：`0: 想看` , `1: 在看` , `2: 看过`，默认为 `1`
 - **loading**: 图片加载完成前的 loading 图片
 
-### 创建一个页面
+#### 创建一个页面
 
-````yaml
+````bash
 hexo new page bangumis
 ````
 
@@ -101,9 +100,9 @@ type: "bangumis"
 ---
 ````
 
-### 如果哔哩哔哩上面的番剧进行了更新，需要用
+#### 如果哔哩哔哩上面的番剧进行了更新，需要用
 
-```yaml
+```bash
 hexo bangumi -u
 ```
 
@@ -111,13 +110,11 @@ hexo bangumi -u
 
 #### 删除数据
 
-````yaml
+````bash
 hexo bangumi -d
 ````
 
-
-
-{% note warning %} 参考自[Hexo哔哩哔哩番剧页面插件](https://blog.hclonely.com/posts/8422e92e/) {% endnote %}
+参考自[Hexo哔哩哔哩番剧页面插件](https://blog.hclonely.com/posts/8422e92e/) 
 
 ### 添加音乐页面
 
@@ -125,7 +122,7 @@ hexo bangumi -d
 
 [实例页面](https://jinan6.vip/music/)
 
-### 安装插件
+#### 安装插件
 
 ````yaml
 npm install aplayer
@@ -133,7 +130,7 @@ npm install aplayer
 npm install --save hexo-tag-aplayer
 ````
 
-### 创建页面
+#### 创建页面
 
 ```yaml
 hexo new page music

@@ -10,8 +10,6 @@ cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530092928.jpeg
 
 > 关于数据库引擎
 
-<!--more-->
-
 
 
 ````sql

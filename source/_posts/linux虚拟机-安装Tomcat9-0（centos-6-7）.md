@@ -9,9 +9,8 @@ cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530094150.jpeg
 
 <center>linux虚拟机上安装Tomcat</center>
 
-<!--more-->
+linux虚拟机上安装Tomcat
 
-## linux虚拟机上安装Tomcat
 注意：安装软件之前要安装java JDk
 
 安装软件：apache-tomcat-9.0.29.tar.gz

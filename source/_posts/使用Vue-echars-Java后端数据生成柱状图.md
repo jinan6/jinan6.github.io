@@ -9,8 +9,6 @@ cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530093453.jpeg
 
 <center>柱状图</center>
 
-<!--more-->
-
 **效果图：**
 ![效果图](https://img-blog.csdnimg.cn/20200305172118753.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTc3NzU0NA==,size_16,color_FFFFFF,t_70)
 **后端controller层代码：**

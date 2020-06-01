@@ -9,8 +9,6 @@ cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530093615.jpeg
 
 <center>springBootmaven依赖</center>
 
-<!--more-->
-
 ```java
 <!-- 热部署 -->
         <dependency>

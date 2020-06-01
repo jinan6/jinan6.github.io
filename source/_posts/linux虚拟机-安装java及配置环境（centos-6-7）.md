@@ -9,8 +9,6 @@ cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530094042.jpeg
 
 <center>linux安装java环境</center>
 
-<!--more-->
-
 #### 安装
 
 ***第一步：下载JDK***

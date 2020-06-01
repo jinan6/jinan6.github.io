@@ -9,8 +9,6 @@ cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530093937.jpeg
 
 <center>实现排序小功能</center>
 
-<!--more-->
-
 效果图：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191105194125483.png)
 在文本框中输入值，触发失焦事件，根据正序或是倒序进行排序（dao层中的SQL语句）

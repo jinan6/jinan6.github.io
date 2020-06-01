@@ -10,8 +10,6 @@ cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530092720.jpeg
 
 > Hexo博客Next主题友链页面，本站用的是next7.8版本，版本不同可能略有差异
 
-<!--more-->
-
 ### link渲染文件
 
 在 `hexo/themes/next/layout` 目录下建一个 `links.swig`文件，写入以下代码：

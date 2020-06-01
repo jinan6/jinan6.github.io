@@ -9,8 +9,6 @@ cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530091733.jpg
 
 > 注意：本样式美化方式只适用于 Next 主题，并且最好懂一些 CSS 前端知识，以便有些不兼容样式部分可以自行在浏览器中 F12 调试。
 
-<!--more-->
-
 修改的话就找到next主题目录下的 `next\source\css\_custom\custom.styl` ，这个文件是Next主题预留给用户自定义修改css样式的文件，所以我们绝大多数全局样式都在这里进行修改即可。
 
 由于next7.x版本以上删除了 `_custom\custom.styl` ，没有则新建，新建完成后在`next\source\css\main.styl`引入即可，在末尾加入

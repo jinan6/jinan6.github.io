@@ -4,15 +4,13 @@ tags: hexo
 categories: hexo和next
 abbrlink: 25396
 date: 2020-05-14 20:58:51
-sticky: 8
+sticky: 
 cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530091102.jpeg
 ---
 
 #### 前言
 
 > 搭建完博客之后，感觉原有的主题太单调了，于是这几天找了很多的教程，也踩了很多的坑，因为教程上的版本和使用的版本不同，很多地方都不相同，往往一个小功能试验好多种方式，才能达到想要的效果。在这里记录下成功过的案例，方便以后查看。或许以后有朝一日，还能帮助他人
-
-<!--more-->
 
 #### 本文目录
 
