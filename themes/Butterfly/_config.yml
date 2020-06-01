@@ -9,11 +9,11 @@ menu:
   归档: /archives/ || fa fa-archive
   标签: /tags/ || fa fa-tags
   分类: /categories/ || fa fa-folder-open
-  邻居: /link/ || fa fa-link
+  友链: /link/ || fa fa-link
   关于: /about/ || fa fa-heart
   娱乐||fa fa-list:
     - 音乐 || /music/ || fa fa-music
-    - 电影 || /movies/ || fa fa-film
+    - 番剧 || /bangumis/ || fa fa-film
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -295,9 +295,10 @@ valine:
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530100127.webp # valine background
   count: true # top_img顯示評論數,
-  emojiCDN: 
+  emojiCDN: '//i0.hdslb.com/bfs/emote/' # 存放表情的cdn库
   enableQQ: true
   requiredFields: nick,mail
+  emojiMaps: {} # 存放表情yaml文件的 这是我后来加上的
   metaPlaceholder:
     nick: 昵称/QQ号(必填)
     mail: 邮箱(必填)
@@ -724,6 +725,7 @@ inject:
   head:
   # - <link rel="stylesheet" href="xxxxx">
   - <link rel="stylesheet" href="/css/background.css">
+  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
   bottom:
     # - <script src="xxxx"></script>
       # - <script src="https://player.lmih.cn/player/js/player.js" id="myhk" key="159080561813" m="1"></script>

@@ -1,4 +1,4 @@
-class:
+class: 
   class_name: 友情链接
   link_list:
     1:
@@ -11,5 +11,9 @@ class:
       link: https://blog.pangao.vip/
       avatar: https://blog.pangao.vip/images/avatar.jpg
       descr:  IT套路深，必须瞎折腾
-	  
+    3:
+      name: Bei’s Blog
+      link: https://wangbei.xyz
+      avatar: https://wangbei.xyz/img/favicon.JPG
+      descr:  Debug the world	  
 	  
