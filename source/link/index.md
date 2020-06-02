@@ -4,8 +4,6 @@ date: 2020-05-29 13:51:08
 type: "link"
 ---
 
-<script src='https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/Hexo/js/mouse_snow.min.js'></script>
-
 ### 友链声明：
 
 1、本站会主动保存您的 HTTPS 形式的头像图片链接
@@ -19,5 +17,5 @@ type: "link"
 
 >名称：Sakura` Blogs
 >头像链接：https://jinan6.vip/img/avatar.png
->主页链接：https://jinan6.vip/
+>主页链接：https://jinan6.vip
 >说明信息：个人小站

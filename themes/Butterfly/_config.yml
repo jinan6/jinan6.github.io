@@ -204,7 +204,8 @@ addThis:
 
 sharejs:
   enable: true
-  sites: facebook,twitter,wechat,weibo,qq
+  # sites: facebook,twitter,wechat,weibo,qq,qzone
+  sites: qq,qzone,wechat,weibo,facebook,twitter
 
 # https://www.addtoany.com/
 addtoany:
@@ -284,12 +285,13 @@ valine:
     - ce2266d4e91782573b50c29e06a811e4
   friends:	#小伙伴邮箱 md5加密
     - d799cdaab02b754cb52617372d860835
+    - e8b9c844c07c99938135e4efdda43334
   notify: false
   verify: false
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   lang: zh-cn # i18n: zh-cn/en
-  placeholder: 昵称输入QQ会自动匹配QQ昵称和QQ头像~，不试试吗？注意：昵称不能少于三位 # valine comment input placeholder(like: Please leave your footprints )
+  placeholder: 建议在上方留下昵称和邮箱等信息，以便收到回复通知（以下二选一）：                                                                                1、仅在昵称中留下QQ号（系统自动获取QQ昵称、QQ邮箱、QQ头像等信息）                                                                              2、自定义填写昵称、邮箱、网址信息（系统自动匹配头像）
   guest_info: 昵称,邮箱,主页 #valine comment header info
   recordIP: true # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
