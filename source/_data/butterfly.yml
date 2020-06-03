@@ -642,7 +642,7 @@ darkmode:
   # autoChangeMode: 1  跟随系统而变化，不支持的浏览器/系统将按照时间晚上6点到早上6点之间切换为 dark mode
   # autoChangeMode: 2  只按照时间晚上6点到早上6点之间切换为 dark mode
   # autoChangeMode: false 取消自动切换
-  autoChangeMode: 1
+  autoChangeMode: false
 
 
 ####    other     ####
