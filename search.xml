@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>MySQL数据库优化</title>
+      <link href="/posts/3155752545/"/>
+      <url>/posts/3155752545/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note success">            <p>关于MySQL数据库优化 </p>          </div><h2 id="了解为什么要数据库优化"><a href="#了解为什么要数据库优化" class="headerlink" title="了解为什么要数据库优化"></a>了解为什么要数据库优化</h2><h3 id="数据库优化的目的"><a href="#数据库优化的目的" class="headerlink" title="数据库优化的目的"></a>数据库优化的目的</h3><h4 id="避免出现页面访问错误"><a href="#避免出现页面访问错误" class="headerlink" title="避免出现页面访问错误"></a>避免出现页面访问错误</h4><ul><li>由于数据库连接timeout产生页面5xx错误</li><li>由于慢查询造成页面无法加载</li><li>由于阻塞造成数据无法提交</li></ul><h4 id="增加数据库的稳定性"><a href="#增加数据库的稳定性" class="headerlink" title="增加数据库的稳定性"></a>增加数据库的稳定性</h4><ul><li>很多数据库问题都是由于低效的查询引起的</li></ul><h4 id="优化用户体验"><a href="#优化用户体验" class="headerlink" title="优化用户体验"></a>优化用户体验</h4><ul><li>流畅页面的访问速度</li><li>良好的网站功能体验</li></ul><h2 id="了解数据库优化的几个方式"><a href="#了解数据库优化的几个方式" class="headerlink" title="了解数据库优化的几个方式"></a>了解数据库优化的几个方式</h2><h3 id="优化方式"><a href="#优化方式" class="headerlink" title="优化方式"></a>优化方式</h3><h4 id="可以从几个方面进行数据库优化"><a href="#可以从几个方面进行数据库优化" class="headerlink" title="可以从几个方面进行数据库优化"></a>可以从几个方面进行数据库优化</h4><p><img src="/posts/3155752545/image-20200604155255484.png" alt="优化方式"></p><h4 id="如何查看SQL的查询效率"><a href="#如何查看SQL的查询效率" class="headerlink" title="如何查看SQL的查询效率"></a>如何查看SQL的查询效率</h4><p>在日常工作中，我们有时会开慢查询去记录一些执行时间比较久的SQL语句，找出这些SQL语句并不意味着完事了，此时我们常常用到<span style="color:red"><strong>explain</strong></span>这个命令来查看这个SQL语句的执行计划，查看该SQL语句有没有使用上了索引，有没有做全表扫描，这些都可以通过<strong>explain</strong>命令来查看。所以我们深入了解MySQL的基于开销的优化器，还可以获得很多可能被优化器考虑到的访问策略的细节，以及当运行SQL语句时哪种策略预计会被优化器采用</p><ul><li>–实际SQL，查找用户名为Jefabc的员工</li><li>select * from emp where name =’Jefabc’ ;</li><li><span style="color:red">– 查看SQL是否使用索引，前面加上explain即可</span></li><li>explain  select * from emp where name =’Jefabc’ ;</li></ul><h4 id="概要描述："><a href="#概要描述：" class="headerlink" title="概要描述："></a>概要描述：</h4><p><strong>explain 出来的信息有10列，分别是id、select_type、table、type、possible_keys、key、key_len、ref、rows、Extra。</strong></p><ol><li>id：选择标识符</li><li>select_type： 表示查询的类型</li><li>table： 输出结果的集</li><li>type： 表示表的连接类型<ul><li>对外访问方式，表示MySQL在表中找到所需行的方式，又称“访问类型”</li></ul></li></ol><h2 id="使用索引和优化数据表结构来优化数据库查询"><a href="#使用索引和优化数据表结构来优化数据库查询" class="headerlink" title="使用索引和优化数据表结构来优化数据库查询"></a>使用索引和优化数据表结构来优化数据库查询</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> MySQL </category>
+          
+          <category> 优化 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Butterfly主题优化</title>
       <link href="/posts/3112011529/"/>
       <url>/posts/3112011529/</url>
@@ -13,6 +40,8 @@
       
       <categories>
           
+          <category> Hexo </category>
+          
           <category> Butterfly </category>
           
       </categories>
@@ -20,22 +49,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
+            <tag> Butterfly </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>测试</title>
-      <link href="/posts/2645272983/"/>
-      <url>/posts/2645272983/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note default">            <p>default 提示块标签</p>          </div><div class="note primary no-icon">            <p>primary 提示块标签</p>          </div><div class="note success">            <p>success 提示块标签</p>          </div><div class="note info">            <p>info 提示块标签</p>          </div><div class="note warning">            <p>warning 提示块标签</p>          </div><div class="note danger">            <p>danger 提示块标签</p>          </div>]]></content>
-      
-      
       
     </entry>
     
@@ -51,14 +67,16 @@
       
       <categories>
           
-          <category> hexo和next </category>
+          <category> Hexo </category>
+          
+          <category> Next </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hexo </tag>
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -77,6 +95,8 @@
       <categories>
           
           <category> MySQL </category>
+          
+          <category> 引擎 </category>
           
       </categories>
       
@@ -126,14 +146,16 @@
       
       <categories>
           
-          <category> hexo和next </category>
+          <category> Hexo </category>
+          
+          <category> Next </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hexo </tag>
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -151,14 +173,14 @@
       
       <categories>
           
-          <category> hexo和next </category>
+          <category> Hexo备份 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hexo备份 </tag>
+            <tag> Hexo备份 </tag>
             
         </tags>
       
@@ -176,14 +198,16 @@
       
       <categories>
           
-          <category> hexo和next </category>
+          <category> Hexo </category>
+          
+          <category> Next </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hexo </tag>
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -201,14 +225,14 @@
       
       <categories>
           
-          <category> hexo和next </category>
+          <category> Hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hexo </tag>
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -226,14 +250,16 @@
       
       <categories>
           
-          <category> next美化 </category>
+          <category> Hexo </category>
+          
+          <category> Next </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> next主题 </tag>
+            <tag> Hexo </tag>
             
         </tags>
       
