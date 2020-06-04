@@ -1,7 +1,7 @@
 ---
 title: 使用hexo-git-backup插件备份博客源文件
-tags: hexo备份
-categories: hexo和next
+tags: Hexo备份
+categories: Hexo备份
 essential: true
 abbrlink: 47733
 date: 2020-05-17 18:25:20

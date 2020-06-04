@@ -1,7 +1,9 @@
 ---
 title: Butterfly主题优化
-tags: hexo
-categories: Butterfly
+tags: Butterfly
+categories: 
+	- Hexo
+	- Butterfly
 cover: 'https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200601085530.jpg'
 abbrlink: 3112011529
 date: 2020-06-01 09:10:58

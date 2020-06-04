@@ -2,7 +2,9 @@
 title: MySQL数据库引擎
 essential: true
 tags: MySQL
-categories: MySQL
+categories: 
+	- MySQL
+	- 引擎
 abbrlink: 29333
 date: 2020-05-25 19:58:29
 cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530092928.jpeg

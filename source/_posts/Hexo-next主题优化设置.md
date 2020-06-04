@@ -1,7 +1,9 @@
 ---
 title: Hexo+next主题优化设置
-tags: hexo
-categories: hexo和next
+tags: Hexo
+categories: 
+	- Hexo
+	- Next
 abbrlink: 25396
 date: 2020-05-14 20:58:51
 sticky: 

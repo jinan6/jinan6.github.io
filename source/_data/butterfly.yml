@@ -726,11 +726,11 @@ fragment_cache: true
 inject:
   head:
   # - <link rel="stylesheet" href="xxxxx">
-  - <link rel="stylesheet" href="/css/background.css">
+  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/background.css">
   - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
   bottom:
     # - <script src="xxxx"></script>
-      # - <script src="https://player.lmih.cn/player/js/player.js" id="myhk" key="159080561813" m="1"></script>
+       - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/beautify.js"></script>
 
 # CDN
 # 非必要不要修改
@@ -746,7 +746,7 @@ CDN:
   gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
   # valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
-  valine: https://cdn.jsdelivr.net/gh/HCLonely/Valine@1.4.14/dist/Valine.min.js
+  valine: https://cdn.jsdelivr.net/gh/jinan6/CDN/js/Valine.min.js
   disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqus.js
   disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqusjs.css
   utterances: https://utteranc.es/client.js

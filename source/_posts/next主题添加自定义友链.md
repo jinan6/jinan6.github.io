@@ -1,8 +1,10 @@
 ---
 title: next主题添加自定义友链
 essential: true
-tags: hexo
-categories: hexo和next
+tags: Hexo
+categories: 
+	- Hexo
+	- Next
 abbrlink: 48141
 date: 2020-05-28 09:52:21
 cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530092720.jpeg

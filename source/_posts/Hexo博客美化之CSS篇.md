@@ -1,7 +1,9 @@
 ---
 title: Hexo博客美化之CSS篇
-tags: hexo
-categories: hexo和next
+tags: Hexo
+categories: 
+	- Hexo
+	- Next
 abbrlink: 26259
 date: 2020-05-23 17:37:46
 cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530091733.jpg

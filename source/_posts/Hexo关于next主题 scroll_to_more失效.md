@@ -1,7 +1,9 @@
 ---
 title: hexo关于next主题 scroll_to_more失效
-tags: next主题
-categories: next美化
+tags: Hexo
+categories: 
+	- Hexo
+	- Next
 abbrlink: 49984
 date: 2020-05-13 09:16:04
 cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530093305.jpg
