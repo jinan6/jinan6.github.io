@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>向GitHub仓库推送本地文件夹</title>
+      <link href="/posts/3120427724/"/>
+      <url>/posts/3120427724/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote><p>向GitHub仓库推送本地文件夹</p></blockquote><p>首页先在<strong>GitHub</strong>上新建一个仓库，取名任意</p><p>其次在本地随便新建一个文件夹，在该文件夹内右键<strong>Git Bash Here</strong></p><p>输入以下命令，下载到本地</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone  #后面跟上你的仓库地址</span><br></pre></td></tr></table></figure><p>然后在下载下来的文件夹内，加入你想要添加的文件</p><p>添加完成后，输入以下命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git add .    #添加全部文件（git  add  -A）</span><br><span class="line">git commit -m &#39;add all the file&#39;    #提交修改</span><br><span class="line">git status    #查看是否还有未提交</span><br><span class="line">git remote  add  origin  你的仓库地址    #远程仓库关联到origin名称上</span><br><span class="line">git push origin master    #将add内容推送到远程仓库</span><br></pre></td></tr></table></figure><p>上传过程中可能还会需要验证你的GitHub的用户名和密码，验证完成稍等一会即可</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Git </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MySQL数据库优化</title>
       <link href="/posts/3155752545/"/>
       <url>/posts/3155752545/</url>
