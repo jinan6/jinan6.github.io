@@ -119,7 +119,7 @@ bangumi:
   enable: true 
   path: 
   vmid: 323386473
-  title: '追番列表'
-  quote: '生命不息，追番不止！'
+  title: '番剧'
+  quote: '看点番剧，放松一会吧~'
   show: 1
   loading:

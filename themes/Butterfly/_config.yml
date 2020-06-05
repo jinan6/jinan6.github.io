@@ -122,11 +122,12 @@ archive_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530084005.jpg
 
 # the banner image of tag page
 # tag page, look like https://xxxxxxxxx.com/tags/butterfly
-tag_img:
+tag_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530085429.jpg
 
 # the banner image of category page
 # category page, look like https://xxxxxxxxx.com/categories/butterfly
-category_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530085429.jpg
+category_img: 
+# https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530085429.jpg
 
 
 # 如果你有使用hexo-douban，可配置這個
@@ -152,7 +153,7 @@ cover:
 lodding_bg:
   flink: /img/friend_404.gif #404後圖片
   post_page: /img/404.jpg #404後圖片
-#  post: /img/loading.gif ##加載動畫
+  post: /img/loading.gif ##加載動畫
 
 # A simple 404 page
 error_404:
@@ -726,13 +727,10 @@ fragment_cache: true
 inject:
   head:
   # - <link rel="stylesheet" href="xxxxx">
-  # - <link rel="stylesheet" href="/css/background.css">
   - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/background.css">
   - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
   bottom:
     # - <script src="xxxx"></script>
-      # - <script src="https://player.lmih.cn/player/js/player.js" id="myhk" key="159080561813" m="1"></script>
-     # - <script src="/js/beautify.js"></script>
        - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/beautify.js"></script>
 
 # CDN
@@ -749,8 +747,8 @@ CDN:
   gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
   # valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
-  # valine: https://cdn.jsdelivr.net/gh/HCLonely/Valine@1.4.14/dist/Valine.min.js
-  valine: https://cdn.jsdelivr.net/gh/jinan6/CDN/js/Valine.min.js
+  valine: https://cdn.jsdelivr.net/gh/jinan6/CDN/js/Valine.js
+  # valine: /js/Valine.min.js
   disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqus.js
   disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqusjs.css
   utterances: https://utteranc.es/client.js
