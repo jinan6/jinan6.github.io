@@ -115,6 +115,8 @@ index_img:
 
 # if the banner of page not setting,it will show the top_img
 default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530084714.jpg
+# default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/wyw8wr.jpg
+# default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/wallhaven-r2ze21.jpg
 
 
 # the banner image of archive page
@@ -333,7 +335,7 @@ facebook_comments:
 # ------------------------------------
 since: 2020
 
-footer_custom_text: CDN BY <a target="_blank" rel="external nofollow" href="https://www.jsdelivr.com/"><b>jsDelivr</b></a> | HOST BY  <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a>
+footer_custom_text: CDN BY <a target="_blank" rel="external nofollow" href="https://www.jsdelivr.com/"><b>jsDelivr</b></a> | HOST BY  <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a><a href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referra"><br><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200612150153.png"align="absmiddle" width="59px" height="30px" /></a><span>提供加速服务</span>
 
 footer_copyright:
   enable: true
