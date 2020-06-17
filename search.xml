@@ -13,6 +13,8 @@
       
       <categories>
           
+          <category> SpringBoot </category>
+          
           <category> SpringSecurity </category>
           
       </categories>
@@ -39,6 +41,8 @@
       
       
       <categories>
+          
+          <category> SpringBoot </category>
           
           <category> Swagger </category>
           
