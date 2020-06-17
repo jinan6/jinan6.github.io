@@ -1,38 +1,3 @@
-# class: 
-#   class_name: 友情链接
-#   link_list:
-#     1:
-#       name: csde
-#       link: https://www.csde.vip/
-#       avatar: https://www.csde.vip/img/avatar.png
-#       descr: 博客
-#     2:
-#       name: 潘高的小站
-#       link: https://blog.pangao.vip/
-#       avatar: https://blog.pangao.vip/images/avatar.jpg
-#       descr:  IT套路深，必须瞎折腾
-#     3:
-#       name: Bei’s Blog
-#       link: https://wangbei.xyz
-#       avatar: https://wangbei.xyz/img/favicon.JPG
-#       descr:  Debug the world	  
-#     4:
-#       name: 煎鱼的海
-#       link: https://euukey.com
-#       avatar: https://cdn.jsdelivr.net/gh/Euukey/euukey.github.io/img/avatar.png
-#       descr: 人之帅，莫过于煎鱼
-#     5:
-#       name: SvnYang
-#       link: https://www.svnyang.cn
-#       avatar: https://cdn.jsdelivr.net/gh/svnyang/CDN/images/SvnYang.jpg
-#       descr:  笑而不语是一种豁达，痛而不言是一种修养
-#     6:
-#        name: 阿里巴巴矢量图标库
-#        link: https://www.iconfont.cn/
-#        avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200610194302.png
-#        descr: 实用的小图标
-	
-	
 - class_name: 友情链接
   class_desc: 那些人，那些事
   link_list:
@@ -73,3 +38,8 @@
       link: https://fontawesome.com/
       avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617141057.png
       descr: 图标
+
+    - name: jsdelivr
+      link: https://www.jsdelivr.com/
+      avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617185527.png
+      descr: CDN

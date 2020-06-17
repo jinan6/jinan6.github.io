@@ -12,6 +12,7 @@ menu:
   标签: /tags/ || fa fa-tags
   分类: /categories/ || fa fa-folder-open
   友链: /link/ || fa fa-link
+  说说: /shuoshuo/ || far fa-comments
   关于: /about/ || fa fa-heart
   娱乐||fa fa-list:
     - 音乐 || /music/ || fa fa-music
@@ -333,10 +334,10 @@ facebook_comments:
 
 # Chat Button [recommend]
 # It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: false
+chat_btn: true	#合并在线聊天
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
-chat_hide_show: false
+chat_hide_show: true	#不使用时隐藏工具栏
 
 # chatra
 # https://chatra.io/
@@ -757,7 +758,7 @@ inject:
   # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
   bottom:
     # - <script src="xxxx"></script>
-       - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/beautify.js"></script>	#自定义js
+       # - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/beautify.js"></script>	#自定义js
 
 # CDN
 # Don't modify the following settings unless you know how they work

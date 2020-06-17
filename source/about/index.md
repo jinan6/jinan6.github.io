@@ -28,3 +28,5 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200605091206.png
 添加页面渐变以及一些样式
 
 添加 daovoice 在线联系
+
+添加说说页面
