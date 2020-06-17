@@ -1,41 +1,3 @@
-//- - let emojiMaps = '""'
-//- if site.data.valine
-//-   - emojiMaps = JSON.stringify(site.data.valine)
-
-//- #vcomment.vcomment
-//- script(src=url_for(theme.CDN.valine))
-//- script.
-//-   var requestSetting = function (from,set) {
-//-     var from = from
-//-     var setting = set.split(',').filter(function(item){
-//-     return from.indexOf(item) > -1
-//-     });
-//-     setting = setting.length == 0 ? from :setting;
-//-     return setting
-//-   }
-
-//-   var guestInfo = requestSetting(['nick','mail','link'],'#{ theme.valine.guest_info }')
-//-   var requiredFields = requestSetting(['nick','mail','link'],'#{ theme.valine.requiredFields }')
-
-//-   window.valine = new Valine({
-//-     el:'#vcomment',
-//-     appId: '#{theme.valine.appId}',
-//-     appKey: '#{theme.valine.appKey}',
-//-     notify: #{theme.valine.notify},
-//-     verify: #{theme.valine.verify},
-//-     placeholder: '#{theme.valine.placeholder}',
-//-     avatar: '#{theme.valine.avatar}',
-//-     meta: guestInfo,
-//-     pageSize: '#{theme.valine.pageSize}',
-//-     lang: '#{theme.valine.lang}',
-//-     recordIP: #{theme.valine.recordIP},
-//-     serverURLs: '#{theme.valine.serverURLs}',
-//-     emojiCDN: '#{theme.valine.emojiCDN}',
-//-     emojiMaps: !{emojiMaps},
-//-     enableQQ: #{theme.valine.enableQQ},
-//-     requiredFields: requiredFields
-//-   });
-
 - let emojiMaps = '""'
 if site.data.valine
   - emojiMaps = JSON.stringify(site.data.valine)
@@ -53,16 +15,12 @@ script.
   }
 
   var guestInfo = requestSetting(['nick','mail','link'],'#{ theme.valine.guest_info }')
-  var requiredFields = requestSetting(['nick','mail','link'],'#{ theme.valine.requiredFields }')
-  let friends = '#{theme.valine.friends}'.split(',')
-  let master = '#{theme.valine.master}'.split(',')
+  var requiredFields = requestSetting(['nick','mail'],'#{ theme.valine.requiredFields }')
 
   window.valine = new Valine({
     el:'#vcomment',
     appId: '#{theme.valine.appId}',
     appKey: '#{theme.valine.appKey}',
-    notify: #{theme.valine.notify},
-    verify: #{theme.valine.verify},
     placeholder: '#{theme.valine.placeholder}',
     avatar: '#{theme.valine.avatar}',
     meta: guestInfo,
@@ -73,8 +31,5 @@ script.
     emojiCDN: '#{theme.valine.emojiCDN}',
     emojiMaps: !{emojiMaps},
     enableQQ: #{theme.valine.enableQQ},
-    requiredFields: requiredFields,
-    master: master,
-    friends: friends,
-    metaPlaceholder: !{JSON.stringify(theme.valine.metaPlaceholder)}
+    requiredFields: requiredFields
   });

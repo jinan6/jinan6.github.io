@@ -1,9 +1,11 @@
-# Main menu navigation
-# ---------------
-# format: xxx: 連結 || icon
+# Main menu navigation (導航目錄)
+# --------------------------------------
+
+# format: name: link || icon
 # sub-menu
-# xxx || icon:
-#   xxx || 連結 || icon
+# name || icon:
+#   name || link || icon
+
 menu:
   首页: / || fa fa-home
   归档: /archives/ || fa fa-archive
@@ -15,46 +17,33 @@ menu:
     - 音乐 || /music/ || fa fa-music
     - 番剧 || /bangumis/ || fa fa-film
 
-# PWA
-# See https://github.com/JLHwung/hexo-offline
-# ---------------
-# pwa:
-#   enable: true
-#   manifest: /img/pwa/manifest.json
-#   theme_color: "#fff"
-#   apple_touch_icon: /img/pwa/apple-touch-icon.png
-#   favicon_32_32: /img/pwa/32.png
-#   favicon_16_16: /img/pwa/16.png
-#   mask_icon: /img/pwa/safari-pinned-tab.svg
+# Code Blocks (代碼相關)
+# --------------------------------------
 
-# Highlight theme
-# ---------------
-highlight_theme: light # default / darker / pale night / light / ocean
-highlight_copy: true #代碼複製按鈕
-highlight_lang: true #代碼語言顯示
-highlight_shrink: false # true 全部代碼框不展開，需點擊 '>' 打開 / false 代碼框展開，有'>'點擊按鈕 | none 代碼框展開，不顯示 '>' 按鈕
-
+highlight_theme: mac # default / darker / pale night / light / ocean / mac / false
+highlight_copy: true # copy button
+highlight_lang: true # show the code language
+highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
 code_word_wrap: false
 
-# copy setting
-# 是否禁止複製（如果禁止，highlight_copy的功能將無效)
-# copyright 複製的內容後面加上版權信息
+# copy settings
+# copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
 copy:
-  enable: true # true 開啟 / false 禁止
+  enable: true
   copyright: false
 
-# social settings
+# social settings (社交圖標設置)
 # formal:
 #   icon: link || the description
-# ---------------
 social:
-  fa fa-github: https://github.com/ || Github
+  fab fa-github: https://github.com/ || Github
   fa fa-envelope: https://mail.qq.com/ || Email
   fa fa-rss: /atom.xml || RSS
 
-####    search    ####
+# search (搜索)
+# --------------------------------------
+
 # Algolia search
-# ---------------
 algolia_search:
   enable: false
   hits:
@@ -66,58 +55,46 @@ algolia_search:
     hits_stats: '${hits} results found in ${time} ms'
 
 # Local search
-# Please see doc for more details: https://docs.jerryc.me/config.html#本地搜索
-# ---------------
 local_search:
   enable: true
   labels:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
 
+# Math (數學)
+# --------------------------------------
+# About the per_page
+# if you set it to true, it will load mathjax/katex script in each page (true 表示每一頁都加載js)
+# if you set it to false, it will load mathjax/katex script according to your setting (add the 'mathjax: true' in page's front-matter)
+# (false 需要時加載，須在使用的 Markdown Front-matter 加上 mathjax: true)
+
 # MathJax
-# Please see doc for more details: https://docs.jerryc.me/config.html#mathjax
-# ---------------
 mathjax:
   enable: false
-  # true 表示每一頁都加載mathjax.js
-  # false 需要時加載，須在使用的Markdown Front-matter 加上 mathjax: true
   per_page: false
 
 # KaTeX
-# ---------------
 katex:
   enable: false
-  # true 表示每一頁都加載katex.js
-  # false 需要時加載，須在使用的Markdown Front-matter 加上 katex: true
   per_page: false
   hide_scrollbar: true
 
-# mermaid
-# see https://github.com/knsv/mermaid
-# -------------------------------
-mermaid:
-  enable: false
-  # built-in themes: default/forest/dark/neutral
-  theme: default
+# Image (圖片設置)
+# --------------------------------------
 
-# Favicon
-# ---------------
+# Favicon（網站圖標）
 favicon: /img/favicon-16x16-next.png
 
-# Post info settings
-# ---------------
+# Avatar (頭像)
 avatar:
   img: /img/avatar.png
   effect: false # 頭像會一直轉圈
 
-# the banner image of index
+# the banner image of home page
 index_img:
 
 # if the banner of page not setting,it will show the top_img
 default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530084714.jpg
-# default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/wyw8wr.jpg
-# default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/wallhaven-r2ze21.jpg
-
 
 # the banner image of archive page
 archive_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530084005.jpg
@@ -128,11 +105,9 @@ tag_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530085429.jpg
 
 # the banner image of category page
 # category page, look like https://xxxxxxxxx.com/categories/butterfly
-category_img: 
-# https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530085429.jpg
+category_img:
 
-
-# 如果你有使用hexo-douban，可配置這個
+# If you are using hexo-douban, you can configure it (如果你有使用 hexo-douban,可配置這個)
 # douban:
 #   meta: false
 #   movies_img:
@@ -140,31 +115,30 @@ category_img:
 #   games_img:
 
 cover:
-  # 是否顯示文章封面
+  # display the cover or not (是否顯示文章封面)
   index_enable: true
   aside_enable: true
   archives_enable: true
-  # 封面顯示的位置
-  # 三個值可配置 left , right , both
+  # the position of cover in home page (封面顯示的位置)
+  # left/right/both
   position: both
-  # 當沒有設置cover時，默認的封面顯示
-  default_cover:
+  # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
+  default_cover: 
     - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
-# if the photo link cannot connect,it will show that
-lodding_bg:
-  flink: /img/friend_404.gif #404後圖片
-  post_page: /img/404.jpg #404後圖片
-  post: /img/loading.gif ##加載動畫
+# Replace Broken Images (替換無法顯示的圖片)
+error_img:
+  flink: /img/friend_404.gif
+  post_page: /img/404.jpg
 
 # A simple 404 page
 error_404:
   enable: true
-  subtitle: "页面没有找到"
-  background:
+  subtitle: 'Page Not Found'
+  background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
 
 post_meta:
-  page:
+  page: # Home Page
     date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     categories: true # true or false 主頁是否顯示分類
     tags: false # true or false 主頁是否顯示標籤
@@ -173,43 +147,76 @@ post_meta:
     categories: true # true or false 文章頁是否顯示分類
     tags: true # true or false 文章頁是否顯示標籤
 
-# Please see doc for more details: https://docs.jerryc.me/config.html#字數統計
+# wordcount (字數統計)
 wordcount:
   enable: true
   post_wordcount: true
   min2read: true
   total_wordcount: true
 
+# Display the article introduction on homepage
+# 1: description
+# 2: both (if the description exists, it will show description. or show the auto_excerpt)
+# 3: auto_excerpt (default)
+index_post_content:
+  method: 3
+  length: 500 # if you set method to 2 or 3, the length need to config
+
+# Post
+# --------------------------------------
+
+# toc (目錄)
 toc:
   enable: true
   number: true
-
-# auto open the sidebar in 'post'
-auto_open_sidebar:
-  enable: true
+  auto_open: true # auto open the sidebar
 
 post_copyright:
   enable: true
-  decode: true
+  decode: false
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-# 自動節選
-auto_excerpt:
+# 打賞按鈕
+reward:
   enable: true
-  length: 150
+  QR_code:
+    - itemlist:
+        img: /img/wechatpay.png
+        text: 微信
+    - itemlist:
+        img: /img/alipay.png
+        text: 支付宝
 
-####    Share System    ####
-# -----------------------------------------
+# Related Articles
+related_post:
+  enable: true
+  limit: 6 # Number of posts displayed
+  date_type: created # or created or updated 文章日期顯示創建日或者更新日
+
+# figcaption (圖片描述文字)
+photofigcaption: false
+
+# anchor
+# when you scroll in post, the URL will update according to header id.
+anchor: false
+
+# Share System (分享功能)
+# --------------------------------------
+
+# AddThis
+# https://www.addthis.com/
 addThis:
   enable: false
   pubid:
 
+# Share.js
+# https://github.com/overtrue/share.js
 sharejs:
   enable: true
-  # sites: facebook,twitter,wechat,weibo,qq,qzone
   sites: qq,qzone,wechat,weibo,facebook,twitter
 
+# AddToAny
 # https://www.addtoany.com/
 addtoany:
   enable: false
@@ -222,30 +229,38 @@ addtoany:
     - email
     - copy_link
 
-####   Comments System    ####
-# ------------------------------------
+# Comments System
+# --------------------------------------
+
+# disqus
+# https://disqus.com/
 disqus:
   enable: false
   shortname:
   count: false # dispaly comment count in top_img
 
-# Disqus.js版評論系統，應對大陸長城的折中方案，兼容原版：https://github.com/SukkaW/DisqusJS
-# API 申請地址：https://disqus.com/api/applications/
-# 與 disqus 共用樣式
+# Alternative Disqus - Render comments with Disqus API
+# DisqusJS評論系統，可以實現在網路審查地區載入 Disqus 評論列表，兼容原版
+# https://github.com/SukkaW/DisqusJS
 disqusjs:
   enable: false
   shortname:
   siteName:
   apikey:
-  api: https://disqus.skk.moe/disqus/ #一般情況下無需修改 API 地址
+  api:
+  nocomment: # display when a blog post or an article has no comment attached
   admin:
   adminLabel:
   count: false # dispaly comment count in top_img
 
-laibili:
+# livere(來必力)
+# https://www.livere.com/
+livere:
   enable: false
   uid:
 
+# gitalk
+# https://github.com/gitalk/gitalk
 gitalk:
   enable: false
   client_id:
@@ -253,37 +268,19 @@ gitalk:
   repo:
   owner:
   admin:
-  language: zh-CN # en , zh-CN , zh-TW
+  language: en # en, zh-CN, zh-TW, es-ES, fr, ru
   perPage: 10 # Pagination size, with maximum 100.
   distractionFreeMode: false # Facebook-like distraction free mode.
   pagerDirection: last # Comment sorting direction, available values are last and first.
   createIssueManually: false # Gitalk will create a corresponding github issue for your every single page automatically
   count: false # dispaly comment count in top_img
 
-# valine comment system. https://valine.js.org
-# valine:
-#   enable: true # if you want use valine,please set this value is true
-#   appId: MAMAVASxjT5dcOMaFjPqd7yC-gzGzoHsz
-#   appKey: nMOGrsKQHA5s9IXapTQnBglA
-#   notify: false # valine mail notify (true/false) Deprecated in v1.4.0+
-#   verify: false # valine verify code (true/false) Deprecated in v1.4.0+
-#   pageSize: 10 # comment list page size
-#   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-#   lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
-#   placeholder: 在昵称中留下QQ号即可使用QQ昵称和QQ头像啦 # valine comment input placeholder(like: Please leave your footprints )
-#   guest_info: nick,mail,link #valine comment header info
-#   recordIP: false # Record reviewer IP
-#   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-#   emojiCDN: # emoji CDN
-#   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
-#   requiredFields: nick,mail # required fields nick/mail/link
-#   bg: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530100127.webp# valine background
-#   count: false # dispaly comment count in top_img
-
+# valine
+# https://valine.js.org
 valine:
   enable: true # if you want use valine,please set this value is true
-  appId: MAMAVASxjT5dcOMaFjPqd7yC-gzGzoHsz # leancloud application app id
-  appKey: nMOGrsKQHA5s9IXapTQnBglA # leancloud application app key
+  appId: 027OlclAiHmUjOrixaVqodkU-MdYXbMMI # leancloud application app id
+  appKey: Cbi33IqwioAJzqeH3ma6fo3F # leancloud application app key
   master:	#博主邮箱 md5加密
     - ce2266d4e91782573b50c29e06a811e4
   friends:	#小伙伴邮箱 md5加密
@@ -314,9 +311,9 @@ valine:
 utterances:
   enable: false
   repo:
-  # 可選 pathname/url/title/og:title
+  # Issue Mapping: pathname/url/title/og:title
   issue_term: pathname
-  # 可選 github-light/github-dark/github-dark-orange/icy-dark/dark-blue/photon-dark
+  # Theme: github-light/github-dark/github-dark-orange/icy-dark/dark-blue/photon-dark
   light_theme: github-light
   dark_theme: photon-dark
 
@@ -331,14 +328,48 @@ facebook_comments:
   lang: en_US # Language en_US/zh_CN/zh_TW and so on
   count: false
 
-#####     Footer Settings    ####
-# ------------------------------------
+# Chat Services
+# --------------------------------------
+
+# Chat Button [recommend]
+# It will create a button in the bottom right corner of website, and hide the origin button
+chat_btn: false
+
+# The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
+chat_hide_show: false
+
+# chatra
+# https://chatra.io/
+chatra:
+  enable: false
+  id:
+
+# tidio
+# https://www.tidio.com/
+tidio:
+  enable: false
+  public_key:
+
+# daovoice
+# http://daovoice.io/
+daovoice:
+  enable: true
+  app_id: ecfd16fd
+
+# gitter
+# https://gitter.im/
+gitter:
+  enable: false
+  room:
+
+# Footer Settings
+# --------------------------------------
+
 since: 2020
 
-footer_custom_text: CDN BY <a target="_blank" rel="external nofollow" href="https://www.jsdelivr.com/"><b>jsDelivr</b></a> | HOST BY  <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a><a href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referra"><br><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200612150153.png"align="absmiddle" width="59px" height="30px" /></a><span>提供加速服务</span>
+footer_custom_text: CDN BY <a target="_blank" rel="external nofollow" href="https://www.jsdelivr.com/"><b>jsDelivr</b></a> | HOST BY  <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a><a href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referra"><br><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200612150153.png"align="absmiddle" width="59px" height="30px" />&nbsp;</a><span>提供加速服务</span>
 
-footer_copyright:
-  enable: true
+footer_copyright: true
 
 ICP:
   enable: false
@@ -346,33 +377,37 @@ ICP:
   text:
   icon: /img/icp.png
 
-####   Analysis    ####
-# ---------------
-baidu_analytics: 24671864208d82bafab66175bcc9f19e
+# Analysis
+# --------------------------------------
+
+# Baidu Analytics
+baidu_analytics:
 
 # Google Analytics
 google_analytics:
 
-# Tencent_analytics ID
+# Tencent Analytics ID
 tencent_analytics:
 
-# Ads
-# ---------------
-# Google Adsense
+# Advertisement
+# --------------------------------------
+
+# Google Adsense (谷歌廣告)
 google_adsense:
   enable: false
   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
   client:
   enable_page_level_ads: true
 
-# 廣告插入位置
-# 適用於開啓手動廣告的配置
+# Insert ads manually (手動插入廣告)
 # ad:
 #   index:
 #   aside:
 #   post:
 
-####    站長驗證    ####
+# Verification (站長驗證)
+# --------------------------------------
+
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
 google_site_verification:
@@ -389,37 +424,12 @@ baidu_site_verification:
 # see http://zhanzhang.so.com/
 qihu_site_verification:
 
-# 打賞按鈕
-reward:
-  enable: true
-  QR_code:
-    - itemlist:
-        img: /img/wechatpay.png
-        text: 微信
-    - itemlist:
-        img: /img/alipay.png
-        text: 支付宝
-
-# 推薦文章
-related_post:
-  enable: true
-  limit: 6 # 顯示推薦文章數目
-  date_type: created # or created or updated 文章日期顯示創建日或者更新日
-
-# figcaption
-# 圖片描述文字
-photofigcaption: false
-
-# anchor
-# when you scroll in post, the url will update according to header id.
-anchor: false
-
-####    美化/效果    ####
-#--------------------------------
+# Beautify/Effect (美化/效果)
+# --------------------------------------
 
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
-# ---------------
+
 theme_color:
   enable: true
   main: "#49B1F5"
@@ -435,32 +445,36 @@ theme_color:
   blockquote_padding_color: "#49b1f5"
   blockquote_background_color: "#49b1f5"
 
-# 主頁設置
-# 默認top_img全屏，site_info在中間
-# 使用默認, 都無需填寫（建議默認）
-index_site_info_top: # 主頁標題距離頂部距離  例如 300px/300em/300rem/10%
-index_top_img_height: # 主頁top_img高度 例如 300px/300em/300rem  不能使用百分比
+# The top_img settings of home page
+# default: top img - full screen, site info - middle (默認top_img全屏，site_info在中間)
+# The positon of site info, eg: 300px/300em/300rem/10% (主頁標題距離頂部距離)
+index_site_info_top:
+# The height of top_img, eg: 300px/300em/300rem (主頁top_img高度)
+index_top_img_height:
 
-# category和tag頁的UI設置
-# index 值代表 UI將與首頁的UI一樣
-# 默認跟archives頁面UI一樣
-category_ui: # 留空或index
-tag_ui: # 留空或index
+# The user interface setting of category and tag page (category和tag頁的UI設置)
+# index - same as Homepage UI (index 值代表 UI將與首頁的UI一樣)
+# default - same as archives UI 默認跟archives頁面UI一樣
+category_ui: # 留空或 index
+tag_ui: # 留空或 index
 
-# 設置網站背景
-# 可設置圖片 或者 顔色
-# 圖片格式 background: url(http://xxxxxx.com/xxx.jpg)
-# 顔色 background: '#49B202'
-# 留空 顯示白色
-# background: '#E9E3ED'
-background: '#efefef'
+# Website Background (設置網站背景)
+# can set it to color or image (可設置圖片 或者 顔色)
+# The formal of color: '#49B202'
+# The formal of image: url(http://xxxxxx.com/xxx.jpg)
+# White color will be shown as default
+background: "#efefef"
 
-# footer是否顯示圖片背景(與top_img一致)
+# Show the footer background image (same as top_img)
 footer_bg: false
 
-# 背景特效
-# 避免卡頓，建議只開啟一個
-# canvas_ribbon 禁止彩帶背景
+# the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
+rightside-bottom:
+
+# Background effects (背景特效)
+# --------------------------------------
+
+# canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
   enable: false
@@ -468,12 +482,12 @@ canvas_ribbon:
   alpha: 0.6
   zIndex: -1
   click_to_change: false
-  mobile: false # false 手機端不顯示 true 手機端顯示
+  mobile: false
 
-# 動態彩帶
+# Dynamic ribbon (動態彩帶)
 canvas_ribbon_piao:
   enable: false
-  mobile: false # false 手機端不顯示 true 手機端顯示
+  mobile: false
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
@@ -483,25 +497,24 @@ canvas_nest:
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
-  mobile: false # false 手機端不顯示 true 手機端顯示
+  mobile: false
 
-# 打字效果
+# Typewriter Effect (打字效果)
+# https://github.com/disjukr/activate-power-mode
 activate_power_mode:
   enable: true
-  colorful: true # 冒光特效
-  shake: false # 抖動特效
+  colorful: true # open particle animation (冒光特效)
+  shake: false #  open shake (抖動特效)
 
-# 鼠標點擊效果
-# 避免卡頓，建議只開啟一個
-# 點擊煙火特效
+# Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
 fireworks:
   enable: true
+  zIndex: 9999 # -1 or 9999
 
-# 點擊出現愛心
-click_heart:
-  enable: false
+# Mouse click effects: Heart symbol (鼠標點擊效果: 愛心)
+click_heart: false
 
-# 點擊出現文字，文字可自行修改
+# Mouse click effects: words (鼠標點擊效果: 文字)
 ClickShowText:
   enable: false
   text:
@@ -510,70 +523,66 @@ ClickShowText:
     - YOU
   fontSize: 15px
 
-# 網站顯示模式
-# light 默認模式
-# dark 黑暗模式（不建議）
+# Default display mode (網站默認的顯示模式)
+# light (default) / dark
 display_mode: light
 
-# 美化頁面顯示
+# Beautify (美化頁面顯示)
 beautify:
   enable: true
   field: post # site/post
   title-prefix-icon: '\f0c1'
   title-prefix-icon-color: '#F47466'
 
-# 全局字體
+# Global font settings
+# Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  enable: false
-  font-family: Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, MicrMicrosoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif
-  code-font: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace, Helvetica Neue For Number
+  font-family:
+  code-font:
 
-# 網站名字字體
+# Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
-  font_link: https://fonts.googleapis.com/css?family=Titillium+Web #字體鏈接
-  font-family: Titillium Web, PingFang SC, Hiragino Sans GB, "Microsoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif
+  font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
+  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', Microsoft YaHei', sans-serif
 
-# 水平分隔綫
-hr:
-  enable: false
-  icon: '\f21c' #fontawesome上圖標的Unicode
-  icon-top: -20px
+# The setting of divider icon (水平分隔線圖標設置)
+hr_icon:
+  enable: true
+  icon: # the unicode value of Font Awesome icon
+  icon-top:
 
-# 主页subtitle
+# the subtitle on homepage (主頁subtitle)
 subtitle:
   enable: true
- # 打字效果
+  # Typewriter Effect (打字效果)
   effect: true
- # 循环或者只打字一次
+  # loop (循環打字)
   loop: true
-  # source调用第三方服务
-   # source: false 关闭调用
-   # source: 1  调用搏天api的随机语录（简体） https://api.btstu.cn/
-   # source: 2  调用一言网的一句话（简体） https://hitokoto.cn/
-   # source: 3  调用一句网（简体） http://yijuzhan.com/
-   # source: 4  调用今日诗词（简体） https://www.jinrishici.com/
-   # subtitle 会先显示 source , 再显示 sub 的内容
+  # source調用第三方服務
+  # source: false 關閉調用
+  # source: 1  調用搏天api的隨機語錄（簡體） https://api.btstu.cn/
+  # source: 2  調用一言網的一句話（簡體） https://hitokoto.cn/
+  # source: 3  調用一句網（簡體） http://yijuzhan.com/
+  # source: 4  調用今日詩詞（簡體） https://www.jinrishici.com/
+  # subtitle 會先顯示 source , 再顯示 sub 的內容
   source: 4
-# (如果有英文逗号' , '，请使用转义字符 &#44;)
-  # 如果关闭打字效果，subtitle只会显示sub的第一行文字
+  # 如果有英文逗號' , ',請使用轉義字元 &#44;
+  # 如果有英文雙引號' " ',請使用轉義字元 &quot;
+  # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
+  # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub:
     - 或苦或甜都不要辜负
 
-# fontawesome圖標
-# 默認使用的是 fontawesome v4版本的圖標
-fontawesome_v5:
-  enable: false
-
-# 加載動畫 Loading Animation
+# Loading Animation (加載動畫)
 preloader: false
 
-####    側邊欄    ####
-#-------------------------------------
-# 側邊欄顯示設置
+# aside (側邊欄)
+# --------------------------------------
+
 aside:
   enable: true
-  mobile: true # 手機頁面（ 顯示寬度 < 768px ）是否顯示aside內容
+  mobile: true # display on mobile
   position: left # left or right
   card_author:
     enable: true
@@ -587,10 +596,11 @@ aside:
   card_categories:
     enable: true
     limit: 8 # if set 0 will show all
+    expand: none # none/true/false
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
-    color: color
+    color: true
   card_archives:
     enable: true
     type: monthly # yearly or monthly
@@ -606,90 +616,70 @@ busuanzi:
   site_pv: true
   page_pv: true
 
-# 網頁開通時間
-# 格式: 月/日/年 時間
-# 也可以寫成 年/月/日 時間
+# Time difference between publish date and now (網頁運行時間)
+# Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  start_date: 5/10/2020 00:00:00
+  publish_date: 5/10/2020 00:00:00  
+  ##網頁開通時間
+  #格式: 月/日/年 時間
+  #也可以寫成 年/月/日 時間
 
-####   右下角按鈕  ####
-#----------------------------------------------
-# 簡繁轉換
+
+# Bottom right button (右下角按鈕)
+# --------------------------------------
+
+# Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
   enable: true
-  # 默认按钮显示文字(网站是简体，应设置为'default: 繁')
-  default: 简
-  #网站默认语言，1: 繁体中文, 2: 简体中文
-  defaultEncoding: 1
-  #延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
+  # The text of a button
+  default: 繁
+  # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
+  defaultEncoding: 2
+  # Time delay
   translateDelay: 0
-  #博客网址
-  cookieDomain: "https://jerryc.me/"
-  #当文字是简体时，按钮显示的文字
-  msgToTraditionalChinese: "繁"
-  #当文字是繁体时，按钮显示的文字
-  msgToSimplifiedChinese: "简"
+  # The text of the button when the language is Simplified Chinese
+  msgToTraditionalChinese: '繁'
+  # The text of the button when the language is Traditional Chinese
+  msgToSimplifiedChinese: '简'
 
-
-#閲讀模式
-readmode:
-  enable: true
+# Read Mode (閲讀模式)
+readmode: true
 
 # dark mode
 darkmode:
   enable: true
-  # dark mode和 light mode切换按钮
+  # Toggle Button to switch dark/light mode
   button: true
-  # 自动切换 dark mode和 light mode
-  # autoChangeMode: 1  跟随系统而变化，不支持的浏览器/系统将按照时间晚上6点到早上6点之间切换为 dark mode
-  # autoChangeMode: 2  只按照时间晚上6点到早上6点之间切换为 dark mode
-  # autoChangeMode: false 取消自动切换
+  # Switch dark/light mode automatically (自動切換 dark mode和 light mode)
+  # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
+  # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
+  # autoChangeMode: false
   autoChangeMode: false
 
+# Lightbox (圖片大圖查看模式)
+# --------------------------------------
+# You can only choose one, or neither (只能選擇一個 或者 兩個都不選)
 
-####    other     ####
-#------------------------------------------------
+# medium-zoom
+# https://github.com/francoischalifour/medium-zoom
+medium_zoom: false
 
-# 圖片大圖查看模式
-# 可選 medium_zoom 或者 fancybox
-# 只選一個 或者 兩個都不選
-#--------------------------------------------
-# medium_zoom https://github.com/francoischalifour/medium-zoom
-medium_zoom:
+# fancybox
+# http://fancyapps.com/fancybox/3/
+fancybox: true
+
+# Tag Plugins settings (標籤外掛)
+# --------------------------------------
+
+# mermaid
+# see https://github.com/knsv/mermaid
+mermaid:
   enable: false
-
-# fancybox http://fancyapps.com/fancybox/3/
-fancybox:
-  enable: true
-
-# Snackbar 彈窗
-# https://github.com/polonel/SnackBar
-# position 彈窗位置
-# 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
-snackbar:
-  enable: false
-  position: bottom-left
-  bg_light: '#49b1f5' #light mode時彈窗背景
-  bg_dark: '#2d3035' #dark mode時彈窗背景
-
-#百度推送
-baidu_push:
-  enable: false
-
-# https://instant.page/
-# prefetch預加載
-instantpage:
-  enable: true
-
-# https://github.com/vinta/pangu.js
-# 中英文之間添加空格
-pangu:
-  enable: false
-  field: page # page/post
+  # built-in themes: default/forest/dark/neutral
+  theme: default
 
 # Note (Bootstrap Callout)
-# https://muse.theme-next.org/docs/tag-plugins/note
 note:
   # Note tag style values:
   #  - simple    bs-callout old alert style. Default.
@@ -703,40 +693,75 @@ note:
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
 
-# 圖片懶加載
-# https://github.com/ApoorvSaxena/lozad.js
-lazyload: false
+# other
+# --------------------------------------
 
-# 避免重複網址分散seo
-canonical: true
+# Snackbar (Toast Notification 彈窗)
+# https://github.com/polonel/SnackBar
+# position 彈窗位置
+# 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
+snackbar:
+  enable: false
+  position: bottom-left
+  bg_light: '#49b1f5' # The background color of Toast Notification in light mode
+  bg_dark: '#121212' # The background color of Toast Notification in dark mode
 
-# 禁止百度轉碼
+# Baidu Push (百度推送)
+baidu_push: false
+
+# https://instant.page/
+# prefetch (預加載)
+instantpage: true
+
+# https://github.com/vinta/pangu.js
+# Insert a space between Chinese character and English character (中英文之間添加空格)
+pangu:
+  enable: false
+  field: site # site/post
+
+# Lazyload (圖片懶加載)
+# https://github.com/verlok/lazyload
+lazyload:
+  enable: true
+  post: /img/loading.gif
+
+# PWA
+# See https://github.com/JLHwung/hexo-offline
+# ---------------
+# pwa:
+#   enable: false
+#   manifest: /image/pwa/manifest.json
+#   theme_color: "#fff"
+#   apple_touch_icon: /image/pwa/apple-touch-icon.png
+#   favicon_32_32: /image/pwa/32.png
+#   favicon_16_16: /image/pwa/16.png
+#   mask_icon: /image/pwa/safari-pinned-tab.svg
+
+# Disable Baidu transformation on mobile devices (禁止百度轉碼)
 disable_baidu_transformation: true
 
-# twitter分享自動帶上樣式
-# https://i.loli.net/2019/09/08/qm3RfvUCKbct1Wz.png
-twitter_meta: true
-
-# facebook QQ 等 分享自動帶上樣式
-# https://i.loli.net/2019/09/08/2wbFJEKloisRvhj.png
+# Open graph meta tags
+# https://developers.facebook.com/docs/sharing/webmasters/
 Open_Graph_meta: true
 
-# 開啟hexo自帶的緩存，加快生成速度
+# Caches the contents in a fragment, speed up the generation (開啟hexo自帶的緩存,加快生成速度)
 fragment_cache: true
 
-# inject
-# 插入代码到头部</head>之前 和 尾部</body>之前
+# Inject
+# Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
+# 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-  # - <link rel="stylesheet" href="xxxxx">
-  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/background.css">
-  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
+    # - <link rel="stylesheet" href="/xxx.css">
+       - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/custom.min.css">	#自定义css文件
+  # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
   bottom:
     # - <script src="xxxx"></script>
-       - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/beautify.js"></script>
+       - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/beautify.js"></script>	#自定义js
 
 # CDN
-# 非必要不要修改
+# Don't modify the following settings unless you know how they work
+# 非必要請不要修改
 CDN:
   # main
   main_css: /css/index.css
@@ -748,11 +773,9 @@ CDN:
   blueimp_md5: https://cdn.jsdelivr.net/npm/blueimp-md5/js/md5.min.js
   gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
-  # valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
   valine: https://cdn.jsdelivr.net/gh/jinan6/CDN/js/Valine.js
-  # valine: /js/Valine.min.js
-  disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqus.js
-  disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqusjs.css
+  disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
+  disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
   utterances: https://utteranc.es/client.js
 
   # share
@@ -781,10 +804,9 @@ CDN:
   canvas_ribbon_piao: /js/third-party/piao.js
   canvas_nest: /js/third-party/canvas-nest.js
 
-  lazyload: https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js
-  instantpage: https://cdn.jsdelivr.net/npm/instant.page@3/instantpage.min.js
+  lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
+  instantpage: https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js
   typed: https://cdn.jsdelivr.net/npm/typed.js
-  js_cookies: https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js
   pangu: https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js
 
   # photo
@@ -796,7 +818,7 @@ CDN:
   snackbar_css: https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css
   snackbar: https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js
 
-  # 鼠標點擊特效
+  # effect
   anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
   activate_power_mode: /js/third-party/activate-power-mode.js
   fireworks: /js/third-party/fireworks.js
@@ -804,11 +826,19 @@ CDN:
   ClickShowText: /js/third-party/ClickShowText.js
 
   # fontawesome
-  fontawesome_v4: https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css
-  fontawesome_v5: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+  fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
 
-  # 簡繁轉換
+  # Conversion between Traditional and Simplified Chinese
   translate: /js/tw_cn.js
 
+  # justifiedGallery
+  justifiedGallery_js: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js
+  justifiedGallery_css: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css
+
+  # aplayer
+  aplayer_css: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
+  aplayer_js: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
+  meting_js: https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js
+
 #全站黑白
-blackandwhite: false
+# blackandwhite: false
