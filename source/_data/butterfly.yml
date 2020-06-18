@@ -37,6 +37,7 @@ copy:
 # formal:
 #   icon: link || the description
 social:
+  fab fa-qq: tencent://message/?uin=2640053707 || QQ
   fab fa-github: https://github.com/ || Github
   fa fa-envelope: https://mail.qq.com/ || Email
   fa fa-rss: /atom.xml || RSS
@@ -759,7 +760,7 @@ inject:
   bottom:
     # - <script src="xxxx"></script>
        # - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/beautify.js"></script>	#自定义js
-       # - <script src="/js/artitalk.js"></script>
+       - <script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/js/hideMobileSidebar.js"></script>	#手机侧边栏默认不展开
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -841,6 +842,3 @@ CDN:
   aplayer_css: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
   aplayer_js: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
   meting_js: https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js
-
-#全站黑白
-# blackandwhite: false

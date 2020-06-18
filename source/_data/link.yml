@@ -43,3 +43,8 @@
       link: https://www.jsdelivr.com/
       avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617185527.png
       descr: CDN
+
+    - name: LeanCloud
+      link: https://console.leancloud.app/
+      avatar: https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@link/img/link/leancloud.png
+      descr: LeanCloud后台
