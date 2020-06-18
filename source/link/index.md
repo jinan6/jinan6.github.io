@@ -19,4 +19,4 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200605091039.jpg
 >名称：Sakura` Blogs
 >头像链接：https://jinan6.vip/img/avatar.png
 >主页链接：https://jinan6.vip
->说明信息：个人小站
+>说明信息：一只菜鸟

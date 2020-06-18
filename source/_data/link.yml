@@ -31,7 +31,7 @@
   link_list:
     - name: 阿里巴巴矢量图标库
       link: https://www.iconfont.cn/
-      avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200610194302.png
+      avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200618154729.png
       descr: 实用的小图标
 
     - name: Font Awesome V5
@@ -48,3 +48,8 @@
       link: https://console.leancloud.app/
       avatar: https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@link/img/link/leancloud.png
       descr: LeanCloud后台
+	  
+    - name: Artitalk.js
+      link: https://artitalk.js.org/
+      avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200618154905.png
+      descr: 可实时发布说说/微语的js

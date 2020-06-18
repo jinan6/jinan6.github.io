@@ -12,7 +12,8 @@ menu:
   标签: /tags/ || fa fa-tags
   分类: /categories/ || fa fa-folder-open
   友链: /link/ || fa fa-link
-  说说: /shuoshuo/ || far fa-comments
+  微语: /shuoshuo/ || far fa-comments
+  留言板: /board/ || fas fa-coffee
   关于: /about/ || fa fa-heart
   娱乐||fa fa-list:
     - 音乐 || /music/ || fa fa-music
