@@ -1,19 +1,21 @@
 ---
-title: 说说
-type: artitalk
-noDate: 'true'
-comments: 'false'
-top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192515.jpg
+title: shuoshuo
+date: 2020-06-18 07:57:19
+top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200605092143.jpg
+type: "shuoshuo"
+comments: false
+
 ---
 
 <head>
   <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 </head>
+
   <body>
       <script>
-        var img = "https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png"; //说说旁边显示的头像
-        var appID = "FPlT7JKll5BUgIzGRtl3bOLe-MdYXbMMI";
-        var appKEY = "PEkBwr3SLdDTfV2NI3i3g53c";
+        var img = "https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/custom/cungudafa.jpg"; //说说旁边显示的头像
+        var appID = "zhzq7s1XSx76S1pQhqGztXOb-MdYXbMMI";
+        var appKEY = "v5U2GE7Xbmcrh10swntEfh3w";
         var per = "5"; //每页显示说说的数量
         var username = "仅安"; //Leancloud中设置的用户名
         var placeholder1="只有仅安才能评论哦"; //在编辑说说的输入框中的占位符
@@ -23,5 +25,5 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192515.jpg
       </script>
       <div id="lazy"></div>
       <div id="artitalk"></div>
-      <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+     <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
   </body>
