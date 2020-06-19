@@ -34,6 +34,6 @@ top_img:
 
    
 
-![](IDEA设置Maven仓库阿里云镜像/20200610091848.png)
+![](https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619160055.jpg)
 
 然后保存即可
