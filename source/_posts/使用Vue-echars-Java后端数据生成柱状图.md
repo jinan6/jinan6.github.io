@@ -4,7 +4,7 @@ tags: 图表
 categories: Vue
 abbrlink: 34782
 date: 2020-05-11 16:15:43
-cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530093453.jpeg
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619143126.jpg
 ---
 
 <center>柱状图</center>

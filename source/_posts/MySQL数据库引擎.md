@@ -7,7 +7,7 @@ categories:
 	- 引擎
 abbrlink: 29333
 date: 2020-05-25 19:58:29
-cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530092928.jpeg
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619145303.jpg
 ---
 
 > 关于数据库引擎

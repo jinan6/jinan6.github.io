@@ -6,7 +6,7 @@ categories:
 	- Next
 abbrlink: 49984
 date: 2020-05-13 09:16:04
-cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530093305.jpg
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619143302.jpg
 ---
 
 <center>在美化过程中遇到的问题</center>

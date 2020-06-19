@@ -4,7 +4,7 @@ tags: 图表
 categories: Vue
 abbrlink: 56512
 date: 2020-05-11 16:13:45
-cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530093401.jpeg
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619142941.jpg
 ---
 
 <center>饼图</center>

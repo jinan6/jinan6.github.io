@@ -5,7 +5,7 @@ categories: Hexo备份
 essential: true
 abbrlink: 47733
 date: 2020-05-17 18:25:20
-cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530093136.jpeg
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619144053.jpg
 ---
 
 > 在搭建好hexo博客之后也要给自己的博客进行备份，文章丢失可是很麻烦的一件事情。可以借助一个插件来进行备份源文件

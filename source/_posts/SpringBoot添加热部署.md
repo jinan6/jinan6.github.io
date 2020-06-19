@@ -4,7 +4,7 @@ categories: SpringBoot
 tags: maven依赖
 abbrlink: 10499
 date: 2020-05-10 12:12:57
-cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530093615.jpeg
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619141653.jpg
 ---
 
 <center>springBootmaven依赖</center>

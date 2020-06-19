@@ -2,7 +2,7 @@
 title: 向GitHub仓库推送本地文件夹
 tags: Git
 categories: Git
-cover: 'https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200604193834.jpeg'
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619150022.jpg
 abbrlink: 3120427724
 date: 2020-06-04 19:37:43
 sticky:

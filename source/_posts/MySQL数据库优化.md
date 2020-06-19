@@ -6,7 +6,7 @@ categories:
   - 优化
 abbrlink: 3155752545
 date: 2020-06-04 15:40:20
-cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200604193217.jpeg
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619145829.jpg
 sticky:
 
 ---

@@ -8,7 +8,7 @@ categories:
   - SpringSecurity
 abbrlink: 3984882913
 date: 2020-06-15 18:57:35
-cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200616162358.jpeg
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619150558.jpg
 sticky:
 top_img:
 ---

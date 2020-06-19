@@ -4,7 +4,7 @@ categories: linux
 abbrlink: 59764
 date: 2020-05-11 16:09:33
 tags: linux
-cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530094042.jpeg
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619142804.jpg
 ---
 
 <center>linux安装java环境</center>

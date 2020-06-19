@@ -2,7 +2,7 @@
 title: IDEA设置Maven仓库阿里云镜像
 tags: IDEA
 categories: IDEA
-cover: 'https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200610091210.jpeg'
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619150139.jpg
 abbrlink: 2352548230
 date: 2020-06-10 09:10:54
 sticky:

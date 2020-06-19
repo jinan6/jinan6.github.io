@@ -7,7 +7,7 @@ categories:
 abbrlink: 25396
 date: 2020-05-14 20:58:51
 sticky: 
-cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530091102.jpeg
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619143451.jpg
 ---
 
 #### 前言

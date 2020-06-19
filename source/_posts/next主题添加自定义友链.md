@@ -7,7 +7,7 @@ categories:
 	- Next
 abbrlink: 48141
 date: 2020-05-28 09:52:21
-cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530092720.jpeg
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619145438.jpg
 ---
 
 > Hexo博客Next主题友链页面，本站用的是next7.8版本，版本不同可能略有差异

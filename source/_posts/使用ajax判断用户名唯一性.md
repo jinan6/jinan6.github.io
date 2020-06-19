@@ -4,7 +4,7 @@ tags: 判断
 categories: ajax
 abbrlink: 14393
 date: 2020-05-11 15:57:45
-cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530093848.jpeg
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619142233.jpg
 ---
 
 <center>ajax判断用户名唯一</center>

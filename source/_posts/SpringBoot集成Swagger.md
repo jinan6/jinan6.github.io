@@ -6,7 +6,7 @@ tags:
 categories: 
   - SpringBoot
   - Swagger
-cover: 'https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200614194015.jpeg'
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619150441.jpg
 abbrlink: 1553907357
 date: 2020-06-14 19:39:59
 sticky:

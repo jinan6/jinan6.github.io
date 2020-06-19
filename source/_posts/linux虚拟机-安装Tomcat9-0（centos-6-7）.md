@@ -4,7 +4,7 @@ categories: linux
 abbrlink: 13258
 date: 2020-05-11 16:03:24
 tags: linux
-cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530094150.jpeg
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619142549.jpg
 ---
 
 <center>linux虚拟机上安装Tomcat</center>
