@@ -2,7 +2,7 @@
 title: 音乐
 date: 2020-05-29 13:51:08
 type: "music"
-top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200605092143.jpg
+top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104100.jpg
 aplayer: true
 ---
 

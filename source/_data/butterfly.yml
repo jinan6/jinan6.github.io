@@ -8,11 +8,15 @@
 
 menu:
   首页: / || fa fa-home
-  归档: /archives/ || fa fa-archive
-  标签: /tags/ || fa fa-tags
-  分类: /categories/ || fa fa-folder-open
-  友链: /link/ || fa fa-link
+  文章||fa-fw fas fa-book-open:
+    - 归档 || /archives/ || fa fa-archive
+    - 标签 || /tags/ || fa fa-tags
+    - 分类 || /categories/ ||  fa fa-folder-open
+  # 归档: /archives/ || fa fa-archive
+  # 标签: /tags/ || fa fa-tags
+  # 分类: /categories/ || fa fa-folder-open
   微语: /shuoshuo/ || far fa-comments
+  友链: /link/ || fa fa-link
   留言板: /board/ || fas fa-coffee
   关于: /about/ || fa fa-heart
   娱乐||fa fa-list:
@@ -97,14 +101,14 @@ avatar:
 index_img:
 
 # if the banner of page not setting,it will show the top_img
-default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530084714.jpg
+default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619101920.jpg
 
 # the banner image of archive page
-archive_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530084005.jpg
+archive_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619102141.jpg
 
 # the banner image of tag page
 # tag page, look like https://xxxxxxxxx.com/tags/butterfly
-tag_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530085429.jpg
+tag_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619102415.jpg
 
 # the banner image of category page
 # category page, look like https://xxxxxxxxx.com/categories/butterfly
@@ -384,7 +388,7 @@ ICP:
 # --------------------------------------
 
 # Baidu Analytics
-baidu_analytics:
+baidu_analytics: 24671864208d82bafab66175bcc9f19e
 
 # Google Analytics
 google_analytics:
