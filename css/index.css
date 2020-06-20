@@ -2807,7 +2807,8 @@ _:future,
   top: 0;
   right: -250px;
   z-index: 103;
-  overflow: hidden scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
   width: 250px;
   height: 100%;
   background: #f6f8fa;
@@ -3826,6 +3827,10 @@ img {
 .layout_post .post-copyright .post-copyright-info a:hover {
   text-decoration: none;
 }
+#article-container {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
 #article-container a {
   color: #99a9bf;
 }
@@ -4316,7 +4321,7 @@ img {
   background-color: #ff7242;
 }
 #vcomment textarea {
-  background: url("https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530100127.webp") 100% 100% no-repeat;
+  background: url("https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200620143712.gif") 100% 100% no-repeat;
 }
 #vcomment .vimg {
   -webkit-transition: all 0.3s;
