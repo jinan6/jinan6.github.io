@@ -102,6 +102,7 @@ index_img:
 
 # if the banner of page not setting,it will show the top_img
 default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619101920.jpg
+# default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200620194436.jpg
 
 # the banner image of archive page
 archive_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619102141.jpg
@@ -596,14 +597,14 @@ aside:
     description:
   card_announcement:
     enable: true
-    content: 欢迎光临<img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200620143712.gif">
+    content: <center>欢迎光临<br><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200620143712.gif"></center>
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
   card_categories:
     enable: true
     limit: 8 # if set 0 will show all
-    expand: none # none/true/false
+    expand: false # none/true/false
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
