@@ -20,7 +20,7 @@ comments: false
         var placeholder1="只有仅安才能评论哦"; //在编辑说说的输入框中的占位符
         var placeholder2="没有密码，不能评论！";  //在编辑密码的输入框中的占位符
         var lazy = 1; //是否开启懒加载动画
-        var bgimg = "https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich16.gif"; //背景动画
+        var bgimg = "https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200620143712.gif"; //背景动画
       </script>
       <div id="lazy"></div>
       <div id="artitalk"></div>

@@ -302,7 +302,7 @@ valine:
   guest_info: 昵称,邮箱,主页 #valine comment header info
   recordIP: true # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  bg: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200530100127.webp # valine background
+  bg: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200620143712.gif # valine background
   count: true # top_img顯示評論數,
   emojiCDN: '//i0.hdslb.com/bfs/emote/' # 存放表情的cdn库
   enableQQ: true
@@ -596,7 +596,7 @@ aside:
     description:
   card_announcement:
     enable: true
-    content: 欢迎光临
+    content: 欢迎光临<img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200620143712.gif">
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -765,7 +765,9 @@ inject:
   bottom:
     # - <script src="xxxx"></script>
        # - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/beautify.js"></script>	#自定义js
-       - <script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/js/hideMobileSidebar.js"></script>	#手机侧边栏默认不展开
+       - <script src="https://cdn.jsdelivr.net/gh/lete114/CDN/js/upjiang.js"></script>	#UP
+       - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/hideMobileSidebar.js"></script>	#手机侧边栏默认不展开
+       - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/title.js"></script>		#搞怪标题
 
 # CDN
 # Don't modify the following settings unless you know how they work
