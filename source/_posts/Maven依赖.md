@@ -122,6 +122,17 @@ top_img:
         </dependency>
 ```
 
+### 热部署
+
+```xml
+<!-- 热部署 -->
+        <dependency>
+			    <groupId>org.springframework.boot</groupId>
+			    <artifactId>spring-boot-devtools</artifactId>
+			    <optional>true</optional> <!-- 这个需要为 true 热部署才有效 -->
+		</dependency>
+```
+
 
 
 ### 常用命名空间
@@ -137,4 +148,8 @@ xmlns:th="http://www.thymeleaf.org"
 ```html
 xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4"
 ```
+
+
+
+
 
