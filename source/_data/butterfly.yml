@@ -42,7 +42,8 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fab fa-qq: tencent://message/?uin=2640053707 || QQ
+# tencent://message/?uin=2640053707
+  fab fa-qq: http://sighttp.qq.com/authd?IDKEY=174f27490788d0ea985eff04604012124179c5760cd91d20 || QQ
   fab fa-github: https://github.com/ || Github
   fa fa-envelope: https://mail.qq.com/ || Email
   fa fa-rss: /atom.xml || RSS
@@ -299,7 +300,7 @@ valine:
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   lang: zh-cn # i18n: zh-cn/en
-  placeholder: 建议在上方留下昵称和邮箱等信息，以便收到回复通知（以下二选一）：                                                                                                       1、仅在昵称中留下QQ号（系统自动获取QQ昵称、QQ邮箱、QQ头像等信息）                                                                                                     2、自定义填写昵称、邮箱、网址信息（系统自动匹配头像）
+  placeholder: 建议在上方留下昵称和邮箱等信息，以便收到回复通知（以下二选一）：\n1、仅在昵称中留下QQ号（系统自动获取QQ昵称、QQ邮箱、QQ头像等信息）\n2、自定义填写昵称、邮箱、网址信息（系统自动匹配头像）
   guest_info: 昵称,邮箱,主页 #valine comment header info
   recordIP: true # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
@@ -766,7 +767,7 @@ inject:
   bottom:
     # - <script src="xxxx"></script>
        # - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/beautify.js"></script>	#自定义js
-       - <script src="https://cdn.jsdelivr.net/gh/lete114/CDN/js/upjiang.js"></script>	#UP
+       # - <script src="https://cdn.jsdelivr.net/gh/lete114/CDN/js/upjiang.js"></script>	#UP
        - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/hideMobileSidebar.js"></script>	#手机侧边栏默认不展开
        - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/title.js"></script>		#搞怪标题
 
