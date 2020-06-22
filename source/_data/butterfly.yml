@@ -102,8 +102,10 @@ avatar:
 index_img:
 
 # if the banner of page not setting,it will show the top_img
-default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619101920.jpg
-# default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200620194436.jpg
+# default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200622075322.jpg  #桌子
+default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200622075321.jpg  #灯
+# default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619101920.jpg  #地球
+# default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200620194436.jpg  #蜘蛛侠
 
 # the banner image of archive page
 archive_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619102141.jpg
