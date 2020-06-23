@@ -161,3 +161,66 @@ type: "music"
 
 ```
 
+### 文章统计图表
+
+#### 详情
+
+[标签页](https://jinan6.vip/tags/)
+
+[分类页](https://jinan6.vip/categories/)
+
+[归档页](https://jinan6.vip/archives/)
+
+安装插件
+
+````code
+npm install hexo-charts -S
+````
+
+#### 归档页面
+
+在`主题目录/Butterfly/layout/archive.pug`文件的`#archive`下面添加一行`#posts-chart`, 新添加的比上一行多缩进两个空格
+
+````code
+block content
+  include ./includes/mixins/article-sort.pug
+  #archive
+    #posts-chart
+````
+
+#### 标签和分类页
+
+编辑`主题目录/Butterfly/layout/page.pug`文件，在`.tag-cloud`下面添加一行`#tags-chart`，在`.category-content`下面添加一行`#categories-chart`，新添加的比上一行多缩进两个空格。
+
+```code
+block content
+  if page.type === 'tags'
+    .tag-cloud
+      #tags-chart
+```
+
+````code
+else if page.type === 'categories'
+  .category-content
+    #categories-chart
+````
+
+此功能参考自[懒人大佬](https://blog.hclonely.com/posts/57bd67ce/#文章统计图表)
+
+### Valine添加标签及图标
+
+参考[懒人大佬](https://blog.hclonely.com/posts/409d3090/)
+
+### 解决Valine自动唤醒失败问题
+
+参考[小康大佬](https://www.antmoe.com/posts/2380732b/index.html)
+
+### 添加说说功能
+
+[文档](https://artitalk.js.org/doc.html#👀-前言)
+
+已经很详细了。
+
+
+
+未完待续。。。

@@ -26,6 +26,16 @@
       avatar: https://cdn.jsdelivr.net/gh/svnyang/CDN/images/SvnYang.jpg
       descr:  笑而不语是一种豁达，痛而不言是一种修养
 
+    - name: Uncle_drew
+      link: https://cndrew.cn
+      avatar: https://cdn.jsdelivr.net/gh/drew233/cdn/dreww.webp
+      descr:  Hand down,man down
+
+    - name: 小康博客
+      link: https://www.antmoe.com/
+      avatar: https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg
+      descr: 一个收藏回忆与分享技术的地方！
+
 - class_name: 网站
   class_desc: 常用网址
   link_list:

@@ -3,6 +3,7 @@ extends includes/layout.pug
 block content
   if page.type === 'tags'
     .tag-cloud
+      #tags-chart
       .tag-cloud__title= _p('page.tag')
         |  - 
         span.tag-cloud__amount= site.tags.length
@@ -14,6 +15,7 @@ block content
     include flink.pug
   else if page.type === 'categories'    
     .category-content
+      #categories-chart
       .category-lists
         .category__title= _p('page.category')
           |  - 
