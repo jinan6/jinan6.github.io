@@ -6,10 +6,13 @@ type: "shuoshuo"
 comments: false
 ---
 
+### 
+
+<div style="text-align:center;font-size:20px">🍉🍉此页面是博主吐槽用的，留言请移步到 👉👉{% btn 'https://jinan6.vip/board/',留言板,far fa-hand-point-right,blue larger %}</div>
+
 <head>
   <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 </head>
-
   <body>
       <script>
         var img = "https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/custom/cungudafa.jpg"; //说说旁边显示的头像

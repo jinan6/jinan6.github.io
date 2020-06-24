@@ -13,6 +13,7 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: inline-block;	/*加入此代码解决图标不转的问题*/
 }
 
 .icon-qq:before {
