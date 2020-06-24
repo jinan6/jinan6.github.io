@@ -123,3 +123,5 @@ bangumi:
   quote: '看点番剧，放松一会吧~'
   show: 1
   loading:
+#Rss插件
+plugins: hexo-generate-feed

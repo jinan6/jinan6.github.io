@@ -16,6 +16,12 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 优化移动端显示
 
+更换社交链接为 Iconfont 图标
+
+问题：图标不转了
+
+添加RSS插件
+
 ### 2020-06-23
 
 添加文章统计图表
