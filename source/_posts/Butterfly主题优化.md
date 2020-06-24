@@ -217,10 +217,10 @@ else if page.type === 'categories'
 
 ### 添加说说功能
 
-[文档](https://artitalk.js.org/doc.html#👀-前言)
+[文档](https://artitalk.js.org/doc.html#👀-前言)已经很详细了。
 
-已经很详细了。
+### 优化移动端显示
 
-
+参考自 [乐特博客](https://blog.lete114.top/article/eef7397d.html)
 
 未完待续。。。

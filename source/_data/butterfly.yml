@@ -765,6 +765,7 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
        - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/custom.min.css">	#自定义css文件
+       # - <link rel="stylesheet" href="/css/icon.css">
   # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
   bottom:
     # - <script src="xxxx"></script>
