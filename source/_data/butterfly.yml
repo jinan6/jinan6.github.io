@@ -47,9 +47,10 @@ social:
   # fab fa-github: https://github.com/ || Github
   # fa fa-envelope: https://mail.qq.com/ || Email
   # fa fa-rss: /atom.xml || RSS
-    iconfont icon-qq: http://sighttp.qq.com/authd?IDKEY=174f27490788d0ea985eff04604012124179c5760cd91d20 || QQ
+    iconfont icon-qq1: http://sighttp.qq.com/authd?IDKEY=174f27490788d0ea985eff04604012124179c5760cd91d20 || QQ
     iconfont icon-github: https://github.com/ || Github
-    iconfont icon-youxiang1: https://mail.qq.com/ || Email
+    iconfont icon-message: https://mail.qq.com/ || Email
+    iconfont icon-csdn: https://blog.csdn.net/weixin_45777544 || CSDN
     iconfont icon-rss: /atom.xml || RSS
 
 # search (搜索)
@@ -770,11 +771,10 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
        - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/custom.min.css">	#自定义css文件
-       - <link rel="stylesheet" href="/css/icon.css">	#阿里图标
+       - <link rel="stylesheet" href="/css/iconfont.css"> #阿里图标
   # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
   bottom:
     # - <script src="xxxx"></script>
-       # - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/beautify.js"></script>	#自定义js
        # - <script src="https://cdn.jsdelivr.net/gh/lete114/CDN/js/upjiang.js"></script>	#UP
        - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/hideMobileSidebar.js"></script>	#手机侧边栏默认不展开
        - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/title.js"></script>		#搞怪标题
