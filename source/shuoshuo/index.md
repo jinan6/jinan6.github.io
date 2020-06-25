@@ -6,8 +6,6 @@ type: "shuoshuo"
 comments: false
 ---
 
-### 
-
 <div style="text-align:center;font-size:20px">🍉🍉此页面是博主吐槽用的，留言请移步到 👉👉{% btn 'https://jinan6.vip/board/',留言板,far fa-hand-point-right,blue larger %}</div>
 
 <head>
@@ -29,3 +27,4 @@ comments: false
       <div id="artitalk"></div>
      <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
   </body>
+
