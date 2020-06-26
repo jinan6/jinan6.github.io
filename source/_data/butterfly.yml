@@ -7,12 +7,13 @@
 #   name || link || icon
 
 menu:
+  主页: https://blog.jinan6.vip/ || fas fa-rocket
   首页: / || fa fa-home
   文章||fa-fw fas fa-book-open:
     - 归档 || /archives/ || fa fa-archive
     - 标签 || /tags/ || fa fa-tags
     - 分类 || /categories/ ||  fa fa-folder-open
-    - 主页 || https://blog.jinan6.vip/ || fa fa-home
+    # - 主页 || https://blog.jinan6.vip/ || fa fa-home
   # 归档: /archives/ || fa fa-archive
   # 标签: /tags/ || fa fa-tags
   # 分类: /categories/ || fa fa-folder-open
