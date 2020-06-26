@@ -12,6 +12,7 @@ menu:
     - 归档 || /archives/ || fa fa-archive
     - 标签 || /tags/ || fa fa-tags
     - 分类 || /categories/ ||  fa fa-folder-open
+    - 主页 || https://blog.jinan6.vip/ || fa fa-home
   # 归档: /archives/ || fa fa-archive
   # 标签: /tags/ || fa fa-tags
   # 分类: /categories/ || fa fa-folder-open

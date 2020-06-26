@@ -12,6 +12,10 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ## 更新记录
 
+### 2020-06-26
+
+添加主页
+
 ### 2020-06-24
 
 优化移动端显示
