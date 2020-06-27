@@ -23,8 +23,7 @@ comments: false
         var lazy = 1; //是否开启懒加载动画
         var bgimg = "https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200620143712.gif"; //背景动画
       </script>
-      <div id="lazy"></div>
-      <div id="artitalk"></div>
+       <div id="artitalk_main"></div>
      <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
   </body>
 
