@@ -784,7 +784,8 @@ inject:
   # - <link rel="stylesheet" href="/xxx.css">
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/custom.min.css">	#自定义css文件
    - <link rel="stylesheet" href="/css/iconfont.css"> #阿里图标
-  # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
+   - <link rel="stylesheet" href="https://unpkg.com/xiaokang-style/butterfly/css/tags.css"> #小康的css
+   - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/flink.min.css"> #小康的友链样式
   bottom:
     # - <script src="xxxx"></script>
        # - <script src="https://cdn.jsdelivr.net/gh/lete114/CDN/js/upjiang.js"></script>	#UP

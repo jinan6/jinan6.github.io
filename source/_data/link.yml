@@ -1,10 +1,34 @@
 - class_name: 友情链接
   class_desc: 那些人，那些事
   link_list:
+    - name: JerryC
+      link: https://jerryc.me/
+      avatar: https://jerryc.me/image/avatar.png
+      descr:  今日事,今日畢
+
     - name: csde
       link: https://www.csde.vip/
       avatar: https://www.csde.vip/img/avatar.png
       descr: 博客
+      width: 1px
+      style: solid
+      # color: "linear-gradient(45deg,blue,red)"
+      color: "#00D1BF"
+      custom: link_custom1
+      time: 4s
+      rotate: 360deg
+
+    - name: Sakura` Blogs
+      link: https://jinan6.vip
+      avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
+      descr:  测试样式
+      width: 1px
+      style: solid
+      # color: "#f9bc17"
+      color: "#2177C7"
+      custom: link_custom
+      time: 4s
+      rotate: 360deg
   
     - name: 潘高的小站
       link: https://blog.pangao.vip/
@@ -35,6 +59,8 @@
       link: https://www.antmoe.com/
       avatar: https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg
       descr: 一个收藏回忆与分享技术的地方！
+      width: 1px
+      color: "#881B12"
 
 - class_name: 网站
   class_desc: 常用网址
@@ -68,3 +94,35 @@
       link: https://next.itellyou.cn/
       avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200622102946.png
       descr: windows原版镜像
+
+
+
+
+
+
+
+
+ # 边框大小 默认为0 
+    # width: 0px
+    # # 边框样式 默认 solid
+    # style: solid
+    # # 边框颜色 默认淡蓝色 #49b1f5
+    # color: "#0078e7"
+    # # 自动旋转 可选值 flash（闪现） link_custom（单色呼吸灯） link_custom1（彩色呼吸灯）
+    # custom: link_custom1
+    # # 动画时长设定，默认为0
+    # time: 4s
+    # # name的颜色
+    # namecolor: "#ff9191"
+    # # descr的颜色
+    # descolor: "#ff9191"
+    # # 背景颜色
+    # background: 0
+    # # 鼠标悬停旋转角度
+    # rotate: 360deg
+    # # 自动旋转 latuo左旋转 rauto右旋转
+    # autorotate: "lauto"
+    # # 旋转的周期（时长）
+    # autotime: 2s
+    # #移除此链接的权重 0为否 非0为移除
+    # remove: 0

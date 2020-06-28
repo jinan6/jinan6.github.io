@@ -223,4 +223,152 @@ else if page.type === 'categories'
 
 参考自 [乐特博客](https://blog.lete114.top/article/eef7397d.html)
 
-未完待续。。。
+## 标签
+
+标签内容全部来自 [小康博客](https://www.antmoe.com/posts/a811d614/index.html)
+
+### 自定义小标签
+
+<div class="snote red"><p>默认red</p></div>
+<div class="snote quote"><p>quote</p></div>
+<div class="snote info"><p>info</p></div>
+<div class="snote done"><p>done</p></div>
+<div class="snote success"><p>success</p></div>
+<div class="snote danger"><p>danger</p></div>
+<div class="snote error"><p>error</p></div>
+<div class="snote radiation"><p>radiation</p></div>
+<div class="snote bug"><p>bug</p></div>
+<div class="snote idea yellow"><p>idea-yellow</p></div>
+<div class="snote link blue"><p>link- blue</p></div>
+<div class="snote paperclip"><p>paperclip</p></div>
+<div class="snote todo"><p>todo</p></div>
+<div class="snote msg cyan"><p>msg cyan</p></div>
+<div class="snote guide"><p>guide</p></div>
+<div class="snote download"><p>download</p></div>
+<div class="snote up"><p>up</p></div>
+<div class="snote undo"><p>undo</p></div>
+<div class="snote quote"><p class='p subtitle'>小标题</p></div>
+
+### 渐变背景标签
+
+<div class='tip'><p>默认情况<p></div>
+<div class='tip info'><p>info<p></div>
+<div class='tip success'><p>success<p></div>
+<div class='tip error'><p>error<p></div>
+<div class='tip warning'><p>warning<p></div>
+<div class='tip font5 fas fa-atom'><p>自定义font5图标<p></div>
+<div class='tip custom icon-QQ2'><p>自定义iconfont图标<p></div>
+<div class="tip wtgo font5 fas fa-bolt"><p>文字</p><p></p></div>
+<div class="tip ban font5 fas fa-ban"><p>文字</p><p></p></div>
+<div class="tip home font5 fas fa-home"><p>文字</p><p></p></div>
+<div class="tip important font5 fas fa-home"><p>魔改标签4</p><p></p></div>
+<div class="tip ref font5 fas fa-sync"><p>魔改标签5</p><p></p></div>
+<div class="tip ffa font5 fas fa-cogs"><p>魔改标签6</p><p></p></div>
+<div class="tip key font5 fas fa-key"><p>魔改标签7</p><p></p></div>
+<div class="tip socd font5 fas fa-bell"><p>魔改标签8</p><p></p></div>
+<div class="tip qq font5 fab fa-qq"><p>魔改标签9</p><p></p></div>
+
+### tag标签格式
+
+<div class="checkbox">
+  <input type="checkbox" />
+  <p>纯文本测试</p>
+</div>
+
+<div class="checkbox checked">
+  <input type="checkbox" checked />
+  <p>
+    支持简单的
+    <a
+      href="https://guides.github.com/features/mastering-markdown/"
+      target="_blank"
+      rel="noopener"
+      >markdown</a
+    >
+    语法
+  </p>
+</div>
+
+<div class="checkbox red">
+  <input type="checkbox" />
+  <p>支持自定义颜色</p>
+</div>
+
+<div class="checkbox green checked">
+  <input type="checkbox" checked />
+  <p>绿色 + 默认选中</p>
+</div>
+
+<div class="checkbox yellow checked">
+  <input type="checkbox" checked />
+  <p>黄色 + 默认选中</p>
+</div>
+
+<div class="checkbox cyan checked">
+  <input type="checkbox" checked />
+  <p>青色 + 默认选中</p>
+</div>
+
+<div class="checkbox blue checked">
+  <input type="checkbox" checked />
+  <p>蓝色 + 默认选中</p>
+</div>
+
+<div class="checkbox plus green checked">
+  <input type="checkbox" checked />
+  <p>增加</p>
+</div>
+
+<div class="checkbox minus yellow checked">
+  <input type="checkbox" checked />
+  <p>减少</p>
+</div>
+
+<div class="checkbox times red checked">
+  <input type="checkbox" checked />
+  <p>叉</p>
+</div>
+
+<div class="checkbox">
+  <input type="radio" />
+  <p>纯文本测试</p>
+</div>
+
+<div class="checkbox checked">
+  <input type="radio" checked />
+  <p>
+    支持简单的
+    <a
+      href="https://guides.github.com/features/mastering-markdown/"
+      target="_blank"
+      rel="noopener"
+      >markdown</a
+    >
+    语法
+  </p>
+</div>
+
+<div class="checkbox red">
+  <input type="radio" />
+  <p>支持自定义颜色</p>
+</div>
+
+<div class="checkbox green">
+  <input type="radio" />
+  <p>绿色</p>
+</div>
+
+<div class="checkbox yellow">
+  <input type="radio" />
+  <p>黄色</p>
+</div>
+
+<div class="checkbox cyan">
+  <input type="radio" />
+  <p>青色</p>
+</div>
+
+<div class="checkbox blue">
+  <input type="radio" />
+  <p>蓝色</p>
+</div>
