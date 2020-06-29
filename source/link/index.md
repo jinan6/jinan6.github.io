@@ -1,5 +1,5 @@
 ---
-title: 邻居们
+title: 友情链接
 date: 2020-05-29 13:51:08
 type: "link"
 top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619103803.jpg
@@ -16,7 +16,8 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619103803.jpg
 先将本站的友链添加到您的友链，相关信息如下
 然后按照以下格式在本站留言区留言，待博主为您添上友链
 
->名称：Sakura` Blogs
->头像链接：https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
->主页链接：https://jinan6.vip
->说明信息：一只菜鸟
+<div class='tip info faa-horizontal animated'>    <p>名称：Sakura` Blogs<p>
+    <p>头像链接：https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png</p>
+    <p>主页链接：https://jinan6.vip</p>
+    <p>说明信息：一只菜鸟</p>
+</div>

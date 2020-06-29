@@ -10,7 +10,7 @@ cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619150902.jpg
 
 #### 前言
 
-> 突发奇想，想自己搞一个博客于是就有了后来的事。记录下这个过程，积累一些经验，同时也方便以后自己看看
+<div class='tip info faa-horizontal animated'><p>突发奇想，想自己搞一个博客于是就有了后来的事。记录下这个过程，积累一些经验，同时也方便以后自己看看<p></div>
 
 #### 本文目录
 

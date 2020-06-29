@@ -143,7 +143,9 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (当沒有设置cover時，默认的封面显示)
   default_cover:
-    - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    - https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619150139.jpg
+
 
 # Replace Broken Images (替换无法显示的图片)
 error_img:
@@ -266,7 +268,7 @@ comments:
   # Disqus/Disqusjs/Livere/Gitalk/Valine/Utterances/Facebook Comments
   use:
    - Valine
-   - Disqusjs
+  #  - Disqusjs
   text: true # Display the comment name next to the button
   load_begin: false # The second comment system will auto load when visiting the website
   count: false # Dispaly comment count in top_img
@@ -396,7 +398,8 @@ gitter:
 
 since: 2020
 
-footer_custom_text: CDN BY <a target="_blank" rel="external nofollow" href="https://www.jsdelivr.com/"><b>jsDelivr</b></a> | HOST BY  <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a><a href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referra"><br><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200612150153.png"align="absmiddle" width="59px" height="30px" />&nbsp;</a><span>提供加速服务</span>
+footer_custom_text: CDN BY <a target="_blank" rel="external nofollow" href="https://www.jsdelivr.com/"><b>jsDelivr</b></a> | HOST BY  <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a>
+# <a href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referra"><br><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200612150153.png"align="absmiddle" width="59px" height="30px" />&nbsp;</a><span>提供加速服务</span>
 
 footer_copyright: true
 
