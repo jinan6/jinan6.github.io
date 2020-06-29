@@ -8,7 +8,7 @@
 
 menu:
   主页: https://blog.jinan6.vip/ || fas fa-rocket
-  首页: / || fa fa-home
+  首页: / || fa fa-home faa-bounce animated
   文章||fa-fw fas fa-book-open:
     - 归档 || /archives/ || fa fa-archive
     - 标签 || /tags/ || fa fa-tags
@@ -784,8 +784,8 @@ inject:
   # - <link rel="stylesheet" href="/xxx.css">
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/custom.min.css">	#自定义css文件
    - <link rel="stylesheet" href="/css/iconfont.css"> #阿里图标
+   - <link rel="stylesheet" href="/css/font-awesome-animation.css"> #动画
    - <link rel="stylesheet" href="https://unpkg.com/xiaokang-style/butterfly/css/tags.css"> #小康的css
-  #  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/plugins.min.css"> #小康的css
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/flink.min.css"> #小康的友链样式
   bottom:
     # - <script src="xxxx"></script>

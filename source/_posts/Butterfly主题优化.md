@@ -276,6 +276,29 @@ else if page.type === 'categories'
 <div class="tip socd font5 fas fa-bell"><p>魔改标签8</p><p></p></div>
 <div class="tip qq font5 fab fa-qq"><p>魔改标签9</p><p></p></div>
 
+#### 添加动画效果
+
+<div class='tip faa-horizontal animated'><p>默认情况<p></div>
+<div class='tip info faa-flash animated'><p>info<p></div>
+<div class='tip success faa-spin animated'><p>success<p></div>
+<div class='tip error faa-shake animated'><p>error<p></div>
+
+```html
+<div class='tip faa-horizontal animated'><p>默认情况<p></div>
+<div class='tip info faa-flash animated'><p>info<p></div>
+<div class='tip success faa-spin animated'><p>success<p></div>
+<div class='tip error faa-shake animated'><p>error<p></div>
+```
+
+#### 参数说明
+
+| 参数                      | 说明                                 |
+| ------------------------- | ------------------------------------ |
+| faa-wrench animated       | faa-wrench表示抖动，animated表示自动 |
+| faa-wrench animated-hover | animated-hover表示hover点击动画      |
+| faa-fast                  | 快速                                 |
+| faa-slow                  | 慢速                                 |
+
 ### tag标签格式
 
 {% checkbox 纯文本测试 %}
