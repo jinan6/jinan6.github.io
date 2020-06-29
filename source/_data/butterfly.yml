@@ -560,8 +560,8 @@ display_mode: light
 beautify:
   enable: true
   field: post # site/post
-  title-prefix-icon: '\f0c1'
-  title-prefix-icon-color: '#F47466'
+  title-prefix-icon: '\f0e7'
+  title-prefix-icon-color: '#49b1f5'
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
@@ -783,13 +783,13 @@ inject:
   head:
   # - <link rel="stylesheet" href="/xxx.css">
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/custom.min.css">	#自定义css文件
-   - <link rel="stylesheet" href="/css/iconfont.css"> #阿里图标
-   - <link rel="stylesheet" href="/css/font-awesome-animation.css"> #动画
+   - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/iconfont.css"> #阿里图标
+   - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/font-awesome-animation.css"> #动画
    - <link rel="stylesheet" href="https://unpkg.com/xiaokang-style/butterfly/css/tags.css"> #小康的css
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/flink.min.css"> #小康的友链样式
   bottom:
     # - <script src="xxxx"></script>
-       # - <script src="https://cdn.jsdelivr.net/gh/lete114/CDN/js/upjiang.js"></script>	#UP
+       # - <script src="https://cdn.jsdelivr.net/gh/lete114/CDN/js/upjiang.js"></script> UP
        - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/hideMobileSidebar.js"></script>	#手机侧边栏默认不展开
        - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/title.js"></script>		#搞怪标题
 
