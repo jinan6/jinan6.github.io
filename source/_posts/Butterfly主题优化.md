@@ -249,6 +249,15 @@ else if page.type === 'categories'
 <div class="snote undo"><p>undo</p></div>
 <div class="snote quote"><p class='p subtitle'>小标题</p></div>
 
+### 小标签
+
+<span class="inline-tag [red|green|blue|yellow|grey]">语法</span>
+<span class="inline-tag red">红色小标签</span>
+<span class="inline-tag green">绿色小标签</span>
+<span class="inline-tag blue">蓝色小标签</span>
+<span class="inline-tag yellow">黄色小标签</span>
+<span class="inline-tag grey">灰色小标签</span>
+
 ### 渐变背景标签
 
 <div class='tip'><p>默认情况<p></div>
@@ -257,7 +266,6 @@ else if page.type === 'categories'
 <div class='tip error'><p>error<p></div>
 <div class='tip warning'><p>warning<p></div>
 <div class='tip font5 fas fa-atom'><p>自定义font5图标<p></div>
-<div class='tip custom icon-QQ2'><p>自定义iconfont图标<p></div>
 <div class="tip wtgo font5 fas fa-bolt"><p>文字</p><p></p></div>
 <div class="tip ban font5 fas fa-ban"><p>文字</p><p></p></div>
 <div class="tip home font5 fas fa-home"><p>文字</p><p></p></div>
@@ -270,105 +278,88 @@ else if page.type === 'categories'
 
 ### tag标签格式
 
-<div class="checkbox">
-  <input type="checkbox" />
-  <p>纯文本测试</p>
-</div>
+{% checkbox 纯文本测试 %}
+{% checkbox checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+{% checkbox red, 支持自定义颜色 %}
+{% checkbox green checked, 绿色 + 默认选中 %}
+{% checkbox yellow checked, 黄色 + 默认选中 %}
+{% checkbox cyan checked, 青色 + 默认选中 %}
+{% checkbox blue checked, 蓝色 + 默认选中 %}
+{% checkbox plus green checked, 增加 %}
+{% checkbox minus yellow checked, 减少 %}
+{% checkbox times red checked, 叉 %}
+{% radio 纯文本测试 %}
+{% radio checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+{% radio red, 支持自定义颜色 %}
+{% radio green, 绿色 %}
+{% radio yellow, 黄色 %}
+{% radio cyan, 青色 %}
+{% radio blue, 蓝色 %}
 
-<div class="checkbox checked">
-  <input type="checkbox" checked />
-  <p>
-    支持简单的
-    <a
-      href="https://guides.github.com/features/mastering-markdown/"
-      target="_blank"
-      rel="noopener"
-      >markdown</a
-    >
-    语法
-  </p>
-</div>
+### Folding
 
-<div class="checkbox red">
-  <input type="checkbox" />
-  <p>支持自定义颜色</p>
-</div>
+{% folding 查看图片测试 %}
 
-<div class="checkbox green checked">
-  <input type="checkbox" checked />
-  <p>绿色 + 默认选中</p>
-</div>
+![](https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200620194436.jpg)
 
-<div class="checkbox yellow checked">
-  <input type="checkbox" checked />
-  <p>黄色 + 默认选中</p>
-</div>
+{% endfolding %}
 
-<div class="checkbox cyan checked">
-  <input type="checkbox" checked />
-  <p>青色 + 默认选中</p>
-</div>
+{% folding cyan open, 查看默认打开的折叠框 %}
 
-<div class="checkbox blue checked">
-  <input type="checkbox" checked />
-  <p>蓝色 + 默认选中</p>
-</div>
+这是一个默认打开的折叠框。
 
-<div class="checkbox plus green checked">
-  <input type="checkbox" checked />
-  <p>增加</p>
-</div>
+{% endfolding %}
 
-<div class="checkbox minus yellow checked">
-  <input type="checkbox" checked />
-  <p>减少</p>
-</div>
+{% folding green, 查看代码测试 %}
 
-<div class="checkbox times red checked">
-  <input type="checkbox" checked />
-  <p>叉</p>
-</div>
+{% endfolding %}
 
-<div class="checkbox">
-  <input type="radio" />
-  <p>纯文本测试</p>
-</div>
+{% folding yellow, 查看列表测试 %}
 
-<div class="checkbox checked">
-  <input type="radio" checked />
-  <p>
-    支持简单的
-    <a
-      href="https://guides.github.com/features/mastering-markdown/"
-      target="_blank"
-      rel="noopener"
-      >markdown</a
-    >
-    语法
-  </p>
-</div>
+- haha
+- hehe
 
-<div class="checkbox red">
-  <input type="radio" />
-  <p>支持自定义颜色</p>
-</div>
+{% endfolding %}
 
-<div class="checkbox green">
-  <input type="radio" />
-  <p>绿色</p>
-</div>
+{% folding red, 查看嵌套测试 %}
 
-<div class="checkbox yellow">
-  <input type="radio" />
-  <p>黄色</p>
-</div>
+{% folding blue, 查看嵌套测试2 %}
 
-<div class="checkbox cyan">
-  <input type="radio" />
-  <p>青色</p>
-</div>
+{% folding 查看嵌套测试3 %}
 
-<div class="checkbox blue">
-  <input type="radio" />
-  <p>蓝色</p>
-</div>
+hahaha <span><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/tieba/%E6%BB%91%E7%A8%BD.png' style='height:24px'></span>
+
+{% endfolding %}
+
+{% endfolding %}
+
+{% endfolding %}
+
+### Fancybox
+
+一行一个图片
+
+{% fancybox %}
+![图片描述](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)
+{% endfancybox %}
+
+一行多个图片（不换行）
+
+{% fancybox %}
+![图片描述](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
+![图片描述](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
+![图片描述](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg)
+{% endfancybox %}
+
+多行多个图片
+
+{% fancybox stretch, 4 %}
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg)
+{% endfancybox %}
