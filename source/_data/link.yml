@@ -71,6 +71,8 @@
       link: https://xiabor.com
       avatar: https://xiabor.com/img/avatar.png
       descr: 君浅吟，叹落笔
+      width: 1px
+      color: "#1AA034"
 
 - class_name: 网站
   class_desc: 常用网址

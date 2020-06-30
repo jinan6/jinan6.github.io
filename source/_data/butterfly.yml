@@ -13,10 +13,6 @@ menu:
     - 归档 || /archives/ || fa fa-archive
     - 标签 || /tags/ || fa fa-tags
     - 分类 || /categories/ ||  fa fa-folder-open
-    # - 主页 || https://blog.jinan6.vip/ || fa fa-home
-  # 归档: /archives/ || fa fa-archive
-  # 标签: /tags/ || fa fa-tags
-  # 分类: /categories/ || fa fa-folder-open
   微语: /shuoshuo/ || far fa-comments
   友链: /link/ || fa fa-link
   留言板: /board/ || fas fa-coffee
@@ -25,7 +21,7 @@ menu:
     - 音乐 || /music/ || fa fa-music
     - 番剧 || /bangumis/ || fa fa-film
     - 樱花 || https://jinan6.vip/home2/ || fas fa-feather-alt
-    - 小圆点 || https://jinan6.vip/xiaoyuandian/ || fas fa-adjust
+    - 小圆点 || https://jinan6.vip/dot/ || fas fa-adjust
     - 液体 || https://jinan6.vip/Fluid/ || fas fa-bacon
 
 # Code Blocks (代码相关)
