@@ -62,6 +62,13 @@
       width: 1px
       color: "#881B12"
 
+    - name: 鱼跃此时海
+      link: https://www.overme.cn/
+      avatar: https://www.overme.cn/static/img/portrait.jpg
+      descr: 鱼跃此时海，花开彼岸天
+      # width: 1px
+      # color: "#881B12"
+
 - class_name: 网站
   class_desc: 常用网址
   link_list:

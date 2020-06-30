@@ -146,7 +146,6 @@ cover:
     # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
     - https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619150139.jpg
 
-
 # Replace Broken Images (替换无法显示的图片)
 error_img:
   flink: /img/friend_404.gif
