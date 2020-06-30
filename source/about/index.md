@@ -15,6 +15,8 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 {% radio yellow checked, 添加樱花、小圆点和液体页面 %}
 
+{% radio yellow checked, 添加表情若干~~ %}
+
 ### 2020-06-28
 
 {% checkbox green checked, 修改友链样式 %}
