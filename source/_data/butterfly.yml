@@ -24,6 +24,8 @@ menu:
   娱乐||fa fa-list:
     - 音乐 || /music/ || fa fa-music
     - 番剧 || /bangumis/ || fa fa-film
+    - 樱花 || https://jinan6.vip/home2/ || fas fa-feather-alt
+    - 小圆点 || https://jinan6.vip/xiaoyuandian/ || fas fa-adjust
 
 # Code Blocks (代码相关)
 # --------------------------------------

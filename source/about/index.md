@@ -11,6 +11,10 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ## 更新记录
 
+### 2020-06-30
+
+{% radio yellow checked, 添加樱花和小圆点页面 %}
+
 ### 2020-06-28
 
 {% checkbox green checked, 修改友链样式 %}
@@ -68,7 +72,5 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 {% checkbox green checked, 添加说说页面 %}
 
 ### 2020-06-16
-
-{% checkbox plus green checked,  %}
 
 {% radio yellow checked, 更换评论为 Leancloud 国际版 %}
