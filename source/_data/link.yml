@@ -66,8 +66,11 @@
       link: https://www.overme.cn/
       avatar: https://www.overme.cn/static/img/portrait.jpg
       descr: 鱼跃此时海，花开彼岸天
-      # width: 1px
-      # color: "#881B12"
+
+    - name: 雪曦
+      link: https://xiabor.com
+      avatar: https://xiabor.com/img/avatar.png
+      descr: 君浅吟，叹落笔
 
 - class_name: 网站
   class_desc: 常用网址

@@ -13,7 +13,7 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ### 2020-06-30
 
-{% radio yellow checked, 添加樱花和小圆点页面 %}
+{% radio yellow checked, 添加樱花、小圆点和液体页面 %}
 
 ### 2020-06-28
 
