@@ -6,7 +6,7 @@ type: "shuoshuo"
 comments: false
 ---
 
-<div style="text-align:center;font-size:20px">🍉🍉此页面是博主吐槽用的，留言请移步到 👉👉{% btn 'https://jinan6.vip/board/',留言板,far fa-hand-point-right,blue larger %}</div>
+<div class='tip info faa-horizontal animated' style="text-align:center;"><p>此页面是博主吐槽用的，留言请移步到👉👉{% btn 'https://jinan6.vip/board/',留言板,far fa-hand-point-right,blue larger %}<p></div>
 
 <head>
   <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
@@ -24,6 +24,33 @@ comments: false
         var bgimg = "https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200620143712.gif"; //背景动画
       </script>
        <div id="artitalk_main"></div>
-     <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+     <script type="text/javascript" src="https://unpkg.com/artitalk"></script>			<!-- 自定义样式 -->
+              <style>
+                .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel {
+                  background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover, url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px;
+                  color: white;
+                }
+                .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel:after {
+                  border-right-color:  rgba(255, 165, 150, 0.5);
+                }
+                .cbp_tmtimeline>li .cbp_tmlabel {
+                  background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover, url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px;
+                  color: white;
+                }
+                .cbp_tmtimeline>li .cbp_tmlabel:after {
+                  border-right-color:  rgba(0, 228, 255, 0.35);
+                }
+                .button {
+                  background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover, url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px;
+                  color: white;
+                }
+    
+              </style>
+              <!-- 自定义样式.end -->
+
+
+
+
+
   </body>
 

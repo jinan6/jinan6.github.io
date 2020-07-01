@@ -250,8 +250,6 @@ else if page.type === 'categories'
 <div class="snote quote"><p class='p subtitle'>小标题</p></div>
 
 ### 小标签
-
-<span class="inline-tag [red|green|blue|yellow|grey]">语法</span>
 <span class="inline-tag red">红色小标签</span>
 <span class="inline-tag green">绿色小标签</span>
 <span class="inline-tag blue">蓝色小标签</span>

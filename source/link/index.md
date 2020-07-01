@@ -19,5 +19,5 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619103803.jpg
 <div class='tip info faa-horizontal animated'>    <p>名称：Sakura` Blogs<p>
     <p>头像链接：https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png</p>
     <p>主页链接：https://jinan6.vip</p>
-    <p>说明信息：一只菜鸟</p>
+    <p>说明信息：或苦或甜都不要辜负</p>
 </div>
