@@ -22,7 +22,18 @@ comments: false
         var placeholder2="没有密码，不能评论！";  //在编辑密码的输入框中的占位符
         var lazy = 1; //是否开启懒加载动画
         var bgimg = "https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200620143712.gif"; //背景动画
+         var atemoji_array={
+转圈:"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/31.webp",
+给我也整一个:"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/22.webp",
+彩色滑稽:"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/19.webp",
+怀疑:"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/17.webp",
+仙女下凡:"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/12.webp",
+拽走小被子:"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/2.webp",
+躲进小被子:"https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/1.webp"
+      }
       </script>
+
+​      </script>
        <div id="artitalk_main"></div>
      <script type="text/javascript" src="https://unpkg.com/artitalk"></script>			<!-- 自定义样式 -->
               <style>
@@ -44,7 +55,9 @@ comments: false
                   background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover, url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px;
                   color: white;
                 }
-    
+
+​    
+
               </style>
               <!-- 自定义样式.end -->
 

@@ -11,6 +11,12 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ## 更新记录
 
+### 2020-07-05
+
+{% radio blue checked, 添加小恐龙页面%}
+
+{% radio blue checked, 说说界面添加自定义表情%}
+
 ### 2020-06-30
 
 {% radio yellow checked, 添加樱花、小圆点和液体页面 %}
