@@ -121,7 +121,7 @@ if (autoChangeMode === '1') {
 <li>流畅页面的访问速度</li>
 <li>良好的网站功能体验</li>
 </ul>
-<h2 id="了解数据库优化的几个方式"><a href="#了解数据库优化的几个方式" class="headerlink" title="了解数据库优化的几个方式"></a>了解数据库优化的几个方式</h2><h3 id="优化方式"><a href="#优化方式" class="headerlink" title="优化方式"></a>优化方式</h3><h4 id="可以从几个方面进行数据库优化"><a href="#可以从几个方面进行数据库优化" class="headerlink" title="可以从几个方面进行数据库优化"></a>可以从几个方面进行数据库优化</h4><p><img src= "/img/loading.gif" data-src="/posts/3155752545/image-20200604155255484.png" alt="优化方式"></p>
+<h2 id="了解数据库优化的几个方式"><a href="#了解数据库优化的几个方式" class="headerlink" title="了解数据库优化的几个方式"></a>了解数据库优化的几个方式</h2><h3 id="优化方式"><a href="#优化方式" class="headerlink" title="优化方式"></a>优化方式</h3><h4 id="可以从几个方面进行数据库优化"><a href="#可以从几个方面进行数据库优化" class="headerlink" title="可以从几个方面进行数据库优化"></a>可以从几个方面进行数据库优化</h4><p><img src= "https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/19.webp" data-src="/posts/3155752545/image-20200604155255484.png" alt="优化方式"></p>
 <h4 id="如何查看SQL的查询效率"><a href="#如何查看SQL的查询效率" class="headerlink" title="如何查看SQL的查询效率"></a>如何查看SQL的查询效率</h4><p>在日常工作中，我们有时会开慢查询去记录一些执行时间比较久的SQL语句，找出这些SQL语句并不意味着完事了，此时我们常常用到<span style="color:red"><strong>explain</strong></span>这个命令来查看这个SQL语句的执行计划，查看该SQL语句有没有使用上了索引，有没有做全表扫描，这些都可以通过<strong>explain</strong>命令来查看。所以我们深入了解MySQL的基于开销的优化器，还可以获得很多可能被优化器考虑到的访问策略的细节，以及当运行SQL语句时哪种策略预计会被优化器采用</p>
 <ul>
 <li>–实际SQL，查找用户名为Jefabc的员工</li>
