@@ -74,6 +74,20 @@
       width: 1px
       color: "#1AA034"
 
+    - name: Flexiston
+      link: https://www.flexiston.com
+      avatar: https://cdn.jsdelivr.net/gh/Flexiston/CDN/img/avatar.png
+      descr: 立即行动吧，未来要自己争取
+      width: 1px
+      color: "#ea736a"
+
+    - name: Colsrch
+      link: https://colsrch.top
+      avatar: https://cdn.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg
+      descr: 愿多年以后，我可以酌一杯清酒，烂醉如泥，梦中回到我们的曾经。
+      width: 1px
+      color: "#d7d1d5"
+
 - class_name: 网站
   class_desc: 常用网址
   link_list:
@@ -106,8 +120,6 @@
       link: https://next.itellyou.cn/
       avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200622102946.png
       descr: windows原版镜像
-
-
 
 
 

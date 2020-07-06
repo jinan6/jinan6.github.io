@@ -754,7 +754,9 @@ pangu:
 # https://github.com/verlok/lazyload
 lazyload:
   enable: true
-  post: /img/loading.gif
+  # post: /img/loading.gif
+  post: https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/19.webp  #滑稽图片
+
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
