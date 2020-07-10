@@ -88,6 +88,11 @@
       width: 1px
       color: "#d7d1d5"
 
+    - name: Seeker
+      link: https://snow.js.org/
+      avatar: https://cdn.jsdelivr.net/gh/srkeo/img/share.jpg
+      descr: 木有灵兮
+
 - class_name: 网站
   class_desc: 常用网址
   link_list:
