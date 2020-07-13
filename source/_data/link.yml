@@ -93,6 +93,18 @@
       avatar: https://cdn.jsdelivr.net/gh/srkeo/img/share.jpg
       descr: 木有灵兮
 
+    - name: 初辰の博客
+      link: https://chuchendjs.github.io
+      avatar: https://cdn.jsdelivr.net/gh/chuchendjs/picgo/picgo/bt-sonny.jpg
+      descr:  边框带呼吸灯效果
+      width: 2px
+      style: solid
+      color: "#77d3dc"
+      rotate: 360deg
+      time: 2s
+      custom: flash
+      autorotate: "rauto"
+
 - class_name: 网站
   class_desc: 常用网址
   link_list:

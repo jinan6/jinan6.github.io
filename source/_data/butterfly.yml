@@ -397,7 +397,7 @@ gitter:
 
 since: 2020
 
-footer_custom_text: CDN BY <a target="_blank" rel="external nofollow" href="https://www.jsdelivr.com/"><b>jsDelivr</b></a> | HOST BY  <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a>
+footer_custom_text: CDN BY <a target="_blank" rel="external nofollow" href="https://www.jsdelivr.com/"><b>jsDelivr</b></a> | HOST BY  <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a><br><b>世间所有的相遇，都是久别重逢</b>
 # <a href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referra"><br><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200612150153.png"align="absmiddle" width="59px" height="30px" />&nbsp;</a><span>提供加速服务</span>
 
 footer_copyright: true

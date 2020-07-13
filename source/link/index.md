@@ -16,8 +16,33 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619103803.jpg
 先将本站的友链添加到您的友链，相关信息如下
 然后按照以下格式在本站留言区留言，待博主为您添上友链
 
+```yaml
+    - name: Sakura` Blogs
+      link: https://jinan6.vip
+      avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
+      descr:  或苦或甜都不要辜负
+      #以下内容如果存在
+      width: 1px
+      style: solid
+      color: "#2177C7"
+      custom: link_custom
+      time: 4s
+      rotate: 360deg
+```
+
+<!--
+
 <div class='tip info faa-horizontal animated'>    <p>名称：Sakura` Blogs<p>
     <p>头像链接：https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png</p>
     <p>主页链接：https://jinan6.vip</p>
     <p>说明信息：或苦或甜都不要辜负</p>
+    <p>#以下内容如果存在的情况下</p>
+    <p>width: 1px</p>
+    <p>style: solid</p>
+    <p>color: "#2177C7"</p>
+    <p>custom: link_custom</p>
+    <p>time: 4s</p>
+    <p>rotate: 360deg</p>
 </div>
+
+-->
