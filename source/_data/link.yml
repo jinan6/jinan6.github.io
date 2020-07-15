@@ -105,6 +105,11 @@
       custom: flash
       autorotate: "rauto"
 
+    - name: 久别人潮
+      link: https://www.jiubrc.com
+      avatar: https://www.jiubrc.com/tx.jpg
+      descr: — 祝福我未曾谋面的TA
+
 - class_name: 网站
   class_desc: 常用网址
   link_list:
