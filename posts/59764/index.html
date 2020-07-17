@@ -17,7 +17,7 @@ var getCookies = function (name) {
   if (parts.length === 2) return parts.pop().split(';').shift()
 }
 
-var autoChangeMode = '2'
+var autoChangeMode = 'false'
 var t = getCookies('theme')
 if (autoChangeMode === '1') {
   var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
