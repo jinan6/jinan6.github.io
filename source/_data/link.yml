@@ -12,7 +12,6 @@
       descr: 舍友
       width: 1px
       style: solid
-      # color: "linear-gradient(45deg,blue,red)"
       color: "#00D1BF"
       custom: link_custom1
       time: 4s
@@ -24,7 +23,6 @@
       descr:  测试样式
       width: 1px
       style: solid
-      # color: "#f9bc17"
       color: "#2177C7"
       custom: link_custom
       time: 4s
@@ -55,12 +53,17 @@
       avatar: https://cdn.jsdelivr.net/gh/drew233/cdn/dreww.webp
       descr:  Hand down,man down
 
+    - name: cungudafa
+      link: https://cungudafa.top
+      avatar: https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/custom/cungudafa.jpg
+      descr:  一个学习记录者
+
     - name: 小康博客
       link: https://www.antmoe.com/
       avatar: https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg
       descr: 一个收藏回忆与分享技术的地方！
-      width: 1px
-      color: "#881B12"
+      # width: 1px
+      # color: "#881B12"
 
     - name: 鱼跃此时海
       link: https://www.overme.cn/
@@ -96,7 +99,7 @@
     - name: 初辰の博客
       link: https://chuchendjs.github.io
       avatar: https://cdn.jsdelivr.net/gh/chuchendjs/picgo/picgo/bt-sonny.jpg
-      descr:  边框带呼吸灯效果
+      descr:  成功是努力的另一个名字！
       width: 2px
       style: solid
       color: "#77d3dc"
@@ -109,6 +112,11 @@
       link: https://www.jiubrc.com
       avatar: https://www.jiubrc.com/tx.jpg
       descr: — 祝福我未曾谋面的TA
+
+    - name: PaddyLin’s blog
+      link: https://www.paddylin.top
+      avatar: https://www.paddylin.top/img/author.jpg
+      descr: 又菜又爱学
 
 - class_name: 网站
   class_desc: 常用网址

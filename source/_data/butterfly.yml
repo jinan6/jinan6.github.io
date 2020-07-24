@@ -16,10 +16,11 @@ menu:
   微语: /shuoshuo/ || far fa-comments
   友链: /link/ || fa fa-link
   留言板: /board/ || fas fa-coffee
-  关于: /about/ || fa fa-heart
+  关于:|| fa fa-heart:
+    - 关于我？ || /Me/ || fab fa-angellist
+    - 更新记录 || /about/ || fas fa-bible
   娱乐||fa fa-list:
     - 音乐 || /music/ || fa fa-music
-    - 番剧 || /bangumis/ || fa fa-film
     - 樱花 || https://jinan6.vip/Sakura/ || fas fa-feather-alt
     - 小圆点 || https://jinan6.vip/dot/ || fas fa-adjust
     - 液体 || https://jinan6.vip/Fluid/ || fas fa-bacon
@@ -266,7 +267,7 @@ comments:
   # Disqus/Disqusjs/Livere/Gitalk/Valine/Utterances/Facebook Comments
   use:
    - Valine
-  #  - Disqusjs
+   - Livere
   text: true # Display the comment name next to the button
   load_begin: false # The second comment system will auto load when visiting the website
   count: false # Dispaly comment count in top_img
@@ -291,7 +292,7 @@ disqusjs:
 # livere(來必力)
 # https://www.livere.com/
 livere:
-  uid:
+  uid: MTAyMC81MTA1OS8yNzU0MQ
 
 # gitalk
 # https://github.com/gitalk/gitalk
@@ -795,9 +796,9 @@ inject:
        # - <script src="https://cdn.jsdelivr.net/gh/lete114/CDN/js/upjiang.js"></script> UP
        - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/hideMobileSidebar.js"></script>	#手机侧边栏默认不展开
        - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/title.js"></script>		#搞怪标题
+       - <script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script>
+      #  - <script src="/js/music.js"></script>
       #  - <script src="https://myhkw.cn/player/js/player.js" id="myhk" key="159080561813" m="1"></script>  #明月浩空播放器 
-       - <script src="https://unpkg.com/xiaokang-style/butterfly/js/xkTool.js"></script>  #小康的工具库
-       - <script src="/js/tool.js"></script>  #本地js
 
 # CDN
 # Don't modify the following settings unless you know how they work

@@ -113,15 +113,13 @@ backup:
   message: Butterfly主题博客备份
   repository:
     github: git@github.com:jinan6/jinan6.github.io.git,butterfly
-	
-#哔哩哔哩
-bangumi:
-  enable: true 
-  path: 
-  vmid: 323386473
-  title: '番剧'
-  quote: '看点番剧，放松一会吧~'
-  show: 1
-  loading:
 #Rss插件
 plugins: hexo-generate-feed
+#弹窗
+# offline config passed to sw-precache.
+service_worker:
+  maximumFileSizeToCacheInBytes: 5242880
+  staticFileGlobs:
+  - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+  stripPrefix: public
+  verbose: false

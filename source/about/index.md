@@ -1,5 +1,5 @@
 ---
-title: 关于本站
+title: 更新记录
 date: 2020-05-11 07:35:20
 type: "about"
 comments: false
@@ -10,6 +10,20 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 
 ## 更新记录
+
+### 2020-07-24
+
+{% radio yellow checked, 换回Dev版 %}
+
+### 2020-07-18
+
+{% checkbox green checked,添加来必力评论 %}
+
+{% checkbox green checked, 添加左下角播放器 %}
+
+### 2020-07-17
+
+{% radio blue checked, 升级主题 ，新增了pjax功能 %}
 
 ### 2020-07-05
 
@@ -25,7 +39,7 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ### 2020-06-28
 
-{% checkbox green checked, 修改友链样式 %}
+{% checkbox green checked, ~~修改友链样式~~ %}
 
 ### 2020-06-26
 
@@ -33,7 +47,7 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ### 2020-06-24
 
-{% checkbox red checked, 优化移动端显示 %}
+{% checkbox red checked, ~~优化移动端显示~~ %}
 
 {% checkbox red checked, 更换社交链接为 Iconfont 图标 %}
 
@@ -43,13 +57,13 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ### 2020-06-23
 
-{% checkbox plus green checked, 添加文章统计图表 %}
+{% checkbox plus green checked, ~~添加文章统计图表~~ %}
 
 ### 2020-06-20
 
 {% checkbox cyan checked, 添加公告处的GIF动图 %}
 
-{% checkbox cyan checked, 添加按钮处的 UP 酱 %}
+{% checkbox cyan checked, ~~添加按钮处的 UP 酱~~ %}
 
 {% checkbox cyan checked, 修改分类菜单的 展开/收缩 设置 %}
 
