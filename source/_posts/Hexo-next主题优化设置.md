@@ -1,6 +1,6 @@
 ---
 title: Hexo+next主题优化设置
-tags: Hexo
+tags: hexo
 categories: 
 	- Hexo
 	- Next

@@ -1,6 +1,6 @@
 ---
 title: Github + Hexo 搭建个人博客基础篇
-tags: Hexo
+tags: hexo
 categories: Hexo
 abbrlink: 31683
 date: 2020-05-13 19:28:54

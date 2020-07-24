@@ -1,6 +1,6 @@
 ---
 title: 使用hexo-git-backup插件备份博客源文件
-tags: Hexo
+tags: hexo
 categories: 
   - Hexo
   - 备份

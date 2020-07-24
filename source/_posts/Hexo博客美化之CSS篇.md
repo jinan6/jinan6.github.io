@@ -1,6 +1,6 @@
 ---
 title: Hexo博客美化之CSS篇
-tags: Hexo
+tags: hexo
 categories: 
 	- Hexo
 	- Next

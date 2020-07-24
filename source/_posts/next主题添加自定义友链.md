@@ -1,7 +1,7 @@
 ---
 title: next主题添加自定义友链
 essential: true
-tags: Hexo
+tags: hexo
 categories: 
 	- Hexo
 	- Next

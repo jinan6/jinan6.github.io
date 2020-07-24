@@ -1,6 +1,6 @@
 ---
 title: hexo关于next主题 scroll_to_more失效
-tags: Hexo
+tags: hexo
 categories: 
 	- Hexo
 	- Next
