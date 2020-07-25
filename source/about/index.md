@@ -13,6 +13,8 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ### 2020-07-25
 
+{% radio red checked, 更换全局字体为`Rubik` %}
+
 {% radio red checked, 添加live2d看板娘 %}
 
 {% radio red checked, 添加全站黑白效果 %}

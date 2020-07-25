@@ -223,9 +223,9 @@ else if page.type === 'categories'
 
 参考自 [乐特博客](https://blog.lete114.top/article/eef7397d.html)
 
-## 标签
+### 标签
 
-标签内容全部来自 [小康博客](https://www.antmoe.com/posts/a811d614/index.html)
+标签内容来自 [小康博客](https://www.antmoe.com/posts/a811d614/index.html)
 
 ### 自定义小标签
 
@@ -384,3 +384,59 @@ hahaha <span><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/tieba
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg)
 {% endfancybox %}
+
+### 使用neat压缩
+
+在博客根目录下执行
+
+```code
+npm install hexo-neat --save
+```
+
+在站点配置文件加入
+
+```yml
+neat_enable: true
+neat_html:
+  enable: true
+  exclude:
+neat_css:
+  enable: true
+  exclude:
+    - '*.min.css'
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '*.min.js'
+```
+
+### hexo-offline-popup
+
+hexo-offline-popup 是一个 [hexo](https://hexo.io/) 插件， 它可加速你的Hexo网站的加载速度，以及网站内容更新弹窗提示。
+
+1. 使用
+
+   在博客根目录安装插件
+
+   ```code
+   npm i hexo-offline-popup --save
+   ```
+
+2. 在博客根目录的`_config.yml`中添加如下配置
+
+   ```yml
+   # offline config passed to sw-precache.
+   service_worker:
+     maximumFileSizeToCacheInBytes: 5242880
+     staticFileGlobs:
+     - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+     stripPrefix: public
+     verbose: false
+   ```
+
+   
+
+具体请看 插件作者  👉👉👉 [Colsrch's blog](https://colsrch.top/posts/32c8ba21/index.html?_sw-precache=93427639c70cbddfaff098f669eff7a2)
