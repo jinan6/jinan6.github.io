@@ -11,6 +11,12 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ## 更新记录
 
+### 2020-07-25
+
+{% radio red checked, 添加live2d看板娘 %}
+
+{% radio red checked, 添加全站黑白效果 %}
+
 ### 2020-07-24
 
 {% radio yellow checked, 换回Dev版 %}
@@ -39,7 +45,7 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ### 2020-06-28
 
-{% checkbox green checked, ~~修改友链样式~~ %}
+{% checkbox green checked, 修改友链样式 %}
 
 ### 2020-06-26
 
@@ -47,7 +53,7 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ### 2020-06-24
 
-{% checkbox red checked, ~~优化移动端显示~~ %}
+{% checkbox red checked, 优化移动端显示%}
 
 {% checkbox red checked, 更换社交链接为 Iconfont 图标 %}
 

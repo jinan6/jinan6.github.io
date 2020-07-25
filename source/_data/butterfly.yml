@@ -16,7 +16,7 @@ menu:
   微语: /shuoshuo/ || far fa-comments
   友链: /link/ || fa fa-link
   留言板: /board/ || fas fa-coffee
-  关于:|| fa fa-heart:
+  关于|| fa fa-heart:
     - 关于我？ || /Me/ || fab fa-angellist
     - 更新记录 || /about/ || fas fa-bible
   娱乐||fa fa-list:
@@ -795,6 +795,7 @@ inject:
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/iconfont.css"> #阿里图标
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/font-awesome-animation.css"> #动画
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/tags.css"> #标签css
+   - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">  #看板娘css
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/flink.min.css"> #小康的友链样式
   bottom:
     # - <script src="xxxx"></script>
@@ -802,6 +803,7 @@ inject:
        - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/hideMobileSidebar.js"></script>	#手机侧边栏默认不展开
        - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/title.js"></script>		#搞怪标题
        - <script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script>
+       - <script src="/live2d-widget/autoload.js"></script>   #看板娘js
       #  - <script src="/js/music.js"></script>
       #  - <script src="https://myhkw.cn/player/js/player.js" id="myhk" key="159080561813" m="1"></script>  #明月浩空播放器 
 
@@ -885,3 +887,9 @@ CDN:
   aplayer_css: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
   aplayer_js: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
   meting_js: https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js
+
+#全站黑白
+blackandwhite: false
+
+live2d:
+  enable: true
