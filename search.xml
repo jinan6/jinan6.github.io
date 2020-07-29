@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>杂记</title>
+      <link href="/posts/1124952030/"/>
+      <url>/posts/1124952030/</url>
+      
+        <content type="html"><![CDATA[<div class="snote idea yellow"><p>一些小杂记😋😋😋</p></div><h3 id="绑定接口时往前端数组里追加数据"><a href="#绑定接口时往前端数组里追加数据" class="headerlink" title="绑定接口时往前端数组里追加数据"></a>绑定接口时往前端数组里追加数据</h3><ol><li><p>v-for</p></li><li><p>定义数组</p></li><li><p>追加值</p><ol><li>先获取长度，然后for循环追加</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var len &#x3D; res.data.data.length;</span><br><span class="line">for (let i&#x3D;0;i&lt;len;i++) &#123;</span><br><span class="line">this.imagess.push(res.data.data[i])</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li></ol><h3 id="SQL语句"><a href="#SQL语句" class="headerlink" title="SQL语句"></a>SQL语句</h3><p>查询某个字段不为空或不为某个特定值</p><p>原SQL：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> *,t2.<span class="string">`type_name`</span> fname <span class="keyword">FROM</span> used_type t1 <span class="keyword">LEFT</span> <span class="keyword">JOIN</span> used_type t2 <span class="keyword">ON</span> t1.<span class="string">`fid`</span>=t2.<span class="string">`type_id`</span></span><br></pre></td></tr></table></figure><p>可以查询出全部内容</p><p>更改后：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> *,t2.<span class="string">`type_name`</span> fname <span class="keyword">FROM</span> used_type t1 <span class="keyword">LEFT</span> <span class="keyword">JOIN</span> used_type t2 <span class="keyword">ON</span> t1.<span class="string">`fid`</span>=t2.<span class="string">`type_id`</span> </span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">TRIM</span>(t1.<span class="string">`fid`</span>)!=<span class="string">'0'</span> <span class="keyword">AND</span> t1.<span class="string">`fid`</span>=t2.<span class="string">`type_id`</span></span><br></pre></td></tr></table></figure><p>可以查出对应的值</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//条件</span><br><span class="line">WHERE TRIM(t1.`fid`)!='0'</span><br><span class="line">//括号里填入需要判断的字段</span><br><span class="line">//  !='' 不等于某个值</span><br></pre></td></tr></table></figure><h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Math.toIntExact() <span class="comment">//类型转换  把long型转换为int</span></span><br></pre></td></tr></table></figure><h3 id="mybatis整理"><a href="#mybatis整理" class="headerlink" title="mybatis整理"></a>mybatis整理</h3><h4 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h4><ol><li>传递多个参数时，使用 <code>@Param</code></li><li><code>@Repository</code>   被spring 接管</li><li><code>@RequestBody</code><ol><li>@RequestBody主要用来接收前端传递给后端的json字符串中的数据的(请求体中的数据的)；</li><li>GET方式无请求体，所以使用@RequestBody接收数据时，前端不能使用GET方式提交数据，而是用POST方式进行提交。</li><li>在后端的同一个接收方法里，@RequestBody与@RequestParam()可以同时使用，@RequestBody最多只能有一个，而@RequestParam()可以有多个。</li></ol></li><li><code>resultType</code> 返回值类型</li><li><code>resultMap</code>resultMap可以实现将查询结果映射为复杂类型的pojo，比如在查询结果映射对象中包括pojo和list实现一对一查询和一对多查询</li><li><code>parameterType</code>用于对应的mapper接口方法接受的参数类型</li></ol><p><span class="inline-tag blue">不定时更新~~</span></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 记录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>常用知识点汇总</title>
       <link href="/posts/961488241/"/>
       <url>/posts/961488241/</url>
