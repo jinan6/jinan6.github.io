@@ -5,7 +5,7 @@ categories: Hexo
 abbrlink: 31683
 date: 2020-05-13 19:28:54
 sticky: 10
-cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619150902.jpg
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200729091830.jpg
 ---
 
 #### 前言

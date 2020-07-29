@@ -9,10 +9,6 @@ comments: false
 <center>
     <div class="tip key font5 fas fa-key"><p>此页面加载较慢，暂关闭评论，留言👉👉{% btn 'https://jinan6.vip/board',留言板 %}</p></div>
 </center>
-
-
-
-
 <!-- https://www.bootcdn.cn/botui/ -->
 <link href="https://cdn.bootcss.com/botui/0.3.9/botui-theme-default.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/botui/0.3.9/botui.min.css" rel="stylesheet">

@@ -99,11 +99,11 @@ katex:
 # --------------------------------------
 
 # Favicon（网站图标）
-favicon: /img/favicon-16x16-next.png
+favicon: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200707202852.png
 
 # Avatar (头像)
 avatar:
-  img: /img/avatar.png
+  img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
   effect: false # 头像会一直转圈
 
 # the banner image of home page
@@ -200,7 +200,7 @@ post_copyright:
 
 # 打赏按钮
 reward:
-  enable: true
+  enable: false
   QR_code:
     - itemlist:
         img: /img/wechatpay.png
@@ -737,8 +737,8 @@ note:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
-  position: bottom-left
+  enable: true
+  position: top-right
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#121212' # The background color of Toast Notification in dark mode
 
@@ -801,7 +801,7 @@ inject:
     # - <script src="xxxx"></script>
        - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/hideMobileSidebar.js"></script>	#手机侧边栏默认不展开
        - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/title.js"></script>		#搞怪标题
-       - <script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script>
+       - <script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script>    #页脚的鱼
       #  - <script src="https://myhkw.cn/player/js/player.js" id="myhk" key="159080561813" m="1"></script>  #明月浩空播放器 
 
 # CDN
