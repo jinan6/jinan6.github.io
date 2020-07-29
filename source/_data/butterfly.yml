@@ -39,7 +39,7 @@ code_word_wrap: false
 # copyright: Add the copyright information after copied content (复制的內容后面加上版权信息)
 copy:
   enable: true
-  copyright: true
+  copyright: false    #复制提醒
 
 # social settings (社交图标設置)
 # formal:
@@ -887,6 +887,3 @@ CDN:
 
 #全站黑白
 blackandwhite: false
-
-live2d:
-  enable: true
