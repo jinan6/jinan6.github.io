@@ -1,1 +1,158 @@
-"use strict";function debounce(n,o,a){var r;return function(){var t=this,e=arguments,i=a&&!r;clearTimeout(r),r=setTimeout(function(){r=null,a||n.apply(t,e)},o),i&&n.apply(t,e)}}function throttle(i,n,o){var a,r,c,l=0;o=o||{};function s(){l=!1===o.leading?0:(new Date).getTime(),a=null,i.apply(r,c),a||(r=c=null)}return function(){var t=(new Date).getTime();l||!1!==o.leading||(l=t);var e=n-(t-l);r=this,c=arguments,e<=0||n<e?(a&&(clearTimeout(a),a=null),l=t,i.apply(r,c),a||(r=c=null)):a||!1===o.trailing||(a=setTimeout(s,e))}}function sidebarPaddingR(){var t=window.innerWidth,e=document.body.clientWidth,i=t-e;t!==e&&$("body").css("padding-right",i)}function isIpad(){return"MacIntel"===navigator.platform&&1<navigator.maxTouchPoints}function isTMobile(){var t=navigator.userAgent;return window.screen.width<992&&/iPad|iPhone|iPod|Android|Opera Mini|BlackBerry|webOS|UCWEB|Blazer|PSP|IEMobile|Symbian/g.test(t)}function isMobile(){return this.isIpad()||this.isTMobile()}function isDesktop(){return!this.isMobile()}function scrollToDest(t){var e=1<arguments.length&&void 0!==arguments[1]?arguments[1]:0,i=$(t).offset();$("body,html").animate({scrollTop:i.top-e})}function loadScript(t,e){var i=document.createElement("script");i.type="text/javascript",i.readyState?i.onreadystatechange=function(){"loaded"!==i.readyState&&"complete"!==i.readyState||(i.onreadystatechange=null,e())}:i.onload=function(){e()},i.src=t,document.body.appendChild(i)}function snackbarShow(t,e,i){var n=void 0!==e&&e,o=void 0!==i?i:2e3,a=GLOBAL_CONFIG.Snackbar.position,r="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark;Snackbar.show({text:t,backgroundColor:r,showAction:n,duration:o,pos:a})}var Cookies={get:function(t){var e="; ".concat(document.cookie).split("; ".concat(t,"="));if(2===e.length)return e.pop().split(";").shift()},set:function(t,e,i){var n,o="";i&&((n=new Date).setTime(n.getTime()+24*i*60*60*1e3),o="; expires="+n.toUTCString()),document.cookie=t+"="+(e||"")+o+"; path=/"}},initJustifiedGallery=function(t){t.each(function(t,e){$(this).is(":visible")&&$(this).justifiedGallery({rowHeight:220,margins:4})})};GLOBAL_CONFIG.islazyload&&(window.lazyLoadOptions={elements_selector:"img",threshold:0});
+/* eslint-disable no-unused-vars */
+
+function debounce (func, wait, immediate) {
+  let timeout
+  return function () {
+    const context = this
+    const args = arguments
+    const later = function () {
+      timeout = null
+      if (!immediate) func.apply(context, args)
+    }
+    const callNow = immediate && !timeout
+    clearTimeout(timeout)
+    timeout = setTimeout(later, wait)
+    if (callNow) func.apply(context, args)
+  }
+};
+
+function throttle (func, wait, options) {
+  let timeout, context, args
+  let previous = 0
+  if (!options) options = {}
+
+  const later = function () {
+    previous = options.leading === false ? 0 : new Date().getTime()
+    timeout = null
+    func.apply(context, args)
+    if (!timeout) context = args = null
+  }
+
+  const throttled = function () {
+    const now = new Date().getTime()
+    if (!previous && options.leading === false) previous = now
+    const remaining = wait - (now - previous)
+    context = this
+    args = arguments
+    if (remaining <= 0 || remaining > wait) {
+      if (timeout) {
+        clearTimeout(timeout)
+        timeout = null
+      }
+      previous = now
+      func.apply(context, args)
+      if (!timeout) context = args = null
+    } else if (!timeout && options.trailing !== false) {
+      timeout = setTimeout(later, remaining)
+    }
+  }
+
+  return throttled
+}
+
+function sidebarPaddingR () {
+  const innerWidth = window.innerWidth
+  const clientWidth = document.body.clientWidth
+  const paddingRight = innerWidth - clientWidth
+  if (innerWidth !== clientWidth) {
+    $('body').css('padding-right', paddingRight)
+  }
+}
+
+// iPadOS
+function isIpad () {
+  return navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1
+}
+
+function isTMobile () {
+  const ua = navigator.userAgent
+  const pa = /iPad|iPhone|iPod|Android|Opera Mini|BlackBerry|webOS|UCWEB|Blazer|PSP|IEMobile|Symbian/g
+  return window.screen.width < 992 && pa.test(ua)
+}
+
+function isMobile () {
+  return this.isIpad() || this.isTMobile()
+}
+
+function isDesktop () {
+  return !this.isMobile()
+}
+
+function scrollToDest (name, offset = 0) {
+  const scrollOffset = $(name).offset()
+  $('body,html').animate({
+    scrollTop: scrollOffset.top - offset
+  })
+};
+
+function loadScript (url, callback) {
+  const script = document.createElement('script')
+  script.type = 'text/javascript'
+  if (script.readyState) { // IE
+    script.onreadystatechange = function () {
+      if (script.readyState === 'loaded' ||
+        script.readyState === 'complete') {
+        script.onreadystatechange = null
+        callback()
+      }
+    }
+  } else { // Others
+    script.onload = function () {
+      callback()
+    }
+  }
+  script.src = url
+  document.body.appendChild(script)
+};
+
+function snackbarShow (text, showAction, duration) {
+  const sa = (typeof showAction !== 'undefined') ? showAction : false
+  const dur = (typeof duration !== 'undefined') ? duration : 2000
+  const position = GLOBAL_CONFIG.Snackbar.position
+  const bg = document.documentElement.getAttribute('data-theme') === 'light' ? GLOBAL_CONFIG.Snackbar.bgLight : GLOBAL_CONFIG.Snackbar.bgDark
+  Snackbar.show({
+    text: text,
+    backgroundColor: bg,
+    showAction: sa,
+    duration: dur,
+    pos: position
+  })
+}
+
+const Cookies = {
+  get: function (name) {
+    const value = `; ${document.cookie}`
+    const parts = value.split(`; ${name}=`)
+    if (parts.length === 2) return parts.pop().split(';').shift()
+  },
+  set: function (name, value, days) {
+    let expires = ''
+    if (days) {
+      const date = new Date()
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000))
+      expires = '; expires=' + date.toUTCString()
+    }
+    document.cookie = name + '=' + (value || '') + expires + '; path=/'
+  }
+}
+
+const initJustifiedGallery = function (selector) {
+  selector.each(function (i, o) {
+    if ($(this).is(':visible')) {
+      $(this).justifiedGallery({
+        rowHeight: 220,
+        margins: 4
+      })
+    }
+  })
+}
+
+/**
+ * lazyload
+ */
+if (GLOBAL_CONFIG.islazyload) {
+  window.lazyLoadOptions = {
+    elements_selector: 'img',
+    threshold: 0
+  }
+}
