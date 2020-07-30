@@ -2998,6 +2998,78 @@ _:future,
   margin: 0;
   list-style: none;
 }
+.open-mobile-menus,
+.open-mobile-toc {
+  overflow: hidden;
+}
+.open-mobile-menus #body-wrap,
+.open-mobile-toc #body-wrap {
+  -webkit-transform: translateX(-240px);
+  -moz-transform: translateX(-240px);
+  -o-transform: translateX(-240px);
+  -ms-transform: translateX(-240px);
+  transform: translateX(-240px);
+}
+.open-mobile-menus #page-header,
+.open-mobile-toc #page-header {
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  -o-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+.open-mobile-menus #page-header.fixed.visible,
+.open-mobile-toc #page-header.fixed.visible {
+  -webkit-transform: translate3d(-240px, 100%, 0);
+  -moz-transform: translate3d(-240px, 100%, 0);
+  -o-transform: translate3d(-240px, 100%, 0);
+  -ms-transform: translate3d(-240px, 100%, 0);
+  transform: translate3d(-240px, 100%, 0);
+}
+.open-mobile-menus #rightside,
+.open-mobile-toc #rightside {
+  -webkit-transform: translate3d(-288px, 0, 0) !important;
+  -moz-transform: translate3d(-288px, 0, 0) !important;
+  -o-transform: translate3d(-288px, 0, 0) !important;
+  -ms-transform: translate3d(-288px, 0, 0) !important;
+  transform: translate3d(-288px, 0, 0) !important;
+}
+.open-mobile-menus {
+  padding-left: 0 !important;
+}
+.open-mobile-menus #mobile-sidebar #mobile-sidebar-menus {
+  -webkit-transform: translateX(-244px);
+  -moz-transform: translateX(-244px);
+  -o-transform: translateX(-244px);
+  -ms-transform: translateX(-244px);
+  transform: translateX(-244px);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.open-mobile-menus #sidebar {
+  left: -300px !important;
+}
+.open-mobile-toc #mobile-sidebar #mobile-sidebar-toc {
+  -webkit-transform: translateX(-244px);
+  -moz-transform: translateX(-244px);
+  -o-transform: translateX(-244px);
+  -ms-transform: translateX(-244px);
+  transform: translateX(-244px);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+@media screen and (max-width: 768px) {
+  #mobile-sidebar-menus {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #mobile-sidebar-toc {
+    display: block !important;
+  }
+}
 .layout_page {
   display: -webkit-box;
   display: -moz-box;
@@ -3406,7 +3478,11 @@ _:future,
 }
 @media screen and (max-width: 768px) {
   .layout_page {
-    padding: 1rem 5px !important;
+    padding: 1rem 0.75rem !important;
+  }
+  .layout_page .content {
+    height: auto;
+    font-size: 0.6rem;
   }
   .layout_page > div:first-child:not(.recent-posts) {
     padding: 1.8rem 0.7rem;
@@ -3786,7 +3862,7 @@ _:future,
   line-height: 0.3rem;
 }
 a {
-  color: #99a9bf;
+  color: #638fff;
   text-decoration: none;
   word-wrap: break-word;
   -webkit-transition: all 0.2s;
@@ -4135,23 +4211,23 @@ img {
 #rightside {
   position: fixed;
   right: -38px;
-  bottom: 40px;
+  bottom: 10px;
   z-index: 100;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
 }
 #rightside #rightside-config-hide {
-  -webkit-transform: translate(35px, 0);
-  -moz-transform: translate(35px, 0);
-  -o-transform: translate(35px, 0);
-  -ms-transform: translate(35px, 0);
-  transform: translate(35px, 0);
+  -webkit-transform: translate(40px, 0);
+  -moz-transform: translate(40px, 0);
+  -o-transform: translate(40px, 0);
+  -ms-transform: translate(40px, 0);
+  transform: translate(40px, 0);
 }
 #rightside .rightside-in {
   -webkit-transform: translate(0, 0) !important;
@@ -4176,13 +4252,17 @@ img {
 #rightside > div > a {
   display: block;
   margin-bottom: 2px;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   background-color: #49b1f5;
   color: #fff;
   text-align: center;
   font-size: 16px;
+  line-height: 35px;
+  margin-bottom: 4px;
+  margin-right: 4px;
   cursor: pointer;
+  border-radius: 3px;
 }
 #rightside > div > button:hover,
 #rightside > div > a:hover {
