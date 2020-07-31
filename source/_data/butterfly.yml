@@ -1,4 +1,4 @@
-# Main menu navigation (导航目录)
+# Main menu navigation (導航目錄)
 # --------------------------------------
 
 # format: name: link || icon
@@ -27,7 +27,7 @@ menu:
     - 小恐龙 || https://jinan6.vip/runner-game/ || fas fa-battery-half
     - 帮你百度 || https://jinan6.vip/lmbtfy/ || far fa-arrow-alt-circle-right
 
-# Code Blocks (代码相关)
+# Code Blocks (代碼相關)
 # --------------------------------------
 
 highlight_theme: mac light # default / darker / pale night / light / ocean / mac / mac light / false
@@ -37,20 +37,17 @@ highlight_shrink: false # true: shrink the code blocks / false: expand the code 
 code_word_wrap: false
 
 # copy settings
-# copyright: Add the copyright information after copied content (复制的內容后面加上版权信息)
+# copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
 copy:
   enable: true
-  copyright: false    #复制提醒
+  copyright:
+    enable: true
+    limit_count: 150
 
-# social settings (社交图标設置)
+# social settings (社交圖標設置)
 # formal:
 #   icon: link || the description
 social:
-# tencent://message/?uin=2640053707
-  # fab fa-qq: http://sighttp.qq.com/authd?IDKEY=174f27490788d0ea985eff04604012124179c5760cd91d20 || QQ
-  # fab fa-github: https://github.com/ || Github
-  # fa fa-envelope: https://mail.qq.com/ || Email
-  # fa fa-rss: /atom.xml || RSS
     iconfont icon-qq1: http://sighttp.qq.com/authd?IDKEY=174f27490788d0ea985eff04604012124179c5760cd91d20 || QQ
     iconfont icon-github: https://github.com/ || Github
     iconfont icon-message: https://mail.qq.com/ || Email
@@ -78,12 +75,12 @@ local_search:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
 
-# Math (数学)
+# Math (數學)
 # --------------------------------------
 # About the per_page
-# if you set it to true, it will load mathjax/katex script in each page (true 表示每一页都加载js)
+# if you set it to true, it will load mathjax/katex script in each page (true 表示每一頁都加載js)
 # if you set it to false, it will load mathjax/katex script according to your setting (add the 'mathjax: true' in page's front-matter)
-# (false 需要时加载，须在使用的 Markdown Front-matter 加上 mathjax: true)
+# (false 需要時加載，須在使用的 Markdown Front-matter 加上 mathjax: true)
 
 # MathJax
 mathjax:
@@ -96,7 +93,7 @@ katex:
   per_page: false
   hide_scrollbar: true
 
-# Image (图片设置)
+# Image (圖片設置)
 # --------------------------------------
 
 # Favicon（网站图标）
@@ -110,9 +107,11 @@ avatar:
 # the banner image of home page
 index_img:
 
-# if the banner of page not setting,it will show the top_img
+# if the banner of page not setting, it will show the top_img
 # default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200622075322.jpg  #桌子
 default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200622075321.jpg  #灯
+# default_top_img: https://cdn.jsdelivr.net/gh/yunwanjia-cloud/banner/25-min.jpg  #鬼刀
+# default_top_img: https://cdn.jsdelivr.net/gh/yunwanjia-cloud/banner/27-min.jpg  #鬼刀2
 # default_top_img: https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture   #随机图片
 # default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619101920.jpg  #地球
 # default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200620194436.jpg  #蜘蛛侠
@@ -125,10 +124,10 @@ archive_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619102141.jpg
 tag_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619102415.jpg
 
 # the banner image of category page
-# category page, look like https://xxxxxxxxx.com/categories/butterfly
+# note: category page, not categories page (子分類頁面的 top_img)
 category_img:
 
-# If you are using hexo-douban, you can configure it (如果你有使用 hexo-douban,可配置这个)
+# If you are using hexo-douban, you can configure it (如果你有使用 hexo-douban,可配置這個)
 # douban:
 #   meta: false
 #   movies_img:
@@ -136,19 +135,19 @@ category_img:
 #   games_img:
 
 cover:
-  # display the cover or not (是否显示文章封面)
+  # display the cover or not (是否顯示文章封面)
   index_enable: true
   aside_enable: true
   archives_enable: true
-  # the position of cover in home page (封面显示的位置)
+  # the position of cover in home page (封面顯示的位置)
   # left/right/both
   position: both
-  # When cover is not set, the default cover is displayed (当沒有设置cover時，默认的封面显示)
+  # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
     # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
     - https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619150139.jpg
 
-# Replace Broken Images (替换无法显示的图片)
+# Replace Broken Images (替換無法顯示的圖片)
 error_img:
   flink: /img/friend_404.gif
   post_page: /img/404.jpg
@@ -161,15 +160,17 @@ error_404:
 
 post_meta:
   page: # Home Page
-    date_type: created # created or updated or both 主页文章日期是创建日或者更新日或都显示
-    categories: true # true or false 主页是否显示分类
-    tags: false # true or false 主页是否显示标签
+    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    categories: true # true or false 主頁是否顯示分類
+    tags: false # true or false 主頁是否顯示標籤
+    label: true # true or false 顯示描述性文字
   post:
-    date_type: both # created or updated or both 文章页日期是创建日或者更新日或都显示
-    categories: true # true or false 文章页是否显示分类
-    tags: true # true or false 文章页是否显示标签
+    date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
+    categories: true # true or false 文章頁是否顯示分類
+    tags: true # true or false 文章頁是否顯示標籤
+    label: true # true or false 顯示描述性文字
 
-# wordcount (字数统计)
+# wordcount (字數統計)
 wordcount:
   enable: true
   post_wordcount: true
@@ -178,7 +179,7 @@ wordcount:
 
 # Display the article introduction on homepage
 # 1: description
-# 2: both (if the description exists, it will show description. or show the auto_excerpt)
+# 2: both (if the description exists, it will show description, or show the auto_excerpt)
 # 3: auto_excerpt (default)
 index_post_content:
   method: 3
@@ -187,7 +188,7 @@ index_post_content:
 # Post
 # --------------------------------------
 
-# toc (目录)
+# toc (目錄)
 toc:
   enable: true
   number: true
@@ -199,24 +200,24 @@ post_copyright:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-# 打赏按钮
+# Sponsor/reward
 reward:
   enable: false
   QR_code:
-    - itemlist:
-        img: /img/wechatpay.png
-        text: 微信
-    - itemlist:
-        img: /img/alipay.png
-        text: 支付宝
+    - img: /img/wechat.jpg
+      link:
+      text: wechat
+    - img: /img/alipay.jpg
+      link:
+      text: alipay
 
 # Related Articles
 related_post:
   enable: true
   limit: 6 # Number of posts displayed
-  date_type: created # or created or updated 文章日期显示创建日或者更新日
+  date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
-# figcaption (图片描述文字)
+# figcaption (圖片描述文字)
 photofigcaption: false
 
 # anchor
@@ -265,13 +266,15 @@ addtoany:
 
 comments:
   # Up to two comments system, the first will be shown as default
-  # Disqus/Disqusjs/Livere/Gitalk/Valine/Utterances/Facebook Comments
+  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Utterances/Facebook Comments
   use:
    - Valine
    - Livere
   text: true # Display the comment name next to the button
-  load_begin: false # The second comment system will auto load when visiting the website
-  count: false # Dispaly comment count in top_img
+  # lazyload: The comment system will be load when comment element enters the browser's viewport.
+  # If you set it to false, the comment count will be invalid
+  lazyload: true
+  count: false # Display comment count in top_img
 
 # disqus
 # https://disqus.com/
@@ -279,7 +282,7 @@ disqus:
   shortname:
 
 # Alternative Disqus - Render comments with Disqus API
-# DisqusJS评论系統，可以实现在網路審查地區載入 Disqus 評論列表，兼容原版
+# DisqusJS 評論系統，可以實現在網路審查地區載入 Disqus 評論列表，兼容原版
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
   shortname:
@@ -290,7 +293,7 @@ disqusjs:
   admin:
   adminLabel:
 
-# livere(來必力)
+# livere (來必力)
 # https://www.livere.com/
 livere:
   uid: MTAyMC81MTA1OS8yNzU0MQ
@@ -312,38 +315,19 @@ gitalk:
 # valine
 # https://valine.js.org
 valine:
-  # enable: true # if you want use valine,please set this value is true
   appId: 027OlclAiHmUjOrixaVqodkU-MdYXbMMI # leancloud application app id
   appKey: Cbi33IqwioAJzqeH3ma6fo3F # leancloud application app key
-  master:	#博主邮箱 md5加密
-    - ce2266d4e91782573b50c29e06a811e4
-  friends:	#小伙伴邮箱 md5加密
-    - d799cdaab02b754cb52617372d860835
-    - e8b9c844c07c99938135e4efdda43334
-    - 3e440f8724c5acd24d0a4fab6eb6a6d1
-    - f836e33cb73b725cafe2756c75b9c844
-    - ab18692a14d8aeb965ea8b0c3dae285b
-    - 49734d6324849e13a50c2dc3058a1070
-    - 11a24387fd883e96428c9410db2b60f4
-  notify: false
-  verify: false
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  lang: zh-cn # i18n: zh-cn/en
-  placeholder: 建议在上方留下昵称和邮箱等信息，以便收到回复通知（以下方式二选一）：\n1、仅在昵称中留下QQ号（系统自动获取QQ昵称、QQ邮箱、QQ头像等信息）\n2、自定义填写昵称、邮箱、网址信息（系统自动匹配头像）
-  guest_info: 昵称,邮箱,主页 #valine comment header info
+  lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
+  placeholder: 建议在上方留下昵称和邮箱等信息，以便收到回复通知（以下方式二选一）：\n1、仅在昵称中留下QQ号（系统自动获取QQ昵称、QQ邮箱、QQ头像等信息）\n2、自定义填写昵称、邮箱、网址信息（系统自动匹配头像） # valine comment input placeholder(like: Please leave your footprints )
+  guest_info: 昵称,邮箱,主页 #valine comment header info (nick/mail/link)
   recordIP: true # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200620143712.gif # valine background
-  # count: true # top_img显示评论数,
-  emojiCDN: '//i0.hdslb.com/bfs/emote/' # 存放表情的cdn库
-  enableQQ: true
-  requiredFields: nick,mail
-  emojiMaps: {} # 存放表情yaml文件的 这是我后来加上的
-  metaPlaceholder:
-    nick: 昵称/QQ号(必填)
-    mail: 邮箱(必填)
-    link: 网址(https://)
+  emojiCDN: '//i0.hdslb.com/bfs/emote/'
+  enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
+  requiredFields: nick,mail # required fields (nick/mail)
 
 # utterances
 # https://utteranc.es/
@@ -369,10 +353,10 @@ facebook_comments:
 
 # Chat Button [recommend]
 # It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: true	#合并在线聊天
+chat_btn: true
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
-chat_hide_show: true	#不使用时隐藏工具栏
+chat_hide_show: true
 
 # chatra
 # https://chatra.io/
@@ -398,21 +382,25 @@ gitter:
   enable: false
   room:
 
+# crisp
+# https://crisp.chat/en/
+crisp:
+  enable: false
+  website_id:
+
 # Footer Settings
 # --------------------------------------
-
-since: 2020
-
-footer_custom_text: CDN BY <a target="_blank" rel="external nofollow" href="https://www.jsdelivr.com/"><b>jsDelivr</b></a> | HOST BY  <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a><br><b>世间所有的相遇，都是久别重逢</b>
-# <a href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referra"><br><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200612150153.png"align="absmiddle" width="59px" height="30px" />&nbsp;</a><span>提供加速服务</span>
-
-footer_copyright: true
-
-ICP:
-  enable: false
-  url:
-  text:
-  icon: /img/icp.png
+footer:
+  owner:
+    enable: true
+    since: 2020
+  custom_text: CDN BY <a target="_blank" rel="external nofollow" href="https://www.jsdelivr.com/"><b>jsDelivr</b></a> | HOST BY  <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a><br><b>世间所有的相遇，都是久别重逢</b>
+  copyright: true # Copyright of theme and framework
+  ICP: # Chinese ICP License
+    enable: false
+    url:
+    text:
+    icon: /img/icp.png
 
 # Analysis
 # --------------------------------------
@@ -429,20 +417,21 @@ tencent_analytics:
 # Advertisement
 # --------------------------------------
 
-# Google Adsense (谷歌广告)
+# Google Adsense (谷歌廣告)
 google_adsense:
   enable: false
+  auto_ads: true
   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
   client:
   enable_page_level_ads: true
 
-# Insert ads manually (手动插入广告)
+# Insert ads manually (手動插入廣告)
 # ad:
 #   index:
 #   aside:
 #   post:
 
-# Verification (站长验证)
+# Verification (站長驗證)
 # --------------------------------------
 
 # Google Webmaster tools verification setting
@@ -460,6 +449,10 @@ baidu_site_verification:
 # 360 Webmaster tools verification setting
 # see http://zhanzhang.so.com/
 qihu_site_verification:
+
+# Yandex Webmaster tools verification setting
+# see https://webmaster.yandex.com/
+yandex_site_verification:
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
@@ -484,7 +477,7 @@ theme_color:
 
 # The top_img settings of home page
 # default: top img - full screen, site info - middle (默認top_img全屏，site_info在中間)
-# The positon of site info, eg: 300px/300em/300rem/10% (主頁標題距離頂部距離)
+# The position of site info, eg: 300px/300em/300rem/10% (主頁標題距離頂部距離)
 index_site_info_top:
 # The height of top_img, eg: 300px/300em/300rem (主頁top_img高度)
 index_top_img_height:
@@ -500,7 +493,7 @@ tag_ui: # 留空或 index
 # The formal of color: '#49B202'
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 # White color will be shown as default
-background: "#efefef"
+background:
 
 # Show the footer background image (same as top_img)
 footer_bg: false
@@ -581,12 +574,12 @@ font:
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
   font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
-  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', Microsoft YaHei', sans-serif
+  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
   enable: true
-  icon: # the unicode value of Font Awesome icon
+  icon: # the unicode value of Font Awesome icon, such as '\3423'
   icon-top:
 
 # the subtitle on homepage (主頁subtitle)
@@ -624,12 +617,17 @@ aside:
   card_author:
     enable: true
     description:
+    button:
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/jinan6
   card_announcement:
     enable: true
-    content: 欢迎光临👉仅安的小站，由于修改了一些主题源码，可能不会再进行更新。<br><center><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200620143712.gif"></center>
+    content: 本站已重新升级为pjax版本，添加全局左下角音乐播放器<br><center><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200620143712.gif"></center>
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
+    sort: date # date or updated
   card_categories:
     enable: true
     limit: 8 # if set 0 will show all
@@ -657,18 +655,14 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 5/10/2020 00:00:00  
-  ##網頁開通時間
-  #格式: 月/日/年 時間
-  #也可以寫成 年/月/日 時間
-
+  publish_date: 5/10/2020 00:00:00 
 
 # Bottom right button (右下角按鈕)
 # --------------------------------------
 
 # Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
-  enable: true
+  enable: false
   # The text of a button
   default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
@@ -692,7 +686,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: 2
+  autoChangeMode: false
 
 # Lightbox (圖片大圖查看模式)
 # --------------------------------------
@@ -733,6 +727,14 @@ note:
 # other
 # --------------------------------------
 
+# Pjax [Beta]
+# It may contain bugs and unstable, give feedback when you find the bugs.
+# https://github.com/MoOx/pjax
+pjax: true
+
+# Inject the css and script (aplayer/meting)
+aplayerInject: true
+
 # Snackbar (Toast Notification 彈窗)
 # https://github.com/polonel/SnackBar
 # position 彈窗位置
@@ -753,16 +755,14 @@ instantpage: true
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
 pangu:
-  enable: true
+  enable: false
   field: site # site/post
 
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/lazyload
 lazyload:
   enable: true
-  # post: /img/loading.gif
   post: https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/19.webp  #滑稽图片
-
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -800,11 +800,9 @@ inject:
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/flink.min.css"> #小康的友链样式
   bottom:
     # - <script src="xxxx"></script>
-       - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/hideMobileSidebar.js"></script>	#手机侧边栏默认不展开
-       - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/title.js"></script>		#搞怪标题
-       - <script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script>    #页脚的鱼
-      #  - <script src="https://myhkw.cn/player/js/player.js" id="myhk" key="159080561813" m="1"></script>  #明月浩空播放器 
-
+      - <div class="aplayer no-destroy" data-id="5015814685" data-server="netease" data-type='playlist' data-fixed='true' data-mini='true' data-listFolded='false' data-order='list' data-preload='none' data-autoplay='false' muted></div>
+      - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/title.js"></script>		#搞怪标题
+      - <script data-pjax src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script>   #页脚的鱼
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
@@ -815,11 +813,13 @@ CDN:
   main: /js/main.js
   utils: /js/utils.js
 
+  # pjax
+  pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
+
   # comments
-  blueimp_md5: https://cdn.jsdelivr.net/npm/blueimp-md5/js/md5.min.js
   gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
-  valine: https://cdn.jsdelivr.net/gh/jinan6/CDN/js/Valine.js
+  valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
   disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
   disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
   utterances: https://utteranc.es/client.js
@@ -836,7 +836,7 @@ CDN:
   algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
 
   # math
-  mathjax: https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   katex: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
   katex_copytex: https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js
   katex_copytex_css: https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css
@@ -852,7 +852,7 @@ CDN:
 
   lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
   instantpage: https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js
-  typed: https://cdn.jsdelivr.net/npm/typed.js
+  typed: https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js
   pangu: https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js
 
   # photo
@@ -884,7 +884,7 @@ CDN:
   # aplayer
   aplayer_css: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
   aplayer_js: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
-  meting_js: https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js
+  meting_js: https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js
 
-#全站黑白
+ #全站黑白
 blackandwhite: false

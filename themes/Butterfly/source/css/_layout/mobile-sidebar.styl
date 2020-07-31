@@ -16,7 +16,7 @@
     overflow-y: auto
     width: 250px
     height: 100%
-    background: #f6f8fa
+    background: var(--sidebar-bg)
     transition: all .5s
 
     & > .mobile_author_icon
@@ -46,12 +46,12 @@
             @extend .limit-one-line
 
           .length_num
-            color: $dark-black
+            color: var(--text-highlight-color)
             font-size: .9rem
 
           .headline
             display: block
-            color: $font-black
+            color: var(--font-color)
             font-size: .7rem
 
     hr
@@ -65,7 +65,7 @@
         position: relative
         display: block
         padding: .3rem 1.5rem
-        color: $font-black
+        color: var(--font-color)
         font-size: .8rem
         cursor: pointer
 
@@ -79,56 +79,15 @@
           &:hover
             color: $light-blue
 
-      .menus-expand
+      .expand
         position: absolute
         right: 0
         padding: .4rem
-        transition: all .3s
-        transform: rotate(0)
+        transition: transform .3s
 
-        &.menus-closed
+        &.closed
           transform: rotate(90deg) !important
 
       .menus_item_child
         margin: 0
         list-style: none
-
-//自行引入的css
-// 手機打開menus，toc特效
-      .open-mobile-menus,
-      .open-mobile-toc
-        overflow: hidden
-        #body-wrap
-          transform: translateX(-240px)
-        #page-header
-          transform: translateX(-20px)
-          &.fixed.visible
-            transform: translate3d(-240px, 100%, 0)
-        #rightside
-          transform: translate3d(-288px, 0, 0) !important
-
-      .open-mobile-menus
-        padding-left: 0 !important
-
-        #mobile-sidebar
-          #mobile-sidebar-menus
-            transform: translateX(-244px)
-            opacity: 1
-
-        // pc界面打開mobile-menus需關閉sidebar
-        #sidebar
-          left: -300px !important
-
-      .open-mobile-toc
-        #mobile-sidebar
-          #mobile-sidebar-toc
-            transform: translateX(-244px)
-            opacity: 1
-
-      @media screen and (max-width: $sm)
-        #mobile-sidebar-menus
-          display: block !important
-
-      @media screen and (max-width: $bg)
-        #mobile-sidebar-toc
-          display: block !important

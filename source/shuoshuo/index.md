@@ -8,6 +8,8 @@ comments: false
 
 <div class='tip info faa-horizontal animated' style="text-align:center;"><p>此页面是博主吐槽用的，留言请移步到👉👉{% btn 'https://jinan6.vip/board/',留言板,far fa-hand-point-right,blue larger %}<p></div>
 
+<div class='tip success'><p>由于pjax的原因，第一次进此页面可能会报错，无法加载，需要刷新页面<p></div>
+
 <head>
   <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 </head>

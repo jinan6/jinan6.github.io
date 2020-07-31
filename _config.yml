@@ -136,10 +136,14 @@ live2d:
   model:
     use: ./live2d_models/models/kesyoban # 路径
   display:
-    position: left
+    position: right
     width: 150
     height: 300
   mobile:
-    show: true   #是否在手机上显示
+    show: false   #是否在手机上显示
   react:
     opacity: 1.0  #透明度
+#
+aplayer:
+  meting: false
+  asset_inject: false
