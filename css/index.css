@@ -178,6 +178,15 @@ template {
 [hidden] {
   display: none
 }
+
+/*移动端优化：去除归档、标签、最新文章、公告、、只保留网站统计*/
+@media screen and (max-width: 800px) {
+  #aside_content
+  div:not(:last-child) {
+      display: none;
+      font-size: 13px;
+  }
+}
 .limit-one-line,
 #aside_content .card-info .card-info-data > .card-info-data-item a .headline,
 #aside_content .card-archives ul.card-archive-list > .card-archive-list-item a span,
@@ -268,8 +277,8 @@ body {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 *::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 4px;
+  height: 4px;
 }
 *::-webkit-scrollbar-thumb {
   background: var(--btn-bg);
@@ -3148,6 +3157,78 @@ _:future,
   margin: 0;
   list-style: none;
 }
+#mobile-sidebar #mobile-sidebar-menus .menus_items .open-mobile-menus,
+#mobile-sidebar #mobile-sidebar-menus .menus_items .open-mobile-toc {
+  overflow: hidden;
+}
+#mobile-sidebar #mobile-sidebar-menus .menus_items .open-mobile-menus #body-wrap,
+#mobile-sidebar #mobile-sidebar-menus .menus_items .open-mobile-toc #body-wrap {
+  -webkit-transform: translateX(-240px);
+  -moz-transform: translateX(-240px);
+  -o-transform: translateX(-240px);
+  -ms-transform: translateX(-240px);
+  transform: translateX(-240px);
+}
+#mobile-sidebar #mobile-sidebar-menus .menus_items .open-mobile-menus #page-header,
+#mobile-sidebar #mobile-sidebar-menus .menus_items .open-mobile-toc #page-header {
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  -o-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+#mobile-sidebar #mobile-sidebar-menus .menus_items .open-mobile-menus #page-header.fixed.visible,
+#mobile-sidebar #mobile-sidebar-menus .menus_items .open-mobile-toc #page-header.fixed.visible {
+  -webkit-transform: translate3d(-240px, 100%, 0);
+  -moz-transform: translate3d(-240px, 100%, 0);
+  -o-transform: translate3d(-240px, 100%, 0);
+  -ms-transform: translate3d(-240px, 100%, 0);
+  transform: translate3d(-240px, 100%, 0);
+}
+#mobile-sidebar #mobile-sidebar-menus .menus_items .open-mobile-menus #rightside,
+#mobile-sidebar #mobile-sidebar-menus .menus_items .open-mobile-toc #rightside {
+  -webkit-transform: translate3d(-288px, 0, 0) !important;
+  -moz-transform: translate3d(-288px, 0, 0) !important;
+  -o-transform: translate3d(-288px, 0, 0) !important;
+  -ms-transform: translate3d(-288px, 0, 0) !important;
+  transform: translate3d(-288px, 0, 0) !important;
+}
+#mobile-sidebar #mobile-sidebar-menus .menus_items .open-mobile-menus {
+  padding-left: 0 !important;
+}
+#mobile-sidebar #mobile-sidebar-menus .menus_items .open-mobile-menus #mobile-sidebar #mobile-sidebar-menus {
+  -webkit-transform: translateX(-244px);
+  -moz-transform: translateX(-244px);
+  -o-transform: translateX(-244px);
+  -ms-transform: translateX(-244px);
+  transform: translateX(-244px);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+#mobile-sidebar #mobile-sidebar-menus .menus_items .open-mobile-menus #sidebar {
+  left: -300px !important;
+}
+#mobile-sidebar #mobile-sidebar-menus .menus_items .open-mobile-toc #mobile-sidebar #mobile-sidebar-toc {
+  -webkit-transform: translateX(-244px);
+  -moz-transform: translateX(-244px);
+  -o-transform: translateX(-244px);
+  -ms-transform: translateX(-244px);
+  transform: translateX(-244px);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+@media screen and (max-width: 768px) {
+  #mobile-sidebar #mobile-sidebar-menus .menus_items #mobile-sidebar-menus {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #mobile-sidebar #mobile-sidebar-menus .menus_items #mobile-sidebar-toc {
+    display: block !important;
+  }
+}
 .layout_page {
   display: -webkit-box;
   display: -moz-box;
@@ -3278,7 +3359,7 @@ _:future,
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap {
   color: #858585;
-  font-size: 90%;
+  font-size: 80%;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .post-meta-date {
   cursor: default;
@@ -3555,7 +3636,11 @@ _:future,
 }
 @media screen and (max-width: 768px) {
   .layout_page {
-    padding: 1rem 5px !important;
+    padding: 1rem 0.75rem !important;
+  }
+  .layout_page .content {
+    height: auto;
+    font-size: 0.6rem;
   }
   .layout_page > div:first-child:not(.recent-posts) {
     padding: 1.8rem 0.7rem;
@@ -3952,7 +4037,7 @@ _:future,
   line-height: 0.3rem;
 }
 a {
-  color: #99a9bf;
+  color: #638fff;
   text-decoration: none;
   word-wrap: break-word;
   -webkit-transition: all 0.2s;
@@ -4301,28 +4386,23 @@ img {
 #rightside {
   position: fixed;
   right: -38px;
-  bottom: 40px;
+  bottom: 10px;
   z-index: 100;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
 }
 #rightside #rightside-config-hide {
-  -webkit-transition: -webkit-transform 0.4s;
-  -moz-transition: -moz-transform 0.4s;
-  -o-transition: -o-transform 0.4s;
-  -ms-transition: -ms-transform 0.4s;
-  transition: transform 0.4s;
-  -webkit-transform: translate(35px, 0);
-  -moz-transform: translate(35px, 0);
-  -o-transform: translate(35px, 0);
-  -ms-transform: translate(35px, 0);
-  transform: translate(35px, 0);
+  -webkit-transform: translate(40px, 0);
+  -moz-transform: translate(40px, 0);
+  -o-transform: translate(40px, 0);
+  -ms-transform: translate(40px, 0);
+  transform: translate(40px, 0);
 }
 #rightside #rightside-config-hide.show {
   -webkit-transform: translate(0, 0) !important;
@@ -4335,13 +4415,17 @@ img {
 #rightside > div > a {
   display: block;
   margin-bottom: 2px;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   background-color: var(--btn-bg);
   color: var(--btn-color);
   text-align: center;
   font-size: 16px;
+  line-height: 35px;
+  margin-bottom: 4px;
+  margin-right: 4px;
   cursor: pointer;
+  border-radius: 3px;
 }
 #rightside > div > button:hover,
 #rightside > div > a:hover {
@@ -4446,6 +4530,10 @@ img {
   border-right-color: #009d92;
   background: #00c4b6;
   color: #fff;
+  border-radius: 5px;
+  width: max-content;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 #sidebar .sidebar-toc__progress {
   position: relative;
