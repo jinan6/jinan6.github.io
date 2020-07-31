@@ -46,7 +46,7 @@ script.
   } else if (autoChangeMode === '2') {
     now = new Date()
     hour = now.getHours()
-    isNight = hour <= 6 || hour >= 18
+    isNight = hour <= 7 || hour >= 21
     if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
     else if (t === 'light') activateLightMode()
     else activateDarkMode()

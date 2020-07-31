@@ -15,17 +15,19 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 {% radio blue checked, 添加全站黑白效果 %}
 
+{% radio blue checked, 换回pjax版 %}
+
 ### 2020-07-25
 
 {% radio red checked, 更换全局字体为`Rubik` %}
 
-{% radio red checked, ~~添加live2d看板娘~~ %}
+{% radio red checked, 添加live2d看板娘%}
 
 {% radio red checked, 添加全站黑白效果 %}
 
 ### 2020-07-24
 
-{% radio yellow checked, 换回Dev版 %}
+{% radio yellow checked, ~~换回Dev版~~ %}
 
 ### 2020-07-18
 

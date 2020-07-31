@@ -93,7 +93,7 @@
 
       & > .article-meta-wrap
         color: $theme-meta-color
-        font-size: 90%
+        font-size: 80%
 
         & > .post-meta-date
           cursor: default
@@ -326,7 +326,11 @@
 
 @media screen and (max-width: $sm)
   .layout_page
-    padding: 1rem 5px !important
+    padding: 1rem 0.75rem !important
+
+    .content
+      height: auto
+      font-size: 0.6rem
 
     & > div:first-child:not(.recent-posts)
       padding: 1.8rem .7rem
