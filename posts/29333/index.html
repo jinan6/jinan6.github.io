@@ -56,13 +56,15 @@ if (autoChangeMode === '1') {
   function initValine () {
     window.valine = new Valine({
       el: '#vcomment',
+      master:'ce2266d4e91782573b50c29e06a811e4',    //博主md5加密邮箱
+      friends:'d799cdaab02b754cb52617372d860835,e8b9c844c07c99938135e4efdda43334,3e440f8724c5acd24d0a4fab6eb6a6d1,f836e33cb73b725cafe2756c75b9c844,ab18692a14d8aeb965ea8b0c3dae285b,49734d6324849e13a50c2dc3058a1070,11a24387fd883e96428c9410db2b60f4',  //小伙伴md5加密邮箱
       appId: '027OlclAiHmUjOrixaVqodkU-MdYXbMMI',
       appKey: 'Cbi33IqwioAJzqeH3ma6fo3F',
       placeholder: '建议在上方留下昵称和邮箱等信息，以便收到回复通知（以下方式二选一）：\n1、仅在昵称中留下QQ号（系统自动获取QQ昵称、QQ邮箱、QQ头像等信息）\n2、自定义填写昵称、邮箱、网址信息（系统自动匹配头像）',
       avatar: 'monsterid',
       meta: '昵称,邮箱,主页'.split(','),
       pageSize: '10',
-      lang: 'zh-CN',
+      lang: 'zh-cn',
       recordIP: true,
       serverURLs: '',
       emojiCDN: '//i0.hdslb.com/bfs/emote/',
@@ -74,7 +76,7 @@ if (autoChangeMode === '1') {
   }
 
   if (typeof Valine === 'function') initValine() 
-  else $.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js', initValine)
+  else $.getScript('https://cdn.jsdelivr.net/gh/jinan6/CDN/js/Valine.js', initValine)
 }
 
 if ('Valine' === 'Valine' || !true) {
