@@ -273,7 +273,7 @@ comments:
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to false, the comment count will be invalid
-  lazyload: false
+  lazyload: true
   count: false # Display comment count in top_img
 
 # disqus
@@ -555,11 +555,11 @@ activate_power_mode:
 
 # Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
 fireworks:
-  enable: true
+  enable: false
   zIndex: 9999 # -1 or 9999
 
 # Mouse click effects: Heart symbol (鼠標點擊效果: 愛心)
-click_heart: false
+click_heart: true
 
 # Mouse click effects: words (鼠標點擊效果: 文字)
 ClickShowText:
@@ -579,7 +579,7 @@ beautify:
   enable: true
   field: post # site/post
   title-prefix-icon: '\f0e7'
-  title-prefix-icon-color: '#49b1f5'
+  title-prefix-icon-color: '#FFB821'
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
@@ -678,7 +678,7 @@ runtimeshow:
 
 # Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
-  enable: false
+  enable: true
   # The text of a button
   default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
@@ -904,6 +904,3 @@ CDN:
   aplayer_css: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
   aplayer_js: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
   meting_js: https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js
-
- #全站黑白
-blackandwhite: false
