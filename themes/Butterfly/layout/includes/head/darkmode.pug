@@ -33,7 +33,7 @@ script.
         console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
         var now = new Date()
         var hour = now.getHours()
-        var isNight = hour <= 6 || hour >= 18
+        var isNight = hour <= 7 || hour >= 21
         isNight ? activateDarkMode() : activateLightMode()
       }
       window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {

@@ -155,7 +155,7 @@ error_img:
 # A simple 404 page
 error_404:
   enable: true
-  subtitle: '页面没有找到'
+  subtitle: '😫😫😫页面没有找到'
   background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
 
 post_meta:
@@ -204,12 +204,12 @@ post_copyright:
 reward:
   enable: false
   QR_code:
-    - img: /img/wechat.jpg
-      link:
-      text: wechat
-    - img: /img/alipay.jpg
-      link:
-      text: alipay
+    # - img: /img/wechat.jpg
+    #   link:
+    #   text: wechat
+    # - img: /img/alipay.jpg
+    #   link:
+    #   text: alipay
 
 # Related Articles
 related_post:
@@ -273,7 +273,7 @@ comments:
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to false, the comment count will be invalid
-  lazyload: true
+  lazyload: false
   count: false # Display comment count in top_img
 
 # disqus
@@ -314,21 +314,6 @@ gitalk:
 
 # valine
 # https://valine.js.org
-# valine:
-#   appId: 027OlclAiHmUjOrixaVqodkU-MdYXbMMI # leancloud application app id
-#   appKey: Cbi33IqwioAJzqeH3ma6fo3F # leancloud application app key
-#   pageSize: 10 # comment list page size
-#   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-#   lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
-#   placeholder: 建议在上方留下昵称和邮箱等信息，以便收到回复通知（以下方式二选一）：\n1、仅在昵称中留下QQ号（系统自动获取QQ昵称、QQ邮箱、QQ头像等信息）\n2、自定义填写昵称、邮箱、网址信息（系统自动匹配头像） # valine comment input placeholder(like: Please leave your footprints )
-#   guest_info: 昵称,邮箱,主页 #valine comment header info (nick/mail/link)
-#   recordIP: true # Record reviewer IP
-#   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-#   bg: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200620143712.gif # valine background
-#   emojiCDN: '//i0.hdslb.com/bfs/emote/'
-#   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
-#   requiredFields: nick,mail # required fields (nick/mail)
-
 valine:
   appId: 027OlclAiHmUjOrixaVqodkU-MdYXbMMI # leancloud application app id
   appKey: Cbi33IqwioAJzqeH3ma6fo3F # leancloud application app key
@@ -525,7 +510,7 @@ tag_ui: # 留空或 index
 # The formal of color: '#49B202'
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 # White color will be shown as default
-background:
+background: '#efefef'
 
 # Show the footer background image (same as top_img)
 footer_bg: false
@@ -635,7 +620,6 @@ subtitle:
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub:
     - 或苦或甜都不要辜负
-
 # Loading Animation (加載動畫)
 preloader: false
 
@@ -694,7 +678,7 @@ runtimeshow:
 
 # Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
-  enable: true
+  enable: false
   # The text of a button
   default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
@@ -718,7 +702,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: false
+  autoChangeMode: 2
 
 # Lightbox (圖片大圖查看模式)
 # --------------------------------------
@@ -765,7 +749,9 @@ note:
 pjax: true
 
 # Inject the css and script (aplayer/meting)
-aplayerInject: true
+aplayerInject:
+  enable: true
+  per_page: true
 
 # Snackbar (Toast Notification 彈窗)
 # https://github.com/polonel/SnackBar
@@ -835,6 +821,7 @@ inject:
       - <div class="aplayer no-destroy" data-id="5015814685" data-server="netease" data-type='playlist' data-fixed='true' data-mini='true' data-listFolded='false' data-order='list' data-preload='none' data-autoplay='false' muted></div>
       - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/title.js"></script>		#搞怪标题
       - <script data-pjax src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script>   #页脚的鱼
+
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
@@ -851,7 +838,6 @@ CDN:
   # comments
   gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
-  # valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
   valine: https://cdn.jsdelivr.net/gh/jinan6/CDN/js/Valine.js
   disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
   disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css

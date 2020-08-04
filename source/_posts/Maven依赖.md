@@ -96,6 +96,20 @@ top_img:
         </dependency>
 ```
 
+### Spring整合thymeleaf模板
+
+```yml
+<!--thymeleaf模板-->
+<dependency>
+    <groupId>org.thymeleaf</groupId>
+    <artifactId>thymeleaf-spring5</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.thymeleaf.extras</groupId>
+    <artifactId>thymeleaf-extras-java8time</artifactId>
+</dependency>
+```
+
 
 
 ### Shiro
@@ -131,6 +145,18 @@ top_img:
 			    <artifactId>spring-boot-devtools</artifactId>
 			    <optional>true</optional> <!-- 这个需要为 true 热部署才有效 -->
 		</dependency>
+```
+
+### JSONObject
+
+```yml
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>2.4</version>
+            <!-- 必须加jdk的版本号 -->
+            <classifier>jdk15</classifier>
+        </dependency>
 ```
 
 
