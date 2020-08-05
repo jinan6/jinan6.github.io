@@ -11,6 +11,14 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ## 更新记录
 
+### 2020-08-05
+
+{% checkbox green checked, 添加当前访问用户 %}
+
+{% checkbox green checked, 添加侧边栏关于网站 %}
+
+{% checkbox green checked, 升级Hexo5.0.0 %}
+
 ### 2020-07-28
 
 {% radio blue checked, 添加全站黑白效果 %}
