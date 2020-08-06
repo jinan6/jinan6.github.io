@@ -4,7 +4,7 @@ tags:
   - Maven
 categories:
   - Maven
-cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619150712.jpg
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200806170404.jpg
 sticky: 9
 abbrlink: 3261239934
 date: 2020-06-18 10:05:52

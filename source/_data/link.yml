@@ -1,5 +1,5 @@
 - class_name: 友情链接
-  class_desc: 那些人，那些事
+  class_desc: 大佬们
   link_list:
     - name: JerryC
       link: https://jerryc.me/
@@ -16,6 +16,11 @@
       custom: link_custom1
       time: 4s
       rotate: 360deg
+
+    # - name: shuowen
+    #   link: https://shuowen.github.io
+    #   avatar: https://shuowen.github.io/img/1596328623057.jpeg
+    #   descr: 同学
 
     - name: Sakura` Blogs
       link: https://jinan6.vip
@@ -57,13 +62,6 @@
       link: https://cungudafa.top
       avatar: https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/custom/cungudafa.jpg
       descr:  一个学习记录者
-
-    - name: 小康博客
-      link: https://www.antmoe.com/
-      avatar: https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg
-      descr: 一个收藏回忆与分享技术的地方！
-      # width: 1px
-      # color: "#881B12"
 
     - name: 鱼跃此时海
       link: https://www.overme.cn/
@@ -119,7 +117,7 @@
       descr: 又菜又爱学
 
 - class_name: 网站
-  class_desc: 常用网址
+  class_desc: 我的一些常用网址
   link_list:
     - name: 阿里巴巴矢量图标库
       link: https://www.iconfont.cn/

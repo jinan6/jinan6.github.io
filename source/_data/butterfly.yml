@@ -230,7 +230,7 @@ noticeOutdate:
   style: flat # style: simple/flat
   limit_day: 7 # When will it be shown
   position: top # position: top/bottom
-  message_prev: 文章已更新
+  message_prev: 😋😋😋文章已更新
   message_next: 天以上，其中有些内容可能已经过时
 
 # Share System (分享功能)
