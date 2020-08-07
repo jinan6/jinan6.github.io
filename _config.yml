@@ -115,7 +115,7 @@ deploy:
 backup:
   type: git
   theme: Butterfly
-  message: Butterfly主题博客备份
+  message: 3.0.0修改源码记录
   repository:
     github: git@github.com:jinan6/jinan6.github.io.git,butterfly
 #Rss插件

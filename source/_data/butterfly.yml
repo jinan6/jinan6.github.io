@@ -218,7 +218,7 @@ related_post:
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption (圖片描述文字)
-photofigcaption: false
+photofigcaption: true
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
@@ -816,8 +816,10 @@ fragment_cache: true
 inject:
   head:
   # - <link rel="stylesheet" href="/xxx.css">
+   - '<style type="text/css">#toggle-sidebar {bottom: 80px}</style>'  #音乐向上调整
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/custom.min.css">	#自定义css文件
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/iconfont.css"> #阿里图标
+   - <link rel="stylesheet" href="/css/meihua.css"> #阿里图标
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/custom.css"> #关于-css
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/tag-Plus.css">   #当前访问用户css 修正版
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/font-awesome-animation.css"> #动画
