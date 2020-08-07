@@ -2,7 +2,7 @@
 title: SpringBoot
 tags: 记录
 categories: 记录
-cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200622093715.jpg
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200807185513.jpg
 abbrlink: 1864766114
 date: 2020-06-22 08:39:15
 sticky:

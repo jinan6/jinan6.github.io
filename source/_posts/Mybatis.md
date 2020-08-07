@@ -2,7 +2,7 @@
 title: Mybatis
 tags: 记录
 categories: 记录
-cover: 'https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200622084022.jpg'
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200807185922.jpg
 abbrlink: 3661501281
 date: 2020-06-22 08:40:49
 sticky:

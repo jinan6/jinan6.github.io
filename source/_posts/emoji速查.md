@@ -2,7 +2,7 @@
 title: emoji速查
 tags: emoji
 categories: emoji
-cover: 'https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200623104659.jpg'
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200807185803.jpg
 abbrlink: 709269996
 date: 2020-06-23 10:44:28
 sticky:
