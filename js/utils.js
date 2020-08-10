@@ -1,1 +1,131 @@
-"use strict";function debounce(i,o,a){var r;return function(){var t=this,e=arguments,n=a&&!r;clearTimeout(r),r=setTimeout(function(){r=null,a||i.apply(t,e)},o),n&&i.apply(t,e)}}function throttle(n,i,o){var a,r,c,l=0;o=o||{};function s(){l=!1===o.leading?0:(new Date).getTime(),a=null,n.apply(r,c),a||(r=c=null)}return function(){var t=(new Date).getTime();l||!1!==o.leading||(l=t);var e=i-(t-l);r=this,c=arguments,e<=0||i<e?(a&&(clearTimeout(a),a=null),l=t,n.apply(r,c),a||(r=c=null)):a||!1===o.trailing||(a=setTimeout(s,e))}}function sidebarPaddingR(){var t=window.innerWidth,e=document.body.clientWidth,n=t-e;t!==e&&$("body").css("padding-right",n)}function scrollToDest(t){var e=1<arguments.length&&void 0!==arguments[1]?arguments[1]:0,n=$(t).offset();$("body,html").animate({scrollTop:n.top-e})}function snackbarShow(t,e,n){var i=void 0!==e&&e,o=void 0!==n?n:2e3,a=GLOBAL_CONFIG.Snackbar.position,r="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark;Snackbar.show({text:t,backgroundColor:r,showAction:i,duration:o,pos:a})}var Cookies={get:function(t){var e="; ".concat(document.cookie).split("; ".concat(t,"="));if(2===e.length)return e.pop().split(";").shift()},set:function(t,e,n){var i,o="";n&&((i=new Date).setTime(i.getTime()+24*n*60*60*1e3),o="; expires="+i.toUTCString()),document.cookie=t+"="+(e||"")+o+"; path=/"}},initJustifiedGallery=function(t){t.each(function(t,e){$(this).is(":visible")&&$(this).justifiedGallery({rowHeight:220,margins:4})})},diffDate=function(t){var e=new Date,n=new Date(t.replace(/-/g,"/")),i=e.getTime()-n.getTime();return Math.floor(i/864e5)},loadComment=function(t,e){var n;"IntersectionObserver"in window?(n=new IntersectionObserver(function(t){t[0].isIntersecting&&(e(),n.disconnect())},{threshold:[0]})).observe(t):e()};
+/* eslint-disable no-unused-vars */
+
+function debounce (func, wait, immediate) {
+  let timeout
+  return function () {
+    const context = this
+    const args = arguments
+    const later = function () {
+      timeout = null
+      if (!immediate) func.apply(context, args)
+    }
+    const callNow = immediate && !timeout
+    clearTimeout(timeout)
+    timeout = setTimeout(later, wait)
+    if (callNow) func.apply(context, args)
+  }
+};
+
+function throttle (func, wait, options) {
+  let timeout, context, args
+  let previous = 0
+  if (!options) options = {}
+
+  const later = function () {
+    previous = options.leading === false ? 0 : new Date().getTime()
+    timeout = null
+    func.apply(context, args)
+    if (!timeout) context = args = null
+  }
+
+  const throttled = function () {
+    const now = new Date().getTime()
+    if (!previous && options.leading === false) previous = now
+    const remaining = wait - (now - previous)
+    context = this
+    args = arguments
+    if (remaining <= 0 || remaining > wait) {
+      if (timeout) {
+        clearTimeout(timeout)
+        timeout = null
+      }
+      previous = now
+      func.apply(context, args)
+      if (!timeout) context = args = null
+    } else if (!timeout && options.trailing !== false) {
+      timeout = setTimeout(later, remaining)
+    }
+  }
+
+  return throttled
+}
+
+function sidebarPaddingR () {
+  const innerWidth = window.innerWidth
+  const clientWidth = document.body.clientWidth
+  const paddingRight = innerWidth - clientWidth
+  if (innerWidth !== clientWidth) {
+    $('body').css('padding-right', paddingRight)
+  }
+}
+
+function scrollToDest (name, offset = 0) {
+  const scrollOffset = $(name).offset()
+  $('body,html').animate({
+    scrollTop: scrollOffset.top - offset
+  })
+};
+
+function snackbarShow (text, showAction, duration) {
+  const sa = (typeof showAction !== 'undefined') ? showAction : false
+  const dur = (typeof duration !== 'undefined') ? duration : 2000
+  const position = GLOBAL_CONFIG.Snackbar.position
+  const bg = document.documentElement.getAttribute('data-theme') === 'light' ? GLOBAL_CONFIG.Snackbar.bgLight : GLOBAL_CONFIG.Snackbar.bgDark
+  Snackbar.show({
+    text: text,
+    backgroundColor: bg,
+    showAction: sa,
+    duration: dur,
+    pos: position
+  })
+}
+
+const Cookies = {
+  get: function (name) {
+    const value = `; ${document.cookie}`
+    const parts = value.split(`; ${name}=`)
+    if (parts.length === 2) return parts.pop().split(';').shift()
+  },
+  set: function (name, value, days) {
+    let expires = ''
+    if (days) {
+      const date = new Date()
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000))
+      expires = '; expires=' + date.toUTCString()
+    }
+    document.cookie = name + '=' + (value || '') + expires + '; path=/'
+  }
+}
+
+const initJustifiedGallery = function (selector) {
+  selector.each(function (i, o) {
+    if ($(this).is(':visible')) {
+      $(this).justifiedGallery({
+        rowHeight: 220,
+        margins: 4
+      })
+    }
+  })
+}
+
+const diffDate = d => {
+  const dateNow = new Date()
+  const datePost = new Date(d.replace(/-/g, '/'))
+  const dateDiff = dateNow.getTime() - datePost.getTime()
+  const dayDiff = Math.floor(dateDiff / (24 * 3600 * 1000))
+  return dayDiff
+}
+
+const loadComment = (dom, callback) => {
+  if ('IntersectionObserver' in window) {
+    const observerItem = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        callback()
+        observerItem.disconnect()
+      }
+    }, { threshold: [0] })
+    observerItem.observe(dom)
+  } else {
+    callback()
+  }
+}
