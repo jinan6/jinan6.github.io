@@ -9,12 +9,12 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "5.0.0"
+    "version": "5.0.2"
   },
   "dependencies": {
     "gulp-htmlmin": "^5.0.1",
-    "hexo": "^5.0.0",
-    "hexo-abbrlink": "^2.0.5",
+    "hexo": "^5.0.2",
+    "hexo-abbrlink": "^2.2.1",
     "hexo-asset-image": "git+https://github.com/CodeFalling/hexo-asset-image.git",
     "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
@@ -30,12 +30,12 @@
     "hexo-renderer-marked": "^3.0.0",
     "hexo-renderer-pug": "^1.0.0",
     "hexo-renderer-stylus": "^1.1.0",
-    "hexo-server": "^1.0.0",
+    "hexo-server": "^2.0.0",
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.5",
+    "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.10.4",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",

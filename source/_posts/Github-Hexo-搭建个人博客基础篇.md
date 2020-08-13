@@ -12,21 +12,6 @@ cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200806201546.jpg
 
 <div class='tip info faa-horizontal animated'><p>突发奇想，想自己搞一个博客于是就有了后来的事。记录下这个过程，积累一些经验，同时也方便以后自己看看<p></div>
 
-#### 本文目录
-
-- 安装环境
-- 安装**Node.js**
-- 添加国内镜像
-- 安装**Git**
-- 注册**Github**账号
-- 创建**Git**仓库
-- 安装**Hexo**
-- 配置本地**Hexo**
-- 连接**Github**与本地
-- 写文章，发布
-- 更换自己喜欢的**Hexo**主题
-- 结语
-
 #### 安装环境
 
 要想搭建**Hexo**，我们先需要安装一下两个其他的东西
