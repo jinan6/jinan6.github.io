@@ -110,6 +110,7 @@ index_img:
 # if the banner of page not setting, it will show the top_img
 # default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200622075322.jpg  #桌子
 default_top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200622075321.jpg  #灯
+# default_top_img: https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302  #随机api
 # default_top_img: https://cdn.jsdelivr.net/gh/yunwanjia-cloud/banner/25-min.jpg  #鬼刀
 # default_top_img: https://cdn.jsdelivr.net/gh/yunwanjia-cloud/banner/27-min.jpg  #鬼刀2
 # default_top_img: https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture   #随机图片
@@ -662,7 +663,7 @@ aside:
       link: https://github.com/jinan6
   card_announcement:
     enable: true
-    content: 关闭全站pjax，取消左下角音乐播放器，关闭看板娘。<p style="text-align:center;color:#49B1F5">2020年8月10日上午✨</p><br><div class="item-headline" style="margin:10px 0"><i class="fas fa-laptop card-announcement-animation"></i><span>关于本站</span></div><div class="github-badge"><a style="color:#fff" href="https://hexo.io/" target="_blank" title="由 Hexo 强力驱动"><span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo5.0.0</span></a><a style="color:#fff" href="https://github.com/" target="_blank" title="静态网页托管于 Github" ><span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen">Github</span><a style="color:#fff" href="https://www.jsdelivr.com/" target="_blank" title="jsDelivr 提供 CDN 加速服务" ><span class="badge-subject">CDN</span><span class="badge-value bg-orange">jsDelivr</span></a><a style="color:#fff" href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" title="站点使用 Butterfly 3.0.0 主题" ><span class="badge-subject">Theme</span><span class="badge-value bg-blue">Butterfly 3.0.0</span></a><a style="color:#fff" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可"><span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span></a></div>
+    content: 关闭全站pjax，取消左下角音乐播放器，关闭看板娘。<p style="text-align:center;color:#49B1F5">2020年8月10日上午✨</p><br><div class="item-headline" style="margin:10px 0"><i class="fas fa-laptop card-announcement-animation"></i><span>关于本站</span></div><div class="github-badge"><a style="color:#fff" href="https://hexo.io/" target="_blank" title="由 Hexo 强力驱动"><span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo5.0.2</span></a><a style="color:#fff" href="https://github.com/" target="_blank" title="静态网页托管于 Github" ><span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen">Github</span><a style="color:#fff" href="https://www.jsdelivr.com/" target="_blank" title="jsDelivr 提供 CDN 加速服务" ><span class="badge-subject">CDN</span><span class="badge-value bg-orange">jsDelivr</span></a><a style="color:#fff" href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" title="站点使用 Butterfly 3.0.0 主题" ><span class="badge-subject">Theme</span><span class="badge-value bg-blue">Butterfly 3.0.0</span></a><a style="color:#fff" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可"><span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span></a></div>
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -834,7 +835,8 @@ fragment_cache: true
 inject:
   head:
   # - <link rel="stylesheet" href="/xxx.css">
-   - '<style type="text/css">#toggle-sidebar {bottom: 80px}</style>'  #音乐向上调整
+  #  - '<style type="text/css">#toggle-sidebar {bottom: 80px}</style>'  #音乐向上调整
+   - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"> #跳动的心
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/custom.min.css">	#自定义css文件
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/iconfont.css"> #阿里图标
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/meihua.css"> #乐特的css

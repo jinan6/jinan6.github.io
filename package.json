@@ -18,6 +18,7 @@
     "hexo-asset-image": "git+https://github.com/CodeFalling/hexo-asset-image.git",
     "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-calendar": "git://github.com/howiefh/hexo-generator-calendar.git",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^2.2.0",
     "hexo-generator-indexed": "^1.2.0",
