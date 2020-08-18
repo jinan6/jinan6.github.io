@@ -6,7 +6,9 @@ if theme.aside.enable
       if theme.aside.card_announcement.enable
         !=partial('includes/widget/card_announcement', {}, {cache:theme.fragment_cache})
       if theme.aside.card_ip
-              !=partial('includes/widget/card_ip', {}, {cache: theme.fragment_cache})
+        !=partial('includes/widget/card_ip', {}, {cache: theme.fragment_cache})
+      if theme.aside.card_calendar
+        !=partial('includes/widget/card_calendar', {}, {cache:theme.fragment_cache})
       if theme.aside.card_recent_post.enable
         !=partial('includes/widget/card_recent_post', {}, {cache:theme.fragment_cache})
       if theme.ad && theme.ad.aside

@@ -684,6 +684,7 @@ aside:
     limit: 8 # if set 0 will show all
   card_webinfo: true
   card_ip: true
+  card_calendar: true
 
 # busuanzi count for PV / UV in site
 # 訪問人數
@@ -853,6 +854,8 @@ inject:
       - <script data-pjax src="https://pv.sohu.com/cityjson?ie=utf-8"></script>   #当前访问用户
       - <script data-pjax src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/Mobile_folding.js"></script>   #手机端导航栏默认不展开
       - <script data-pjax src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/ip_content.js"></script>     #当前访问用户js
+      - <script src="/js/calendar.js"></script>
+      - <script src="/js/languages.js"></script>
       # - <script data-pjax src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/Max.js"></script>     #总的js
       # - <script data-pjax src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script>   #页脚的鱼
 
