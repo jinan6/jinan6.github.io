@@ -18,8 +18,8 @@
     & > a
       display: block
       margin-bottom: 2px
-      width: 35px
-      height: 35px
+      width: 36px
+      height: 36px
       background-color: var(--btn-bg)
       color: var(--btn-color)
       text-align: center
@@ -40,5 +40,5 @@
   #mobile-toc-button
     display: none
 
-    @media screen and (max-width: $bg)
+    +maxWidth1024()
       display: block

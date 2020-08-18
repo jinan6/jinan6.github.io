@@ -7,10 +7,10 @@ script.
     function initValine () {
       window.valine = new Valine({
         el: '#vcomment',
-        //- master:'#{theme.valine.master}',    //博主md5加密邮箱
-        //- friends:'#{theme.valine.friends}',  //小伙伴md5加密邮箱
         appId: '#{theme.valine.appId}',
         appKey: '#{theme.valine.appKey}',
+        master:'#{theme.valine.master}',    //博主md5加密邮箱
+        friends:'#{theme.valine.friends}',  //小伙伴md5加密邮箱
         placeholder: '#{theme.valine.placeholder}',
         avatar: '#{theme.valine.avatar}',
         meta: '#{theme.valine.guest_info }'.split(','),
