@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>在小白鸽遇到的问题</title>
+      <link href="/posts/704219325/"/>
+      <url>/posts/704219325/</url>
+      
+        <content type="html"><![CDATA[<div class="snote bug"><p>近期碰到并且已解决的问题</p></div><h3 id="一个输入框需要传多个字段的情况"><a href="#一个输入框需要传多个字段的情况" class="headerlink" title="一个输入框需要传多个字段的情况"></a>一个输入框需要传多个字段的情况</h3><p><img src= "https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/19.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200824194406.png"></p><p>解决：</p><ol><li><p>在实体类新加一个字段</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**用来查询多个值得条件*/</span></span><br><span class="line"><span class="meta">@Excel(name = &quot;用来查询多个值得条件&quot;)</span></span><br><span class="line"><span class="keyword">private</span> String Bastard;</span><br></pre></td></tr></table></figure><p>生成对应的    get  和 set  ，还有    toString</p></li><li><p>然后在相应的<code>xml</code>里，加入以下配置</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;Bastard != null  and Bastard != &#x27;&#x27;&quot;</span>&gt;</span></span><br><span class="line">    and (stu.`user_name` like concat(&#x27;%&#x27;,#&#123;Bastard&#125;,&#x27;%&#x27;)</span><br><span class="line">    or stu.`student_num` = #&#123;Bastard&#125;</span><br><span class="line">    or stu.`phone` = #&#123;Bastard&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br></pre></td></tr></table></figure></li><li><p>然后在对应的<code>html</code>里写入对应的<code>name</code>即可</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">input</span> <span class="attr">style</span>=<span class="string">&quot;border:none; border-bottom:2px solid #eee;outline:none&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;Bastard&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;学员姓名及首字母/学号/电话&quot;</span>  /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br></pre></td></tr></table></figure></li></ol><h3 id="Mybatis里面的foreach用法"><a href="#Mybatis里面的foreach用法" class="headerlink" title="Mybatis里面的foreach用法"></a>Mybatis里面的foreach用法</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;className != null  and className != &#x27;&#x27;&quot;</span>&gt;</span></span><br><span class="line">    and cla.`class_name` in</span><br><span class="line">    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">collection</span>=<span class="string">&quot;className.split(&#x27;,&#x27;)&quot;</span>  <span class="attr">open</span>=<span class="string">&quot;(&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;,&quot;</span> <span class="attr">close</span>=<span class="string">&quot;)&quot;</span>&gt;</span></span><br><span class="line">        #&#123;item&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br></pre></td></tr></table></figure><p>foreach元素的属性主要有 item，index，collection，open，separator，close。</p><p>item表示集合中每一个元素进行迭代时的别名.</p><p>index指 定一个名字，用于表示在迭代过程中，每次迭代到的位置.</p><p>open表示该语句以什么开始，separator表示在每次进行迭代之间以什么符号作为分隔 符.</p><p>close表示以什么结束.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># item表示集合中每一个元素进行迭代时的别名.</span><br><span class="line"># index指 定一个名字，用于表示在迭代过程中，每次迭代到的位置.</span><br><span class="line"># collection 为传进来的collection参数的 *类型*</span><br><span class="line"># open表示该语句以什么开始</span><br><span class="line"># separator表示在每次进行迭代之间以什么符号作为分隔符</span><br><span class="line"># close表示以什么结束</span><br></pre></td></tr></table></figure><h3 id="SQL语句减法运算"><a href="#SQL语句减法运算" class="headerlink" title="SQL语句减法运算"></a>SQL语句减法运算</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">直接通过“bai+”、“-”符号运算即可;</span><br><span class="line">        //第一个字段                减    第二个字段            别名</span><br><span class="line"><span class="keyword">SELECT</span> (sub.<span class="string">`purchase_quantity`</span> - sub.<span class="string">`remaining_courses`</span>) a <span class="keyword">FROM</span> dove_student_subgect sub  </span><br></pre></td></tr></table></figure><p><strong>不定时更新补充—–</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mybatis </category>
+          
+          <category> 记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 记录 </tag>
+            
+            <tag> Mybatis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>上传图片到七牛云之封装</title>
       <link href="/posts/3109851417/"/>
       <url>/posts/3109851417/</url>
