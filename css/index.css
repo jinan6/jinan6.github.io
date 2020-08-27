@@ -3790,6 +3790,16 @@ _:future,
   overflow: hidden;
   margin-top: 1rem;
   width: 100%;
+  border-radius: 8px;
+}
+#pagination img.prev-cover,
+#pagination img.next-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
 }
 #pagination .pagination {
   text-align: center;
@@ -3797,16 +3807,17 @@ _:future,
 #pagination .page-number {
   display: inline-block;
   margin: 0 0.2rem;
-  min-width: 1.2rem;
-  height: 1.2rem;
+  min-width: 1.5rem;
+  height: 1.5rem;
   text-align: center;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
   cursor: pointer;
 }
 #pagination .page-number.current {
   background: #00c4b6;
   color: var(--white);
   cursor: default;
+  border-radius: 20px;
 }
 #pagination img.prev-cover,
 #pagination img.next-cover {
@@ -4161,10 +4172,12 @@ img {
   margin: 0.4rem 0.4rem 0.4rem 0;
   padding: 0 0.6rem;
   width: fit-content;
-  border: 1px solid #49b1f5;
-  border-radius: 0.6rem;
-  color: #49b1f5;
-  font-size: 0.85em;
+  border: 2px solid #4c4948;
+  border-radius: 0.2rem;
+  color: #4c4948;
+  font-size: 14px;
+  text-decoration: overline;
+  cursor: pointer;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -4195,12 +4208,13 @@ img {
   position: relative;
   margin: 2rem 0 0.5rem;
   padding: 0.5rem 0.8rem;
-  border: 1px solid var(--light-grey);
+  border: 1px solid $dark-white;
   -webkit-transition: box-shadow 0.3s ease-in-out;
   -moz-transition: box-shadow 0.3s ease-in-out;
   -o-transition: box-shadow 0.3s ease-in-out;
   -ms-transition: box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out;
+  border-radius: 5px;
 }
 .layout_post .post-copyright:before {
   position: absolute;
@@ -4227,7 +4241,7 @@ img {
   box-shadow: 0 0 8px 0 rgba(232,237,250,0.6), 0 2px 4px 0 rgba(232,237,250,0.5);
 }
 .layout_post .post-copyright .post-copyright-meta {
-  color: #49b1f5;
+  color: #858585;
   font-weight: bold;
 }
 .layout_post .post-copyright .post-copyright-info {
@@ -4615,6 +4629,10 @@ img {
   border-right-color: #009d92;
   background: #00c4b6;
   color: #fff;
+  border-radius: 5px;
+  width: max-content;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 #sidebar .sidebar-toc__progress {
   position: relative;
