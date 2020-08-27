@@ -115,7 +115,7 @@ deploy:
 backup:
   type: git
   theme: Butterfly
-  message: Butterfly 3.1.0-rc1版本--修复
+  message: Butterfly 3.1.0-rc1版本-08-27更新
   repository:
     github: git@github.com:jinan6/jinan6.github.io.git,butterfly
 #Rss插件
@@ -154,3 +154,13 @@ service_worker:
   # - public/**/*.{html,css}
   stripPrefix: public
   verbose: false
+
+#哔哩哔哩插件
+bangumi:
+  enable: true 
+  path: 
+  vmid: 323386473
+  title: '追番列表'
+  quote: '生命不息，追番不止！'
+  show: 1
+  loading:

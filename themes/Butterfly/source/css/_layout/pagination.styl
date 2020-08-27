@@ -2,6 +2,14 @@
   overflow: hidden
   margin-top: 1rem
   width: 100%
+  border-radius: 8px
+
+  img.prev-cover,
+  img.next-cover
+    position: absolute
+    width: 100%
+    height: 100%
+    opacity: .5
 
   .pagination
     text-align: center
@@ -9,7 +17,7 @@
   .page-number
     display: inline-block
     margin: 0 .2rem
-    min-width: w = 1.2rem
+    min-width: w = 1.5rem
     height: w
     text-align: center
     line-height: w
@@ -19,6 +27,7 @@
       background: $theme-paginator-color
       color: var(--white)
       cursor: default
+      border-radius: 20px
 
   img.prev-cover,
   img.next-cover

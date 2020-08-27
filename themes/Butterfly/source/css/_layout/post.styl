@@ -201,11 +201,14 @@ img
         margin: .4rem .4rem .4rem 0
         padding: 0 .6rem
         width: fit-content
-        border: 1px solid $light-blue
-        border-radius: .6rem
-        color: $light-blue
-        font-size: .85em
+        border: 2px solid $font-black
+        border-radius: .2rem
+        color: $font-black
+        font-size: 14px
+        text-decoration: overline
+        cursor: pointer
         transition: all .2s ease-in-out
+        
 
         &:hover
           background: $light-blue
@@ -231,8 +234,9 @@ img
     position: relative
     margin: 2rem 0 .5rem
     padding: .5rem .8rem
-    border: 1px solid var(--light-grey)
+    border: 1px solid $dark-white
     transition: box-shadow .3s ease-in-out
+    border-radius: 5px
 
     &:before
       position: absolute
@@ -259,7 +263,7 @@ img
 
     .post-copyright
       &-meta
-        color: $light-blue
+        color: $grey
         font-weight: bold
 
       &-info

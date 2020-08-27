@@ -7,7 +7,7 @@
 #   name || link || icon
 
 menu:
-  主页: https://blog.jinan6.vip/ || fas fa-rocket
+  # 主页: https://blog.jinan6.vip/ || fas fa-rocket
   首页: / || fa fa-home 
   文章||fa-fw fas fa-book-open:
     - 归档 || /archives/ || fa fa-archive
@@ -21,6 +21,7 @@ menu:
     - 更新记录 || /about/ || fas fa-bible
   娱乐||fa fa-list:
     - 音乐 || /music/ || fa fa-music
+    - 番剧 || /bangumis/ || fas fa-video
     - 樱花 || https://jinan6.vip/Sakura/ || fas fa-feather-alt
     - 小圆点 || https://jinan6.vip/dot/ || fas fa-adjust
     - 液体 || https://jinan6.vip/Fluid/ || fas fa-bacon
@@ -655,10 +656,14 @@ aside:
   card_author:
     enable: true
     description:
+    # button:
+    #   icon: fab fa-github
+    #   text: Follow Me
+    #   link: https://github.com/jinan6
     button:
-      icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/jinan6
+      icon: fas fa-rocket
+      text: 个人主页
+      link: https://blog.jinan6.vip
   card_announcement:
     enable: true
     content: 关闭全站pjax，取消左下角音乐播放器。<p style="text-align:center;color:#49B1F5">2020年8月10日上午✨</p><div class="item-headline" style="margin:10px 0"><i class="fas fa-laptop card-announcement-animation"></i><span>关于本站</span></div><div class="github-badge"><a style="color:#fff" href="https://hexo.io/" target="_blank" title="由 Hexo 强力驱动"><span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo5.0.2</span></a><a style="color:#fff" href="https://github.com/" target="_blank" title="静态网页托管于 Github" ><span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen">Github</span><a style="color:#fff" href="https://www.jsdelivr.com/" target="_blank" title="jsDelivr 提供 CDN 加速服务" ><span class="badge-subject">CDN</span><span class="badge-value bg-orange">jsDelivr</span></a><a style="color:#fff" href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" title="站点使用 Butterfly 3.1.0-rc1 主题" ><span class="badge-subject">Theme</span><span class="badge-value bg-blue">Butterfly 3.1.0-rc1</span></a><a style="color:#fff" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可"><span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span></a></div>

@@ -64,8 +64,6 @@ aside:
   card_tags: 标签
   card_archives: 归档
   card_recent_post: 最新文章
-  card_ip: 当前访问用户
-  card_calendar: 文章日历
   card_webinfo:
     headline: 网站资讯
     article_name: 文章数目
@@ -74,11 +72,14 @@ aside:
       unit: 天
     last_push_date:
       name: 最后更新时间
+      zero_day: 今天
       suffix: 天前
     site_wordcount: 本站总字数
     site_uv_name: 本站访客数
     site_pv_name: 本站总访问量
   more_button: 查看更多
+  card_ip: 当前访问用户
+  card_calendar: 文章日历
 
 donate: 打赏
 share: 分享
