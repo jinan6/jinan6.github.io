@@ -33,7 +33,7 @@ cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200806201546.jpg
 
 ![Node.js](https://img-blog.csdnimg.cn/2020051322344366.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTc3NzU0NA==,size_16,color_FFFFFF,t_70)检查是否安装完成，按**Win+R**打开命令提示符，输入以下代码，查看版本号，如果出现，即为安装成功
 
-```
+```bash
 node -v
 npm -v
 ```
@@ -42,7 +42,7 @@ npm -v
 
 换成阿里的国内镜像，同样是按**Win+R**，输入
 
-```
+```bash
 npm config set registry https://registry.npm.taobao.org
 ```
 
@@ -58,7 +58,7 @@ npm config set registry https://registry.npm.taobao.org
 
 按**Win+R**，输入以下命令查看是否安装成功
 
-```
+```bash
 git --version
 ```
 
@@ -70,7 +70,7 @@ git --version
 
 登录之后新建一个仓库用来存储![创建仓库](https://img-blog.csdnimg.cn/20200513223630340.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTc3NzU0NA==,size_16,color_FFFFFF,t_70)![基本设置](https://img-blog.csdnimg.cn/20200513222317701.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTc3NzU0NA==,size_16,color_FFFFFF,t_70)
 
-点击仓库右上角的 ==**Settings**==，进去页面后往下滑动，找到以下内容![GitHub Pages](https://img-blog.csdnimg.cn/20200513222438682.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTc3NzU0NA==,size_16,color_FFFFFF,t_70)
+点击仓库右上角的 `Settings`，进去页面后往下滑动，找到以下内容![GitHub Pages](https://img-blog.csdnimg.cn/20200513222438682.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTc3NzU0NA==,size_16,color_FFFFFF,t_70)
 
 我们就可以通过这里面的这个地址进行访问了
 
@@ -84,9 +84,9 @@ git --version
 
 > Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](http://daringfireball.net/projects/markdown/)（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
 
-选择一个盘，在里面==新建一个文件夹==用来存放博客文件。建完后在该文件夹右键  <span style='color:red'>Git Bash Here</span> 输入以下 命令即可安装
+选择一个盘，在里面`新建一个文件夹`用来存放博客文件。建完后在该文件夹右键  <span style='color:red'>Git Bash Here</span> 输入以下 命令即可安装
 
-```
+```bash
 $ npm install hexo-cli -g
 ```
 
@@ -94,16 +94,16 @@ $ npm install hexo-cli -g
 
 #### 配置本地Hexo
 
-在刚才新建的文件夹下 右键  <span style='color:red'>Git Bash Here</span> 输入以下 命令进行==初始化==
+在刚才新建的文件夹下 右键  <span style='color:red'>Git Bash Here</span> 输入以下 命令进行`初始化`
 
-```
+```bash
 hexo init
 npm install
 ```
 
 初始化完成后接着输入 <span style='color:red'>hexo g</span> 生成静态网页，然后输入<span style='color:red'>hexo s</span> 打开本地服务器，
 
-```
+```bash
 显示以下内容表示开启成功
 INFO Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.
 ```
@@ -118,10 +118,10 @@ INFO Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.
 
 ##### 常用命令
 
-1. ==hexo g 生成静态网页==
-2. ==hexo s打开服务器==
-3. ==hexo clean 清理缓存==
-4. ==hexo d 部署到 Github==
+1. `hexo g 生成静态网页`
+2. `hexo s打开服务器`
+3. `hexo clean 清理缓存`
+4. `hexo d 部署到 Github`
 
 #### 连接本地与Github
 
@@ -129,16 +129,16 @@ INFO Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.
 
 右键  <span style='color:red'>Git Bash Here</span> 输入以下 命令
 
-```
+```bash
 git config --global user.name "Name"
 git config --global user.email "Email"
 ```
 
-里面的**Name**和**Email** 就是注册**Github**时的==用户名==和==邮箱==
+里面的**Name**和**Email** 就是注册**Github**时的`用户名`和`邮箱`
 
 然后生成密钥
 
-```
+```bash
 ssh-keygen -t rsa -C "Email"
 ```
 
@@ -146,7 +146,7 @@ ssh-keygen -t rsa -C "Email"
 
 接下来会出现
 
-```
+```bash
 Generating public/private rsa key pair.
 Enter file in which to save the key (/c/Users/you/.ssh/id_rsa):
 //到这里可以直接回车将密钥按默认文件进行存储
@@ -154,7 +154,7 @@ Enter file in which to save the key (/c/Users/you/.ssh/id_rsa):
 
 之后：
 
-```
+```bash
 Enter passphrase (empty for no passphrase):
 //这里是要你输入密码，其实不需要输什么密码，直接回车就行
 Enter same passphrase again:
@@ -162,7 +162,7 @@ Enter same passphrase again:
 
 接下来
 
-```
+```bash
 Your identification has been saved in /c/Users/you/.ssh/id_rsa.
 Your public key has been saved in /c/Users/you/.ssh/id_rsa.pub.
 The key fingerprint is:
@@ -173,15 +173,15 @@ The key's randomart image is:
 
 这样密钥就生成了，一般会存放在 <span style='color:red'>/C/Users/you/.ssh/id_rsa.pub.</span>中
 
-运行以下命令将其==复制==到剪贴板
+运行以下命令将其`复制`到剪贴板
 
-```
+```bash
 clip < ~/.ssh/id_rsa.pub
 ```
 
 ##### 连接Github
 
-点击==**Settings**=
+点击`Settings`
 
 ![设置](https://img-blog.csdnimg.cn/20200513222646787.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTc3NzU0NA==,size_16,color_FFFFFF,t_70)
 
@@ -191,13 +191,13 @@ clip < ~/.ssh/id_rsa.pub
 
 
 
-然后打开博客文件夹下的==<span style='color:red'>_config.yml</span>== 文件，进行修改，这是博客的配置文件，需要修改以下才能连接**Github**
+然后打开博客文件夹下的`<span style='color:red'>_config.yml</span>` 文件，进行修改，这是博客的配置文件，需要修改以下才能连接**Github**
 
 ![文件夹](https://img-blog.csdnimg.cn/20200513222813871.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTc3NzU0NA==,size_16,color_FFFFFF,t_70)
 
 修改以下配置
 
-```
+```yaml
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
@@ -206,7 +206,7 @@ deploy:
 
 改成
 
-```
+```yaml
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
@@ -219,7 +219,7 @@ deploy:
 
 然后右键  <span style='color:red'>Git Bash Here</span> 输入以下 命令,出现用户名，那就成功了
 
-```
+```bash
 ssh -T git@github.com
 //注意不要做任何修改
 ```
@@ -228,13 +228,13 @@ ssh -T git@github.com
 
 在博客根目录下 ，右键  <span style='color:red'>Git Bash Here</span> 输入以下 命令安装一个插件
 
-```
+```bash
 npm i hexo-deployer-git
 ```
 
 然后输入，新建一片文章
 
-```
+```bash
 hexo new post "article title"
 引号内的是名字
 ```
@@ -251,25 +251,25 @@ hexo new post "article title"
 
 ![主题地址](https://img-blog.csdnimg.cn/20200513223250506.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTc3NzU0NA==,size_16,color_FFFFFF,t_70)
 
-然后打开**博客文件夹**下的的 ==**themes**== 目录，右键  <span style='color:red'>Git Bash Here</span> 输入以下 命令
+然后打开**博客文件夹**下的的 `themes` 目录，右键  <span style='color:red'>Git Bash Here</span> 输入以下 命令
 
-```
+```bash
 $ git clone 此处填写你刚才复制的主题地址
 ```
 
 例如：
 
-```
+```bash
 $ git clone git@github.com:theme-next/hexo-theme-next.git
 ```
 
-下载完成后会在==**themes**==文件夹下生成该主题的文件夹,然后打开**博客文件夹**下的<span style='color:red'>_config.yml</span> 文件，进行修改
+下载完成后会在`themes`文件夹下生成该主题的文件夹,然后打开**博客文件夹**下的<span style='color:red'>_config.yml</span> 文件，进行修改
 
 搜索 **theme**![更改主题](https://img-blog.csdnimg.cn/20200513223146381.png)
 
 这样就替换完成了，部署到**Github**，在**博客文件夹**根目录下右键  <span style='color:red'>Git Bash Here</span>  输入以下命令
 
-```
+```bash
 hexo clean
 hexo g
 hexo d

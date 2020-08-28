@@ -34,7 +34,7 @@ year/:month/:day/:title/
 npm install hexo-abbrlink --save
 ````
 
-安装完成后==编辑站点配置文件==，修改如下配置
+安装完成后`编辑站点配置文件`，修改如下配置
 
 ```yaml
 #permalink: :year/:month/:day/:title/
@@ -92,7 +92,7 @@ bangumi:
 hexo new page bangumis
 ````
 
-编辑这个页面的==index.md==文件，加入type
+编辑这个页面的`index.md`文件，加入type
 
 ````markdown
 ---
@@ -1451,7 +1451,7 @@ hexo-offline-popup 是一个 [hexo](https://hexo.io/) 插件， 它可加速你�
 npm install --save git://github.com/howiefh/hexo-generator-calendar.git
 ```
 
-然后在``themes\butterfly\source\js`下创建两个js文件，文件名为 ==calendar.js==和==languages.js==
+然后在``themes\butterfly\source\js`下创建两个js文件，文件名为 `calendar.js` 和 `languages.js`
 
 **calendar.js**
 
@@ -2510,7 +2510,7 @@ if theme.aside.card_calendar
 card_calendar: true
 ```
 
-编辑`themes\butterfly\languages\zh-CN.yml`文件，找到 `card_announcement: 公告` , 在下面添加一行 ==card_calendar: 文章日历== (后面的文本可自定义)
+编辑`themes\butterfly\languages\zh-CN.yml`文件，找到 `card_announcement: 公告` , 在下面添加一行 `card_calendar: 文章日历` (后面的文本可自定义)
 
 ```code
 card_calendar: 文章日历
