@@ -7,7 +7,7 @@
 #   name || link || icon
 
 menu:
-  # 主页: https://blog.jinan6.vip/ || fas fa-rocket
+  导航: https://jinan6.vip/navigation/ || fas fa-rocket
   首页: / || fa fa-home 
   文章||fa-fw fas fa-book-open:
     - 归档 || /archives/ || fa fa-archive
