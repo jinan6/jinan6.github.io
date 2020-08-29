@@ -1,1 +1,120 @@
-"use strict";function debounce(i,o,r){var a;return function(){var t=this,n=arguments,e=r&&!a;clearTimeout(a),a=setTimeout(function(){a=null,r||i.apply(t,n)},o),e&&i.apply(t,n)}}function throttle(e,i,o){var r,a,c,l=0;o=o||{};function u(){l=!1===o.leading?0:(new Date).getTime(),r=null,e.apply(a,c),r||(a=c=null)}return function(){var t=(new Date).getTime();l||!1!==o.leading||(l=t);var n=i-(t-l);a=this,c=arguments,n<=0||i<n?(r&&(clearTimeout(r),r=null),l=t,e.apply(a,c),r||(a=c=null)):r||!1===o.trailing||(r=setTimeout(u,n))}}function sidebarPaddingR(){var t=window.innerWidth,n=document.body.clientWidth,e=t-n;t!==n&&$("body").css("padding-right",e)}function scrollToDest(t){var n=$(t).offset().top,e=$(window).scrollTop()>n?65:0;$("body,html").animate({scrollTop:n-e})}function snackbarShow(t,n,e){var i=void 0!==n&&n,o=void 0!==e?e:2e3,r=GLOBAL_CONFIG.Snackbar.position,a="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark;Snackbar.show({text:t,backgroundColor:a,showAction:i,duration:o,pos:r})}var initJustifiedGallery=function(t){t.each(function(t,n){$(this).is(":visible")&&$(this).justifiedGallery({rowHeight:220,margins:4})})},diffDate=function(t){var n=new Date,e=new Date(t.replace(/-/g,"/")),i=n.getTime()-e.getTime();return Math.floor(i/864e5)},loadComment=function(t,n){var e;"IntersectionObserver"in window?(e=new IntersectionObserver(function(t){t[0].isIntersecting&&(n(),e.disconnect())},{threshold:[0]})).observe(t):n()};
+/* eslint-disable no-unused-vars */
+
+function debounce (func, wait, immediate) {
+  let timeout
+  return function () {
+    const context = this
+    const args = arguments
+    const later = function () {
+      timeout = null
+      if (!immediate) func.apply(context, args)
+    }
+    const callNow = immediate && !timeout
+    clearTimeout(timeout)
+    timeout = setTimeout(later, wait)
+    if (callNow) func.apply(context, args)
+  }
+}
+
+function throttle (func, wait, options) {
+  let timeout, context, args
+  let previous = 0
+  if (!options) options = {}
+
+  const later = function () {
+    previous = options.leading === false ? 0 : new Date().getTime()
+    timeout = null
+    func.apply(context, args)
+    if (!timeout) context = args = null
+  }
+
+  const throttled = function () {
+    const now = new Date().getTime()
+    if (!previous && options.leading === false) previous = now
+    const remaining = wait - (now - previous)
+    context = this
+    args = arguments
+    if (remaining <= 0 || remaining > wait) {
+      if (timeout) {
+        clearTimeout(timeout)
+        timeout = null
+      }
+      previous = now
+      func.apply(context, args)
+      if (!timeout) context = args = null
+    } else if (!timeout && options.trailing !== false) {
+      timeout = setTimeout(later, remaining)
+    }
+  }
+
+  return throttled
+}
+
+function sidebarPaddingR () {
+  const innerWidth = window.innerWidth
+  const clientWidth = document.body.clientWidth
+  const paddingRight = innerWidth - clientWidth
+  if (innerWidth !== clientWidth) {
+    $('body').css('padding-right', paddingRight)
+  }
+}
+
+function scrollToDest (name) {
+  const scrollOffset = $(name).offset().top
+  let offset
+  if ($(window).scrollTop() > scrollOffset) {
+    offset = 65
+  } else {
+    offset = 0
+  }
+  $('body,html').animate({
+    scrollTop: scrollOffset - offset
+  })
+}
+
+function snackbarShow (text, showAction, duration) {
+  const sa = (typeof showAction !== 'undefined') ? showAction : false
+  const dur = (typeof duration !== 'undefined') ? duration : 2000
+  const position = GLOBAL_CONFIG.Snackbar.position
+  const bg = document.documentElement.getAttribute('data-theme') === 'light' ? GLOBAL_CONFIG.Snackbar.bgLight : GLOBAL_CONFIG.Snackbar.bgDark
+  Snackbar.show({
+    text: text,
+    backgroundColor: bg,
+    showAction: sa,
+    duration: dur,
+    pos: position
+  })
+}
+
+const initJustifiedGallery = function (selector) {
+  selector.each(function (i, o) {
+    if ($(this).is(':visible')) {
+      $(this).justifiedGallery({
+        rowHeight: 220,
+        margins: 4
+      })
+    }
+  })
+}
+
+const diffDate = d => {
+  const dateNow = new Date()
+  const datePost = new Date(d.replace(/-/g, '/'))
+  const dateDiff = dateNow.getTime() - datePost.getTime()
+  const dayDiff = Math.floor(dateDiff / (24 * 3600 * 1000))
+  return dayDiff
+}
+
+const loadComment = (dom, callback) => {
+  if ('IntersectionObserver' in window) {
+    const observerItem = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        callback()
+        observerItem.disconnect()
+      }
+    }, { threshold: [0] })
+    observerItem.observe(dom)
+  } else {
+    callback()
+  }
+}
