@@ -2515,3 +2515,170 @@ card_calendar: true
 ```code
 card_calendar: 文章日历
 ```
+
+### 修改源码
+
+{% note info %}
+参考转载于[木槿的博客](https://xiabor.com/)
+{% endnote %}
+
+#### 调整页码圆角
+
+修改`\source\css\_layout\pagination.styl`
+
+```stylus
+.page-number
+  display: inline-block
+  margin: 0 .2rem
+  min-width: w = 1.5rem
+  height: w
+  text-align: center
+  line-height: w
+  cursor: pointer
+
+&.current
+  background: $theme-color
+  color: $button-color
+  cursor: default
+  border-radius: 20px
+```
+
+#### 修改右下角返回顶部按钮
+
+修改`\source\css\_layout\rightside.styl`，加大按钮宽度和高度。
+
+```stylus
+#rightside
+  position: fixed
+  right: -38px
+  bottom: 10px
+  z-index: 100
+  opacity: 0
+  transition: all .3s
+
+  #rightside-config-hide
+    transition: transform .4s
+    transform: translate(40px, 0)
+
+  & > div
+    & > button,
+    & > a
+      display: block
+      margin-bottom: 2px
+      width: 35px
+      height: 35px
+      background-color: var(--btn-bg)
+      color: var(--btn-color)
+      text-align: center
+      font-size: 16px
+      line-height: 35px
+      margin-bottom: 4px
+      margin-right: 4px
+      cursor: pointer
+      border-radius: 3px
+```
+
+#### 文章目录美化
+
+选择某一目录时，背景框宽度为最大且为方形，修改选中时边框为圆润且适应标题长度。
+
+修改`\source\css\_layout\sidebar.styl`
+
+```stylus
+      &.active
+        border-right-color: darken($theme-toc-color, 20%)
+        background: $theme-toc-color
+        color: $sidebar-active-color
+        border-radius: 5px
+        width: max-content
+        padding-right: 5px
+        padding-left: 5px
+```
+
+#### 修改文章底部标签框
+
+修改`\source\css\_layout\post.styl`
+
+```stylus
+      &__tags
+        display: inline-block
+        margin: .4rem .4rem .4rem 0
+        padding: 0 .6rem
+        width: fit-content
+        border: 2px solid $font-black
+        border-radius: .2rem
+        color: $font-black
+        font-size: 14px
+        text-decoration: overline
+        cursor: pointer
+        transition: all .2s ease-in-out
+        
+        .post-copyright
+        position: relative
+        margin: 2rem 0 .5rem
+        padding: .5rem .8rem
+        border: 1px solid $dark-white
+        transition: box-shadow .3s ease-in-out
+        border-radius: 5px
+        
+       .post-copyright
+         &-meta
+           color: $grey
+           font-weight: bold
+```
+
+#### 修改链接颜色
+
+修改`\source\css\var.styl`
+
+```stylus
+$a-link-color = #638fff
+```
+
+#### 自动切换夜间模式时间
+
+修改`\layout\includes\head\darkmode.styl`，根据需要修改即可
+
+#### 修改推荐文章和上下篇文章的图片圆角
+
+上一篇下一篇图片圆角，修改`\source\css\_layout\pagination.styl`
+
+```stylus
+#pagination
+  overflow: hidden
+  margin-top: 1rem
+  width: 100%
+  border-radius: 8px
+```
+
+#### 相关文章图片圆角
+
+修改`\source\css\_layout\relatedposts.styl`
+
+```stylus
+  .relatedPosts_item
+    position: relative
+    display: inline-block
+    overflow: hidden
+    margin: 3px
+    width: calc(33.333% - 6px)
+    height: 200px
+    background: $dark-black
+    vertical-align: bottom
+    border-radius: 8px
+```
+
+#### 页脚跳动的心
+
+{% note info %}
+此功能转载于[一个懒人的博客](https://xiabor.com/)
+{% endnote %}
+
+编辑`博客根目录/themes/Butterfly/layout/includes/footer.pug`文件，将`©${theme.since} - ${nowYear} By ${config.author}`改为`©${theme.since} - ${nowYear + ' '}  ${config.author}`, 将`©${nowYear} By ${config.author}`改为`©${nowYear + ' '}  ${config.author}`
+
+在`inject->head`下面添加如下内容：
+
+```yaml
+- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
+```
+

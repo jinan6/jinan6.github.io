@@ -7,8 +7,9 @@
 #   name || link || icon
 
 menu:
-  导航: https://jinan6.vip/navigation/ || fas fa-rocket
   首页: / || fa fa-home 
+  导航: https://only_ann.gitee.io/navigation/ || fas fa-rocket
+  Next版: https://only_ann.gitee.io/next/ || fa-fw fab fa-ubuntu
   文章||fa-fw fas fa-book-open:
     - 归档 || /archives/ || fa fa-archive
     - 标签 || /tags/ || fa fa-tags
@@ -30,6 +31,7 @@ menu:
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
+
 # Code Blocks (代碼相關)
 # --------------------------------------
 
@@ -427,7 +429,6 @@ footer:
     enable: true
     since: 2020
   custom_text: <b>世间所有的相遇，都是久别重逢</b>
-# CDN BY <a target="_blank" rel="external nofollow" href="https://www.jsdelivr.com/"><b>jsDelivr</b></a> | HOST BY  <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a>
   copyright: true # Copyright of theme and framework
   ICP: # Chinese ICP License
     enable: false
@@ -439,16 +440,21 @@ footer:
 # --------------------------------------
 
 # Baidu Analytics
+# https://tongji.baidu.com/web/welcome/login
 baidu_analytics: 24671864208d82bafab66175bcc9f19e
 
 # Google Analytics
+# https://analytics.google.com/analytics/web/
 google_analytics:
 
 # Tencent Analytics ID
+# https://mta.qq.com
 tencent_analytics:
+
 # CNZZ Analytics
 # https://www.umeng.com/
 cnzz_analytics:
+
 # Advertisement
 # --------------------------------------
 
@@ -606,9 +612,10 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size: # The unit must be 'px', default is 14px
+  global-font-size:
+  code-font-size:
   font-family: Rubik, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif
-  code-font:
+  code-font-family:
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
@@ -656,17 +663,13 @@ aside:
   card_author:
     enable: true
     description:
-    # button:
-    #   icon: fab fa-github
-    #   text: Follow Me
-    #   link: https://github.com/jinan6
     button:
       icon: fas fa-rocket
       text: 个人主页
       link: https://blog.jinan6.vip
   card_announcement:
     enable: true
-    content: 重新开启全站pjax，开启左下角音乐播放器。<p style="text-align:center;color:#49B1F5">2020年8月28日上午✨</p><div class="item-headline" style="margin:10px 0"><i class="fas fa-laptop card-announcement-animation"></i><span>关于本站</span></div><div class="github-badge"><a style="color:#fff" href="https://hexo.io/" target="_blank" title="由 Hexo 强力驱动"><span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo5.0.2</span></a><a style="color:#fff" href="https://github.com/" target="_blank" title="静态网页托管于 Github" ><span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen">Github</span><a style="color:#fff" href="https://www.jsdelivr.com/" target="_blank" title="jsDelivr 提供 CDN 加速服务" ><span class="badge-subject">CDN</span><span class="badge-value bg-orange">jsDelivr</span></a><a style="color:#fff" href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" title="站点使用 Butterfly 3.1.0-rc1 主题" ><span class="badge-subject">Theme</span><span class="badge-value bg-blue">Butterfly 3.1.0-rc1</span></a><a style="color:#fff" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可"><span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span></a></div>
+    content: 重新开启全站pjax，开启左下角音乐播放器。<p style="text-align:center;color:#49B1F5">2020年8月28日上午✨</p><div class="item-headline" style="margin:10px 0"><i class="fas fa-laptop card-announcement-animation"></i><span>关于本站</span></div><div class="github-badge"><a style="color:#fff" href="https://hexo.io/" target="_blank" title="由 Hexo 强力驱动"><span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo5.0.2</span></a><a style="color:#fff" href="https://github.com/" target="_blank" title="静态网页托管于 Github" ><span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen">Github</span><a style="color:#fff" href="https://www.jsdelivr.com/" target="_blank" title="jsDelivr 提供 CDN 加速服务" ><span class="badge-subject">CDN</span><span class="badge-value bg-orange">jsDelivr</span></a><a style="color:#fff" href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" title="站点使用 Butterfly 3.1.0-rc2 主题" ><span class="badge-subject">Theme</span><span class="badge-value bg-blue">Butterfly 3.1.0-rc2</span></a><a style="color:#fff" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可"><span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span></a></div>
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -689,7 +692,7 @@ aside:
     enable: true
     post_count: true
     last_push_date: true
-  card_ip: true
+  card_ip: true 
   card_calendar: true
 
 # busuanzi count for PV / UV in site
@@ -704,6 +707,24 @@ busuanzi:
 runtimeshow:
   enable: true
   publish_date: 5/10/2020 00:00:00 
+# Aside widget - Newest Comments
+newest_comments:
+  enable: false
+  limit: 6
+  avatar: true
+  leancloud:
+    enable: true
+    appId: 027OlclAiHmUjOrixaVqodkU-MdYXbMMI
+    appKey: Cbi33IqwioAJzqeH3ma6fo3F
+    serverURL: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+    default_avatar: mp # mp/identicon/monsterid/wavatar/retro/robohash/blank
+  github_issues:
+    enable: false
+    repo:
+  disqus:
+    enable: false
+    forum:
+    api_key:
 
 # Bottom right button (右下角按鈕)
 # --------------------------------------
@@ -824,7 +845,6 @@ lazyload:
 # pwa:
 #   enable: false
 #   manifest: /image/pwa/manifest.json
-#   theme_color: "#fff"
 #   apple_touch_icon: /image/pwa/apple-touch-icon.png
 #   favicon_32_32: /image/pwa/32.png
 #   favicon_16_16: /image/pwa/16.png
@@ -954,4 +974,8 @@ CDN:
   aplayer_js: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
   meting_js: https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js
 
-  ##324353
+# Prism.js
+  prismjs_js: https://cdn.jsdelivr.net/npm/prismjs/prism.min.js
+  prismjs_lineNumber_js: https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
+  prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
+  

@@ -11,6 +11,12 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ## 更新记录
 
+### 2020-08-29
+
+{% checkbox blue checked, 导航栏添加 `Next版`，`导航 `%}
+
+{% checkbox blue checked, 升级主题为`3.1.0.rc2` %}
+
 ### 2020-08-05
 
 {% checkbox green checked, 添加当前访问用户 %}
@@ -21,9 +27,9 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ### 2020-07-28
 
-{% radio blue checked, 添加全站黑白效果 %}
+{% radio blue checked, ~~添加全站黑白效果~~ %}
 
-{% radio blue checked, 换回pjax版 %}
+{% radio blue checked, ~~换回pjax版~~ %}
 
 ### 2020-07-25
 
@@ -31,7 +37,7 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 {% radio red checked, 添加live2d看板娘%}
 
-{% radio red checked, 添加全站黑白效果 %}
+{% radio red checked, ~~添加全站黑白效果~~ %}
 
 ### 2020-07-24
 
@@ -69,7 +75,7 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ### 2020-06-24
 
-{% checkbox red checked, 优化移动端显示%}
+{% checkbox red checked, ~~优化移动端显示~~%}
 
 {% checkbox red checked, 更换社交链接为 Iconfont 图标 %}
 
@@ -87,7 +93,7 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 {% checkbox cyan checked, ~~添加按钮处的 UP 酱~~ %}
 
-{% checkbox cyan checked, 修改分类菜单的 展开/收缩 设置 %}
+{% checkbox cyan checked, ~~修改分类菜单的 展开/收缩 设置~~ %}
 
 {% checkbox cyan checked, 添加搞怪标题 %}
 
