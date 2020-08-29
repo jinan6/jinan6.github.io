@@ -13,8 +13,8 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url: https://only_ann.gitee.io/next/
+root: /next/
 #permalink: :year/:month/:day/:title/
 permalink: archives/:abbrlink.html # 该这个
 permalink_defaults:
@@ -101,7 +101,8 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:jinan6/jinan6.github.io.git
+  # repository: git@github.com:jinan6/jinan6.github.io.git
+  repository: https://gitee.com/only_ann/next.git
   branch: master
 
    
@@ -129,7 +130,9 @@ backup:
   theme: next
   message: 备份博客
   repository:
-    github: git@github.com:jinan6/jinan6.github.io.git,backup
+    # github: git@github.com:jinan6/jinan6.github.io.git,backup
+    gitee: https://gitee.com/only_ann/next.git,backup
+
 #
 # back2top标签，右下角滚动球
 moon_menu:

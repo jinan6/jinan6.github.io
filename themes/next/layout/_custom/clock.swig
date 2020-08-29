@@ -3,6 +3,6 @@
 </div>
 
 <!--粒子时钟js-->
-<script type="text/javascript" src="/js/src/canvas-dance-time.js"></script>
+<script type="text/javascript" src="/next/js/src/canvas-dance-time.js"></script>
 
 

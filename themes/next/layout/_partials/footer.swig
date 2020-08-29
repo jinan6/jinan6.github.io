@@ -105,7 +105,7 @@
 繁/简：<a id="translateLink" href="javascript:translatePage();">繁体
 </a>
 </div>
-<script type="text/javascript" src="/js/tw_cn.js"></script>
+<script type="text/javascript" src="/next/js/tw_cn.js"></script>
 <script type="text/javascript">
 var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
 var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0

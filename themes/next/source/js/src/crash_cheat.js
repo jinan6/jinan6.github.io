@@ -4,12 +4,12 @@ $(window).load(function () {
     var titleTime;
     document.addEventListener('visibilitychange', function () {
         if (document.hidden) {
-            $('[rel="icon"]').attr('href', "../../images/failure.png");
+            $('[rel="icon"]').attr('href', "../../next/images/failure.png");
             $('[rel="shortcut icon"]').attr('href', "../../images/failure.png");
             document.title = '(つェ⊂) 我藏好了哦~ ';
             clearTimeout(titleTime);
         } else {
-            $('[rel="icon"]').attr('href', "../../images/favicon.png");
+            $('[rel="icon"]').attr('href', "../../next/images/favicon.png");
             $('[rel="shortcut icon"]').attr('href', "../../images/favicon.png");
             document.title = 'o(^▽^)o 被你发现啦~ ';
             titleTime = setTimeout(function () {

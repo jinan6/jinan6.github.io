@@ -60,9 +60,9 @@
     </div>
   {%- endif %}
   <!-- 页面点击小红心 -->
-<script type="text/javascript" src="/js/src/love.js"></script>
+<script type="text/javascript" src="/next/js/src/love.js"></script>
 <!--崩溃欺骗-->
-<script type="text/javascript" src="/js/src/crash_cheat.js"></script>
-<script src="/live2d-widget/autoload.js"></script>
+<script type="text/javascript" src="/next/js/src/crash_cheat.js"></script>
+<script src="/next/live2d-widget/autoload.js"></script>
 </body>
 </html>

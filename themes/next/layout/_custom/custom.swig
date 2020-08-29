@@ -1,6 +1,6 @@
 {# 打字特效 #}
 {% if theme.typing_effect %}
-  <script src="/js/activate-power-mode.min.js"></script>
+  <script src="/next/js/activate-power-mode.min.js"></script>
   <script>
     POWERMODE.colorful = {{ theme.typing_effect.colorful }};
     POWERMODE.shake = {{ theme.typing_effect.shake }};

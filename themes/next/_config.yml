@@ -617,7 +617,7 @@ changyan:
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:		#评论功能
-  enable: true		#开关
+  enable: false		#开关
   appid: MAMAVASxjT5dcOMaFjPqd7yC-gzGzoHsz
   appkey: nMOGrsKQHA5s9IXapTQnBglA
   notify: false # Mail notifier
@@ -862,7 +862,7 @@ motion:
 # For more information: https://github.com/HubSpot/pace
 #加载特效
 pace:
-  enable: true
+  enable: false
   # Themes list:
   # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
   # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
@@ -1035,7 +1035,7 @@ live2d:
 #打字特效
 # typing effect
 typing_effect:
-  colorful: true  # 礼花特效
+  colorful: false  # 礼花特效
   shake: false  # 震动特效
 #近期文章
 recent_posts_title: 近期文章
@@ -1068,9 +1068,14 @@ defaultlinks:
 #朋友博客
 friendslinks:
   - nickname: csde     # 昵称
-    avatar: https://www.csde.vip/images/avatar.jpg    # 头像地址
-    site: https://www.csde.vip/ #友链地址
+    avatar: https://www.csde.vip/img/avatar.png    # 头像地址
+    site: https://jinan6.vip #友链地址
     info: 个人博客
+
+  - nickname: Sakura` Blogs     # 昵称
+    avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png    # 头像地址
+    site: https://www.csde.vip/ #友链地址
+    info: 本站已经迁移到这个网址
 
 #常用网站	
 commonlinks:
