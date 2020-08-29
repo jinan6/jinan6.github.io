@@ -130,8 +130,8 @@ backup:
   theme: next
   message: 备份博客
   repository:
-    # github: git@github.com:jinan6/jinan6.github.io.git,backup
-    gitee: https://gitee.com/only_ann/next.git,backup
+    github: git@github.com:jinan6/jinan6.github.io.git,backup
+    # github: https://github.com/qianan6/qianan6.github.io.git,backup
 
 #
 # back2top标签，右下角滚动球
