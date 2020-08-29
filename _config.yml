@@ -113,4 +113,5 @@ backup:
   theme: webstack
   message: webstack-网站导航
   repository:
-    github: git@github.com:jinan6/jinan6.github.io.git,nav
+    # github: git@github.com:jinan6/jinan6.github.io.git,nav
+    gitee: git@gitee.com:only_ann/only_ann/navigation,nav
