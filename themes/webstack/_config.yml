@@ -1,0 +1,351 @@
+favicon: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200707202852.png
+banner: /navigation/images/webstack_banner_cn.png
+
+logo:
+  expanded: /navigation/images/logo@2x.png
+  collapsed: /navigation/images/logo-collapsed@2x.png
+  dark: /navigation/images/logo_dark@2x.png
+
+flag:
+  icon: flag-cn
+  name: Chinese
+
+# githubCorner: '<a href="https://github.com/HCLonely/hexo-theme-webstack" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>'
+
+menu:
+  - name: 常用工具
+    icon: fa fa-folder-open
+    submenu:
+      - name: 博客相关
+        icon: 
+        config: correlation
+      - name: 站长工具
+        icon: 
+        config: people
+      - name: IT工具箱
+        icon: 
+        config: tool
+  
+
+  - name: 素材资源
+    icon: fas fa-archive
+    submenu:
+      - name: 图标素材
+        icon: 
+        config: icon
+      - name: 图片素材
+        icon: 
+        config: photo
+      - name: 设计相关
+        icon: 
+        config: Logo
+
+  - name: 学习教程
+    icon: fas fa-book
+    submenu:
+      - name: 学习平台
+        icon: 
+        config: study
+      - name: 前端相关
+        icon: 
+        config: qianduan
+
+  - name: 开发社区
+    icon: fas fa-thumbs-up
+    submenu:
+      - name: 社区论坛
+        icon: 
+        config: community
+      - name: 代码托管
+        icon: 
+        config: collocation
+      - name: 云服务商
+        icon: 
+        config: yun
+
+correlation:
+  - name: Hexo
+    url: https://hexo.io/zh-cn/
+    img: /navigation/images/img/hexo.svg
+    description: 快速、简洁且高效的博客框架
+  - name: Vuepress
+    url: https://vuepress.vuejs.org/zh/
+    img: /navigation/images/img/vuepress.png
+    description: Vue 驱动的静态网站生成器
+  - name: Valine
+    url: https://valine.js.org/
+    img: /navigation/images/img/valine.png
+    description: 一款快速、简洁且高效的无后端评论系统。
+  - name: Cool Background
+    url: https://coolbackgrounds.io/
+    img: /navigation/images/img/coolbackgrounds.png
+    description: 炫酷背景在线生成器
+people:
+  - name: 站长工具
+    url: http://tool.chinaz.com/
+    img: /navigation/images/img/chinaz.png
+    description: 站长工具，SEO工具
+  - name: 阿里云 whois 查询
+    url: https://whois.aliyun.com/
+    img: /navigation/images/img/aliyun.png
+    description: whois查询,域名whois,域名注册信息,whois查询工具,whois信息,域名信息
+  - name: 百度站长平台
+    url: https://ziyuan.baidu.com/
+    img: /navigation/images/img/baidu.png
+    description: 百度搜索资源平台 - 让网站更具价值
+  - name: 百度统计
+    url: https://tongji.baidu.com/
+    img: /navigation/images/img/baidu.png
+    description: 百度统计 — 最大的中文网站分析平台
+tool:
+  - name: 在线工具 - 程序员的工具箱
+    url: https://tool.lu/
+    img: /navigation/images/img/tool.png
+    description: 站长工具、代码格式化、压缩、加密、解密、下载链接转换等
+  - name: 在线工具 - OSCHINA.NET社区
+    url: https://tool.oschina.net/
+    img: /navigation/images/img/tool.png
+    description: 常用文档、常用对照表、代码处理、Html/Js/Css工具、加密/转码工具等
+  - name: 记磊工具箱
+    url: https://tools.ly522.com/
+    img: /navigation/images/img/tool.png
+    description: Dns检测、CSS格式化、超级Ping、端口扫描等
+  - name: 孟坤工具箱
+    url: http://tool.mkblog.cn/
+    img: /navigation/images/img/tool.png
+    description: css一键美化、文本差异比较、代码高亮等
+
+icon:
+  - name: iconfont
+    url: https://www.iconfont.cn/
+    img: /navigation/images/img/ali.ico
+    description: 阿里巴巴矢量图标库
+  - name: fontawesome
+    url: https://fontawesome.com/
+    img: /navigation/images/img/fontawesome.png
+    description: 实用的小图标
+  - name: FindIcons
+    url: https://findicons.com/
+    img: /navigation/images/img/FindIcons.png
+    description: Search through 300,000 free icons
+  - name: Font Awesome
+    url: http://www.fontawesome.com.cn/faicons/
+    img: /navigation/images/img/fontawesomeicon.png
+    description: 超漂亮的图标和字体库
+photo:
+  - name: 必应壁纸
+    url: https://bing.ioliu.cn/
+    img: /navigation/images/img/bing.png
+    description: 必应每日高清壁纸
+  - name: 极简壁纸
+    url: https://bz.zzzmh.cn/
+    img: /navigation/images/img/zzzmh.png
+    description: 高质量精品壁纸
+  - name: 千图网
+    url: https://www.58pic.com/
+    img: /navigation/images/img/qiantu.png
+    description: 专注免费设计素材下载的网站
+  - name: wallhaven
+    url: https://wallhaven.cc/
+    img: /navigation/images/img/wallhaven.ico
+    description: 高质量精品壁纸
+  - name: wallroom
+    url: https://wallroom.io/
+    img: /navigation/images/img/wallroom.ico
+    description: 高质量精品壁纸
+  - name: wallpaper
+    url: https://wall.alphacoders.com/?lang=Chinese
+    img: /navigation/images/img/alphacoders.png
+    description: 高质量精品壁纸
+  - name: Simple Desktops
+    url: http://simpledesktops.com/
+    img: /navigation/images/img/simple.ico
+    description: 极简风格的壁纸
+  - name: Pexels
+    url: https://www.pexels.com/zh-cn/
+    img: /navigation/images/img/pexels.ico
+    description: 免费素材图片
+Logo:
+  - name: Fotor
+    url: https://www.fotor.com/
+    img: /navigation/images/img/fotor.png
+    description: 一款好用的图片设计网站
+  - name: 炫酷配色
+    url: https://www.coocolors.com/
+    img: /navigation/images/img/coocolors.ico
+    description: 设计师配色神器
+  - name: 稿定设计
+    url: https://www.gaoding.com/
+    img: /navigation/images/img/gaoding.png
+    description: 免费在线PS，在线抠图，在线生成海报
+  - name: World Vector Logo
+    url: https://worldvectorlogo.com/
+    img: /navigation/images/img/worldvectorlogo.png
+    description: Brand logos free to download
+study:
+  - name: 菜鸟教程
+    url: https://www.runoob.com/
+    img: /navigation/images/img/runoob.png
+    description: 学的不仅是技术，更是梦想！
+  - name: W3school
+    url: https://www.w3school.com.cn/
+    img: /navigation/images/img/w3school.png
+    description: 领先的web技术教程
+  - name: 牛客网
+    url: https://www.nowcoder.com/
+    img: /navigation/images/img/nowcoder.png
+    description: 牛客网 - 互联网求职神器和备考学习平台
+  - name: How2J
+    url: https://how2j.cn/
+    img: /navigation/images/img/how2j.png
+    description: How2J的Java教程, 内容涵盖J2SE、WEB前端、J2EE、框架技术等全面的Java内容
+qianduan:
+  - name: Semantic-ui
+    url: https://semantic-ui.com/
+    img: /navigation/images/img/logo.png
+    description: User Interface is the language of the web
+  - name: Element
+    url: https://element.eleme.cn/#/zh-CN
+    img: /navigation/images/img/element.ico
+    description: Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库
+  - name: Bootstrap
+    url: https://v3.bootcss.com/
+    img: /navigation/images/img/bootstrap.ico
+    description: Bootstrap 是最受欢迎的 HTML、CSS 和 JS 框架，用于开发响应式布局、移动设备优先的 WEB 项目。
+  - name: Vue.js
+    url: https://cn.vuejs.org/
+    img: /navigation/images/img/vue.png
+    description: 渐进式JavaScript 框架
+community:
+  - name: CSDN
+    url: https://www.csdn.net/
+    img: /navigation/images/img/csdn.png
+    description: 全球最大中文IT社区，为IT专业技术人员提供最全面的信息传播和服务平台
+  - name: 博客园
+    url: https://www.cnblogs.com/
+    img: /navigation/images/img/cnblogs.png
+    description: 代码改变世界
+  - name: 掘金
+    url: https://juejin.im/
+    img: /navigation/images/img/juejin.png
+    description: 一个帮助开发者成长的社区
+  - name: 简书
+    url: https://www.jianshu.com/
+    img: /navigation/images/img/jianshu.png
+    description: 创作你的创作
+  - name: 开源中国
+    url: https://www.oschina.net/
+    img: /navigation/images/img/oschina.png
+    description: 国内最大的开源技术社区
+  - name: 知乎
+    url: https://www.zhihu.com/
+    img: /navigation/images/img/zhihu.png
+    description: 国内最受欢迎的知识性问答社区
+  - name: 吾爱破解
+    url: https://www.52pojie.cn/
+    img: /navigation/images/img/52pojie.png
+    description: 致力于软件安全与病毒分析的前沿，丰富的技术版块交相辉映，由无数热衷于软件加密解密及反病毒爱好者共同维护
+collocation:
+  - name: Github
+    url: https://github.com/
+    img: /navigation/images/img/github.png
+    description: 全球最大的面向开源及私有软件项目的托管平台
+  - name: Gitlab
+    url: https://gitlab.com/
+    img: /navigation/images/img/gitlab.png
+    description: 支持无限的公有项目和私有项目的代码托管平台
+  - name: 码云-Gitee
+    url: https://gitee.com
+    img: /navigation/images/img/gitee.ico
+    description: 码云(gitee.com)是 OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。
+  - name: CODING
+    url: https://coding.net/
+    img: /navigation/images/img/coding.ico
+    description: Coding.net 是一个面向开发者的云端开发平台.
+yun:
+  - name: 阿里云
+    url: https://www.aliyun.com/
+    img: /navigation/images/img/aliyun.png
+    description: 阿里云 - 为了无法计算的价值
+  - name: 腾讯云
+    url: https://cloud.tencent.com/
+    img: /navigation/images/img/cloudtencent.png
+    description: 腾讯云 - 产业智变 云启未来
+  - name: 华为云
+    url: https://www.huaweicloud.com/
+    img: /navigation/images/img/huaweicloud.png
+    description: 华为云 - +智能，见未来
+  - name: 七牛云
+    url: https://www.qiniu.com/
+    img: /navigation/images/img/qiniu.png
+    description: 七牛云 - 国内领先的企业级云服务商
+  - name: 又拍云
+    url: https://www.upyun.com/
+    img: /navigation/images/img/upyun.png
+    description: 又拍云 - 加速在线业务-CDN-云存储
+  - name: Cloudflare
+    url: https://www.cloudflare.com/
+    img: /navigation/images/img/cloudflare.png
+    description: Cloudflare - 网络性能和安全公司
+  - name: jsdelivr
+    url: https://www.jsdelivr.com/
+    img: /navigation/images/img/jsdelivr.png
+    description: jsDelivr - A free, fast, and reliable Open Source CDN for npm and GitHub
+about:
+  url: /about/
+  icon: far fa-heart
+  name: 关于本站
+
+aboutPage:
+  website:
+    head: 关于本站
+    html: <p style="text-align:center;">📢📢📢本站是我收集的一些常用的网址，为了方便以后寻找，便整理了此站。<br>于2020年8月28日搭建其雏形，以后会进行补充。<br>下方是我的个人博客，欢迎来访</p>
+  webmaster:
+    head: 关于站长
+    name: 仅安
+    url: https://jinan6.vip
+    img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
+    description: 或苦或甜都不要辜负
+
+since: 2020
+
+busuanzi:
+  enable: false
+  position: sidebar # 'footer','sidebar'
+  pv: 本站总访问量$pv
+  uv: 本站总访客数$uv
+
+custom:
+  head: |- # 以下内容插入到<head></head>标签内，可设置多行，注意每行开头至少四个空格
+    <!-- 直接添加html内容即可 -->
+    <!-- 可设置多行 -->
+  body: |- # 以下内容插入到</body>标签之前，可设置多行，注意每行开头至少四个空格
+    <!-- 直接添加html内容即可 -->
+    <!-- 可设置多行 -->
+
+js:
+  header: /js/header.js
+  footer: /js/footer.js
+  jquery: /js/jquery-1.11.1.min.js
+  bootstrap: /js/bootstrap.min.js
+  TweenMax: /js/TweenMax.min.js
+  resizeable: /js/resizeable.min.js
+  joinable: /js/joinable.js
+  xenonApi: /js/xenon-api.min.js
+  xenonToggles: /js/xenon-toggles.min.js
+  xenonCustom: /js/xenon-custom.min.js
+  lozad: /js/lozad.min.js
+  html5shiv: /js/html5shiv.min.js
+  respond: /js/respond.min.js
+  busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+
+css:
+  hclonely: /css/hclonely.css
+  fonts: //fonts.loli.net/css?family=Arimo:400,700,400italic
+  linecons: /css/fonts/linecons/css/linecons.min.css
+  fontawesome: /css/fonts/fontawesome/css/all.min.css
+  bootstrap: /css/bootstrap.min.css
+  xenonCore: /css/xenon-core.min.css
+  xenonComponents: /css/xenon-components.min.css
+  xenonSkins: /css/xenon-skins.min.css
+  nav: /css/nav.min.css
