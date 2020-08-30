@@ -4,7 +4,7 @@
 
 # Site
 title: Sakura` Blogs
-subtitle: ''
+subtitle: 'Gitee版'
 description: '或苦或甜都不要辜负'
 keywords:
 author: 仅安
@@ -13,10 +13,8 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://jinan6.vip     # Github
-root: /                     # Github
-# url: https://only_ann.gitee.io/blog/    #码云
-# root: /blog/                            #码云
+url: https://only_ann.gitee.io/blog/    #码云
+root: /blog/                            #码云
 # permalink: :title/
 # permalink_defaults:
 permalink: posts/:abbrlink/
@@ -110,7 +108,7 @@ theme: Butterfly
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://gitee.com/only_ann/only_ann.git
+  repository: https://gitee.com/only_ann/blog.git
   branch: master
 
 #备份
@@ -120,7 +118,7 @@ backup:
   message: Butterfly Gitee版
   repository:
     # github: git@github.com:jinan6/jinan6.github.io.git,gitee
-    gitee: git@gitee.com:only_ann/only_ann.gitee.io.git,backup
+    gitee: git@gitee.com:only_ann/blog.git,backup
 #Rss插件
 plugins: hexo-generate-feed
 
