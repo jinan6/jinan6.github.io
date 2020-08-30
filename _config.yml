@@ -13,8 +13,8 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://jinan6.vip
-root: /
+url: https://jinan6.vip     # Github
+root: /                     # Github
 # permalink: :title/
 # permalink_defaults:
 permalink: posts/:abbrlink/
@@ -114,7 +114,7 @@ deploy:
 #备份
 backup:
   type: git
-  theme: Butterfly
+  theme: butterfly
   message: Butterfly 3.1.0-rc1版本
   repository:
     github: git@github.com:jinan6/jinan6.github.io.git,butterfly
