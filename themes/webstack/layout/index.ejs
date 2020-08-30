@@ -17,6 +17,7 @@
           </svg>
         </a>
       </li>
+      <li><span id="mytime" style="line-height: 78px;font-size: 19px;"></span></li>
     </ul>
     <% if (theme.githubCorner) { %>
     <%- theme.githubCorner %>
@@ -37,14 +38,14 @@
           <ul></ul>
         </div> -->
         <!-- 搜索引擎 -->
-        <!-- <div class="search-engine" style="display: none;">
+        <div class="search-engine" style="display: none;">
           <div class="search-engine-head">
             <strong class="search-engine-tit">选择您的默认搜索引擎：</strong>
-            <div class="search-engine-tool">搜索热词： <span id="hot-btn"></span></div>
+            <!-- <div class="search-engine-tool">搜索热词： <span id="hot-btn"></span></div> -->
           </div>
-          <ul class="search-engine-list search-engine-list_zmki_ul">
+          <ul class="search-engine-list search-engine-list_zmki_ul" style="list-style-type: none;">
           </ul>
-        </div> -->
+        </div>
     </section>
     <script>search()</script>
     <% theme.menu.forEach(function(e) { %>
@@ -59,3 +60,13 @@
     <% } %>
     <% }) %>
     <%- js(theme.js.footer) %>
+    <script type="text/javascript">
+			function showTime() {
+				nowtime = new Date();
+				year = nowtime.getFullYear();
+				month = nowtime.getMonth() + 1;
+				date = nowtime.getDate();
+				document.getElementById("mytime").innerText = "当前时间为："+"👉"+year + "年" + month + "月" + date + "日"+" " + nowtime.toLocaleTimeString();
+			}
+			setInterval("showTime()", 1000);
+		</script>

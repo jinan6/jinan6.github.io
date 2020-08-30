@@ -199,7 +199,7 @@ function search() {
         }, 250)
     });
     for (var i = 0; i < searchData.data.length; i++) {
-        $(".search-engine-list").append('<li><span style="background:' + searchData.data[i].img + '"/></span>' +
+        $(".search-engine-list").append('<li><span style="background:' + '/navigation/'+searchData.data[i].img + '"/></span>' +
             searchData.data[i].name + "</li>")
     }
     $(".search-icon, .search-engine").hover(function () {

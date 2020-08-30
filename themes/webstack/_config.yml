@@ -17,13 +17,13 @@ menu:
     icon: fa fa-folder-open
     submenu:
       - name: 博客相关
-        icon: fas fa-book
+        icon: fas fa-battery-empty
         config: correlation
       - name: 站长工具
-        icon: fas fa-book
+        icon: fas fa-battery-quarter
         config: people
       - name: IT工具箱
-        icon: fas fa-book
+        icon: fas fa-battery-half
         config: tool
   
 
@@ -31,36 +31,39 @@ menu:
     icon: fas fa-archive
     submenu:
       - name: 图标素材
-        icon: fas fa-book
+        icon: fas fa-bolt
         config: icon
       - name: 图片素材
-        icon: fas fa-book
+        icon: fas fa-images
         config: photo
       - name: 设计相关
-        icon: fas fa-book
+        icon: fas fa-dove
         config: Logo
 
   - name: 学习教程
     icon: fas fa-book
     submenu:
       - name: 学习平台
-        icon: fas fa-book
+        icon: fas fa-laptop-code
         config: study
       - name: 前端相关
-        icon: fas fa-book
+        icon: fas fa-mouse
         config: qianduan
+      - name: 常用类库
+        icon: fas fa-paper-plane
+        config: class
 
   - name: 开发社区
     icon: fas fa-thumbs-up
     submenu:
       - name: 社区论坛
-        icon: fas fa-book
+        icon: fas fa-atom
         config: community
       - name: 代码托管
-        icon: fas fa-book
+        icon: fas fa-code
         config: collocation
       - name: 云服务商
-        icon: fas fa-book
+        icon: fas fa-cloud
         config: yun
 
   - name: 与我相关
@@ -235,6 +238,19 @@ qianduan:
     url: https://cn.vuejs.org/
     img: /navigation/images/img/vue.png
     description: 渐进式JavaScript 框架
+class:
+  - name: jQuery
+    url: https://jquery.com/
+    img: /navigation/images/img/jquery.png
+    description: jQuery
+  - name: Echarts
+    url: https://echarts.apache.org/zh/index.html
+    img: /navigation/images/img/echarts.png
+    description: 图表
+  - name: jQuery插件库
+    url: https://www.jq22.com/
+    img: /navigation/images/img/jq22.ico
+    description: jQuery插件库
 community:
   - name: CSDN
     url: https://www.csdn.net/
@@ -317,19 +333,23 @@ yun:
 me:
   - name: Sakura` Blogs
     url: https://jinan6.vip
-    img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
+    img: /navigation/images/img/author.png
     description: 搭建在 Github
   - name: Sakura` Blogs
+    url: https://only_ann.gitee.io/next/
+    img: /navigation/images/img/author.png
+    description: Next主题，已停止维护更新。
+  - name: Sakura` Blogs
     url: https://only_ann.gitee.io/blog/
-    img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
+    img: /navigation/images/img/author.png
     description: 搭建在 Gitee
   - name: 仅安的个人主页
     url: https://blog.jinan6.vip/
-    img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
+    img: /navigation/images/img/author.png
     description: 个人主页
   - name: 仅安的网址导航
     url: https://only_ann.gitee.io/navigation/
-    img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
+    img: /navigation/images/img/author.png
     description: 网址导航
 about:
   url: /about/
