@@ -13,8 +13,10 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://jinan6.vip
-root: /
+url: https://jinan6.vip     # Github
+root: /                     # Github
+# url: https://only_ann.gitee.io/blog/    #码云
+# root: /blog/                            #码云
 # permalink: :title/
 # permalink_defaults:
 permalink: posts/:abbrlink/
@@ -108,16 +110,17 @@ theme: Butterfly
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:jinan6/jinan6.github.io.git
+  repository: https://gitee.com/only_ann/only_ann.git
   branch: master
 
 #备份
 backup:
   type: git
-  theme: Butterfly
-  message: Butterfly 3.1.0-rc1版本
+  theme: butterfly
+  message: Butterfly Gitee版
   repository:
-    github: git@github.com:jinan6/jinan6.github.io.git,butterfly
+    # github: git@github.com:jinan6/jinan6.github.io.git,gitee
+    gitee: git@gitee.com:only_ann/only_ann.gitee.io.git,backup
 #Rss插件
 plugins: hexo-generate-feed
 
@@ -145,15 +148,6 @@ live2d:
 aplayer:
   meting: false
   asset_inject: false
-#弹窗
-# offline config passed to sw-precache.
-service_worker:
-  maximumFileSizeToCacheInBytes: 5242880
-  staticFileGlobs:
-  - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
-  # - public/**/*.{html,css}
-  stripPrefix: public
-  verbose: false
 
 #哔哩哔哩插件
 bangumi:
