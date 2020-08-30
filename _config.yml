@@ -117,8 +117,7 @@ backup:
   theme: butterfly
   message: Butterfly Gitee版
   repository:
-    # github: git@github.com:jinan6/jinan6.github.io.git,gitee
-    gitee: git@gitee.com:only_ann/blog.git,backup
+    github: git@github.com:jinan6/jinan6.github.io.git,gitee
 #Rss插件
 plugins: hexo-generate-feed
 
