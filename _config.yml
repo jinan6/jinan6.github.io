@@ -113,5 +113,20 @@ backup:
   theme: webstack
   message: webstack-网站导航
   repository:
-    # github: git@github.com:jinan6/jinan6.github.io.git,nav
-    gitee: git@gitee.com:only_ann/only_ann/navigation,nav
+    github: git@github.com:jinan6/jinan6.github.io.git,nav
+#压缩
+neat_enable: true
+neat_html:
+  enable: true
+  exclude:
+neat_css:
+  enable: true
+  exclude:
+    - '*.min.css'
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '*.min.js'

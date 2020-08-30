@@ -2,9 +2,9 @@ favicon: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200707202852.png
 banner: /navigation/images/webstack_banner_cn.png
 
 logo:
-  expanded: /navigation/images/logo@2x.png
-  collapsed: /navigation/images/logo-collapsed@2x.png
-  dark: /navigation/images/logo_dark@2x.png
+  expanded: /navigation/images/1030.png
+  collapsed: /navigation/images/1030.png
+  dark: /navigation/images/1257.png
 
 flag:
   icon: flag-cn
@@ -17,13 +17,13 @@ menu:
     icon: fa fa-folder-open
     submenu:
       - name: 博客相关
-        icon: 
+        icon: fas fa-book
         config: correlation
       - name: 站长工具
-        icon: 
+        icon: fas fa-book
         config: people
       - name: IT工具箱
-        icon: 
+        icon: fas fa-book
         config: tool
   
 
@@ -31,37 +31,44 @@ menu:
     icon: fas fa-archive
     submenu:
       - name: 图标素材
-        icon: 
+        icon: fas fa-book
         config: icon
       - name: 图片素材
-        icon: 
+        icon: fas fa-book
         config: photo
       - name: 设计相关
-        icon: 
+        icon: fas fa-book
         config: Logo
 
   - name: 学习教程
     icon: fas fa-book
     submenu:
       - name: 学习平台
-        icon: 
+        icon: fas fa-book
         config: study
       - name: 前端相关
-        icon: 
+        icon: fas fa-book
         config: qianduan
 
   - name: 开发社区
     icon: fas fa-thumbs-up
     submenu:
       - name: 社区论坛
-        icon: 
+        icon: fas fa-book
         config: community
       - name: 代码托管
-        icon: 
+        icon: fas fa-book
         config: collocation
       - name: 云服务商
-        icon: 
+        icon: fas fa-book
         config: yun
+
+  - name: 与我相关
+    icon: fas fa-user
+    submenu:
+      - name: 个人站点
+        icon: fas fa-star
+        config: me
 
 correlation:
   - name: Hexo
@@ -72,14 +79,18 @@ correlation:
     url: https://vuepress.vuejs.org/zh/
     img: /navigation/images/img/vuepress.png
     description: Vue 驱动的静态网站生成器
+  - name: Hexo-Butterfly主题
+    url: https://github.com/jerryc127/hexo-theme-butterfly
+    img: /navigation/images/img/butterfly.png
+    description: 一個簡潔、卡片式設計的Hexo主題
+  - name: Hexo-volantis主题
+    url: https://volantis.js.org/v3/getting-started/
+    img: /navigation/images/img/volantis.png
+    description: Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博客主题
   - name: Valine
     url: https://valine.js.org/
     img: /navigation/images/img/valine.png
     description: 一款快速、简洁且高效的无后端评论系统。
-  - name: Cool Background
-    url: https://coolbackgrounds.io/
-    img: /navigation/images/img/coolbackgrounds.png
-    description: 炫酷背景在线生成器
 people:
   - name: 站长工具
     url: http://tool.chinaz.com/
@@ -182,6 +193,14 @@ Logo:
     url: https://worldvectorlogo.com/
     img: /navigation/images/img/worldvectorlogo.png
     description: Brand logos free to download
+  - name: 艺术字Logo
+    url: http://v.zhenbi.com/x/11.htm
+    img: /navigation/images/img/yi.png
+    description: 制作简单Logo
+  - name: Cool Background
+    url: https://coolbackgrounds.io/
+    img: /navigation/images/img/coolbackgrounds.png
+    description: 炫酷背景在线生成器
 study:
   - name: 菜鸟教程
     url: https://www.runoob.com/
@@ -262,6 +281,10 @@ collocation:
     url: https://coding.net/
     img: /navigation/images/img/coding.ico
     description: Coding.net 是一个面向开发者的云端开发平台.
+  - name: Vercel
+    url: https://vercel.com/
+    img: /navigation/images/img/vercel.png
+    description: 曾经的zeit，速度还可以。
 yun:
   - name: 阿里云
     url: https://www.aliyun.com/
@@ -291,6 +314,23 @@ yun:
     url: https://www.jsdelivr.com/
     img: /navigation/images/img/jsdelivr.png
     description: jsDelivr - A free, fast, and reliable Open Source CDN for npm and GitHub
+me:
+  - name: Sakura` Blogs
+    url: https://jinan6.vip
+    img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
+    description: 搭建在 Github
+  - name: Sakura` Blogs
+    url: https://only_ann.gitee.io/blog/
+    img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
+    description: 搭建在 Gitee
+  - name: 仅安的个人主页
+    url: https://blog.jinan6.vip/
+    img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
+    description: 个人主页
+  - name: 仅安的网址导航
+    url: https://only_ann.gitee.io/navigation/
+    img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
+    description: 网址导航
 about:
   url: /about/
   icon: far fa-heart
@@ -310,7 +350,7 @@ aboutPage:
 since: 2020
 
 busuanzi:
-  enable: false
+  enable: true
   position: sidebar # 'footer','sidebar'
   pv: 本站总访问量$pv
   uv: 本站总访客数$uv
