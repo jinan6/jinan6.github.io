@@ -52,6 +52,9 @@ menu:
       - name: 常用类库
         icon: fas fa-paper-plane
         config: class
+      - name: 常用网址
+        icon: fas fa-carrot
+        config: website
 
   - name: 开发社区
     icon: fas fa-thumbs-up
@@ -85,7 +88,7 @@ correlation:
   - name: Hexo-Butterfly主题
     url: https://github.com/jerryc127/hexo-theme-butterfly
     img: /navigation/images/img/butterfly.png
-    description: 一個簡潔、卡片式設計的Hexo主題
+    description: 一个简洁、卡片式设计的Hexo主题
   - name: Hexo-volantis主题
     url: https://volantis.js.org/v3/getting-started/
     img: /navigation/images/img/volantis.png
@@ -94,6 +97,22 @@ correlation:
     url: https://valine.js.org/
     img: /navigation/images/img/valine.png
     description: 一款快速、简洁且高效的无后端评论系统。
+  - name: LeanCloud
+    url: https://console.leancloud.app/
+    img: /navigation/images/img/leancloud.png
+    description: LeanCloud 为应用开发提供一站式解决方案
+  - name: 明月浩空
+    url: https://myhkw.cn/
+    img: /navigation/images/img/mingyue.ico
+    description: 音乐-影视-Emlog|Z-Blog|WordPress|Typecho|HTML5网站播放器
+  - name: 梨花带雨播放器
+    url: https://music.m0x.cn/
+    img: /navigation/images/img/lihua.ico
+    description: 不只是一款人性化的HTML网页音乐播放器插件
+  - name: DaoCloud
+    url: https://www.daocloud.io/
+    img: /navigation/images/img/daocloud.ico
+    description: 企业级云计算领域的创新领导者
 people:
   - name: 站长工具
     url: http://tool.chinaz.com/
@@ -146,6 +165,14 @@ icon:
     url: http://www.fontawesome.com.cn/faicons/
     img: /navigation/images/img/fontawesomeicon.png
     description: 超漂亮的图标和字体库
+  - name: 小康的 Font Awesome 5 图标速查
+    url: https://dh.xiaokang.me/font5/
+    img: /navigation/images/img/lll.png
+    description: 简单快速的使用Font Awesome 5 图标
+  - name: 致美化
+    url: https://zhutix.com/
+    img: /navigation/images/img/zhimeihua.png
+    description: 致美化 - 最专业的桌面美化交流平台
 photo:
   - name: 必应壁纸
     url: https://bing.ioliu.cn/
@@ -251,6 +278,19 @@ class:
     url: https://www.jq22.com/
     img: /navigation/images/img/jq22.ico
     description: jQuery插件库
+website:
+  - name: uni-app
+    url: https://uniapp.dcloud.io/
+    img: /navigation/images/img/uni-app.png
+    description: 开发一次，多端覆盖
+  - name: DCloud 插件市场
+    url: https://ext.dcloud.net.cn/
+    img: /navigation/images/img/favicon.png
+    description: DCloud 插件市场
+  - name: cron-job
+    url: https://cron-job.org/en/
+    img: /navigation/images/img/cron.ico
+    description: 定时任务网站
 community:
   - name: CSDN
     url: https://www.csdn.net/
@@ -280,6 +320,10 @@ community:
     url: https://www.52pojie.cn/
     img: /navigation/images/img/52pojie.png
     description: 致力于软件安全与病毒分析的前沿，丰富的技术版块交相辉映，由无数热衷于软件加密解密及反病毒爱好者共同维护
+  - name: WINOS
+    url: https://www.winos.me/
+    img: /navigation/images/img/winos.ico
+    description: 前沿的精简系统下载
 collocation:
   - name: Github
     url: https://github.com/
@@ -333,24 +377,28 @@ yun:
 me:
   - name: Sakura` Blogs
     url: https://jinan6.vip
-    img: /navigation/images/img/author.png
+    img: /navigation/images/img/author.jpg
     description: 搭建在 Github
   - name: Sakura` Blogs
     url: https://only_ann.gitee.io/next/
-    img: /navigation/images/img/author.png
+    img: /navigation/images/img/author.jpg
     description: Next主题，已停止维护更新。
   - name: Sakura` Blogs
     url: https://only_ann.gitee.io/blog/
-    img: /navigation/images/img/author.png
+    img: /navigation/images/img/author.jpg
     description: 搭建在 Gitee
-  - name: 仅安的个人主页
+  - name: 仅安の个人主页
     url: https://blog.jinan6.vip/
-    img: /navigation/images/img/author.png
+    img: /navigation/images/img/author.jpg
     description: 个人主页
-  - name: 仅安的网址导航
+  - name: 仅安の网址导航
     url: https://only_ann.gitee.io/navigation/
-    img: /navigation/images/img/author.png
+    img: /navigation/images/img/author.jpg
     description: 网址导航
+  - name: 仅安の网站监控
+    url: https://status.jinan6.vip/
+    img: /navigation/images/img/author.jpg
+    description: 网站监控
 about:
   url: /about/
   icon: far fa-heart
