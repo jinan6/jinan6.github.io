@@ -1,10 +1,10 @@
-favicon: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200707202852.png
+favicon: /navigation/images/萌版航空航天-星星star.png
 banner: /navigation/images/webstack_banner_cn.png
 
 logo:
-  expanded: /navigation/images/1030.png
-  collapsed: /navigation/images/1030.png
-  dark: /navigation/images/1257.png
+  expanded: /navigation/images/logo1.png
+  collapsed: /navigation/images/logo1.png
+  dark: /navigation/images/logo_dark.png
 
 flag:
   icon: flag-cn
@@ -113,6 +113,10 @@ correlation:
     url: https://www.daocloud.io/
     img: /navigation/images/img/daocloud.ico
     description: 企业级云计算领域的创新领导者
+  - name: UptimeRobot
+    url: https://uptimerobot.com/
+    img: /navigation/images/img/UptimeRobot.png
+    description: 全球领先的正常运行时间监控服务
 people:
   - name: 站长工具
     url: http://tool.chinaz.com/
@@ -223,10 +227,10 @@ Logo:
     url: https://worldvectorlogo.com/
     img: /navigation/images/img/worldvectorlogo.png
     description: Brand logos free to download
-  - name: 艺术字Logo
-    url: http://v.zhenbi.com/x/11.htm
+  - name: LOGO在线设计
+    url: http://www.uugai.com/
     img: /navigation/images/img/yi.png
-    description: 制作简单Logo
+    description: 免费的LOGO在线设计制作工具
   - name: Cool Background
     url: https://coolbackgrounds.io/
     img: /navigation/images/img/coolbackgrounds.png
@@ -396,7 +400,7 @@ me:
     img: /navigation/images/img/author.jpg
     description: 网址导航
   - name: 仅安の网站监控
-    url: https://status.jinan6.vip/
+    url: https://jinan6.vip/status/
     img: /navigation/images/img/author.jpg
     description: 网站监控
 about:
