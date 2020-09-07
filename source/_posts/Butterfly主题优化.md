@@ -2671,7 +2671,7 @@ $a-link-color = #638fff
 #### 页脚跳动的心
 
 {% note info %}
-此功能转载于[一个懒人的博客](https://xiabor.com/)
+此功能转载于[一个懒人的博客](https://blog.hclonely.com/)
 {% endnote %}
 
 编辑`博客根目录/themes/Butterfly/layout/includes/footer.pug`文件，将`©${theme.since} - ${nowYear} By ${config.author}`改为`©${theme.since} - ${nowYear + ' '}  ${config.author}`, 将`©${nowYear} By ${config.author}`改为`©${nowYear + ' '}  ${config.author}`
@@ -2682,3 +2682,65 @@ $a-link-color = #638fff
 - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
 ```
 
+### 添加左下角全局音乐播放器
+
+{% note info %}
+此功能转载于[Jerry的博客](https://demo.jerryc.me/posts/507c070f/)，供以后方便自己查找使用
+{% endnote %}
+
+首先，需要安装`hexo-tag-aplayer`这款插件。
+
+在你的博客目录，右键`Git Bash Here`，输入以下命令安装插件
+
+```bas
+npm install --save hexo-tag-aplayer
+```
+
+然后，在博客配置文件中加入以下设置于
+
+```yml
+aplayer:
+  meting: false
+  asset_inject: false
+```
+
+在主题配置文件中，修改以下内容
+
+```yml
+# Inject the css and script (aplayer/meting)
+aplayerInject:
+  enable: true
+  per_page: true
+```
+
+然后需要把 `aplayer`代碼插入到主題配置文件的 `inject.bottom` 去
+
+```html
+inject:
+  head:
+  bottom:
+    - <div class="aplayer no-destroy" data-id="000PeZCQ1i4XVs" data-server="tencent" data-type="artist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div>
+```
+
+参数详情：
+
+| 选项          | 默认值     | 描述                                                        |
+| ------------- | ---------- | ----------------------------------------------------------- |
+| id            | **必须值** | 歌曲 id / 播放列表 id / 相册 id / 搜索关键字                |
+| server        | **必须值** | 音乐平台: `netease`, `tencent`, `kugou`, `xiami`, `baidu`   |
+| type          | **必须值** | `song`, `playlist`, `album`, `search`, `artist`             |
+| fixed         | `false`    | 开启固定模式                                                |
+| mini          | `false`    | 开启迷你模式                                                |
+| loop          | `all`      | 列表循环模式：`all`, `one`,`none`                           |
+| order         | `list`     | 列表播放模式： `list`, `random`                             |
+| volume        | 0.7        | 播放器音量                                                  |
+| lrctype       | 0          | 歌词格式类型                                                |
+| listfolded    | `false`    | 指定音乐播放列表是否折叠                                    |
+| storagename   | `metingjs` | LocalStorage 中存储播放器设定的键名                         |
+| autoplay      | `true`     | 自动播放，移动端浏览器暂时不支持此功能                      |
+| mutex         | `true`     | 该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停 |
+| listmaxheight | `340px`    | 播放列表的最大长度                                          |
+| preload       | `auto`     | 音乐文件预载入模式，可选项： `none`, `metadata`, `auto`     |
+| theme         | `#ad7a86`  | 播放器风格色彩设置                                          |
+
+如果需要刷新网页音乐不间断，就需要在主题配置文件中将`pjax`设置为`true`
