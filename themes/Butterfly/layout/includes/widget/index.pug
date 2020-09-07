@@ -7,9 +7,7 @@
     if theme.aside.card_ip
       !=partial('includes/widget/card_ip', {}, {cache: theme.fragment_cache})
     if theme.aside.card_calendar
-      !=partial('includes/widget/card_calendar', {}, {cache:theme.fragment_cache})
-    if theme.aside.card_calendar.enable
-      include ./card_calendar
+        =partial('includes/widget/card_calendar', {}, {cache:theme.fragment_cache})
     if theme.aside.card_recent_post.enable
       include ./card_recent_post.pug
     if theme.newest_comments.enable
