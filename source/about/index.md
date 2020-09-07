@@ -11,6 +11,10 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ## 更新记录
 
+### 2020-09-07
+
+{% checkbox green checked, 升级主题为 3.2.0-b1 %}
+
 ### 2020-08-29
 
 {% checkbox blue checked, 导航栏添加 `Next版`，`导航 `%}

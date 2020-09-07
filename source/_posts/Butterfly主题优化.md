@@ -2674,7 +2674,7 @@ $a-link-color = #638fff
 此功能转载于[一个懒人的博客](https://blog.hclonely.com/)
 {% endnote %}
 
-编辑`博客根目录/themes/Butterfly/layout/includes/footer.pug`文件，将`©${theme.since} - ${nowYear} By ${config.author}`改为`©${theme.since} - ${nowYear + ' '}  ${config.author}`, 将`©${nowYear} By ${config.author}`改为`©${nowYear + ' '}  ${config.author}`
+编辑`博客根目录/themes/Butterfly/layout/includes/footer.pug`文件，将`©${theme.since} - ${nowYear} By ${config.author}`改为`&copy;${theme.since} - ${nowYear + ' '} <i id="heartbeat" class="fa fas fa-heartbeat"></i> ${config.author}`, 将`©${nowYear} By ${config.author}`改为`&copy;${nowYear + ' '} <i id="heartbeat" class="fa fas fa-heartbeat"></i> ${config.author}`
 
 在`inject->head`下面添加如下内容：
 
