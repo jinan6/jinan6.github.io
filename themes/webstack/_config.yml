@@ -239,6 +239,10 @@ Logo:
     url: https://coolbackgrounds.io/
     img: /navigation/images/img/coolbackgrounds.png
     description: 炫酷背景在线生成器
+  - name: Canva
+    url: https://www.canva.cn/
+    img: /navigation/images/img/fb_cover.webp
+    description: Canva在线平面设计软件_免费设计模板素材和海量正版图片
 study:
   - name: 菜鸟教程
     url: https://www.runoob.com/
