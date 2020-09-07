@@ -19,6 +19,7 @@ menu:
   - 个人主页 || https://blog.jinan6.vip/ || fas fa-user
   - 网址导航 || https://only_ann.gitee.io/navigation/ || fas fa-bookmark
   - Next主题 || https://only_ann.gitee.io/next/ || fa-fw fab fa-ubuntu
+  - 网站监控 || https://jinan6.vip/status/ || fas fa-eye
   关于|| fa fa-heart:
     - 关于我？ || /Me/ || fab fa-angellist
     - 更新记录 || /about/ || fas fa-bible
@@ -153,7 +154,7 @@ cover:
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
     # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
-    - https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619150139.jpg
+    - https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200831183858.webp
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -695,7 +696,7 @@ aside:
     post_count: true
     last_push_date: true
   card_ip: true 
-  card_calendar: true
+  card_calendar: false
 
 # busuanzi count for PV / UV in site
 # 訪問人數
@@ -802,14 +803,14 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: true
+  enable: false
   exclude:
     - /shuoshuo/
     - /Me/
     # - xxxx
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: true
+  enable: false
   per_page: false
 
 # Snackbar (Toast Notification 彈窗)
@@ -839,7 +840,8 @@ pangu:
 # https://github.com/verlok/lazyload
 lazyload:
   enable: true
-  post: https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/19.webp  #滑稽图片
+  # post: https://cdn.jsdelivr.net/gh/blogimg/emotion/custom/19.webp  #滑稽图片
+  post: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200831183858.webp  #小太阳
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -868,7 +870,7 @@ fragment_cache: true
 inject:
   head:
   # - <link rel="stylesheet" href="/xxx.css">
-   - '<style type="text/css">#toggle-sidebar {bottom: 80px}</style>'  #音乐向上调整
+  #  - '<style type="text/css">#toggle-sidebar {bottom: 80px}</style>'  #音乐向上调整
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"> #跳动的心
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/custom.min.css">	#自定义css文件
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/iconfont.css"> #阿里图标
@@ -881,7 +883,7 @@ inject:
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/flink.min.css"> #小康的友链样式
   bottom:
     # - <script src="xxxx"></script>
-      - <div class="aplayer no-destroy" data-id="5015814685" data-server="netease" data-type='playlist' data-fixed='true' data-mini='true' data-listFolded='false' data-order='list' data-preload='none' data-autoplay='false' muted></div>
+      # - <div class="aplayer no-destroy" data-id="5015814685" data-server="netease" data-type='playlist' data-fixed='true' data-mini='true' data-listFolded='false' data-order='list' data-preload='none' data-autoplay='false' muted></div>
       - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/title.js"></script> #搞怪标题
       - <script data-pjax src="https://pv.sohu.com/cityjson?ie=utf-8"></script>   #当前访问用户
       - <script data-pjax src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/Mobile_folding.js"></script>   #手机端导航栏默认不展开
