@@ -101,6 +101,10 @@ correlation:
     url: https://console.leancloud.app/
     img: /navigation/images/img/leancloud.png
     description: LeanCloud 为应用开发提供一站式解决方案
+  - name: Artitalk.js
+    url: https://artitalk.js.org/
+    img: /navigation/images/img/atico.png
+    description: 基于 LeanCloud 实现的可实时发布说说/微语的 js
   - name: 明月浩空
     url: https://myhkw.cn/
     img: /navigation/images/img/mingyue.ico
@@ -295,6 +299,10 @@ website:
     url: https://cron-job.org/en/
     img: /navigation/images/img/cron.ico
     description: 定时任务网站
+  - name: I tell you(MSDN)
+    url: https://next.itellyou.cn/
+    img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200622102946.png
+    description: 提供可靠的原版软件，电脑系统
 community:
   - name: CSDN
     url: https://www.csdn.net/
