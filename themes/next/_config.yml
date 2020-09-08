@@ -617,7 +617,7 @@ changyan:
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:		#评论功能
-  enable: false		#开关
+  enable: true		#开关
   appid: MAMAVASxjT5dcOMaFjPqd7yC-gzGzoHsz
   appkey: nMOGrsKQHA5s9IXapTQnBglA
   notify: false # Mail notifier
