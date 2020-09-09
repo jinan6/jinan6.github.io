@@ -34,19 +34,29 @@
           <button class="search-btn" id="search-btn"><i class="fa fa-search"></i></button>
         </div>
         <!-- 搜索热词 -->
-        <!-- <div class="box search-hot-text" id="box" style="display: none;">
+        <div class="box search-hot-text" id="box" style="display: none;">
           <ul></ul>
-        </div> -->
+        </div>
         <!-- 搜索引擎 -->
         <div class="search-engine" style="display: none;">
           <div class="search-engine-head">
             <strong class="search-engine-tit">选择您的默认搜索引擎：</strong>
-            <!-- <div class="search-engine-tool">搜索热词： <span id="hot-btn"></span></div> -->
+            <div class="search-engine-tool">搜索热词： <span id="hot-btn"></span></div>
           </div>
           <ul class="search-engine-list search-engine-list_zmki_ul" style="list-style-type: none;">
           </ul>
         </div>
+        <div style="text-align: center;">
+          <h3 id="hitokoto"><a href="#" id="hitokoto_text"></a></h3>
+        </div>
     </section>
+    <div style="text-align: center;border-left: 1px solid rgb(129, 115, 115);border-right: 1px solid black;border-bottom: 1px solid black;width: 800px;margin: 0 auto;">
+      <div style="border: 1px solid black;width: 180px;float: left;"></div>
+      <div style="border: 1px solid black;width: 180px;float: right;"></div>
+      <h3 style="font-weight: 400;">念两句诗</h3>
+      <p id="poem_sentence" style="font-size: 25px;"></p>
+      <p id="poem_info" style="font-size-adjust: 20px;"></p>
+    </div>
     <script>search()</script>
     <% theme.menu.forEach(function(e) { %>
     <% if (e.submenu) { %>
@@ -66,7 +76,17 @@
 				year = nowtime.getFullYear();
 				month = nowtime.getMonth() + 1;
 				date = nowtime.getDate();
-				document.getElementById("mytime").innerText = "当前时间为："+"👉"+year + "年" + month + "月" + date + "日"+" " + nowtime.toLocaleTimeString();
+				document.getElementById("mytime").innerText = "当前时间："+year + "年" + month + "月" + date + "日"+" " + nowtime.toLocaleTimeString();
 			}
 			setInterval("showTime()", 1000);
-		</script>
+    </script>
+    <!-- 今日诗词js -->
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<script type="text/javascript">
+  jinrishici.load(function(result) {
+    var sentence = document.querySelector("#poem_sentence")
+    var info = document.querySelector("#poem_info")
+    sentence.innerHTML = result.data.content
+    info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+  });
+</script>

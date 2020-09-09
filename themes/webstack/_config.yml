@@ -121,6 +121,10 @@ correlation:
     url: https://uptimerobot.com/
     img: /navigation/images/img/UptimeRobot.png
     description: 全球领先的正常运行时间监控服务
+  - name: 谷歌测速网
+    url: https://www.googlespeed.cn/
+    img: /navigation/images/img/cesu.png
+    description: 全面分析提升网页加载速度与网站测试评分
 people:
   - name: 站长工具
     url: http://tool.chinaz.com/
@@ -434,7 +438,7 @@ aboutPage:
 since: 2020
 
 busuanzi:
-  enable: true
+  enable: false
   position: sidebar # 'footer','sidebar'
   pv: 本站总访问量$pv
   uv: 本站总访客数$uv
