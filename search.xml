@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>一些好用的SQL语句</title>
+      <link href="/posts/1321241776/"/>
+      <url>/posts/1321241776/</url>
+      
+        <content type="html"><![CDATA[<div class="snote success"><p>一些简单好用的SQL语句</p></div><h3 id="ISNULL"><a href="#ISNULL" class="headerlink" title="ISNULL"></a>ISNULL</h3><p>使用指定的替换值替换 NULL</p><p><strong>语法：</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ISNULL ( check_expression , replacement_value )</span><br></pre></td></tr></table></figure><p><strong>参数说明：</strong></p><ol><li>check_expression 被检查是否为NULL的表达式，如果不为NULL，直接返回</li><li>check_expression 为NULL时返回的表达式</li></ol><p>简单来说，就是如果 check_expression 不为 NULL，那么返回该表达式的值；否则返回 replacement_value。</p><h3 id="GROUP-CONCAT"><a href="#GROUP-CONCAT" class="headerlink" title="GROUP_CONCAT"></a>GROUP_CONCAT</h3><p>如果有一条数据重复出现很多次，看上去就不太直观</p><p>使用这个函数可以将相同的行组合起来</p><p><strong>例子：</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">id</span>,<span class="keyword">GROUP_CONCAT</span>(<span class="keyword">name</span>) <span class="keyword">from</span> <span class="keyword">user</span> <span class="keyword">group</span> <span class="keyword">by</span> <span class="keyword">id</span></span><br></pre></td></tr></table></figure><h3 id="去除重复列"><a href="#去除重复列" class="headerlink" title="去除重复列"></a>去除重复列</h3><ol><li>单表<code>distinct</code></li><li>多表<code>group by</code></li></ol><p><strong>注意：</strong>group by 必须放在 order by 和 limit之前，不然会报错</p><p>具体请看原文链接  <a href="https://www.cnblogs.com/techliang666/p/10881402.html">sql查询去除重复值语句</a></p><h3 id="UNION-语法"><a href="#UNION-语法" class="headerlink" title="UNION 语法"></a>UNION 语法</h3><p>UNION 操作符用于合并两个或多个 SELECT 语句的结果集。</p><p>注意，UNION内部的 SELECT 语句必须拥有相同数量的列。列也必须拥有相似的数据类型。同时，每条 SELECT 语句中的列的顺序必须相同。</p><p>例子：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column_name(s) <span class="keyword">FROM</span> table_name1</span><br><span class="line"><span class="keyword">UNION</span></span><br><span class="line"><span class="keyword">SELECT</span> column_name(s) <span class="keyword">FROM</span> table_name2</span><br></pre></td></tr></table></figure><p>详细链接 <a href="https://www.w3school.com.cn/sql/sql_union.asp">W3school</a></p><center style="font-size: 20px;">不定时补充~</center>]]></content>
+      
+      
+      <categories>
+          
+          <category> MySQL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>在小白鸽遇到的问题</title>
       <link href="/posts/704219325/"/>
       <url>/posts/704219325/</url>
