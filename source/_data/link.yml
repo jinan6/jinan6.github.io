@@ -17,16 +17,16 @@
       time: 4s
       rotate: 360deg
 
-    - name: Sakura` Blogs
-      link: https://only_ann.gitee.io/blog/
-      avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
-      descr:  gitee版
-      width: 1px
-      style: solid
-      color: "#2177C7"
-      custom: link_custom
-      time: 4s
-      rotate: 360deg
+    # - name: Sakura` Blogs
+    #   link: https://only_ann.gitee.io/blog/
+    #   avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
+    #   descr:  gitee版
+    #   width: 1px
+    #   style: solid
+    #   color: "#2177C7"
+    #   custom: link_custom
+    #   time: 4s
+    #   rotate: 360deg
   
     - name: 潘高的小站
       link: https://blog.pangao.vip/
@@ -42,11 +42,6 @@
       link: https://euukey.com
       avatar: https://cdn.jsdelivr.net/gh/Euukey/euukey.github.io/img/avatar.png
       descr: 人之帅，莫过于煎鱼
-
-    # - name: SvnYang
-    #   link: https://www.svnyang.cn
-    #   avatar: https://cdn.jsdelivr.net/gh/svnyang/CDN/images/SvnYang.jpg
-    #   descr:  笑而不语是一种豁达，痛而不言是一种修养
 
     - name: Uncle_drew
       link: https://cndrew.cn

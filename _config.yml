@@ -118,8 +118,9 @@ backup:
   message: Butterfly 3.2.0-b7版本
   repository:
     github: git@github.com:jinan6/jinan6.github.io.git,butterfly
+
 #Rss插件
-plugins: hexo-generate-feed
+# plugins: hexo-generate-feed
 
 # Live2D
 ## https://github.com/EYHN/hexo-helper-live2d

@@ -13,9 +13,13 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ### 2020-09-22
 
-{% radio blue checked, 升级主题版本为 butterfly 3.2.0 - b7 %}
+{% radio blue checked, 升级主题版本为 `butterfly 3.2.0 - b7` %}
 
 {% radio blue checked, 取消左侧当前访问用户的 js %}
+
+{% radio blue checked, 删除一些曾经的魔改 %}
+
+{% radio blue checked, 升级Hexo版本为` 5.2.0` %}
 
 ### 2020-09-07
 
@@ -29,7 +33,7 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ### 2020-08-05
 
-{% checkbox green checked, 添加当前访问用户 %}
+{% checkbox green checked, ~~添加当前访问用户~~ %}
 
 {% checkbox green checked, 添加侧边栏关于网站 %}
 
@@ -45,7 +49,7 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 {% radio red checked, 更换全局字体为`Rubik` %}
 
-{% radio red checked, 添加live2d看板娘%}
+{% radio red checked, ~~添加live2d看板娘~~%}
 
 {% radio red checked, ~~添加全站黑白效果~~ %}
 
@@ -57,7 +61,7 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 {% checkbox green checked,添加来必力评论 %}
 
-{% checkbox green checked, 添加左下角播放器 %}
+{% checkbox green checked, ~~添加左下角播放器~~ %}
 
 ### 2020-07-17
 
@@ -91,7 +95,7 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 {% checkbox minus yellow checked, ~~问题：图标不转了~~ %}
 
-{% checkbox red checked, 添加RSS插件 %}
+{% checkbox red checked, ~~添加RSS插件~~ %}
 
 ### 2020-06-23
 
@@ -127,7 +131,7 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 {% checkbox green checked, 添加页面渐变以及一些样式  %}
 
-{% checkbox green checked, 添加 daovoice 在线联系 %}
+{% checkbox green checked, ~~添加 daovoice 在线联系~~ %}
 
 {% checkbox green checked, 添加说说页面 %}
 
