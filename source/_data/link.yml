@@ -17,11 +17,6 @@
       time: 4s
       rotate: 360deg
 
-    # - name: shuowen
-    #   link: https://shuowen.github.io
-    #   avatar: https://shuowen.github.io/img/1596328623057.jpeg
-    #   descr: 同学
-
     - name: Sakura` Blogs
       link: https://only_ann.gitee.io/blog/
       avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
@@ -48,10 +43,10 @@
       avatar: https://cdn.jsdelivr.net/gh/Euukey/euukey.github.io/img/avatar.png
       descr: 人之帅，莫过于煎鱼
 
-    - name: SvnYang
-      link: https://www.svnyang.cn
-      avatar: https://cdn.jsdelivr.net/gh/svnyang/CDN/images/SvnYang.jpg
-      descr:  笑而不语是一种豁达，痛而不言是一种修养
+    # - name: SvnYang
+    #   link: https://www.svnyang.cn
+    #   avatar: https://cdn.jsdelivr.net/gh/svnyang/CDN/images/SvnYang.jpg
+    #   descr:  笑而不语是一种豁达，痛而不言是一种修养
 
     - name: Uncle_drew
       link: https://cndrew.cn
@@ -116,38 +111,46 @@
       avatar: https://www.paddylin.top/img/author.jpg
       descr: 又菜又爱学
 
-- class_name: 网站
-  class_desc: 我的一些常用网址
-  link_list:
-    - name: 阿里巴巴矢量图标库
-      link: https://www.iconfont.cn/
-      avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200618154729.png
-      descr: 实用的小图标
+    - name: 樱桃先生
+      link: https://xyingtao.gitee.io/
+      avatar: https://xyingtao.gitee.io/img/avatar.jpg
+      descr: 我们都是迷途的星星
 
-    - name: Font Awesome V5
-      link: https://fontawesome.com/
-      avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617141057.png
-      descr: 图标
+# - class_name: 其他站点
+#   class_desc: 我的其他站点
+#   link_list:
+#     - name: Sakura` Blogs Gitee版
+#       link: https://only_ann.gitee.io/blog/
+#       avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
+#       descr: 搭建在 Gitee上，内容与本站一致，速度相对较快
 
-    - name: jsdelivr
-      link: https://www.jsdelivr.com/
-      avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617185527.png
-      descr: CDN
+#     - name: Sakura` Blogs Next主题
+#       link: https://only_ann.gitee.io/next/
+#       avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
+#       descr: Next主题，已停止维护更新。
 
-    - name: LeanCloud
-      link: https://console.leancloud.app/
-      avatar: https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@link/img/link/leancloud.png
-      descr: LeanCloud后台
+#     - name: 仅安の个人主页
+#       link: https://blog.jinan6.vip/
+#       avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
+#       descr: 个人主页
+
+#     - name: 仅安の网址导航
+#       link: https://only_ann.gitee.io/navigation/
+#       avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
+#       descr: 网址导航
 	  
-    - name: Artitalk.js
-      link: https://artitalk.js.org/
-      avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200618154905.png
-      descr: 可实时发布说说/微语的js
+#     - name: 仅安の网站监控
+#       link: https://jinan6.vip/status/
+#       avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
+#       descr: 网站监控
 
-    - name: MSDN
-      link: https://next.itellyou.cn/
-      avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200622102946.png
-      descr: windows原版镜像
+- class_name: 阵亡名单
+  class_desc: 以下是不能正常访问的链接，超过一个月后，将会从本页面删除
+  link_list:
+    - name: SvnYang
+      link: https://www.svnyang.cn
+      avatar: https://cdn.jsdelivr.net/gh/svnyang/CDN/images/SvnYang.jpg
+      descr:  笑而不语是一种豁达，痛而不言是一种修养
 
 
 

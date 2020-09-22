@@ -2744,3 +2744,13 @@ inject:
 | theme         | `#ad7a86`  | 播放器风格色彩设置                                          |
 
 如果需要刷新网页音乐不间断，就需要在主题配置文件中将`pjax`设置为`true`
+
+### 实现全站黑白
+
+只需引入一条css即可实现
+
+```css
+   - '<style type="text/css">html{filter:progid:DXImageTransForm.Microsoft.BasicImage(grayscale=1);-webkit-filter:saturate(0)}</style>'  #全站黑白css
+
+```
+

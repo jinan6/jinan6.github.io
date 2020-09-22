@@ -11,6 +11,12 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ## 更新记录
 
+### 2020-09-22
+
+{% radio blue checked, 升级主题版本为 butterfly 3.2.0 - b7 %}
+
+{% radio blue checked, 取消左侧当前访问用户的 js %}
+
 ### 2020-09-07
 
 {% checkbox green checked, 升级主题为 3.2.0-b1 %}

@@ -27,7 +27,7 @@ if theme.darkmode.enable
         else if (isNotSpecified || hasNoSupport) {
           var now = new Date()
           var hour = now.getHours()
-          var isNight = hour <= 7 || hour >= 21
+          var isNight = hour <= 6 || hour >= 18
           isNight ? activateDarkMode() : activateLightMode()
         }
         window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
@@ -40,7 +40,7 @@ if theme.darkmode.enable
     } else if (autoChangeMode === '2') {
       now = new Date()
       hour = now.getHours()
-      isNight = hour <= 7 || hour >= 21
+      isNight = hour <= 6 || hour >= 18
       if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
       else if (t === 'light') activateLightMode()
       else activateDarkMode()

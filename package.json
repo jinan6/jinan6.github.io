@@ -16,7 +16,6 @@
     "hexo": "^5.0.2",
     "hexo-abbrlink": "^2.2.1",
     "hexo-asset-image": "git+https://github.com/CodeFalling/hexo-asset-image.git",
-    "hexo-bilibili-bangumi": "^1.5.0",
     "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-calendar": "git://github.com/howiefh/hexo-generator-calendar.git",

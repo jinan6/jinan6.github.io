@@ -102,7 +102,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: Butterfly
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -115,7 +115,7 @@ deploy:
 backup:
   type: git
   theme: butterfly
-  message: Butterfly 3.1.0-rc1版本
+  message: Butterfly 3.2.0-b7版本
   repository:
     github: git@github.com:jinan6/jinan6.github.io.git,butterfly
 #Rss插件
@@ -132,7 +132,9 @@ live2d:
   tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
   debug: false # 调试, 是否在控制台输出日志
   model:
-    use: ./live2d_models/models/kesyoban # 路径
+    # use: ./live2d_models/models/kesyoban # 看板娘
+    # use: ./live2d_models/models/tororo # 白猫
+    # use: ./live2d_models/models/hijiki # 黑猫
   display:
     position: right
     width: 150
@@ -145,6 +147,7 @@ live2d:
 aplayer:
   meting: false
   asset_inject: false
+
 #弹窗
 # offline config passed to sw-precache.
 service_worker:
@@ -154,13 +157,3 @@ service_worker:
   # - public/**/*.{html,css}
   stripPrefix: public
   verbose: false
-
-#哔哩哔哩插件
-bangumi:
-  enable: true 
-  path: 
-  vmid: 323386473
-  title: '追番列表'
-  quote: '来看点番剧吧~~~'
-  show: 1
-  loading:
