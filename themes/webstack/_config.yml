@@ -311,6 +311,10 @@ website:
     url: https://next.itellyou.cn/
     img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200622102946.png
     description: 提供可靠的原版软件，电脑系统
+  - name: ProcessOn
+    url: https://www.processon.com/diagrams
+    img:  /navigation/images/img/logo_small.png
+    description: ProcessOn是一个在线协作绘图平台。
 community:
   - name: CSDN
     url: https://www.csdn.net/
@@ -403,18 +407,10 @@ me:
     url: https://only_ann.gitee.io/next/
     img: /navigation/images/img/author.jpg
     description: Next主题，已停止维护更新。
-  - name: Sakura` Blogs
-    url: https://only_ann.gitee.io/blog/
-    img: /navigation/images/img/author.jpg
-    description: 搭建在 Gitee
   - name: 仅安の个人主页
     url: https://blog.jinan6.vip/
     img: /navigation/images/img/author.jpg
     description: 个人主页
-  - name: 仅安の网址导航
-    url: https://only_ann.gitee.io/navigation/
-    img: /navigation/images/img/author.jpg
-    description: 网址导航
   - name: 仅安の网站监控
     url: https://jinan6.vip/status/
     img: /navigation/images/img/author.jpg
