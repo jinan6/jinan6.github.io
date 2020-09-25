@@ -64,7 +64,7 @@
 	min-height:400px;
 	height:calc(36vh - 56px + 200px)
 }
-.cover-wrapper .cover-body{margin-top:56px;margin-bottom:100px;}
+.cover-wrapper .cover-body{margin-top:25px;margin-bottom:100px;}
 .cover-wrapper .cover-body,.cover-wrapper .cover-body .bottom,.cover-wrapper .cover-body .top{display:flex;flex-direction:column;align-items:center;max-width:100%;}
 .cover-wrapper .cover-body .bottom{margin-top:32px}
 .cover-wrapper .list-h{
