@@ -10,7 +10,7 @@ date: 2020-06-01 09:10:58
 sticky:
 ---
 
-{% note success %}  关于Butterfly主题的一些优化 {% endnote %}
+{% note success %}  关于Butterfly主题的一些魔改，由于主题版本更新迭代，可能部分方法已经不适用，仅供参考 {% endnote %}
 
 ### 优化文章链接
 
@@ -138,7 +138,7 @@ npm install --save hexo-tag-aplayer
 hexo new page music
 ```
 
-修改==index.md==文件，加入type
+修改`index.md`文件，加入type
 
 ```markdown
 ---
@@ -205,19 +205,19 @@ else if page.type === 'categories'
     #categories-chart
 ````
 
-此功能参考自[懒人大佬](https://blog.hclonely.com/posts/57bd67ce/#文章统计图表)
+此功能参考自[一个懒人的博客](https://blog.hclonely.com/posts/57bd67ce/#文章统计图表)
 
 ### Valine添加标签及图标
 
-参考[懒人大佬](https://blog.hclonely.com/posts/409d3090/)
+参考[一个懒人的博客](https://blog.hclonely.com/posts/409d3090/)
 
 ### 解决Valine自动唤醒失败问题
 
-参考[小康大佬](https://www.antmoe.com/posts/2380732b/index.html)
+参考[小康博客](https://www.antmoe.com/posts/2380732b/index.html)
 
 ### 添加说说功能
 
-[文档](https://artitalk.js.org/doc.html#👀-前言)已经很详细了。
+具体实现效果可以去[官方文档](https://artitalk.js.org/doc.html#👀-前言)查看
 
 ### 优化移动端显示
 
@@ -415,6 +415,10 @@ neat_js:
 
 ### hexo-offline-popup
 
+{% note info %}
+以下代码来自于 [Colsrch's blog](https://colsrch.cn/posts/32c8ba21/)
+{% endnote %}
+
 hexo-offline-popup 是一个 [hexo](https://hexo.io/) 插件， 它可加速你的Hexo网站的加载速度，以及网站内容更新弹窗提示。
 
 1. 使用
@@ -437,15 +441,16 @@ hexo-offline-popup 是一个 [hexo](https://hexo.io/) 插件， 它可加速你�
      verbose: false
    ```
 
-   
-
-具体请看 插件作者  👉👉👉 [Colsrch's blog](https://colsrch.top/posts/32c8ba21/index.html?_sw-precache=93427639c70cbddfaff098f669eff7a2)
 
 ### 侧边栏的github-badge
 
 {% note info %}
-[大佬原文](https://zykj.js.org/posts/e55bad60/#github-badge)
+以下代码来自于[卓越科技的Blog](https://zykj.js.org/posts/e55bad60/#github-badge)
 {% endnote %}
+
+具体效果：
+
+![image-20200925103911262](Butterfly主题优化/image-20200925103911262.png)
 
 - 在 `themes\Butterfly\source\css` 文件夹新建 `custom.css` 文件，文件内容如下：
 
@@ -519,7 +524,7 @@ hexo-offline-popup 是一个 [hexo](https://hexo.io/) 插件， 它可加速你�
 ### 添加当前访问用户
 
 {% note info %}
-[大佬原文](https://zykj.js.org/posts/e55bad60/#github-badge)
+以下代码来自于[卓越科技的Blog](https://zykj.js.org/posts/e55bad60/#github-badge)
 {% endnote %}
 
 1. 在 `themes\Butterfly\source\css` 下创建 `tag.css` 文件、输入以下内容
@@ -1451,7 +1456,7 @@ hexo-offline-popup 是一个 [hexo](https://hexo.io/) 插件， 它可加速你�
 npm install --save git://github.com/howiefh/hexo-generator-calendar.git
 ```
 
-然后在``themes\butterfly\source\js`下创建两个js文件，文件名为 `calendar.js` 和 `languages.js`
+然后在`themes\butterfly\source\js`下创建两个js文件，文件名为 `calendar.js` 和 `languages.js`
 
 **calendar.js**
 
@@ -2359,7 +2364,7 @@ var calLanguages = {
   };
 ```
 
-然后编辑编辑`calendar.js` 文件，在文件最后`}(jQuery));`之前添加:
+然后编辑`calendar.js` 文件，在文件最后`}(jQuery));`之前添加:
 
 ```javas
 $(document).ready(function () {
@@ -2674,9 +2679,10 @@ $a-link-color = #638fff
 此功能转载于[一个懒人的博客](https://blog.hclonely.com/)
 {% endnote %}
 
-编辑`博客根目录/themes/Butterfly/layout/includes/footer.pug`文件，将`©${theme.since} - ${nowYear} By ${config.author}`改为`&copy;${theme.since} - ${nowYear + ' '} <i id="heartbeat" class="fa fas fa-heartbeat"></i> ${config.author}`, 将`©${nowYear} By ${config.author}`改为`&copy;${nowYear + ' '} <i id="heartbeat" class="fa fas fa-heartbeat"></i> ${config.author}`
-
-在`inject->head`下面添加如下内容：
+1. 编辑`博客根目录/themes/Butterfly/layout/includes/footer.pug`文件
+2. 将`©${theme.since} - ${nowYear} By ${config.author}`改为`&copy;${theme.since} - ${nowYear + ' '} <i id="heartbeat" class="fa fas fa-heartbeat"></i> ${config.author}`
+3. 将`©${nowYear} By ${config.author}`改为`&copy;${nowYear + ' '} <i id="heartbeat" class="fa fas fa-heartbeat"></i> ${config.author}`
+4. 在`inject->head`下面添加如下内容：
 
 ```yaml
 - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
@@ -2690,30 +2696,32 @@ $a-link-color = #638fff
 
 首先，需要安装`hexo-tag-aplayer`这款插件。
 
-在你的博客目录，右键`Git Bash Here`，输入以下命令安装插件
+1. 在你的博客目录，右键`Git Bash Here`，输入以下命令安装插件
 
-```bas
-npm install --save hexo-tag-aplayer
-```
+   ```bash
+   npm install --save hexo-tag-aplayer
+   ```
 
-然后，在博客配置文件中加入以下设置于
+   
 
-```yml
-aplayer:
-  meting: false
-  asset_inject: false
-```
+2. 在博客配置文件中加入以下设置
 
-在主题配置文件中，修改以下内容
+   ```yml
+   aplayer:
+     meting: false
+     asset_inject: false
+   ```
 
-```yml
-# Inject the css and script (aplayer/meting)
-aplayerInject:
-  enable: true
-  per_page: true
-```
+3. 在主题配置文件中，修改以下内容
 
-然后需要把 `aplayer`代碼插入到主題配置文件的 `inject.bottom` 去
+   ```yml
+   # Inject the css and script (aplayer/meting)
+   aplayerInject:
+     enable: true
+     per_page: true
+   ```
+
+4. 需要把 `aplayer`代碼插入到主題配置文件的 `inject.bottom` 去
 
 ```html
 inject:
@@ -2754,3 +2762,258 @@ inject:
 
 ```
 
+### 添加封面小菜单
+
+最近闲来无事，逛了下友链，发现了一个魔改的小菜单功能，于是就跟着配置了😁。
+
+本功能转载自👉[PaddyLin的博客](https://www.paddylin.top/post/a510.html)。
+
+由于主题版本的不同，我做了一些修改，此方法适用于 `Butterfly 3.2.0-b7`，其他的主题版本可能稍有差异。根据实际情况自行修改。
+
+#### 效果图
+
+![image-20200925103831335](Butterfly主题优化/image-20200925103831335.png)
+
+#### 具体方法
+
+1. 在`butterfly\source\css`下建立文件`cover.css`，代码如下
+
+   ```css
+   .l_cover{min-height:56px}
+   
+   .cover-wrapper{
+   	top:0;
+   	left:0;
+   	max-width:100%;
+   	display:flex;
+   	flex-wrap:nowrap;
+   	flex-direction:column;
+   	align-items:center;
+   	align-self:center;
+   	align-content:center;
+   	color:#555;
+   	padding:0 16px;
+   	-moz-user-select:none;
+   	-ms-user-select:none;
+   	-webkit-user-select:none;
+   	user-select:none;
+   	position:relative;
+   	overflow:hidden;
+   	margin-bottom:-100px
+   	}
+   .cover-wrapper .cover-backstretch,.cover-wrapper .cover-bg{
+   	position:absolute;
+   	width:100%;
+   	height:100%;
+   	background-position:center;
+   	background-size:cover
+   }
+   .cover-wrapper .cover-backstretch.lazyload:not(.loaded),.cover-wrapper .cover-bg.lazyload:not(.loaded){opacity:0}
+   .cover-wrapper .cover-backstretch.lazyload.loaded,.cover-wrapper .cover-bg.lazyload.loaded{
+   	animation-delay:0s;
+   	animation-duration:.5s;
+   	animation-fill-mode:forwards;
+   	animation-timing-function:ease-out;
+   	animation-name:fadeIn
+   }
+   
+   @-moz-keyframes fadeIn{
+   	0%{opacity:0;filter:blur(12px);transform:scale(1.02)}
+   	100%{opacity:1}
+   }
+   
+   @-webkit-keyframes fadeIn{
+   	0%{opacity:0;filter:blur(12px);transform:scale(1.02)}
+   	100%{opacity:1}
+   }
+   
+   @-o-keyframes fadeIn{
+   	0%{opacity:0;filter:blur(12px);transform:scale(1.02)}
+   	100%{opacity:1}
+   }
+   
+   @keyframes fadeIn{
+   	0%{opacity:0;filter:blur(12px);transform:scale(1.02)}
+   	100%{opacity:1}
+   }
+   .cover-wrapper .cover-body{
+   	z-index:1;position:relative;
+   	height:30%;
+   }
+   .cover-wrapper#half{
+   	max-height:640px;
+   	min-height:400px;
+   	height:calc(36vh - 56px + 200px)
+   }
+   .cover-wrapper .cover-body{margin-top:25px;margin-bottom:100px;}
+   .cover-wrapper .cover-body,.cover-wrapper .cover-body .bottom,.cover-wrapper .cover-body .top{display:flex;flex-direction:column;align-items:center;max-width:100%;}
+   .cover-wrapper .cover-body .bottom{margin-top:32px}
+   .cover-wrapper .list-h{
+   	display:flex;
+   	flex-direction:row;
+   	flex-wrap:wrap;
+   	align-items:stretch;
+   	border-radius:4px;
+   	-moz-user-select:none;
+   	-ms-user-select:none;
+   	-webkit-user-select:none;
+   	user-select:none
+   }
+   .cover-wrapper .list-h a{
+   	flex:1;
+   	display:flex;
+   	font-weight:600
+   }
+   .cover-wrapper .list-h a img{
+   	display:block;
+   	border-radius:2px;
+   	margin:4px;
+   	min-width:40px;
+   	max-width:44px
+   }
+   @media screen and (max-width:768px){
+   	.cover-wrapper .list-h a img{
+   		min-width:36px;
+   		max-width:40px
+   	}
+   }
+   @media screen and (max-width:500px){
+   	.cover-wrapper .list-h a img{
+   		margin:2px 4px;
+   		min-width:32px;
+   		max-width:36px
+   	}
+   }
+   @media screen and (max-width:375px){
+   	.cover-wrapper .list-h a img{min-width:28px;max-width:32px}}
+   	.cover-wrapper{max-width:100%}
+   	.cover-wrapper.search .bottom .menu{margin-top:16px}
+   	.cover-wrapper.search .bottom .menu .list-h a{
+   		white-space:nowrap;
+   		flex-direction:row;
+   		align-items:baseline;
+   		font-size:1rem;
+   		padding:2px;
+   		margin:4px;
+   		color:rgba(85,85,85,.75);
+   		text-shadow:0 1px 2px rgba(0,0,0,.05);
+   		border-bottom:2px solid transparent
+   }
+   @media screen and (max-width:500px){.cover-wrapper.search .bottom .menu .list-h a{margin:4px 12px}}
+   .cover-wrapper.search .bottom .menu .list-h a i{margin-right:4px}
+   .cover-wrapper.search .bottom .menu .list-h a p{font-size:1rem}
+   .cover-wrapper.search .bottom .menu .list-h a.active,.cover-wrapper.search .bottom .menu .list-h a:active,.cover-wrapper.search .bottom .menu .list-h a:hover{color:#555;border-bottom:2px solid #555}
+   .cover-wrapper.dock .menu,.cover-wrapper.featured .menu,.cover-wrapper.focus .menu{border-radius:6px}
+   .cover-wrapper.dock .menu .list-h a,.cover-wrapper.featured .menu .list-h a,.cover-wrapper.focus .menu .list-h a{flex-direction:column;align-items:center;padding:12px;line-height:1px;border-radius:4px;border-bottom:none;text-align:center;align-content:flex-end;color:rgba(68,68,68,.7);font-size:1.5rem}
+   @media screen and (max-width:500px){.cover-wrapper.dock .menu .list-h a,.cover-wrapper.featured .menu .list-h a,.cover-wrapper.focus .menu .list-h a{padding:12px 8px}}
+   .cover-wrapper.dock .menu .list-h a i,.cover-wrapper.featured .menu .list-h a i,.cover-wrapper.focus .menu .list-h a i{margin:8px}
+   .cover-wrapper.dock .menu .list-h a p,.cover-wrapper.featured .menu .list-h a p,.cover-wrapper.focus .menu .list-h a p{font-size:.875rem}
+   .cover-wrapper.dock .menu .list-h a.active,.cover-wrapper.featured .menu .list-h a.active,.cover-wrapper.focus .menu .list-h a.active{backdrop-filter:none}
+   .cover-wrapper.dock .menu .list-h a.active i,.cover-wrapper.dock .menu .list-h a.active i+p,.cover-wrapper.featured .menu .list-h a.active i,.cover-wrapper.featured .menu .list-h a.active i+p,.cover-wrapper.focus .menu .list-h a.active i,.cover-wrapper.focus .menu .list-h a.active i+p{color:#7c5246}
+   .cover-wrapper.dock .menu .list-h a.active img+p,.cover-wrapper.featured .menu .list-h a.active img+p,.cover-wrapper.focus .menu .list-h a.active img+p{color:#444}.cover-wrapper.dock .menu .list-h a:hover,.cover-wrapper.featured .menu .list-h a:hover,.cover-wrapper.focus .menu .list-h a:hover{background:#fff}
+   .cover-wrapper.dock .top{margin-bottom:48px}
+   .cover-wrapper.dock .menu{background:rgba(255,255,255,.5);position:absolute;bottom:0;max-width:100%}
+   .cover-wrapper.dock .menu .list-h{flex-wrap:nowrap;margin:4px}
+   .cover-wrapper.dock .menu .list-h a+a{margin-left:4px}
+   @media screen and (max-width:500px){
+   	.cover-wrapper.dock .menu .list-h{overflow-x:scroll}
+   	.cover-wrapper.dock .menu .list-h::-webkit-scrollbar{height:0;width:0}
+   	.cover-wrapper.dock .menu .list-h::-webkit-scrollbar-track-piece{background:0 0}
+   	.cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb{background:#7c5246;cursor:pointer;border-radius:0}
+   	.cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb:hover{background:#ff5722}}
+   @supports (backdrop-filter:blur(20px)){
+   	.cover-wrapper.dock .menu{background:rgba(255,255,255,.5);backdrop-filter:saturate(200%) blur(20px)}}
+   	.cover-wrapper.featured .menu .list-h{margin:-2px}
+   	.cover-wrapper.featured .menu .list-h a{margin:2px;background:rgba(255,255,255,.5)}
+   @supports (backdrop-filter:blur(20px)){
+   	.cover-wrapper.featured .menu .list-h a{background:rgba(255,255,255,.5);backdrop-filter:saturate(200%) blur(20px)}}
+       .cover-wrapper.focus .menu{transition:all .28s ease;-moz-transition:all .28s ease;-webkit-transition:all .28s ease;-o-transition:all .28s ease}
+       .cover-wrapper.focus .menu .list-h{margin:2px}
+       .cover-wrapper.focus .menu:hover{background:rgba(255,255,255,.5)}
+   @supports (backdrop-filter:blur(20px)){
+   	.cover-wrapper.focus .menu:hover{background:rgba(255,255,255,.5);backdrop-filter:saturate(200%) blur(20px)}}
+   	.cover-wrapper.focus .menu .list-h a{margin:2px}
+   	.cover-wrapper.focus .menu .list-h a:hover{opacity:1;background:#fff}
+   ```
+
+   
+
+2. 在主题配置文件中引入此css文件
+
+   ```yml
+   - <link rel="stylesheet" href="/css/cover.css">
+   ```
+
+   
+
+3. 找到`butterfly\layout\includes\header`中的`index.pug`文件，修改代码
+
+   修改前
+
+   ```code
+   header#page-header(class=isHomeClass style=bg_img)
+     !=partial('includes/header/nav', {}, {cache:theme.fragment_cache})
+     if top_img !== false
+       if is_post()
+         include ./post-info.pug
+       else if is_home() 
+         #site-info
+           h1#site-title=site_title
+           #site-subtitle
+             span#subtitle
+           if(theme.social)
+             #site_social_icons
+               !=fragment_cache('social', function(){return partial('includes/header/social')})
+         #scroll-down
+           i.fas.fa-angle-down.scroll-down-effects
+       else
+         #page-site-info
+           h1#site-title=site_title
+   ```
+
+   修改后
+
+   ```code
+   header#page-header(class=isHomeClass style=bg_img)
+     !=partial('includes/header/nav', {}, {cache:theme.fragment_cache})
+     if top_img !== false
+       if is_post()
+         include ./post-info.pug
+       else if is_home() 
+         #site-info
+           h1#site-title=site_title
+           #site-subtitle
+             span#subtitle
+           #full.cover-wrapper.featured(style='')
+             .cover-backstretch
+             .cover-body
+               .bottom
+                 .menu.navigation
+                   .list-h
+                     a#home.active(href='/', data-pjax-state='')
+                       img.lazyload.placeholder.loaded(src='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923110533.png', srcset='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923110533.png', data-ll-status='loaded')
+                       p 主页
+                     a#archives(href='/archives/', data-pjax-state='load')
+                       img.lazyload.placeholder.loaded(src='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923110830.svg', srcset='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923110830.svg', data-ll-status='loaded')
+                       p 归档
+                     a#links(href='/tags/', data-pjax-state='load')
+                       img.lazyload.placeholder.loaded(src='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923111232.svg', srcset='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923111232.svg', data-ll-status='loaded')
+                       p 标签
+                     a#comments(href='/categories/', data-pjax-state='')
+                       img.lazyload.placeholder.loaded(src='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923111427.svg', srcset='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923111427.svg', data-ll-status='loaded')
+                       p 分类
+                     a#about(href='/link/', data-pjax-state='load')
+                       img.lazyload.placeholder.loaded(src='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923111759.svg', srcset='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923111759.svg', data-ll-status='loaded')
+                       p 友链
+   
+           if(theme.social)
+             #site_social_icons
+               !=fragment_cache('social', function(){return partial('includes/header/social')})
+         #scroll-down
+           i.fas.fa-angle-down.scroll-down-effects
+       else
+         #page-site-info
+           h1#site-title=site_title
+   ```
+
+4. 最后 三连就可以查看效果了

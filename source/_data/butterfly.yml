@@ -172,15 +172,15 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: true
+  enable: false
   subtitle: '😫😫😫页面没有找到'
   background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
 
 post_meta:
   page: # Home Page
-    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     date_format: date # date/relative 顯示日期還是相對日期
-    categories: true # true or false 主頁是否顯示分類
+    categories: false # true or false 主頁是否顯示分類
     tags: false # true or false 主頁是否顯示標籤
     label: true # true or false 顯示描述性文字
   post:
@@ -247,7 +247,7 @@ anchor: false
 
 # Displays outdated notice for a post (文章過期提醒)
 noticeOutdate:
-  enable: true
+  enable: false
   style: flat # style: simple/flat
   limit_day: 7 # When will it be shown
   position: top # position: top/bottom
@@ -713,9 +713,9 @@ runtimeshow:
 newest_comments:
   enable: false
   limit: 6
-  avatar: true
+  avatar: false
   leancloud:
-    enable: true
+    enable: false
     appId: 027OlclAiHmUjOrixaVqodkU-MdYXbMMI
     appKey: Cbi33IqwioAJzqeH3ma6fo3F
     serverURL: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
@@ -748,11 +748,11 @@ translate:
 # Read Mode (閲讀模式)
 readmode: true
 
-# dark mode
+# dark mode 夜间模式
 darkmode:
-  enable: true
+  enable: false
   # Toggle Button to switch dark/light mode
-  button: true
+  button: false
   # Switch dark/light mode automatically (自動切換 dark mode和 light mode)
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
@@ -879,11 +879,12 @@ inject:
   # - <link rel="stylesheet" href="/xxx.css">
   #  - '<style type="text/css">#toggle-sidebar {bottom: 80px}</style>'  #音乐向上调整
   #  - '<style type="text/css">html{filter:progid:DXImageTransForm.Microsoft.BasicImage(grayscale=1);-webkit-filter:saturate(0)}</style>'  #音乐向上调整
-   - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"> #跳动的心
+  #  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"> #跳动的心
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/custom.min.css">	#自定义css文件
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/iconfont.css"> #阿里图标
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/meihua.css"> #乐特的css
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/custom.css"> #关于-css
+   - <link rel="stylesheet" href="/css/cover.css"> #封面
   #  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/tag-Plus.css">   #当前访问用户css 修正版
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/font-awesome-animation.css"> #动画
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/tags.css"> #标签css

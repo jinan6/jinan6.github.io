@@ -40,6 +40,26 @@ else
   - var top_img = false
   - var isHomeClass = 'no-top-img'
 
+//- header#page-header(class=isHomeClass style=bg_img)
+//-   !=partial('includes/header/nav', {}, {cache:theme.fragment_cache})
+//-   if top_img !== false
+//-     if is_post()
+//-       include ./post-info.pug
+//-     else if is_home() 
+//-       #site-info
+//-         h1#site-title=site_title
+//-         #site-subtitle
+//-           span#subtitle
+//-         if(theme.social)
+//-           #site_social_icons
+//-             !=fragment_cache('social', function(){return partial('includes/header/social')})
+//-       #scroll-down
+//-         i.fas.fa-angle-down.scroll-down-effects
+//-     else
+//-       #page-site-info
+//-         h1#site-title=site_title
+
+
 header#page-header(class=isHomeClass style=bg_img)
   !=partial('includes/header/nav', {}, {cache:theme.fragment_cache})
   if top_img !== false
@@ -50,6 +70,28 @@ header#page-header(class=isHomeClass style=bg_img)
         h1#site-title=site_title
         #site-subtitle
           span#subtitle
+        #full.cover-wrapper.featured(style='')
+          .cover-backstretch
+          .cover-body
+            .bottom
+              .menu.navigation
+                .list-h
+                  a#home.active(href='/', data-pjax-state='')
+                    img.lazyload.placeholder.loaded(src='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923110533.png', srcset='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923110533.png', data-ll-status='loaded')
+                    p 主页
+                  a#archives(href='/archives/', data-pjax-state='load')
+                    img.lazyload.placeholder.loaded(src='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923110830.svg', srcset='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923110830.svg', data-ll-status='loaded')
+                    p 归档
+                  a#links(href='/tags/', data-pjax-state='load')
+                    img.lazyload.placeholder.loaded(src='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923111232.svg', srcset='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923111232.svg', data-ll-status='loaded')
+                    p 标签
+                  a#comments(href='/categories/', data-pjax-state='')
+                    img.lazyload.placeholder.loaded(src='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923111427.svg', srcset='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923111427.svg', data-ll-status='loaded')
+                    p 分类
+                  a#about(href='/link/', data-pjax-state='load')
+                    img.lazyload.placeholder.loaded(src='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923111759.svg', srcset='https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200923111759.svg', data-ll-status='loaded')
+                    p 友链
+
         if(theme.social)
           #site_social_icons
             !=fragment_cache('social', function(){return partial('includes/header/social')})

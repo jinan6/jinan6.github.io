@@ -4,7 +4,7 @@ tags: hexo
 categories: Hexo
 abbrlink: 31683
 date: 2020-05-13 19:28:54
-sticky: 10
+sticky: 
 cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200806201546.jpg
 ---
 
