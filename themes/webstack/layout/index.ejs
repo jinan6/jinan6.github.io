@@ -15,9 +15,9 @@
           <svg t="1593061068148" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1681" width="16" height="16">
             <path d="M582.4 326.4c-140.8 0-256 115.2-256 256s115.2 256 256 256 256-115.2 256-256-115.2-256-256-256z m0 448c-70.4 0-131.2-36.8-164.8-92.8 12.8 3.2 27.2 4.8 40 4.8 121.6 0 219.2-99.2 219.2-219.2 0-17.6-1.6-35.2-6.4-52.8 60.8 32 102.4 96 102.4 169.6 1.6 104-84.8 190.4-190.4 190.4zM582.4 262.4c17.6 0 32-14.4 32-32v-128c0-17.6-14.4-32-32-32s-32 14.4-32 32v128c0 17.6 14.4 32 32 32zM262.4 582.4c0-17.6-14.4-32-32-32h-128c-17.6 0-32 14.4-32 32s14.4 32 32 32h128c17.6 0 32-14.4 32-32zM310.4 356.8c6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6 12.8-12.8 12.8-32 0-44.8l-91.2-91.2c-12.8-12.8-32-12.8-44.8 0-12.8 12.8-12.8 32 0 44.8l91.2 91.2zM944 220.8c-12.8-12.8-32-12.8-44.8 0l-91.2 91.2c-12.8 12.8-12.8 32 0 44.8 6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6l91.2-91.2c12.8-12.8 12.8-33.6 0-44.8zM310.4 808l-91.2 91.2c-12.8 12.8-12.8 32 0 44.8 6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6l91.2-91.2c12.8-12.8 12.8-32 0-44.8-11.2-11.2-32-11.2-44.8 0z" p-id="1682" fill="#707070"></path>
           </svg>
+          <i>日间&nbsp;/夜间</i>
         </a>
       </li>
-      <li><span id="mytime" style="line-height: 78px;font-size: 19px;margin-left:150px"></span></li>
     </ul>
     <% if (theme.githubCorner) { %>
     <%- theme.githubCorner %>
@@ -50,13 +50,6 @@
           <h3 id="hitokoto"><a href="#" id="hitokoto_text"></a></h3>
         </div>
     </section>
-    <div style="text-align: center;border-left: 1px solid rgb(129, 115, 115);border-right: 1px solid black;border-bottom: 1px solid black;width: 800px;margin: 0 auto;">
-      <div style="border: 1px solid black;width: 180px;float: left;"></div>
-      <div style="border: 1px solid black;width: 180px;float: right;"></div>
-      <h3 style="font-weight: 400;">念两句诗</h3>
-      <p id="poem_sentence" style="font-size: 25px;"></p>
-      <p id="poem_info" style="font-size-adjust: 20px;"></p>
-    </div>
     <script>search()</script>
     <% theme.menu.forEach(function(e) { %>
     <% if (e.submenu) { %>
@@ -70,23 +63,3 @@
     <% } %>
     <% }) %>
     <%- js(theme.js.footer) %>
-    <script type="text/javascript">
-			function showTime() {
-				nowtime = new Date();
-				year = nowtime.getFullYear();
-				month = nowtime.getMonth() + 1;
-				date = nowtime.getDate();
-				document.getElementById("mytime").innerText = "当前时间："+year + "年" + month + "月" + date + "日"+" " + nowtime.toLocaleTimeString();
-			}
-			setInterval("showTime()", 1000);
-    </script>
-    <!-- 今日诗词js -->
-<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<script type="text/javascript">
-  jinrishici.load(function(result) {
-    var sentence = document.querySelector("#poem_sentence")
-    var info = document.querySelector("#poem_info")
-    sentence.innerHTML = result.data.content
-    info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
-  });
-</script>
