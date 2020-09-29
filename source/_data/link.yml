@@ -79,6 +79,11 @@
       width: 1px
       color: "#d7d1d5"
 
+    - name: SvnYang
+      link: https://www.svnyang.cn
+      avatar: https://cdn.jsdelivr.net/gh/svnyang/CDN/images/SvnYang.jpg
+      descr:  笑而不语是一种豁达，痛而不言是一种修养
+
     - name: Seeker
       link: https://snow.js.org/
       avatar: https://cdn.jsdelivr.net/gh/srkeo/img/share.jpg
@@ -139,13 +144,10 @@
 #       avatar: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200617192549.png
 #       descr: 网站监控
 
-- class_name: 阵亡名单
-  class_desc: 以下是不能正常访问的链接，超过一个月后，将会删除链接
-  link_list:
-    - name: SvnYang
-      link: https://www.svnyang.cn
-      avatar: https://cdn.jsdelivr.net/gh/svnyang/CDN/images/SvnYang.jpg
-      descr:  笑而不语是一种豁达，痛而不言是一种修养
+# - class_name: 阵亡名单
+#   class_desc: 以下是不能正常访问的链接------暂无
+#   link_list:
+
 
 
 

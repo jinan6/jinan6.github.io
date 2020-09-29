@@ -6,7 +6,7 @@
 title: Sakura` Blogs
 subtitle: ''
 description: '或苦或甜都不要辜负'
-keywords:
+keywords: '仅安的小站'
 author: 仅安
 language: zh-CN
 timezone: ''
@@ -115,7 +115,7 @@ deploy:
 backup:
   type: git
   theme: butterfly
-  message: Butterfly 3.2.0-b7版本
+  message: Butterfly 3.2.0版本
   repository:
     github: git@github.com:jinan6/jinan6.github.io.git,butterfly
 
@@ -133,7 +133,7 @@ live2d:
   tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
   debug: false # 调试, 是否在控制台输出日志
   model:
-    # use: ./live2d_models/models/kesyoban # 看板娘
+    # use: ./live2d_models/models/kesyoban # 血小板
     # use: ./live2d_models/models/tororo # 白猫
     # use: ./live2d_models/models/hijiki # 黑猫
   display:

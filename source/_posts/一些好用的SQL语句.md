@@ -65,5 +65,47 @@ SELECT column_name(s) FROM table_name2
 
 详细链接 [W3school](https://www.w3school.com.cn/sql/sql_union.asp)
 
+### mysql中case使用
+
+此 SQL 可以根据不同的条件 返回不同的值
+
+分为两种方式，以下列举两个例子
+
+1. 例子1：
+
+   ```sql
+   SELECT
+           CASE sex
+           WHEN 1 THEN '男'
+           WHEN 2 THEN '女'
+           END '性别'
+   FROM
+       user
+   ```
+
+   
+
+   意思为 如果 sex 的值为 1 的话，返回 男， 为 2  的话，则返回 女 最后显示在 性别 这一列里
+
+2. 例子2：
+
+   ```sql
+   SELECT
+           CASE
+           WHEN  score>=90 THEN '优秀'
+           WHEN score>=60 THEN '及格'
+           ELSE '不及格'
+           END '等级'
+   FROM
+       math
+   ORDER BY score 
+   ```
+
+   
+
+
+
+**注意点：表达式最后 的  END 不能省略！**
+
 <center style="font-size: 20px;">不定时补充~</center>
 
