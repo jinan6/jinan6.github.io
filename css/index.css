@@ -3051,7 +3051,6 @@ blockquote footer cite:before {
   position: relative;
   width: 100%;
   background-color: #49b1f5;
-  background-attachment: scroll;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
