@@ -356,6 +356,7 @@ valine:
   requiredFields: nick,mail # required fields nick/mail/link
   bg: # valine background
   count: true # dispaly comment count in top_img
+  option:
 
 # utterances
 # https://utteranc.es/
@@ -670,7 +671,7 @@ aside:
       link: https://only_ann.gitee.io/navigation/
   card_announcement:
     enable: true
-    content: <center>升级主题为 butterfly 3.2.0<p style="text-align:center;color:#49B1F5">2020年9月29日上午✨</p></center><div class="item-headline" style="margin:10px 0"><i class="fas fa-laptop card-announcement-animation"></i><span>关于本站</span></div><div class="github-badge"><a style="color:#fff" href="https://hexo.io/" target="_blank" title="由 Hexo 强力驱动"><span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo5.2.0</span></a><a style="color:#fff" href="https://github.com/" target="_blank" title="静态网页托管于 Github" ><span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen">Github</span><a style="color:#fff" href="https://www.jsdelivr.com/" target="_blank" title="jsDelivr 提供 CDN 加速服务" ><span class="badge-subject">CDN</span><span class="badge-value bg-orange">jsDelivr</span></a><a style="color:#fff" href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" title="站点使用 Butterfly 3.2.0 主题" ><span class="badge-subject">Theme</span><span class="badge-value bg-blue">Butterfly 3.2.0</span></a><a style="color:#fff" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可"><span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span></a></div>
+    content: <center>升级主题为 butterfly 3.3.0-b1<p style="text-align:center;color:#49B1F5">2020年10月9日上午 9:30 ✨</p></center><div class="item-headline" style="margin:10px 0"><i class="fas fa-laptop card-announcement-animation"></i><span>关于本站</span></div><div class="github-badge"><a style="color:#fff" href="https://hexo.io/" target="_blank" title="由 Hexo 强力驱动"><span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo5.2.0</span></a><a style="color:#fff" href="https://github.com/" target="_blank" title="静态网页托管于 Github" ><span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen">Github</span><a style="color:#fff" href="https://www.jsdelivr.com/" target="_blank" title="jsDelivr 提供 CDN 加速服务" ><span class="badge-subject">CDN</span><span class="badge-value bg-orange">jsDelivr</span></a><a style="color:#fff" href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" title="站点使用 Butterfly 3.3.0-b1 主题" ><span class="badge-subject">Theme</span><span class="badge-value bg-blue">Butterfly 3.3.0-b1</span></a><a style="color:#fff" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可"><span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span></a></div>
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
