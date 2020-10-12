@@ -188,7 +188,6 @@ index_post_content:
 toc:
   enable: true
   number: true
-  auto_open: true # auto open the sidebar
 
 post_copyright:
   enable: true
@@ -317,6 +316,7 @@ valine:
   emojiCDN: # emoji CDN
   enableQQ: false # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields (nick/mail)
+  option:
 
 # utterances
 # https://utteranc.es/
@@ -486,12 +486,10 @@ tag_ui: # 留空或 index
 
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
-# The formal of color: '#49B202'
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-# White color will be shown as default
 background:
 
-# Show the footer background image (same as top_img)
+# Footer Background
 footer_bg: false
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)

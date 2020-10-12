@@ -28,12 +28,12 @@ script.
       if (!{Boolean(theme.valine.requiredFields)}) { 
         initData.requiredFields= ('!{theme.valine.requiredFields}'.split(','))
       }
-
+      
       if (!{Boolean(option)}) {
         const otherData = !{option}
         initData = Object.assign({}, initData, otherData)
       }
-
+      
       const valine = new Valine(initData)
     }
 

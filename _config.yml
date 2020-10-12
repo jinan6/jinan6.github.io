@@ -115,7 +115,7 @@ deploy:
 backup:
   type: git
   theme: butterfly
-  message: Butterfly 3.2.0版本
+  message: Butterfly 3.3.0-b2版本
   repository:
     github: git@github.com:jinan6/jinan6.github.io.git,butterfly
 
@@ -149,12 +149,12 @@ aplayer:
   meting: false
   asset_inject: false
 
-#弹窗
-# offline config passed to sw-precache.
-service_worker:
-  maximumFileSizeToCacheInBytes: 5242880
-  staticFileGlobs:
-  - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
-  # - public/**/*.{html,css}
-  stripPrefix: public
-  verbose: false
+# #弹窗
+# # offline config passed to sw-precache.
+# service_worker:
+#   maximumFileSizeToCacheInBytes: 5242880
+#   staticFileGlobs:
+#   - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+#   # - public/**/*.{html,css}
+#   stripPrefix: public
+#   verbose: false

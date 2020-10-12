@@ -2671,6 +2671,7 @@ $a-link-color = #638fff
     background: $dark-black
     vertical-align: bottom
     border-radius: 8px
+    // 3.3.0 -b2 变为 .relatedPosts-list
 ```
 
 #### 页脚跳动的心

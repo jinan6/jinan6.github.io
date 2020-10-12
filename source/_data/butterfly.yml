@@ -37,7 +37,7 @@ hide_sidebar_menu_child: false
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: mac light # default / darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: mac light #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: true # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -213,7 +213,6 @@ index_post_content:
 toc:
   enable: true
   number: true
-  auto_open: true # auto open the sidebar
 
 post_copyright:
   enable: true
@@ -527,7 +526,8 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: '#efefef'
+# background: '#efefef'
+background: 
 
 # Footer Background
 footer_bg: false
@@ -671,7 +671,7 @@ aside:
       link: https://only_ann.gitee.io/navigation/
   card_announcement:
     enable: true
-    content: <center>升级主题为 butterfly 3.3.0-b1<p style="text-align:center;color:#49B1F5">2020年10月9日上午 9:30 ✨</p></center><div class="item-headline" style="margin:10px 0"><i class="fas fa-laptop card-announcement-animation"></i><span>关于本站</span></div><div class="github-badge"><a style="color:#fff" href="https://hexo.io/" target="_blank" title="由 Hexo 强力驱动"><span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo5.2.0</span></a><a style="color:#fff" href="https://github.com/" target="_blank" title="静态网页托管于 Github" ><span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen">Github</span><a style="color:#fff" href="https://www.jsdelivr.com/" target="_blank" title="jsDelivr 提供 CDN 加速服务" ><span class="badge-subject">CDN</span><span class="badge-value bg-orange">jsDelivr</span></a><a style="color:#fff" href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" title="站点使用 Butterfly 3.3.0-b1 主题" ><span class="badge-subject">Theme</span><span class="badge-value bg-blue">Butterfly 3.3.0-b1</span></a><a style="color:#fff" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可"><span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span></a></div>
+    content: <center>升级主题为 butterfly 3.3.0-b2<p style="text-align:center;color:#49B1F5">2020年10月12日 ✨</p></center><div class="item-headline" style="margin:10px 0"><i class="fas fa-laptop card-announcement-animation"></i><span>关于本站</span></div><div class="github-badge"><a style="color:#fff" href="https://hexo.io/" target="_blank" title="由 Hexo 强力驱动"><span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo5.2.0</span></a><a style="color:#fff" href="https://github.com/" target="_blank" title="静态网页托管于 Github" ><span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen">Github</span><a style="color:#fff" href="https://www.jsdelivr.com/" target="_blank" title="jsDelivr 提供 CDN 加速服务" ><span class="badge-subject">CDN</span><span class="badge-value bg-orange">jsDelivr</span></a><a style="color:#fff" href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" title="站点使用 Butterfly 3.3.0-b2 主题" ><span class="badge-subject">Theme</span><span class="badge-value bg-blue">Butterfly 3.3.0-b2</span></a><a style="color:#fff" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可"><span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span></a></div>
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -879,12 +879,11 @@ inject:
   #  - '<style type="text/css">#toggle-sidebar {bottom: 80px}</style>'  #音乐向上调整
   #  - '<style type="text/css">html{filter:progid:DXImageTransForm.Microsoft.BasicImage(grayscale=1);-webkit-filter:saturate(0)}</style>'  #音乐向上调整
   #  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/tag-Plus.css">   #当前访问用户css 修正版
-  #  - <link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css"> #控制台打印
-   - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/custom.min.css">	#自定义css文件
+  #  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/custom.min.css">  已在3.3.0-b2版本注释掉
+  #  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/meihua.css"> # 乐特的css  已在3.3.0-b2版本注释掉
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/iconfont.css"> #阿里图标
-   - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/meihua.css"> #乐特的css
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/custom.css"> #关于本站-css
-   - <link rel="stylesheet" href="/css/cover.css"> #首页封面
+   - <link rel="stylesheet" href="/css/m-plus.css"> #新合并的css样式 3.3.0-b2 使用
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/font-awesome-animation.css"> #动画
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/css/tags.css"> #标签css
    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jinan6/CDN/fonts/Rubik/googleapis.css"> #字体css
@@ -896,8 +895,6 @@ inject:
       # - <script data-pjax src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/ip_content.js"></script>     #当前访问用户js
       # - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/calendar.js"></script>
       # - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/languages.js"></script>
-      # - <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>  #控制台打印
-      # - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/im.js"></script>   #控制台打印
       - <script src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/title.js"></script> #搞怪标题
       - <script data-pjax src="https://cdn.jsdelivr.net/gh/jinan6/CDN/js/Mobile_folding.js"></script>   #手机端导航栏默认不展开
 
