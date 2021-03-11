@@ -11,6 +11,10 @@ top_img: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20200619104620.png
 
 ## 更新记录
 
+### 2021-03-11
+
+{% radio red checked, 被恶意刷评论，故`关闭`评论系统 %}
+
 ### 2020-10-11
 
 {% checkbox green checked, 升级主题为 `3.3.0-b2` %}
