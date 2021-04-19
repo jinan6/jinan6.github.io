@@ -1,0 +1,331 @@
+---
+title: JeecgBoot前端随笔
+tags: JeecgBoot
+categories: JeecgBoot
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210419181010.png
+abbrlink: 4114942351
+date: 2021-04-19 18:04:44
+sticky:
+top_img:
+---
+
+### 相关方法解读
+
+```javascript
+//初始化字典配置 在自己页面定义
+this.initDictConfig();
+```
+
+```javascript
+// 加载页面参数
+this.initPageParams()
+```
+
+```javascript
+//页面刷新
+this.loadData();
+```
+
+### 页面跳转(路由)
+
+示例：
+
+定义一个事件，点击触发方法
+
+```vue
+<a-menu-item>
+    <a @click='handleClassInstance(record)'>课堂实例</a>
+</a-menu-item>
+```
+
+下方定义相对应的方法
+
+```javascript
+// 跳转 添加 课堂实例
+handleClassInstance(row) {
+    console.log('row.id >>', row.id)
+    // 写上想要跳转的地址
+    this.$router.push({ path: '/course-management/case-study', query: { id: row.id } })
+},
+```
+
+**具体实现过程**：
+
+**List页面**
+
+跳转到对应的页面之后,以新增方法为例
+
+替换掉系统自带的新增按钮
+
+```vue
+<a-button @click='handleAdd({courseId:filters.courseId})' v-if='filters.courseId!=null' type='primary' icon='plus'>新增</a-button>
+```
+
+下方 `methods` 中加入以下代码
+
+```javascript
+initPageParams() {
+    if (this.$route.query && this.$route.query.id) {
+        const id = this.$route.query.id
+
+        Object.assign(this.filters, { courseId: id })
+    }
+},
+```
+
+**From页面**
+
+在表单页加入一个 input输入框，用来接受传过来的 课程id，设置 隐藏
+
+```vue
+<a-input-number v-model='model.courseId' hidden />
+```
+
+在下方JS代码中，Props代码块里定义一个 courseId
+
+```javascript
+courseId: {
+    type: String,
+    default: null
+}
+```
+
+在下方 `methods` 里，修改系统自带的添加方法
+
+```javascript
+add(v) {
+    console.log('add >> F', v)
+    const module = {
+        courseId:  v.courseId ,
+        moduleName:  v.moduleName ,
+        moduleTitle:  v.moduleTitle ,
+    }
+    Object.assign(this.modelDefault, module)
+    this.edit(this.modelDefault)
+},
+```
+
+v  是什么，....暂时不知道这是从哪里来的
+
+**Modal页面**
+
+最后在 `modal`页面修改一下  ==add==方法
+
+```javascript
+add (v) {
+    console.log('add >> M', v);
+    this.visible=true
+    this.$nextTick(()=>{
+        this.$refs.realForm.add(v);
+    })
+},
+```
+
+致此大功告成。
+
+### 配置老师课程权限
+
+用到了插槽，就是在 表格 的那个页面，点击某一字段的值，会出来一个弹窗，然后选择对应的权限
+
+
+
+1、首先在合适的位置加入代码，模板都类似，相差不是特别大
+
+**注意：** `slot`的名字就是插槽的名字，下方会使用
+
+```vue
+<template slot='coursePower' slot-scope='text,record'>
+<a @click='handleCoursePower(record)'>{{ text }}</a>
+</template>
+```
+
+2、在`<a-table></a-table>`外面，加入以下代码
+
+```vue
+      <j-modal
+        title='课程权限配置'
+        :visible='visible'
+        :confirmLoading='confirmLoading'
+        @ok='handleSubmit'
+        @cancel='handleCancel'
+        wrapClassName='j-depart-select-modal'
+        switchFullscreen
+        cancelText='关闭'>
+        <a-spin tip='Loading...' :spinning='confirmLoading'>
+          <a-tree
+            v-model='checkedKeys'
+            checkable
+            :expanded-keys='expandedKeys'
+            :auto-expand-parent='autoExpandParent'
+            :selected-keys='selectedKeys'
+            :tree-data='treeData'
+            @expand='onExpand'
+            @select='onSelect'
+          />
+        </a-spin>
+      </j-modal>
+```
+
+3、在列表显示的地方加入代码
+
+```javascript
+          {
+            title:'课程权限',
+            align:"center",
+            dataIndex: 'coursePower',
+                // 加入下方代码，名字对应上方 slot 的名字
+            scopedSlots: { customRender: 'coursePower' }
+          },
+```
+
+4、弹窗之后里面的具体实现等等根据实际情况编写
+
+
+
+### 页面排序
+
+在  前端列表 页面加入以下代码即可
+
+```javascript
+sorter: true,
+customRender:function (text) {
+   return !text?"":(text.length>20?text.substr(0,20):text)
+}
+```
+
+二者缺一不可！
+
+示例：
+
+```javascript
+          {
+            title:'创建时间',
+            align:"center",
+            sorter: true,
+            dataIndex: 'createTime',
+            customRender:function (text) {
+              return !text?"":(text.length>20?text.substr(0,20):text)
+            }
+          },
+```
+
+
+
+### 自定义下拉框查询
+
+参考链接：https://blog.csdn.net/zhengtornado/article/details/106979079
+
+
+
+控制器里写相关查询代码
+
+
+
+**查询页面**
+
+前端页面
+
+==:key="index.toString()"==，这段代码去掉会报错
+
+```vue
+<a-col :xl="6" :lg="7" :md="8" :sm="24">
+    <a-form-item label="任课老师">
+        <a-select  v-model="queryParam.teacherName" placeholder="请选择任课老师">
+            <a-select-option v-for="item in projectNameList2" :key="index.toString()" :value="item.name"> {{item.name}}</a-select-option>
+        </a-select>
+    </a-form-item>
+</a-col>
+```
+
+
+
+data（）里定义以下参数
+
+```javascript
+projectNameList:[],
+teacherName:'',
+index:'',
+```
+
+url 里写入对应控制器的路径
+
+```javascript
+ teacherList:'/School/TeacherList'
+```
+
+methods 里面定义
+
+```javascript
+getName(){
+    postAction(this.url.courseList).then((res) =>{
+        if (res.success){
+            this.projectNameList=res.result;
+            console.log(this.projectNameList)
+        }
+    })
+},
+```
+
+
+
+**添加页面**
+
+```vue
+<a-col :span="24">
+    <a-form-model-item label="任课老师" :labelCol="labelCol" :wrapperCol="wrapperCol" prop="teacherName">
+        <a-select v-model="model.teacherName" v-decorator="['teacherName', validatorRules.teacherName]">
+            <a-select-option  v-for="(item, index)  in projectNameList2" :key="index.toString()" :value="item.name" > {{item.name}}</a-select-option>
+        </a-select>
+    </a-form-model-item>
+</a-col>
+```
+
+modal里定义相应的值
+
+```code
+projectNameList:[],
+projectNameList2:[],
+model:{
+    classCourse:'',
+    teacherName:''
+},
+```
+
+其他与添加时一样。
+
+
+
+### 超长文本截取
+
+1、引入相关组件
+
+```code
+import JEllipsis from '@/components/jeecg/JEllipsis'
+```
+
+2、在`components`里加入
+
+```code
+JEllipsis
+```
+
+3、在 data() 与 return{}中间加入
+
+```javascript
+// 20 代表的是长度，加入后会有些地方报红，但不影响使用
+let ellipsis = (v, l = 20) => (<j-ellipsis value={v} length={l}/>)
+```
+
+4、在想要截取的字段下方加入
+
+```javascript
+customRender:(t) => ellipsis(t)
+```
+
+完成！
+
+参考链接：https://blog.csdn.net/github_39019743/article/details/105274552
+
+
+
+#### 不定时更新~
