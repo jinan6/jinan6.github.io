@@ -9,6 +9,8 @@ sticky:
 top_img:
 ---
 
+<div class="snote done"><p>本笔记是本人在开发中遇到的问题，由于此前未接触过，故此记录，方便以后的自己查看</p></div>
+
 ### 相关方法解读
 
 ```javascript
@@ -225,7 +227,7 @@ customRender:function (text) {
 
 前端页面
 
-==:key="index.toString()"==，这段代码去掉会报错
+`:key="index.toString()"`，这段代码去掉会报错
 
 ```vue
 <a-col :xl="6" :lg="7" :md="8" :sm="24">
@@ -328,4 +330,146 @@ customRender:(t) => ellipsis(t)
 
 
 
+### 字典遇到过的问题
+
+前几天遇到了一个问题 ，查询结果一直显示为 null  
+
+`xxx_dictText`   就是这个字段，后来发现是实体类的原因，用字典注解的这个字段，首字母是大写的。于是我便改为小写实验了一下，竟然成功了。
+
+总结：字典的实体类字段 首字母尽量不要用大写 ，否则可能会造成某些异常问题。
+
+### 时间范围查询
+
+由于是自己重写的方法，所有没有调用系统自带的那些查询条件，就摸索了一套解决方案。
+
+```xml
+            <if test="teaCourseRecordVo.classUpTime_begin != null and teaCourseRecordVo.classUpTime_begin != '' and teaCourseRecordVo.classUpTime_end != null and teaCourseRecordVo.classUpTime_end != ''">
+                and cls.`class_up_time` between #{teaCourseRecordVo.classUpTime_begin} and #{teaCourseRecordVo.classUpTime_end}
+            </if>
+```
+
+xml 里的具体格式就是这样，相对于的前端代码如下
+
+```vue
+          <a-col :xl="10" :lg="11" :md="12" :sm="24">
+            <a-form-item label="上课时间">
+              <a-range-picker
+                :ranges="{ 今天: [moment(), moment()], '本月': [moment(), moment().endOf('month')] }"
+                style="width: 350px"
+                v-model="queryParam.classUpTime"
+                show-time
+                format="YYYY-MM-DD HH:mm:ss"
+                :placeholder="['开始时间', '结束时间']"
+                @change="onDateChange"
+                @ok="onDateOk"
+              />
+            </a-form-item>
+          </a-col>
+```
+
+注意：需要导入组件
+
+```javascript
+  import { filterObj } from '@/utils/util'
+  import moment from 'moment'
+    components: {
+      filterObj, moment
+    },
+```
+
+定义参数：
+
+```javascript
+// 查询条件
+queryParam: {
+    createTimeRange:[],
+},
+```
+
+用到的方法
+
+```javascript
+/**
+       *  时间查询 开始
+       */
+      moment,
+      getQueryParams() {
+        var param = Object.assign({}, this.queryParam, this.isorter)
+        param.field = this.getQueryField()
+        param.pageNo = this.ipagination.current
+        param.pageSize = this.ipagination.pageSize
+        delete param.classUpTime // 时间参数不传递后台
+        if (this.superQueryParams) {
+          param['superQueryParams'] = encodeURI(this.superQueryParams)
+          param['superQueryMatchType'] = this.superQueryMatchType
+        }
+        return filterObj(param)
+      },
+      // 重置
+      searchReset() {
+        var that = this
+        that.queryParam = {} //清空查询区域参数
+        that.loadData(this.ipagination.current)
+      },
+      onDateChange: function(value, dateString) {
+        console.log(dateString[0], dateString[1])
+        this.queryParam.classUpTime_begin = dateString[0]
+        this.queryParam.classUpTime_end = dateString[1]
+      },
+       onDateOk(value) {
+        console.log(value)
+      }
+      /**
+       * 时间查询 END
+       */
+```
+
+这样就可以实现具体的功能了。
+
+本方法参考自：https://blog.csdn.net/qq_38215042/article/details/110875770
+
+### Tea标签页使用
+
+这是一个选项卡切换组件
+
+官方示例：
+
+```vue
+<template>
+  <div>
+    <a-tabs default-active-key="1" @change="callback">
+      <a-tab-pane key="1" tab="Tab 1">
+        Content of Tab Pane 1
+           这里可以换成自定的页面
+      </a-tab-pane>
+      <a-tab-pane key="2" tab="Tab 2" force-render>
+        Content of Tab Pane 2
+           这里可以换成自定的页面
+      </a-tab-pane>
+      <a-tab-pane key="3" tab="Tab 3">
+        Content of Tab Pane 3
+          这里可以换成自定的页面
+      </a-tab-pane>
+    </a-tabs>
+  </div>
+</template>
+<script>
+export default {
+  data() {
+    return {};
+  },
+  methods: {
+    callback(key) {
+      console.log(key);
+    },
+  },
+};
+</script>
+```
+
+
+
+
+
 #### 不定时更新~
+
