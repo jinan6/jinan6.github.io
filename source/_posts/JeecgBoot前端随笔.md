@@ -467,9 +467,118 @@ export default {
 </script>
 ```
 
+### 弹窗的使用
 
+近期项目中遇到了一个功能，在查询老师上课记录的时候，需要显示出`签到/班级人数`，并且点击后会弹出一个对话框，显示出对应的数据。
 
+效果如下：
 
+![image-20210510171350731](JeecgBoot前端随笔/image-20210510171350731.png)
+
+特此记录一下，防止时间久了，自己会遗忘。
+
+#### 实现
+
+先定义一个插槽，点击会触发弹窗的方法
+
+```vue
+<span slot="action" slot-scope="text, record">
+    <a @click="handleTest(record)">{{text}}</a>
+</span>
+```
+
+```javascript
+          {
+            title: '签到/班级学生',
+            align: 'center',
+            dataIndex: 'peopleCounting',
+            scopedSlots: { customRender: 'action' }
+          }
+
+		//方法
+      handleTest(v) {
+        this.visible = true
+        // console.log('>>>>>', v)
+        getAction(this.url.listCondition, {
+          classId: v.classId,
+          courseName: v.courseName
+        }).then((res) => {
+          if (res.success) {
+            this.stuList = res.result.records
+          }
+        })
+      },
+      handleCancel() {
+        this.handleClear()
+      },
+      handleClear() {
+        this.visible = false
+      },
+```
+
+**需要定义好的值**
+
+```javascript
+visible: false,
+confirmLoading: false
+```
+
+在标签`</a-table>`的外面定义弹窗
+
+```vue
+      <j-modal
+        title='学生到课情况'
+        :visible='visible'
+        :confirmLoading='confirmLoading'
+        width="700px"
+        @cancel='handleCancel'
+        :footer="null" 
+        switchFullscreen
+        cancelText='关闭'>
+        <a-spin tip='Loading...' :spinning='confirmLoading'>
+          <a-table
+            rowKey="id"
+            :columns="columnstwo"
+            :dataSource="stuList"
+          >
+          </a-table>
+        </a-spin>
+      </j-modal>
+```
+
+**定义弹窗里面表格的字段**
+
+```javascript
+        columnstwo: [
+          {
+            title: '序号',
+            dataIndex: '',
+            key: 'rowIndex',
+            width: 60,
+            align: 'center',
+            customRender: function(t, r, index) {
+              return parseInt(index) + 1
+            }
+          },
+          {
+            title: '账号',
+            align: 'center',
+            dataIndex: 'accountNumber'
+          },
+          {
+            title: '学生',
+            align: 'center',
+            dataIndex: 'studentName'
+          },
+          {
+            title: '状态',
+            align: 'center',
+            dataIndex: 'type_dictText'
+          }
+        ],
+```
+
+其他调用对应的方法即可，可能记录的会有些潦草，
 
 #### 不定时更新~
 
