@@ -578,7 +578,57 @@ confirmLoading: false
         ],
 ```
 
-其他调用对应的方法即可，可能记录的会有些潦草，
+其他调用对应的方法即可。
+
+
+
+### 实现分页
+
+默认使用的是 `table`分页，实现分页只需要加入一个配置即可
+
+```vue
+:pagination="pagination"
+```
+
+而 `list` 却不能这样使用
+
+记录下 copy 别人的分页
+
+```vue
+ <a-list 	:pagination="ipagination"  
+            :data-source="dataSource">
+</a-list>
+```
+
+以上两个设置必须要有，第一个是分页设置的一个方法，第二个是数据源，及获取的地址
+
+方法：
+
+```javascript
+        ipagination: {
+          current: 1,
+          pageSize: 8,
+          showTotal: (total, range) => {
+            return range[0] + '-' + range[1] + ' 共' + total + '条'
+          },
+          showSizeChanger: false,
+          showQuickJumper: false,
+          total: 0,
+          onChange: function(page, pageSize) {
+            this.current = page
+          }
+        }
+```
+
+```javascript
+    watch: {
+      'ipagination.current': function(val) {
+        this.loadData(val)
+      }
+    },
+```
+
+
 
 #### 不定时更新~
 
