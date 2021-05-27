@@ -628,7 +628,59 @@ confirmLoading: false
     },
 ```
 
+### 显示图片
 
+使用`img`标签显示图片
+
+```vue
+<img :src="getImgView(model.schoolLogo)" />
+```
+
+getImgView()方法可以获取图片的路径
+
+```javascript
+// 引入
+import {getAction,getFileAccessHttpUrl} from '@/api/manage'
+
+/* 图片预览 */
+getImgView(text){
+    if(text && text.indexOf(",")>0){
+        text = text.substring(0,text.indexOf(","))
+    }
+    return getFileAccessHttpUrl(text)
+},
+```
+
+jeecgboot自动生成的页面不需要上述这一步也可以使用
+
+因为它引用了
+
+```vue
+  import { mixinDevice } from '@/utils/mixin'
+  import { JeecgListMixin } from '@/mixins/JeecgListMixin'
+
+mixins: [JeecgListMixin, mixinDevice],
+```
+
+JeecgListMixin中涵盖了此方法。
+
+### 气泡式的卡片浮层
+
+a-popover
+
+文档：https://www.antdv.com/components/popover-cn/
+
+### 文字提示气泡框
+
+a-tooltip
+
+文档：https://www.antdv.com/components/tooltip-cn/
+
+### Badge徽标数
+
+a-badge
+
+文档：https://www.antdv.com/components/badge-cn/
 
 #### 不定时更新~
 
