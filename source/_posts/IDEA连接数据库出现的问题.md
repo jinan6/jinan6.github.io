@@ -4,7 +4,7 @@ tags: IDEA
 categories: IDEA
 abbrlink: 517722444
 date: 2020-12-01 10:54:23
-cover:
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png
 sticky:
 top_img:
 ---

@@ -4,7 +4,7 @@ tags: MySQL
 categories: MySQL
 abbrlink: 2117804210
 date: 2021-06-02 09:51:32
-cover:
+cover: https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png
 sticky:
 top_img:
 ---
